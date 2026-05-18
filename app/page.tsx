@@ -96,7 +96,7 @@ export default function HomePage() {
               Dedetizadora em Londrina há mais de 40 anos
             </div>
             <h1 className="mt-6 text-4xl font-bold leading-tight font-display text-white sm:text-5xl lg:text-6xl">
-              Sua casa ou empresa <span className="text-brand-400">livre de pragas</span> — com garantia.
+              Sua casa ou empresa <span className="text-accent-400">livre de pragas</span> — com garantia.
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-ink-200 max-w-xl">
               Controle profissional de baratas, ratos, cupins, escorpiões, morcegos e mais. Atendimento residencial, comercial, industrial e condomínios em Londrina e todo o Paraná.
@@ -147,14 +147,14 @@ export default function HomePage() {
               <div className="grid grid-cols-2 gap-6">
                 {stats.map((s) => (
                   <div key={s.label} className="text-center">
-                    <div className="text-4xl font-bold text-brand-400 font-display">{s.value}</div>
+                    <div className="text-4xl font-bold text-accent-400 font-display">{s.value}</div>
                     <div className="mt-1 text-sm text-ink-300">{s.label}</div>
                   </div>
                 ))}
               </div>
               <div className="mt-8 rounded-2xl bg-white/10 p-6 border border-white/10">
                 <div className="flex items-center gap-3">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-500">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-accent-500">
                     <svg className="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
@@ -352,7 +352,7 @@ export default function HomePage() {
               <div key={t.name} className="rounded-2xl bg-white p-6 shadow-sm">
                 <div className="flex gap-1">
                   {[1,2,3,4,5].map((i) => (
-                    <svg key={i} className="h-5 w-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
+                    <svg key={i} className="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
                   ))}
@@ -434,4 +434,6 @@ function ServiceIcon({ name }: { name: string }) {
     ),
   };
   return icons[name] || icons.shield;
+}
+ons.shield;
 }

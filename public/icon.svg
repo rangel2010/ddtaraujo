@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <clipPath id="hexClip">
+      <path d="M100 8c4 0 8 1 12 3l63 36c5 3 8 9 8 15v76c0 6-3 12-8 15l-63 36c-4 2-8 3-12 3s-8-1-12-3l-63-36c-5-3-8-9-8-15V62c0-6 3-12 8-15l63-36c4-2 8-3 12-3z"/>
+    </clipPath>
+  </defs>
+  <g clipPath="url(#hexClip)">
+    <rect width="200" height="200" fill="#5ab031"/>
+    <path d="M200 0v200H0V112c20-14 45-30 75-44 25-12 50-22 75-30 18-6 35-11 50-15V0z" fill="#203a72"/>
+  </g>
+  <path d="M67 145l27-78c1-3 4-5 7-5h0c3 0 6 2 7 5l27 78c1 3-1 5-4 5h-8c-2 0-4-1-5-4l-5-15H89l-5 15c-1 3-3 4-5 4h-8c-3 0-5-2-4-5zm26-31h14L100 92l-7 22z" fill="#ffffff"/>
+</svg>
