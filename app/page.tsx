@@ -435,5 +435,3 @@ function ServiceIcon({ name }: { name: string }) {
   };
   return icons[name] || icons.shield;
 }
-ons.shield;
-}
