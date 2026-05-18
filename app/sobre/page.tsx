@@ -18,7 +18,7 @@ export default function SobrePage() {
             <div className="inline-flex items-center gap-2 rounded-full bg-brand-600/20 px-4 py-1.5 text-sm font-medium text-brand-300 backdrop-blur">
               Nossa história
             </div>
-            <h1 className="mt-6 text-4xl font-bold font-display sm:text-5xl">
+            <h1 className="mt-6 text-4xl font-bold font-display text-white sm:text-5xl">
               40 anos de história protegendo Londrina
             </h1>
             <p className="mt-6 text-lg text-ink-200">

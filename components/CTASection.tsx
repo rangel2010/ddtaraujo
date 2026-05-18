@@ -8,7 +8,7 @@ export default function CTASection({
     <section className="section bg-gradient-to-br from-brand-700 via-brand-600 to-brand-700">
       <div className="container">
         <div className="mx-auto max-w-3xl text-center text-white">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-display">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-display text-white">
             {title}
           </h2>
           <p className="mt-6 text-lg text-brand-50">

@@ -97,7 +97,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
             <div className="inline-flex items-center gap-2 rounded-full bg-brand-600/20 px-4 py-1.5 text-sm font-medium text-brand-300 backdrop-blur">
               ✓ Garantia escrita • 40 anos de experiência
             </div>
-            <h1 className="mt-6 text-4xl font-bold leading-tight font-display sm:text-5xl">
+            <h1 className="mt-6 text-4xl font-bold leading-tight font-display text-white sm:text-5xl">
               {service.hero.headline}
             </h1>
             <p className="mt-6 text-lg text-ink-200">
@@ -125,7 +125,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
           </div>
 
           <div className="rounded-3xl bg-white/5 p-8 backdrop-blur border border-white/10">
-            <h3 className="font-display text-xl font-bold">Por que escolher a Araújo?</h3>
+            <h3 className="font-display text-xl font-bold text-white">Por que escolher a Araújo?</h3>
             <ul className="mt-6 space-y-3">
               {service.benefits.map((b) => (
                 <li key={b} className="flex items-start gap-3 text-ink-200">

@@ -95,7 +95,7 @@ export default function HomePage() {
               <span className="h-2 w-2 animate-pulse rounded-full bg-brand-400" />
               Dedetizadora em Londrina há mais de 40 anos
             </div>
-            <h1 className="mt-6 text-4xl font-bold leading-tight font-display sm:text-5xl lg:text-6xl">
+            <h1 className="mt-6 text-4xl font-bold leading-tight font-display text-white sm:text-5xl lg:text-6xl">
               Sua casa ou empresa <span className="text-brand-400">livre de pragas</span> — com garantia.
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-ink-200 max-w-xl">
