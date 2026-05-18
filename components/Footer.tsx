@@ -13,11 +13,11 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Image
-              src="/logo-white.svg"
+              src="/logo-white.png"
               alt="Araújo Dedetizadora"
-              width={210}
-              height={70}
-              className="h-14 w-auto"
+              width={2460}
+              height={671}
+              className="h-12 w-auto"
             />
             <p className="mt-4 text-sm leading-relaxed">
               Controle de pragas profissional em Londrina e todo o Paraná há mais de 40 anos. Credenciados ANVISA, IAP e SESA.

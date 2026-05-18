@@ -36,7 +36,7 @@ export default function Header() {
 
       <div className="container flex items-center justify-between py-4">
         <Link href="/" className="flex items-center gap-3" aria-label="Araújo Dedetizadora">
-          <Image src="/logo.svg" alt="Araújo Dedetizadora" width={210} height={70} priority className="h-12 w-auto md:h-14" />
+          <Image src="/logo.png" alt="Araújo Dedetizadora" width={2460} height={671} priority className="h-10 w-auto md:h-12" />
           <span className="hidden sm:inline-flex items-center rounded-full bg-accent-500 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-white">40 anos</span>
         </Link>
 
@@ -102,4 +102,5 @@ export default function Header() {
       )}
     </header>
   );
+}
 }
