@@ -138,7 +138,20 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
             </div>
           </div>
 
-          <div className="rounded-3xl bg-white/5 p-8 backdrop-blur border border-white/10">
+          <div className="relative rounded-3xl bg-white/5 p-8 backdrop-blur border border-white/10">
+            <Link
+              href="/garantia"
+              aria-label="Saiba mais sobre nossa garantia escrita"
+              className="absolute -top-6 -right-4 z-10 transition hover:scale-105 sm:-right-6"
+            >
+              <Image
+                src="/selo-garantia.png"
+                alt="Selo Garantia Escrita Araújo"
+                width={240}
+                height={160}
+                className="h-20 w-auto drop-shadow-2xl md:h-24"
+              />
+            </Link>
             <h3 className="font-display text-xl font-bold text-white">Por que escolher a Araújo?</h3>
             <ul className="mt-6 space-y-3">
               {service.benefits.map((b) => (

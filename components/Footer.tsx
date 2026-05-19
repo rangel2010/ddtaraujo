@@ -11,9 +11,12 @@ export default function Footer() {
       <div className="container py-16">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <div className="flex items-center gap-4">
+            <div className="flex flex-wrap items-center gap-3">
               <Image src="/logo-white.png" alt="Araújo Dedetizadora" width={2460} height={671} className="h-12 w-auto" />
-              <Image src="/badge-40-anos.svg" alt="40 anos de tradição" width={200} height={200} className="h-14 w-14 flex-shrink-0 drop-shadow-md" />
+              <Image src="/badge-40-anos.svg" alt="40 anos de tradição" width={200} height={200} className="h-12 w-12 flex-shrink-0 drop-shadow-md" />
+              <Link href="/garantia" aria-label="Garantia escrita Araújo" className="transition hover:scale-105">
+                <Image src="/selo-garantia.png" alt="Selo Garantia Escrita Araújo" width={240} height={160} className="h-12 w-auto flex-shrink-0 drop-shadow-md" />
+              </Link>
             </div>
             <p className="mt-4 text-sm leading-relaxed">
               Controle de pragas profissional em Londrina e todo o Paraná há mais de 40 anos. Credenciados ANVISA, IAP e SESA.
@@ -41,6 +44,7 @@ export default function Footer() {
             <h3 className="font-semibold text-white">Empresa</h3>
             <ul className="mt-4 space-y-2 text-sm">
               <li><Link href="/sobre" className="hover:text-yellow-400">Quem Somos</Link></li>
+              <li><Link href="/garantia" className="hover:text-yellow-400">Garantia Escrita</Link></li>
               <li><Link href="/blog" className="hover:text-yellow-400">Blog</Link></li>
               <li><Link href="/contato" className="hover:text-yellow-400">Contato</Link></li>
               <li><Link href="/orcamento" className="hover:text-yellow-400">Solicitar orçamento</Link></li>
