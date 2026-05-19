@@ -11,10 +11,12 @@ export const metadata: Metadata = {
   alternates: { canonical: '/blog' },
 };
 
-// Ordenado do mais recente para o mais antigo
-const posts = [...blogPosts].sort(
-  (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-);
+// Featured primeiro (fixado), depois do mais recente para o mais antigo
+const posts = [...blogPosts].sort((a, b) => {
+  if (a.featured && !b.featured) return -1;
+  if (!a.featured && b.featured) return 1;
+  return new Date(b.date).getTime() - new Date(a.date).getTime();
+});
 
 export default function BlogPage() {
   return (

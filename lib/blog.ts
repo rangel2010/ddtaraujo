@@ -16,6 +16,8 @@ export type BlogPost = {
   coverImage: string;
   coverAlt: string;
   coverCredit: { name: string; url: string };
+  /** Se true, fixa o artigo na primeira posição da listagem (independente da data). */
+  featured?: boolean;
   content: BlogContent[];
 };
 
@@ -87,6 +89,167 @@ export const blogPosts: BlogPost[] = [
       {
         type: 'p',
         text: 'A Araújo Dedetizadora faz vistoria técnica gratuita de cupins em Londrina e região. Identifica a espécie, mapeia a infestação e propõe o tratamento adequado — com garantia escrita.',
+      },
+    ],
+  },
+  {
+    slug: '5-sinais-de-que-sua-casa-tem-ratos',
+    title: '5 sinais de que sua casa tem ratos (mesmo sem ver nenhum)',
+    date: '2026-05-10',
+    category: 'Roedores',
+    excerpt:
+      'Ratos são noturnos e cautelosos — você raramente vê um, mas eles deixam pistas claras. Saiba os 5 sinais antes que a infestação se espalhe.',
+    metaTitle: '5 Sinais de Ratos em Casa | Como Identificar | Araújo',
+    metaDescription:
+      'Ratos são noturnos e cautelosos. Veja os 5 sinais principais: fezes, roeduras, barulhos no forro, marcas de gordura e odor. Saiba o que fazer.',
+    readingMinutes: 2,
+    coverImage:
+      'https://images.unsplash.com/photo-1540366244940-9dce0a570312?auto=format&fit=crop&w=1600&q=80',
+    coverAlt: 'Rato em close-up sobre superfície de madeira',
+    coverCredit: { name: 'Alexander Crawley', url: 'https://unsplash.com/@xander_crawley' },
+    content: [
+      {
+        type: 'p',
+        text: 'Ratos sabem se esconder. São animais predominantemente noturnos, cautelosos e adaptados a viver perto de humanos sem serem percebidos. Quando alguém finalmente vê um durante o dia, geralmente é porque a colônia já está grande — ratos saem em horário visível só quando há tantos competindo por comida que alguns têm que arriscar.',
+      },
+      {
+        type: 'p',
+        text: 'A boa notícia é que mesmo sem ver os animais, dá pra identificar a infestação por pistas que eles deixam. Quanto antes você reconhecer os sinais, mais fácil é controlar. Veja os 5 principais:',
+      },
+      { type: 'h2', text: '1. Fezes espalhadas pelo ambiente' },
+      {
+        type: 'p',
+        text: 'É o sinal mais inequívoco. As fezes ficam em locais por onde passam — atrás de eletrodomésticos, dentro de gavetas pouco usadas, em despensas, próximas a fontes de comida. A forma ajuda a identificar a espécie: ratazana (rato de esgoto) deixa fezes em forma de cápsula com pontas arredondadas; rato de telhado deixa fezes mais finas e pontiagudas; camundongo deixa fezes muito pequenas (3-6mm), parecidas com grãos de arroz pretos.',
+      },
+      { type: 'h2', text: '2. Roeduras em embalagens, fios e madeira' },
+      {
+        type: 'p',
+        text: 'Ratos precisam roer constantemente porque seus dentes nunca param de crescer. Embalagens de plástico com buracos circulares, sacos de ração ou alimentos com rasgos típicos, fios elétricos com a capa mordida (perigo de incêndio), batentes de madeira com marcas — todos são sinais clássicos. Em comércios, conferir periodicamente caixas de papelão e embalagens é hábito que evita prejuízo.',
+      },
+      { type: 'h2', text: '3. Barulhos no forro à noite' },
+      {
+        type: 'p',
+        text: 'Sons de corrida, arranhões, "pulos" no forro durante a madrugada são típicos de rato de telhado (Rattus rattus), espécie que prefere áreas altas: forros, sótãos, vigas. Se você escuta barulho mas não vê o animal, provavelmente está lidando com essa espécie. Em casas próximas a árvores grandes ou ligações com prédios vizinhos, o telhado é rota natural.',
+      },
+      { type: 'h2', text: '4. Marcas escuras nas paredes (trilhas de gordura)' },
+      {
+        type: 'p',
+        text: 'Ratos passam sempre pelas mesmas rotas, encostando o corpo nas paredes. A pelagem solta gordura e sujeira que vai marcando o caminho — você vê linhas escuras, meio amarronzadas, em rodapés, cantos de parede, frestas de armário. Quanto mais nítidas as marcas, mais tempo a passagem é usada. Isso ajuda a empresa de controle a posicionar iscas e armadilhas nos pontos certos.',
+      },
+      { type: 'h2', text: '5. Odor característico em locais fechados' },
+      {
+        type: 'p',
+        text: 'Onde há colônia ativa, há odor — um cheiro azedo, amoniacal, vindo da urina acumulada. É mais perceptível em ambientes fechados (despensas, garagens, espaços entre paredes). Se você abre um armário ou despensa e sente um cheiro forte que não consegue identificar, vale considerar a possibilidade de infestação.',
+      },
+      { type: 'h2', text: 'O que fazer ao identificar' },
+      {
+        type: 'ul',
+        items: [
+          'NÃO use raticidas comuns sem proteção — risco pra crianças e pets',
+          'Não jogue isca solta no ambiente — ratos podem morrer dentro de paredes e gerar mau cheiro intenso',
+          'Vede frestas evidentes (entradas de cano, ralos sem proteção), mas não tente fechar tudo de vez (rato encurralado fica mais agressivo)',
+          'Elimine fontes de alimento: lixo bem fechado, ração de pet recolhida à noite, sobras de comida limpas',
+          'Chame uma empresa especializada — o controle profissional usa porta-iscas lacrados (seguros para crianças e pets) e iscas com efeito retardado que fazem o rato sair pra morrer fora do ambiente',
+        ],
+      },
+      {
+        type: 'p',
+        text: 'A Araújo Dedetizadora faz desratização em residências, comércios e indústrias em Londrina e região com produtos registrados na ANVISA, porta-iscas lacrados e monitoramento periódico. Garantia escrita com retornos.',
+      },
+    ],
+  },
+  {
+    slug: 'por-que-empresas-precisam-cipv-controle-integrado-de-pragas',
+    title: 'Por que indústrias, hospitais e restaurantes precisam de CIPV (e dedetização pontual não basta)',
+    date: '2026-05-05',
+    category: 'Programa Empresarial',
+    excerpt:
+      'Dedetização pontual resolve quando aparece. Mas pra empresas com fiscalização sanitária, o CIPV é exigência por lei — entenda a diferença.',
+    metaTitle: 'Por que empresas precisam de CIPV | Araújo Dedetizadora',
+    metaDescription:
+      'CIPV é o programa contínuo de controle de pragas exigido pela ANVISA para indústrias, hospitais e restaurantes. Entenda a diferença para dedetização pontual.',
+    readingMinutes: 3,
+    coverImage:
+      'https://images.unsplash.com/photo-1515263487990-61b07816b324?auto=format&fit=crop&w=1600&q=80',
+    coverAlt: 'Edifício comercial moderno em perspectiva',
+    coverCredit: { name: 'Luke van Zyl', url: 'https://unsplash.com/@lukevz' },
+    content: [
+      {
+        type: 'p',
+        text: 'Existem duas formas muito diferentes de fazer controle de pragas: a **pontual** (chama quando aparece o problema, resolve, vai embora) e a **contínua** (visitas programadas, monitoramento, documentação técnica). Pra uma residência, a pontual é o normal. Pra empresas com fiscalização sanitária, a contínua não é opção — é exigência.',
+      },
+      { type: 'h2', text: 'O que é CIPV?' },
+      {
+        type: 'p',
+        text: 'CIPV é a sigla de **Controle Integrado de Pragas e Vetores**. É o nome técnico do programa contínuo de controle, baseado em monitoramento, prevenção e ação corretiva — em vez de "matar quando aparecer". A operação é regulamentada pela RDC 622/2022 da ANVISA e pela Resolução SESA 1153/2024 (no Paraná).',
+      },
+      { type: 'h2', text: 'Diferença na prática: pontual x CIPV' },
+      {
+        type: 'p',
+        text: 'A dedetização pontual é reativa. Aparece barata na cozinha do restaurante → chama dedetizadora → aplica produto → resolve. Quando volta a aparecer, repete o ciclo.',
+      },
+      {
+        type: 'p',
+        text: 'O CIPV é preventivo. A equipe vai periodicamente (semanal, quinzenal ou mensal, conforme o segmento) e:',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Inspeciona todos os pontos críticos do estabelecimento',
+          'Mantém porta-iscas lacrados, armadilhas luminosas e dispositivos de monitoramento',
+          'Registra a atividade observada (consumo de isca, captura, sinais de pragas)',
+          'Atualiza um mapa técnico dos pontos de controle',
+          'Identifica e elimina as causas (entradas, fontes de alimento, abrigos) antes que vire infestação',
+          'Emite relatório a cada visita pra prestação de contas e auditoria',
+        ],
+      },
+      {
+        type: 'p',
+        text: 'A grande diferença é a postura: em vez de remediar problemas que apareceram, o CIPV impede que apareçam.',
+      },
+      { type: 'h2', text: 'Quem é obrigado a ter CIPV?' },
+      {
+        type: 'p',
+        text: 'Por exigência da ANVISA e vigilâncias sanitárias estaduais/municipais, precisam manter programa contínuo de controle de pragas:',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Indústrias alimentícias (frigoríficos, panificadoras, fábricas de alimentos)',
+          'Hospitais, clínicas e laboratórios',
+          'Restaurantes, lanchonetes, hotéis e pousadas',
+          'Supermercados e mercados',
+          'Escolas e creches',
+          'Empresas com certificações de qualidade (ISO 22000, BRC, FSSC 22000, HACCP)',
+          'Indústria farmacêutica e cosmética',
+        ],
+      },
+      {
+        type: 'p',
+        text: 'Pra esses segmentos, a fiscalização sanitária verifica a existência do programa, a frequência das visitas e os relatórios técnicos. Empresa flagrada sem CIPV ativo pode ser autuada e, em casos graves, ter o alvará suspenso.',
+      },
+      { type: 'h2', text: 'O que está incluído no contrato' },
+      {
+        type: 'ul',
+        items: [
+          'Diagnóstico inicial completo do estabelecimento',
+          'Mapa de pontos de controle (armadilhas, porta-iscas, sensores)',
+          'Visitas técnicas com periodicidade definida em contrato',
+          'Aplicação de produtos só quando necessária e em pontos específicos',
+          'Laudos técnicos e relatórios para auditoria interna e externa',
+          'Documentação compatível com exigências de ANVISA, BRC, ISO 22000 e FSSC 22000',
+          'Atendimento emergencial entre visitas (sem custo adicional, conforme contrato)',
+          'Treinamento da equipe interna sobre prevenção',
+        ],
+      },
+      { type: 'h2', text: 'Vantagens pro síndico ou gerente' },
+      {
+        type: 'p',
+        text: 'Além da conformidade legal, manter CIPV ativo gera benefícios práticos: reduz drasticamente o risco de surto de pragas em momento crítico (data de auditoria, fiscalização surpresa, recebimento de cliente importante); diminui a perda de produtos por contaminação ou roedores; economiza em comparação a dedetizações pontuais frequentes; e gera documentação organizada que vale ouro em assembleia de condomínio ou prestação de contas pra matriz.',
+      },
+      {
+        type: 'p',
+        text: 'A Araújo Dedetizadora opera CIPV em indústrias, hospitais, hotéis e supermercados de Londrina e região há mais de 40 anos. Equipe técnica dedicada, documentação completa para todas as certificações sanitárias e atendimento emergencial sem custo adicional. Solicite uma vistoria inicial gratuita pra montar a proposta sob medida.',
       },
     ],
   },
@@ -311,6 +474,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription:
       'Dedetização residencial em Londrina com produtos sem cheiro e sem mancha. Não precisa sair de casa. Mais de 40 anos de experiência. Orçamento sem compromisso.',
     readingMinutes: 1,
+    featured: true,
     coverImage:
       'https://images.unsplash.com/photo-1747659629851-a92bd71149f6?auto=format&fit=crop&w=1600&q=80',
     coverAlt: 'Pessoa segurando equipamento profissional de pulverização',
