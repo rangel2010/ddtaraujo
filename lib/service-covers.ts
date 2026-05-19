@@ -81,9 +81,9 @@ export const serviceCovers: Record<string, ServiceCover> = {
     credit: { name: 'Chandler Cruttenden', url: 'https://unsplash.com/@chanphoto' },
   },
   'sanitizacao-de-ambientes-londrina': {
-    image: `https://images.unsplash.com/flagged/photo-1573722398482-f0853718ba49${baseParams}`,
-    alt: 'Profissional uniformizado realizando pulverização',
-    credit: { name: 'Ibadah Mimpi', url: 'https://unsplash.com/@ibadahmimpi' },
+    image: `https://images.unsplash.com/photo-1668600418580-822f03b4e21d${baseParams}`,
+    alt: 'Profissional com máscara e luvas higienizando ambiente interno',
+    credit: { name: 'Toon Lambrechts', url: 'https://unsplash.com/@mycellhub' },
   },
   'dac-divisao-de-atendimento-a-condominios': {
     image: `https://images.unsplash.com/photo-1545324418-cc1a3fa10c00${baseParams}`,
