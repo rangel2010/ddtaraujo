@@ -59,7 +59,7 @@ export default function ServicosPage() {
                       <h3 className="font-display text-lg font-bold text-ink-900 group-hover:text-brand-700">
                         {s.title}
                       </h3>
-                      <p className="mt-2 text-sm text-ink-600">
+                      <p className="mt-2 text-sm text-ink-600 dark:text-ink-400">
                         {s.hero.subheadline}
                       </p>
                       <div className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand-700">

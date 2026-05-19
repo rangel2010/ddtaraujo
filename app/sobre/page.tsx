@@ -41,26 +41,26 @@ export default function SobrePage() {
             </div>
           </div>
           <div className="grid gap-6">
-            <div className="rounded-2xl bg-brand-50 p-8 border border-brand-100">
+            <div className="rounded-2xl bg-brand-50 p-8 border border-brand-100 dark:bg-brand-900/20 dark:border-brand-800">
               <div className="font-display text-5xl font-bold text-brand-700">+40</div>
               <div className="mt-2 text-lg font-semibold text-ink-900">anos de experiência</div>
-              <p className="mt-2 text-sm text-ink-700">Acumulando conhecimento técnico desde {siteConfig.business.foundedYear} no combate às pragas urbanas mais resistentes.</p>
+              <p className="mt-2 text-sm text-ink-700 dark:text-ink-300">Acumulando conhecimento técnico desde {siteConfig.business.foundedYear} no combate às pragas urbanas mais resistentes.</p>
             </div>
-            <div className="rounded-2xl bg-white border border-ink-200 p-8">
+            <div className="rounded-2xl bg-white border border-ink-200 p-8 dark:bg-ink-800 dark:border-ink-700">
               <div className="font-display text-5xl font-bold text-brand-700">+15k</div>
               <div className="mt-2 text-lg font-semibold text-ink-900">clientes atendidos</div>
-              <p className="mt-2 text-sm text-ink-700">Residências, comércios, indústrias e condomínios em Londrina e todo o Paraná.</p>
+              <p className="mt-2 text-sm text-ink-700 dark:text-ink-300">Residências, comércios, indústrias e condomínios em Londrina e todo o Paraná.</p>
             </div>
-            <div className="rounded-2xl bg-white border border-ink-200 p-8">
+            <div className="rounded-2xl bg-white border border-ink-200 p-8 dark:bg-ink-800 dark:border-ink-700">
               <div className="font-display text-5xl font-bold text-brand-700">100%</div>
               <div className="mt-2 text-lg font-semibold text-ink-900">credenciados</div>
-              <p className="mt-2 text-sm text-ink-700">ANVISA, IAP, SESA e responsabilidade técnica de profissional habilitado (CRQ).</p>
+              <p className="mt-2 text-sm text-ink-700 dark:text-ink-300">ANVISA, IAP, SESA e responsabilidade técnica de profissional habilitado (CRQ).</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="section bg-ink-50">
+      <section className="section bg-ink-50 dark:bg-ink-900">
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
             <div className="eyebrow">Nossos Valores</div>
@@ -73,11 +73,11 @@ export default function SobrePage() {
               { title: 'Compromisso com resultado', desc: 'Garantia escrita em todos os serviços. Se a praga voltar dentro do prazo, retornamos sem custo adicional.', icon: 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z' },
             ].map((v) => (
               <div key={v.title} className="card text-center">
-                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-100 text-brand-700">
+                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-100 text-brand-700 dark:bg-brand-900/30 dark:text-brand-300">
                   <svg className="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={v.icon}/></svg>
                 </div>
-                <h3 className="mt-4 font-display text-lg font-bold text-ink-900">{v.title}</h3>
-                <p className="mt-2 text-sm text-ink-600">{v.desc}</p>
+                <h3 className="mt-4 font-display text-lg font-bold text-ink-900 dark:text-white">{v.title}</h3>
+                <p className="mt-2 text-sm text-ink-600 dark:text-ink-400">{v.desc}</p>
               </div>
             ))}
           </div>
@@ -100,9 +100,9 @@ export default function SobrePage() {
               { name: 'NR-33', desc: 'Espaços Confinados' },
               { name: 'NR-35', desc: 'Trabalho em Altura' },
             ].map((c) => (
-              <div key={c.name} className="rounded-2xl border border-ink-200 bg-white p-4 text-center">
+              <div key={c.name} className="rounded-2xl border border-ink-200 bg-white p-4 text-center dark:border-ink-800 dark:bg-ink-800">
                 <div className="font-display text-xl font-bold text-brand-700">{c.name}</div>
-                <div className="mt-1 text-xs text-ink-600">{c.desc}</div>
+                <div className="mt-1 text-xs text-ink-600 dark:text-ink-400">{c.desc}</div>
               </div>
             ))}
           </div>

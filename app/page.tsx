@@ -109,22 +109,22 @@ export default function HomePage() {
           <div className="relative hidden md:block animate-fade-in">
             <div className="relative rounded-3xl bg-gradient-to-br from-white/10 to-white/5 p-6 backdrop-blur-sm border border-white/10 shadow-2xl">
               {/* Card Avaliação Google */}
-              <div className="rounded-2xl bg-white p-5 shadow-lg">
+              <div className="rounded-2xl bg-white/10 p-5 border border-white/10 backdrop-blur">
                 <div className="flex items-center gap-3">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-ink-50">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md">
                     <GoogleIcon />
                   </div>
                   <div className="flex-1">
-                    <div className="text-[10px] uppercase tracking-wider text-ink-500 font-bold">Avaliação verificada</div>
+                    <div className="text-[10px] uppercase tracking-wider text-ink-300 font-bold">Avaliação verificada</div>
                     <div className="flex items-baseline gap-2 mt-0.5">
-                      <span className="font-display text-3xl font-bold text-ink-900 leading-none">4,8</span>
+                      <span className="font-display text-3xl font-bold text-white leading-none">4,8</span>
                       <div className="flex gap-0.5">{[1,2,3,4,5].map((i) => <Star key={i} />)}</div>
                     </div>
                   </div>
                 </div>
-                <div className="mt-3 flex items-center justify-between border-t border-ink-100 pt-3">
-                  <span className="text-sm text-ink-600"><strong className="text-ink-900">97 avaliações</strong> reais de clientes</span>
-                  <a href={GOOGLE_REVIEWS_URL} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-brand-700 hover:text-brand-800">Ver →</a>
+                <div className="mt-3 flex items-center justify-between border-t border-white/10 pt-3">
+                  <span className="text-sm text-ink-300"><strong className="text-white">97 avaliações</strong> reais de clientes</span>
+                  <a href={GOOGLE_REVIEWS_URL} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-accent-400 hover:text-accent-400">Ver →</a>
                 </div>
               </div>
 
@@ -137,8 +137,8 @@ export default function HomePage() {
                   { value: '24h', label: 'Atendimento WhatsApp', icon: 'M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z' },
                 ].map((s) => (
                   <div key={s.label} className="rounded-2xl bg-white/10 p-5 border border-white/10 backdrop-blur transition hover:bg-white/15">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent-500/25 ring-1 ring-accent-400/40">
-                      <svg className="h-7 w-7 text-accent-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={s.icon}/></svg>
+                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent-400/15 ring-1 ring-accent-400/40">
+                      <svg className="h-7 w-7 text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={s.icon}/></svg>
                     </div>
                     <div className="mt-4 font-display text-3xl font-bold text-white leading-none">{s.value}</div>
                     <div className="mt-1 text-xs text-ink-300">{s.label}</div>
@@ -151,7 +151,7 @@ export default function HomePage() {
       </section>
 
       {/* TRUST STRIP */}
-      <section className="border-y border-ink-200 bg-ink-50 py-8">
+      <section className="border-y border-ink-200 bg-ink-50 dark:border-ink-800 dark:bg-ink-900 py-8">
         <div className="container">
           <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
             {[
@@ -162,7 +162,7 @@ export default function HomePage() {
             ].map((c) => (
               <div key={c.label} className="text-center">
                 <div className="text-xl font-bold text-ink-900 font-display">{c.label}</div>
-                <div className="text-xs uppercase tracking-wider text-ink-500">{c.sub}</div>
+                <div className="text-xs uppercase tracking-wider text-ink-500 dark:text-ink-400">{c.sub}</div>
               </div>
             ))}
           </div>
@@ -181,7 +181,7 @@ export default function HomePage() {
           <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {featuredServices.map((s) => (
               <Link key={s.slug} href={`/servicos/${s.slug}`} className="card group flex flex-col">
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100 text-brand-700 transition group-hover:bg-brand-600 group-hover:text-white">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100 text-brand-700 transition group-hover:bg-brand-600 group-hover:text-white dark:bg-brand-900/30 dark:text-brand-300">
                   <ServiceIcon name={s.icon} />
                 </div>
                 <h3 className="mt-4 text-lg font-bold text-ink-900">{s.shortTitle}</h3>
@@ -204,17 +204,17 @@ export default function HomePage() {
       </section>
 
       {/* ABOUT */}
-      <section className="section bg-ink-50">
+      <section className="section bg-ink-50 dark:bg-ink-900">
         <div className="container grid gap-12 md:grid-cols-2 md:items-center">
           <div>
             <div className="eyebrow">Quem Somos</div>
             <h2 className="section-title mt-2">40 anos protegendo famílias e empresas em Londrina</h2>
-            <p className="mt-6 text-lg text-ink-700">A Araújo Dedetizadora é referência no controle profissional de pragas em Londrina e em todo o Paraná. Investimos continuamente em tecnologia, capacitação técnica e produtos de última geração — sempre com responsabilidade ambiental e segurança para você.</p>
+            <p className="mt-6 text-lg text-ink-700 dark:text-ink-300">A Araújo Dedetizadora é referência no controle profissional de pragas em Londrina e em todo o Paraná. Investimos continuamente em tecnologia, capacitação técnica e produtos de última geração — sempre com responsabilidade ambiental e segurança para você.</p>
             <ul className="mt-8 space-y-3">
               {['Técnicos certificados e em treinamento contínuo','Produtos registrados ANVISA com NR-33 e NR-35','Conformidade total com SESA e ANVISA','Equipamentos modernos e EPIs completos','Atendimento personalizado de pequeno a grande porte'].map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <Check cls="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-600" />
-                  <span className="text-ink-700">{item}</span>
+                  <span className="text-ink-700 dark:text-ink-300">{item}</span>
                 </li>
               ))}
             </ul>
@@ -228,10 +228,10 @@ export default function HomePage() {
               { num: '03', title: 'Executamos o serviço', desc: 'Aplicação profissional com EPIs e produtos certificados.' },
               { num: '04', title: 'Garantia e acompanhamento', desc: 'Você recebe certificado e suporte pós-serviço.' },
             ].map((step) => (
-              <div key={step.num} className="flex gap-4 rounded-2xl border border-ink-200 bg-white p-5">
+              <div key={step.num} className="flex gap-4 rounded-2xl border border-ink-200 bg-white p-5 dark:border-ink-800 dark:bg-ink-800">
                 <div className="text-3xl font-bold text-brand-600 font-display">{step.num}</div>
                 <div>
-                  <div className="font-semibold text-ink-900">{step.title}</div>
+                  <div className="font-semibold text-ink-900 dark:text-white">{step.title}</div>
                   <div className="text-sm text-ink-600">{step.desc}</div>
                 </div>
               </div>
@@ -249,8 +249,8 @@ export default function HomePage() {
           </div>
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {Object.entries(groupedAll).map(([cat, items]) => (
-              <div key={cat} className="rounded-2xl border border-ink-200 bg-white p-6">
-                <h3 className="font-display text-xl font-bold text-ink-900">{categoryLabels[cat as keyof typeof categoryLabels]}</h3>
+              <div key={cat} className="rounded-2xl border border-ink-200 bg-white p-6 dark:border-ink-800 dark:bg-ink-800">
+                <h3 className="font-display text-xl font-bold text-ink-900 dark:text-white">{categoryLabels[cat as keyof typeof categoryLabels]}</h3>
                 <ul className={`mt-4 ${items.length > 4 ? 'grid grid-cols-2 gap-x-4 gap-y-2' : 'space-y-2'}`}>
                   {items.map((s) => (
                     <li key={s.slug}>
@@ -268,34 +268,34 @@ export default function HomePage() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="section bg-ink-50">
+      <section className="section bg-ink-50 dark:bg-ink-900">
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
             <div className="eyebrow">Depoimentos reais</div>
             <h2 className="section-title mt-2">O que nossos clientes dizem</h2>
             <div className="mt-6 inline-flex items-center gap-3 rounded-full bg-white px-5 py-2.5 shadow-sm border border-ink-200">
               <div className="flex gap-0.5">{[1,2,3,4,5].map((i) => <Star key={i} />)}</div>
-              <div className="text-sm"><span className="font-bold text-ink-900">4,8</span><span className="text-ink-600"> · 97 avaliações no </span><span className="font-semibold text-ink-900">Google</span></div>
+              <div className="text-sm"><span className="font-bold text-ink-900">4,8</span><span className="text-ink-600"> · 97 avaliações no </span><span className="font-semibold text-ink-900 dark:text-white">Google</span></div>
             </div>
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {reviews.map((t) => (
-              <div key={t.name} className="flex flex-col rounded-2xl bg-white p-6 shadow-sm">
+              <div key={t.name} className="flex flex-col rounded-2xl bg-white p-6 shadow-sm dark:bg-ink-800">
                 <div className="flex items-center justify-between">
                   <div className="flex gap-0.5">{[1,2,3,4,5].map((i) => <Star key={i} />)}</div>
                   <GoogleIcon />
                 </div>
                 <p className="mt-4 flex-1 text-ink-700">&ldquo;{t.text}&rdquo;</p>
-                <div className="mt-4 border-t border-ink-100 pt-4">
-                  <div className="font-semibold text-ink-900">{t.name}</div>
-                  <div className="text-sm text-ink-500">{t.role} · {t.date}</div>
+                <div className="mt-4 border-t border-ink-100 pt-4 dark:border-ink-700">
+                  <div className="font-semibold text-ink-900 dark:text-white">{t.name}</div>
+                  <div className="text-sm text-ink-500 dark:text-ink-400">{t.role} · {t.date}</div>
                 </div>
               </div>
             ))}
             <a href={GOOGLE_WRITE_REVIEW_URL} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center rounded-2xl border-2 border-dashed border-brand-300 bg-brand-50 p-6 text-center transition hover:border-brand-600 hover:bg-brand-100">
               <div className="flex h-14 w-14 items-center justify-center rounded-full bg-white shadow-sm"><GoogleIcon /></div>
               <h3 className="mt-4 font-display text-lg font-bold text-brand-800">Você é nosso cliente?</h3>
-              <p className="mt-2 text-sm text-ink-700">Conta sua experiência no Google e ajude outras pessoas a encontrarem um serviço de qualidade.</p>
+              <p className="mt-2 text-sm text-ink-700 dark:text-ink-300">Conta sua experiência no Google e ajude outras pessoas a encontrarem um serviço de qualidade.</p>
               <div className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand-700">
                 Deixar avaliação
                 <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>

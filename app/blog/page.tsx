@@ -80,7 +80,7 @@ export default function BlogPage() {
             ))}
           </div>
           <div className="mt-12 rounded-2xl bg-ink-50 p-8 text-center">
-            <p className="text-ink-700">
+            <p className="text-ink-700 dark:text-ink-300">
               <strong className="text-ink-900">Mais artigos em breve.</strong> Estamos publicando novos conteúdos sobre prevenção, identificação de pragas e legislação sanitária.
             </p>
           </div>

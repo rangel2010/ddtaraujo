@@ -78,20 +78,20 @@ export default function ContatoPage() {
               </div>
             </a>
 
-            <div className="rounded-2xl bg-ink-50 p-6">
-              <h3 className="font-display text-lg font-bold text-ink-900">Horário de atendimento</h3>
+            <div className="rounded-2xl bg-ink-50 p-6 dark:bg-ink-800">
+              <h3 className="font-display text-lg font-bold text-ink-900 dark:text-white">Horário de atendimento</h3>
               <dl className="mt-4 space-y-2 text-sm">
                 <div className="flex justify-between">
                   <dt className="text-ink-600">Segunda a sexta</dt>
-                  <dd className="font-semibold text-ink-900">{siteConfig.hours.weekday}</dd>
+                  <dd className="font-semibold text-ink-900 dark:text-white">{siteConfig.hours.weekday}</dd>
                 </div>
                 <div className="flex justify-between">
                   <dt className="text-ink-600">Sábado</dt>
-                  <dd className="font-semibold text-ink-900">{siteConfig.hours.saturday}</dd>
+                  <dd className="font-semibold text-ink-900 dark:text-white">{siteConfig.hours.saturday}</dd>
                 </div>
                 <div className="flex justify-between">
                   <dt className="text-ink-600">Domingo</dt>
-                  <dd className="font-semibold text-ink-900">{siteConfig.hours.sunday}</dd>
+                  <dd className="font-semibold text-ink-900 dark:text-white">{siteConfig.hours.sunday}</dd>
                 </div>
               </dl>
             </div>
@@ -99,16 +99,16 @@ export default function ContatoPage() {
 
           {/* Endereço + Mapa */}
           <div className="space-y-6">
-            <div className="rounded-2xl bg-ink-50 p-6">
+            <div className="rounded-2xl bg-ink-50 p-6 dark:bg-ink-800">
               <div className="flex items-start gap-4">
-                <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-brand-100 text-brand-700">
+                <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-brand-100 text-brand-700 dark:bg-brand-900/30 dark:text-brand-300">
                   <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-display text-lg font-bold text-ink-900">Nosso endereço</h3>
+                  <h3 className="font-display text-lg font-bold text-ink-900 dark:text-white">Nosso endereço</h3>
                   <p className="mt-2 text-ink-700">
                     {siteConfig.address.street}<br />
                     {siteConfig.address.neighborhood}<br />
@@ -119,7 +119,7 @@ export default function ContatoPage() {
               </div>
             </div>
 
-            <div className="overflow-hidden rounded-2xl border border-ink-200">
+            <div className="overflow-hidden rounded-2xl border border-ink-200 dark:border-ink-800">
               <iframe
                 title="Mapa Araújo Dedetizadora"
                 src={`https://maps.google.com/maps?q=${encodeURIComponent(

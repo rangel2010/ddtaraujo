@@ -79,7 +79,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       {/* Breadcrumbs */}
-      <nav className="border-b border-ink-100 bg-ink-50 py-3 text-sm" aria-label="Breadcrumb">
+      <nav className="border-b border-ink-100 bg-ink-50 dark:border-ink-800 dark:bg-ink-900 py-3 text-sm" aria-label="Breadcrumb">
         <div className="container">
           <ol className="flex flex-wrap items-center gap-2 text-ink-600">
             <li><Link href="/" className="hover:text-brand-700">Início</Link></li>
@@ -195,7 +195,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
 
 
       {/* Process */}
-      <section className="section bg-ink-50">
+      <section className="section bg-ink-50 dark:bg-ink-900">
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
             <div className="eyebrow">Como funciona</div>
@@ -203,12 +203,12 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {service.process.map((step, i) => (
-              <div key={i} className="relative rounded-2xl border border-ink-200 bg-white p-6">
+              <div key={i} className="relative rounded-2xl border border-ink-200 bg-white p-6 dark:border-ink-800 dark:bg-ink-800">
                 <div className="absolute -top-4 left-6 flex h-10 w-10 items-center justify-center rounded-full bg-brand-600 font-display text-lg font-bold text-white">
                   {i + 1}
                 </div>
-                <h3 className="mt-4 font-display text-lg font-bold text-ink-900">{step.title}</h3>
-                <p className="mt-2 text-sm text-ink-600">{step.description}</p>
+                <h3 className="mt-4 font-display text-lg font-bold text-ink-900 dark:text-white">{step.title}</h3>
+                <p className="mt-2 text-sm text-ink-600 dark:text-ink-400">{step.description}</p>
               </div>
             ))}
           </div>
@@ -218,7 +218,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
       <FAQ items={service.faqs} title={`Dúvidas sobre ${service.shortTitle}`} />
 
       {/* Related */}
-      <section className="section bg-ink-50">
+      <section className="section bg-ink-50 dark:bg-ink-900">
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
             <div className="eyebrow">Outros Serviços</div>
@@ -227,7 +227,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
           <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             {services.filter((s) => s.slug !== service.slug).slice(0, 4).map((s) => (
               <Link key={s.slug} href={`/servicos/${s.slug}`} className="card group">
-                <h3 className="font-display text-base font-bold text-ink-900 group-hover:text-brand-700">{s.shortTitle}</h3>
+                <h3 className="font-display text-base font-bold text-ink-900 group-hover:text-brand-700 dark:text-white dark:group-hover:text-brand-400">{s.shortTitle}</h3>
                 <div className="mt-3 text-sm font-semibold text-brand-700">Saiba mais →</div>
               </Link>
             ))}
