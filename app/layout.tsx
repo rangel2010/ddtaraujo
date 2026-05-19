@@ -53,11 +53,21 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     title: `${siteConfig.name} | Dedetização em Londrina há 40 anos`,
     description: siteConfig.description,
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Araújo Dedetizadora — Controle de Pragas Urbanas em Londrina há 40 anos',
+        type: 'image/jpeg',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: `${siteConfig.name} | Dedetização em Londrina`,
     description: siteConfig.shortDescription,
+    images: ['/og-image.jpg'],
   },
   robots: {
     index: true,
