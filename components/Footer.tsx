@@ -43,7 +43,7 @@ export default function Footer() {
               <li><Link href="/sobre" className="hover:text-yellow-400">Quem Somos</Link></li>
               <li><Link href="/blog" className="hover:text-yellow-400">Blog</Link></li>
               <li><Link href="/contato" className="hover:text-yellow-400">Contato</Link></li>
-              <li><a href={whatsappLink()} target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400">Solicitar orçamento</a></li>
+              <li><Link href="/orcamento" className="hover:text-yellow-400">Solicitar orçamento</Link></li>
             </ul>
           </div>
           <div>

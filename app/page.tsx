@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { services, categoryLabels } from '@/lib/services';
-import { whatsappLink, phoneLink, siteConfig } from '@/lib/site-config';
+import { phoneLink, siteConfig } from '@/lib/site-config';
 import FAQ from '@/components/FAQ';
 import CTASection from '@/components/CTASection';
 
@@ -92,10 +92,10 @@ export default function HomePage() {
               Controle profissional de baratas, ratos, cupins, escorpiões, morcegos e mais. Atendimento residencial, comercial, industrial e condomínios em Londrina e todo o Paraná.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <a href={whatsappLink('Olá! Gostaria de solicitar um orçamento.')} target="_blank" rel="noopener noreferrer" className="btn-whatsapp">
+              <Link href="/orcamento" className="btn-whatsapp">
                 <WhatsAppIcon />
                 Orçamento Grátis
-              </a>
+              </Link>
               <a href={phoneLink} className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-white/30 bg-white/5 px-6 py-3 text-base font-semibold text-white backdrop-blur transition hover:bg-white/10">
                 {siteConfig.phoneDisplay}
               </a>
