@@ -72,8 +72,8 @@ export default function SobrePage() {
               { title: 'Responsabilidade ambiental', desc: 'Usamos quantidade mínima de produto para máxima eficácia. Manejo de fauna (morcegos e pombos) sem matar os animais.', icon: 'M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3c.5.12 1 .2 1.5.2C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z' },
               { title: 'Compromisso com resultado', desc: 'Garantia escrita em todos os serviços. Se a praga voltar dentro do prazo, retornamos sem custo adicional.', icon: 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z' },
             ].map((v) => (
-              <div key={v.title} className="card text-center">
-                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-yellow-100 text-yellow-700 dark:bg-yellow-400/15 dark:text-yellow-400">
+              <div key={v.title} className="card group text-center">
+                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-yellow-100 text-yellow-700 transition group-hover:bg-yellow-500 group-hover:text-white dark:bg-yellow-400/15 dark:text-yellow-400 dark:group-hover:bg-yellow-500 dark:group-hover:text-white">
                   <svg className="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={v.icon}/></svg>
                 </div>
                 <h3 className="mt-4 font-display text-lg font-bold text-ink-900 dark:text-white">{v.title}</h3>
@@ -111,5 +111,8 @@ export default function SobrePage() {
 
       <CTASection />
     </>
+  );
+}
+</>
   );
 }
