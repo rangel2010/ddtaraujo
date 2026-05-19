@@ -79,7 +79,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       {/* Breadcrumbs */}
-      <nav className="border-b border-ink-100 bg-ink-50 dark:border-ink-800 dark:bg-ink-900 py-3 text-sm" aria-label="Breadcrumb">
+      <nav className="border-b border-ink-100 bg-ink-50 dark:border-ink-700 dark:bg-ink-800 py-3 text-sm" aria-label="Breadcrumb">
         <div className="container">
           <ol className="flex flex-wrap items-center gap-2 text-ink-600">
             <li><Link href="/" className="hover:text-brand-700">Início</Link></li>
@@ -208,7 +208,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
                   {i + 1}
                 </div>
                 <h3 className="mt-4 font-display text-lg font-bold text-ink-900 dark:text-white">{step.title}</h3>
-                <p className="mt-2 text-sm text-ink-600 dark:text-ink-400">{step.description}</p>
+                <p className="mt-2 text-sm text-ink-600 dark:text-ink-300">{step.description}</p>
               </div>
             ))}
           </div>

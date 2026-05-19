@@ -77,7 +77,7 @@ export default function SobrePage() {
                   <svg className="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={v.icon}/></svg>
                 </div>
                 <h3 className="mt-4 font-display text-lg font-bold text-ink-900 dark:text-white">{v.title}</h3>
-                <p className="mt-2 text-sm text-ink-600 dark:text-ink-400">{v.desc}</p>
+                <p className="mt-2 text-sm text-ink-600 dark:text-ink-300">{v.desc}</p>
               </div>
             ))}
           </div>
@@ -102,7 +102,7 @@ export default function SobrePage() {
             ].map((c) => (
               <div key={c.name} className="rounded-2xl border border-ink-200 bg-white p-4 text-center dark:border-ink-800 dark:bg-ink-800">
                 <div className="font-display text-xl font-bold text-brand-700">{c.name}</div>
-                <div className="mt-1 text-xs text-ink-600 dark:text-ink-400">{c.desc}</div>
+                <div className="mt-1 text-xs text-ink-600 dark:text-ink-300">{c.desc}</div>
               </div>
             ))}
           </div>

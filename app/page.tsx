@@ -151,7 +151,7 @@ export default function HomePage() {
       </section>
 
       {/* TRUST STRIP */}
-      <section className="border-y border-ink-200 bg-ink-50 dark:border-ink-800 dark:bg-ink-900 py-8">
+      <section className="border-y border-ink-200 bg-ink-50 dark:border-ink-700 dark:bg-ink-800 py-8">
         <div className="container">
           <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
             {[
@@ -162,7 +162,7 @@ export default function HomePage() {
             ].map((c) => (
               <div key={c.label} className="text-center">
                 <div className="text-xl font-bold text-ink-900 font-display">{c.label}</div>
-                <div className="text-xs uppercase tracking-wider text-ink-500 dark:text-ink-400">{c.sub}</div>
+                <div className="text-xs uppercase tracking-wider text-ink-500 dark:text-ink-300">{c.sub}</div>
               </div>
             ))}
           </div>
@@ -288,7 +288,7 @@ export default function HomePage() {
                 <p className="mt-4 flex-1 text-ink-700">&ldquo;{t.text}&rdquo;</p>
                 <div className="mt-4 border-t border-ink-100 pt-4 dark:border-ink-700">
                   <div className="font-semibold text-ink-900 dark:text-white">{t.name}</div>
-                  <div className="text-sm text-ink-500 dark:text-ink-400">{t.role} · {t.date}</div>
+                  <div className="text-sm text-ink-500 dark:text-ink-300">{t.role} · {t.date}</div>
                 </div>
               </div>
             ))}
