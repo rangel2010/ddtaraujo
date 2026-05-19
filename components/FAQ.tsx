@@ -5,7 +5,7 @@ import { useState } from 'react';
 type FAQItem = { question: string; answer: string };
 
 export default function FAQ({ items, title = 'Perguntas Frequentes' }: { items: FAQItem[]; title?: string }) {
-  const [open, setOpen] = useState<number | null>(0);
+  const [open, setOpen] = useState<number | null>(null);
 
   return (
     <section className="section">
