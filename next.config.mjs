@@ -52,6 +52,13 @@ const nextConfig = {
       { source: '/descupinizacao-em-londrina', destination: '/servicos/descupinizacao', permanent: true },
       { source: '/desratizacao-em-londrina', destination: '/servicos/desratizacao', permanent: true },
 
+      // ───── URLs históricas indexadas no Google (versões antigas do Wix) ─────
+      { source: '/sanitização-de-ambientes', destination: '/servicos/sanitizacao-de-ambientes-londrina', permanent: true },
+      { source: '/limpeza-de-cisternas-e-caixas-de-água', destination: '/servicos/limpeza-de-caixas-de-agua-em-londrina', permanent: true },
+      { source: '/desratização-controle-de-roedores', destination: '/servicos/desratizacao', permanent: true },
+      { source: '/descupinizacao-controle-de-cupins', destination: '/servicos/descupinizacao', permanent: true },
+      { source: '/controle-de-morcegos', destination: '/servicos/controle-de-morcegos-em-londrina', permanent: true },
+
       // ───── Blog (Wix usava /blog-araujo-dedetizadora e /post/SLUG) ─────
       { source: '/blog-araujo-dedetizadora', destination: '/blog', permanent: true },
       { source: '/post/morcegos-em-londrina-riscos-leis-e-como-resolver-definitivamente', destination: '/blog/morcegos-em-londrina-riscos-leis-e-como-resolver-definitivamente', permanent: true },
