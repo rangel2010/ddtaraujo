@@ -102,7 +102,7 @@ export const blogPosts: BlogPost[] = [
       'A ANVISA recomenda limpeza e desinfecção de caixas d\'água a cada 6 meses. Saiba o que se acumula, os riscos e como funciona o serviço profissional.',
     readingMinutes: 2,
     coverImage:
-      'https://images.unsplash.com/photo-1730108227471-f0f1dafb9f7a?auto=format&fit=crop&w=1600&h=900&q=80&crop=focalpoint&fp-x=0.5&fp-y=0.75',
+      'https://images.unsplash.com/photo-1730108227471-f0f1dafb9f7a?auto=format&fit=crop&w=1600&h=900&q=80&crop=focalpoint&fp-x=0.5&fp-y=0.75&fp-z=0.5',
     coverAlt: 'Close-up em tons azuis com bolhas e encanamento — vista que remete ao interior de um reservatório de água',
     coverCredit: { name: 'Dynamic Wang', url: 'https://unsplash.com/@dynamicwang' },
     content: [
