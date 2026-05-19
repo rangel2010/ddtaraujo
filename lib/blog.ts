@@ -254,6 +254,101 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
+    slug: 'por-que-aparecem-escorpioes-em-casa-como-agir',
+    title: 'Por que escorpiões aparecem em casa e o que fazer (especialmente com crianças)',
+    date: '2026-04-20',
+    category: 'Escorpiões',
+    excerpt:
+      'Em Londrina, o escorpião amarelo virou problema urbano. Saiba por que aparecem, sintomas da picada, primeiros socorros e como prevenir antes que aconteça.',
+    metaTitle: 'Escorpiões em Casa: por que aparecem e como agir | Araújo',
+    metaDescription:
+      'Por que escorpiões aparecem em casa em Londrina, sintomas da picada, primeiros socorros e prevenção. Guia completo para proteger sua família.',
+    readingMinutes: 3,
+    coverImage:
+      'https://images.unsplash.com/photo-1727527056819-04bc5ac49bb8?auto=format&fit=crop&w=1600&q=80',
+    coverAlt: 'Escorpião sobre superfície de madeira',
+    coverCredit: { name: 'Andrey Tikhonovskiy', url: 'https://unsplash.com/@anritikhon' },
+    content: [
+      {
+        type: 'p',
+        text: 'Em Londrina e em todo o Paraná, o escorpião amarelo (Tityus serrulatus) deixou de ser problema de campo e virou questão urbana. Aparece em residências, escolas, condomínios e empresas — e o número de acidentes cresce todo ano, especialmente em meses quentes e úmidos.',
+      },
+      {
+        type: 'p',
+        text: 'A picada é grave em qualquer pessoa, mas em crianças pequenas, idosos e cardiopatas o risco é potencialmente fatal. A boa notícia é que, com algumas medidas práticas, dá pra reduzir drasticamente a chance de ter um desses bichos em casa.',
+      },
+      { type: 'h2', text: 'Por que estão aparecendo cada vez mais?' },
+      {
+        type: 'p',
+        text: 'Três fatores se combinaram nas últimas décadas: urbanização desordenada (esgoto exposto, terrenos baldios com entulho); aumento da população de baratas urbanas (que são o alimento principal dos escorpiões); e a alta capacidade reprodutiva do Tityus serrulatus, que se reproduz por partenogênese — a fêmea gera filhotes sem precisar de macho. Resultado: uma única fêmea em ambiente favorável vira colônia em pouco tempo.',
+      },
+      { type: 'h2', text: 'Onde costumam se esconder' },
+      {
+        type: 'ul',
+        items: [
+          'Ralos internos e externos sem proteção',
+          'Caixas de gordura e redes de esgoto',
+          'Terrenos vizinhos com entulho, lixo ou materiais de construção',
+          'Jardins com pedras, telhas empilhadas ou madeira armazenada',
+          'Frestas em paredes, batentes, telhas e atrás de rodapés',
+          'Calhas entupidas e telhados com folhas acumuladas',
+          'Casas próximas a fundos de vale, córregos ou áreas verdes',
+          'Garagens, lavanderias e áreas externas pouco iluminadas',
+        ],
+      },
+      { type: 'h2', text: 'Sintomas da picada — atenção redobrada com crianças' },
+      {
+        type: 'p',
+        text: 'A picada do escorpião amarelo causa dor intensa imediata, formigamento e inchaço no local. Em casos moderados, vêm sudorese, taquicardia, náuseas e vômitos. Em crianças e idosos, o veneno tem efeito proporcionalmente maior — pode evoluir pra complicações neurológicas e cardíacas em poucas horas. Casos graves não tratados rapidamente podem ser fatais.',
+      },
+      { type: 'h2', text: 'O que fazer em caso de picada' },
+      {
+        type: 'ul',
+        items: [
+          'Vá IMEDIATAMENTE ao pronto-socorro — não espere os sintomas piorarem',
+          'Se possível, leve o animal (mesmo morto) para identificação correta da espécie',
+          'NÃO faça torniquete, sucção, corte ou aplique substâncias caseiras',
+          'Lave o local da picada com água e sabão',
+          'Mantenha a pessoa calma e em repouso',
+          'Em crianças, a urgência é ainda maior — quanto menor o peso, mais grave a reação ao veneno',
+        ],
+      },
+      {
+        type: 'p',
+        text: 'O tratamento envolve soro antiescorpiônico quando indicado pelo médico. A maioria dos casos atendidos rapidamente evolui bem, mas o tempo é crítico.',
+      },
+      { type: 'h2', text: 'Como prevenir no dia a dia' },
+      {
+        type: 'ul',
+        items: [
+          'Mantenha todos os ralos com proteção (tela fina ou abafador)',
+          'Elimine entulhos, materiais de construção e madeira armazenada no quintal',
+          'Corte grama regularmente e pode arbustos próximos à casa',
+          'Vede frestas em paredes, batentes, telhas e rodapés',
+          'Não acumule lixo encostado em paredes externas',
+          'Sacuda roupas, toalhas e lençóis antes do uso (especialmente os guardados há tempo)',
+          'Bata calçados de cabeça pra baixo antes de calçar',
+          'Não ande descalço em garagens, quintais ou áreas externas, principalmente à noite',
+          'Mantenha sapatos longe da parede e fora do alcance fácil quando guardados',
+        ],
+      },
+      { type: 'h2', text: 'Por que o controle profissional faz diferença' },
+      {
+        type: 'p',
+        text: 'Matar um escorpião que apareceu não resolve — eles vêm de fora (esgoto, terrenos vizinhos, frestas estruturais). O controle profissional usa pulverização residual em pontos de acesso, inspeciona abrigos potenciais, orienta sobre vedação estrutural e — talvez o mais importante — ataca a cadeia alimentar. Sem barata pra comer, escorpião não permanece.',
+      },
+      { type: 'h2', text: 'Dica de quem já fez isso milhares de vezes' },
+      {
+        type: 'p',
+        text: 'Se você está pensando em controle de escorpiões, aqui vai um conselho prático: combine com dedetização de baratas no mesmo serviço. Escorpião se alimenta principalmente de barata — sem fonte de comida, ele não tem motivo pra permanecer no ambiente. Tratar só os escorpiões e esquecer das baratas é deixar a porta entreaberta pro problema voltar. No nosso orçamento, esse combo da mesma família (insetos + aracnídeos) costuma render condições especiais. Vale considerar.',
+      },
+      {
+        type: 'p',
+        text: 'A Araújo Dedetizadora faz controle de escorpiões em residências, condomínios e empresas em Londrina e região — atendimento emergencial em casos de avistamento, garantia escrita e protocolo integrado pra eliminar tanto os escorpiões quanto o que os atrai.',
+      },
+    ],
+  },
+  {
     slug: 'caixa-dagua-quanto-tempo-limpar-anvisa',
     title: 'De quanto em quanto tempo limpar a caixa d\'água? O que a ANVISA exige',
     date: '2026-04-08',
