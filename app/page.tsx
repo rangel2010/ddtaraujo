@@ -85,7 +85,7 @@ export default function HomePage() {
               Dedetizadora em Londrina há mais de 40 anos
             </div>
             <h1 className="mt-6 text-4xl font-bold leading-tight font-display text-white sm:text-5xl lg:text-6xl">
-              Sua casa ou empresa <span className="text-accent-400">livre de pragas</span> — com garantia.
+              Sua casa ou empresa <span className="text-yellow-400">livre de pragas</span> — com garantia.
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-ink-200 max-w-xl">
               Controle profissional de baratas, ratos, cupins, escorpiões, morcegos e mais. Atendimento residencial, comercial, industrial e condomínios em Londrina e todo o Paraná.
@@ -138,7 +138,7 @@ export default function HomePage() {
                 ].map((s) => (
                   <div key={s.label} className="rounded-2xl bg-white/10 p-5 border border-white/10 backdrop-blur transition hover:bg-white/15">
                     <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent-400/15 ring-1 ring-accent-400/40">
-                      <svg className="h-7 w-7 text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={s.icon}/></svg>
+                      <svg className="h-7 w-7 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={s.icon}/></svg>
                     </div>
                     <div className="mt-4 font-display text-3xl font-bold text-white leading-none">{s.value}</div>
                     <div className="mt-1 text-xs text-ink-300">{s.label}</div>
@@ -254,7 +254,7 @@ export default function HomePage() {
                 <ul className={`mt-4 ${items.length > 4 ? 'grid grid-cols-2 gap-x-4 gap-y-2' : 'space-y-2'}`}>
                   {items.map((s) => (
                     <li key={s.slug}>
-                      <Link href={`/servicos/${s.slug}`} className="group flex items-center justify-between text-sm text-ink-700 hover:text-brand-700">
+                      <Link href={`/servicos/${s.slug}`} className="group flex items-center justify-between text-sm text-ink-700 hover:text-brand-700 dark:text-ink-200 dark:hover:text-yellow-400">
                         <span>{s.shortTitle}</span>
                         <svg className="h-4 w-4 opacity-0 transition group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
                       </Link>
