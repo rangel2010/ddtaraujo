@@ -210,7 +210,7 @@ export default function HomePage() {
           <div>
             <div className="eyebrow">Quem Somos</div>
             <h2 className="section-title mt-2">40 anos protegendo famílias e empresas em Londrina</h2>
-            <p className="mt-6 text-lg text-ink-700 dark:text-ink-300">A Araújo Dedetizadora é referência no controle profissional de pragas em Londrina e em todo o Paraná. Investimos continuamente em tecnologia, capacitação técnica e produtos de última geração — sempre com responsabilidade ambiental e segurança para você.</p>
+            <p className="mt-6 text-lg text-ink-700 dark:text-ink-300">A Araújo é referência no controle profissional de pragas em Londrina e em todo o Paraná. Investimos continuamente em tecnologia, capacitação técnica e produtos de última geração — sempre com responsabilidade ambiental e segurança para você.</p>
             <ul className="mt-8 space-y-3">
               {['Técnicos certificados e em treinamento contínuo','Produtos registrados ANVISA com NR-33 e NR-35','Conformidade total com SESA e ANVISA','Equipamentos modernos e EPIs completos','Atendimento personalizado de pequeno a grande porte'].map((item) => (
                 <li key={item} className="flex items-start gap-3">

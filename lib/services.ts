@@ -39,7 +39,7 @@ export const services: Service[] = [
         'Mais de 40 anos eliminando pragas em residências, empresas, indústrias e condomínios em toda a região.',
     },
     intro:
-      'A Araújo Dedetizadora é referência em dedetização em Londrina há mais de 4 décadas. Atendemos residências, comércios, indústrias e condomínios com técnicos qualificados, produtos registrados na ANVISA e total compromisso com a segurança da sua família e funcionários. Cada serviço é precedido de inspeção técnica e plano de ação personalizado.',
+      'A Araújo é referência em dedetização em Londrina há mais de 4 décadas. Atendemos residências, comércios, indústrias e condomínios com técnicos qualificados, produtos registrados na ANVISA e total compromisso com a segurança da sua família e funcionários. Cada serviço é precedido de inspeção técnica e plano de ação personalizado.',
     benefits: [
       'Garantia escrita em todos os serviços',
       'Técnicos certificados e equipados',

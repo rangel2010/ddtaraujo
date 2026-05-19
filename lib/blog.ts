@@ -88,7 +88,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'A Araújo Dedetizadora faz vistoria técnica gratuita de cupins em Londrina e região. Identifica a espécie, mapeia a infestação e propõe o tratamento adequado — com garantia escrita.',
+        text: 'A Araújo faz vistoria técnica gratuita de cupins em Londrina e região. Identifica a espécie, mapeia a infestação e propõe o tratamento adequado — com garantia escrita.',
       },
     ],
   },
@@ -154,7 +154,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'A Araújo Dedetizadora faz desratização em residências, comércios e indústrias em Londrina e região com produtos registrados na ANVISA, porta-iscas lacrados e monitoramento periódico. Garantia escrita com retornos.',
+        text: 'A Araújo faz desratização em residências, comércios e indústrias em Londrina e região com produtos registrados na ANVISA, porta-iscas lacrados e monitoramento periódico. Garantia escrita com retornos.',
       },
     ],
   },
@@ -249,7 +249,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'A Araújo Dedetizadora opera CIPV em indústrias, hospitais, hotéis e supermercados de Londrina e região há mais de 40 anos. Equipe técnica dedicada, documentação completa para todas as certificações sanitárias e atendimento emergencial sem custo adicional. Solicite uma vistoria inicial gratuita pra montar a proposta sob medida.',
+        text: 'A Araújo opera CIPV em indústrias, hospitais, hotéis e supermercados de Londrina e região há mais de 40 anos. Equipe técnica dedicada, documentação completa para todas as certificações sanitárias e atendimento emergencial sem custo adicional. Solicite uma vistoria inicial gratuita pra montar a proposta sob medida.',
       },
     ],
   },
@@ -344,7 +344,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'A Araújo Dedetizadora faz controle de escorpiões em residências, condomínios e empresas em Londrina e região — atendimento emergencial em casos de avistamento, garantia escrita e protocolo integrado pra eliminar tanto os escorpiões quanto o que os atrai.',
+        text: 'A Araújo faz controle de escorpiões em residências, condomínios e empresas em Londrina e região — atendimento emergencial em casos de avistamento, garantia escrita e protocolo integrado pra eliminar tanto os escorpiões quanto o que os atrai.',
       },
     ],
   },
@@ -412,7 +412,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'A Araújo Dedetizadora faz a limpeza completa de caixas d\'água e cisternas em Londrina e região, com produtos próprios para água potável e emissão de certificado válido para vigilância sanitária.',
+        text: 'A Araújo faz a limpeza completa de caixas d\'água e cisternas em Londrina e região, com produtos próprios para água potável e emissão de certificado válido para vigilância sanitária.',
       },
     ],
   },
@@ -466,7 +466,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Se você precisa de controle de morcegos em Londrina ou região, entre em contato para uma avaliação técnica. A Araújo Dedetizadora possui equipe treinada, com vacinação antirrábica em dia, e segue rigorosamente os protocolos ambientais.',
+        text: 'Se você precisa de controle de morcegos em Londrina ou região, entre em contato para uma avaliação técnica. A Araújo possui equipe treinada, com vacinação antirrábica em dia, e segue rigorosamente os protocolos ambientais.',
       },
     ],
   },
@@ -513,7 +513,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'A Araújo Dedetizadora elimina pulgas em ambientes residenciais, sítios e canis com produtos seguros para pets após o período de carência. Faça seu orçamento sem compromisso.',
+        text: 'A Araújo elimina pulgas em ambientes residenciais, sítios e canis com produtos seguros para pets após o período de carência. Faça seu orçamento sem compromisso.',
       },
     ],
   },
@@ -554,7 +554,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Proteja seu ambiente. Realize seu orçamento com a Araújo Dedetizadora — controle profissional de formigas em Londrina e todo o Paraná.',
+        text: 'Proteja seu ambiente. Realize seu orçamento com a Araújo — controle profissional de formigas em Londrina e todo o Paraná.',
       },
     ],
   },
@@ -577,7 +577,7 @@ export const blogPosts: BlogPost[] = [
     content: [
       {
         type: 'p',
-        text: 'A Araújo Dedetizadora é uma empresa especializada no controle profissional de pragas há mais de 40 anos, com técnicos qualificados e comprometidos. Atendemos residências, comércios, indústrias e condomínios em Londrina e em todo o Paraná.',
+        text: 'A Araújo é uma empresa especializada no controle profissional de pragas há mais de 40 anos, com técnicos qualificados e comprometidos. Atendemos residências, comércios, indústrias e condomínios em Londrina e em todo o Paraná.',
       },
       { type: 'h2', text: 'Dedetização residencial sem incômodo' },
       {

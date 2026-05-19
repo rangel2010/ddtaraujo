@@ -64,13 +64,13 @@ export const richContent: Record<string, RichSection[]> = {
       title: 'Controle de morcegos dentro da legislação',
       paragraphs: [
         'Os morcegos são animais silvestres protegidos pela legislação ambiental brasileira. O manejo desses animais deve seguir normas específicas e ser realizado por profissionais capacitados.',
-        'A Araújo Dedetizadora realiza o controle de morcegos respeitando as diretrizes ambientais e utilizando métodos apropriados para o desalojamento seguro das colônias. O objetivo do serviço é afastar os morcegos da estrutura sem causar danos aos animais, garantindo também a segurança dos moradores ou ocupantes do imóvel.',
+        'A Araújo realiza o controle de morcegos respeitando as diretrizes ambientais e utilizando métodos apropriados para o desalojamento seguro das colônias. O objetivo do serviço é afastar os morcegos da estrutura sem causar danos aos animais, garantindo também a segurança dos moradores ou ocupantes do imóvel.',
       ],
     },
     {
       title: 'Onde atendemos',
       paragraphs: [
-        'A Araújo Dedetizadora atende Londrina e todo o estado do Paraná com serviços especializados de controle de morcegos e desalojamento de colônias. Nossa equipe realiza avaliação técnica do local para identificar o tipo de infestação e definir a melhor solução para cada caso. Atendemos:',
+        'A Araújo atende Londrina e todo o estado do Paraná com serviços especializados de controle de morcegos e desalojamento de colônias. Nossa equipe realiza avaliação técnica do local para identificar o tipo de infestação e definir a melhor solução para cada caso. Atendemos:',
       ],
       list: {
         items: [

@@ -23,7 +23,7 @@ export default function SobrePage() {
               40 anos de história protegendo Londrina
             </h1>
             <p className="mt-6 text-lg text-ink-200">
-              A Araújo Dedetizadora nasceu com um propósito simples e firme: oferecer controle de pragas profissional, seguro e com resultados duradouros para famílias e empresas do Paraná.
+              A Araújo nasceu com um propósito simples e firme: oferecer controle de pragas profissional, seguro e com resultados duradouros para famílias e empresas do Paraná.
             </p>
           </div>
         </div>
