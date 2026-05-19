@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { services } from '@/lib/services';
 import { blogPosts } from '@/lib/blog';
+import { bairros } from '@/lib/bairros';
 import { siteConfig } from '@/lib/site-config';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -13,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteConfig.url}/contato`, priority: 0.8, changeFrequency: 'monthly' as const },
     { url: `${siteConfig.url}/orcamento`, priority: 0.95, changeFrequency: 'monthly' as const },
     { url: `${siteConfig.url}/garantia`, priority: 0.75, changeFrequency: 'yearly' as const },
+    { url: `${siteConfig.url}/atendimento`, priority: 0.85, changeFrequency: 'monthly' as const },
     { url: `${siteConfig.url}/blog`, priority: 0.7, changeFrequency: 'weekly' as const },
   ].map((r) => ({ ...r, lastModified }));
 
@@ -30,5 +32,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticRoutes, ...serviceRoutes, ...blogRoutes];
+  const bairroRoutes = bairros.map((b) => ({
+    url: `${siteConfig.url}/atendimento/${b.slug}`,
+    lastModified,
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }));
+
+  return [...staticRoutes, ...serviceRoutes, ...blogRoutes, ...bairroRoutes];
 }

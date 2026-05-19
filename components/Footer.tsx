@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { siteConfig, whatsappLink, phoneLink } from '@/lib/site-config';
 import { services } from '@/lib/services';
+import { bairros } from '@/lib/bairros';
 
 export default function Footer() {
   const featuredServices = services.slice(0, 8);
@@ -60,7 +61,25 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="mt-12 border-t border-brand-800 pt-6 text-center text-xs text-ink-500">
+        {/* Linha extra: bairros atendidos (SEO local + descoberta) */}
+        <div className="mt-12 border-t border-brand-800 pt-8">
+          <div className="text-sm">
+            <h3 className="font-semibold text-white">Atendemos em Londrina</h3>
+            <div className="mt-4 flex flex-wrap gap-x-3 gap-y-2 text-ink-400">
+              {bairros.map((b, i) => (
+                <span key={b.slug} className="flex items-center gap-3">
+                  <Link href={`/atendimento/${b.slug}`} className="hover:text-yellow-400">{b.name}</Link>
+                  {i < bairros.length - 1 && <span className="text-brand-700">•</span>}
+                </span>
+              ))}
+            </div>
+            <Link href="/atendimento" className="mt-3 inline-block text-sm font-medium text-yellow-400 hover:text-yellow-300">
+              Ver todas as áreas atendidas →
+            </Link>
+          </div>
+        </div>
+
+        <div className="mt-8 border-t border-brand-800 pt-6 text-center text-xs text-ink-500">
           © {new Date().getFullYear()} {siteConfig.fullName} — Todos os direitos reservados. Controle de Pragas Urbanas em Londrina.
         </div>
       </div>
