@@ -276,7 +276,7 @@ export default function HomePage() {
             <h2 className="section-title mt-2">O que nossos clientes dizem</h2>
             <div className="mt-6 inline-flex items-center gap-3 rounded-full bg-white px-5 py-2.5 shadow-sm border border-ink-200">
               <div className="flex gap-0.5">{[1,2,3,4,5].map((i) => <Star key={i} />)}</div>
-              <div className="text-sm"><span className="font-bold text-ink-900">4,8</span><span className="text-ink-600"> · 97 avaliações no </span><span className="font-semibold text-ink-900 dark:text-white">Google</span></div>
+              <div className="text-sm"><span className="font-bold text-ink-900">4,8</span><span className="text-ink-600"> · 97 avaliações no </span><span className="font-semibold text-ink-900">Google</span></div>
             </div>
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
