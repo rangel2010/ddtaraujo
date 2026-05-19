@@ -1,8 +1,10 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Metadata } from 'next';
 import { services, servicesBySlug } from '@/lib/services';
 import { richContent } from '@/lib/services-extended';
+import { serviceCovers, fallbackCover } from '@/lib/service-covers';
 import { siteConfig, whatsappLink, phoneLink } from '@/lib/site-config';
 import FAQ from '@/components/FAQ';
 import CTASection from '@/components/CTASection';
@@ -36,6 +38,8 @@ export async function generateMetadata({
 export default function ServicePage({ params }: { params: { slug: string } }) {
   const service = servicesBySlug[params.slug];
   if (!service) notFound();
+
+  const cover = serviceCovers[service.slug] || fallbackCover;
 
   const serviceSchema = {
     '@context': 'https://schema.org',
@@ -92,8 +96,19 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
       </nav>
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-ink-900 via-ink-800 to-brand-900 py-16 text-white md:py-20">
-        <div className="container grid gap-12 md:grid-cols-2 md:items-center">
+      <section className="relative overflow-hidden bg-ink-900 py-16 text-white md:py-20">
+        <div className="absolute inset-0">
+          <Image
+            src={cover.image}
+            alt={cover.alt}
+            fill
+            sizes="100vw"
+            priority
+            className="object-cover opacity-25"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-ink-900/90 via-ink-800/85 to-brand-900/90" />
+        </div>
+        <div className="container relative grid gap-12 md:grid-cols-2 md:items-center">
           <div>
             <div className="inline-flex items-center gap-2 rounded-full bg-yellow-400/20 px-4 py-1.5 text-sm font-medium text-yellow-300 backdrop-blur">
               ✓ Garantia escrita • 40 anos de experiência
@@ -234,6 +249,20 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
           </div>
         </div>
       </section>
+
+      <div className="container pb-6 pt-2">
+        <p className="text-xs italic text-ink-500 dark:text-ink-400">
+          Foto de capa: {cover.credit.name} /{' '}
+          <a
+            href={cover.credit.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline-offset-2 hover:underline"
+          >
+            Unsplash
+          </a>
+        </p>
+      </div>
 
       <CTASection title={`Solicite agora seu orçamento de ${service.shortTitle}`} subtitle="Atendimento rápido pelo WhatsApp ou telefone. Orçamento sem compromisso." />
     </>
