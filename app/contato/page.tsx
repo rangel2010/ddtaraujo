@@ -43,8 +43,8 @@ export default function ContatoPage() {
                 </svg>
               </div>
               <div>
-                <div className="text-sm font-medium opacity-80">WhatsApp (mais rápido)</div>
-                <div className="font-display text-2xl font-bold">{siteConfig.whatsappDisplay}</div>
+                <div className="text-sm font-medium opacity-80 dark:opacity-90">WhatsApp (mais rápido)</div>
+                <div className="font-display text-2xl font-bold dark:text-white">{siteConfig.whatsappDisplay}</div>
               </div>
             </a>
 
@@ -58,8 +58,8 @@ export default function ContatoPage() {
                 </svg>
               </div>
               <div>
-                <div className="text-sm font-medium opacity-80">Telefone fixo</div>
-                <div className="font-display text-2xl font-bold">{siteConfig.phoneDisplay}</div>
+                <div className="text-sm font-medium opacity-80 dark:opacity-90">Telefone fixo</div>
+                <div className="font-display text-2xl font-bold dark:text-white">{siteConfig.phoneDisplay}</div>
               </div>
             </a>
 
@@ -73,8 +73,8 @@ export default function ContatoPage() {
                 </svg>
               </div>
               <div>
-                <div className="text-sm font-medium opacity-70">E-mail</div>
-                <div className="font-display text-lg font-bold break-all">{siteConfig.email}</div>
+                <div className="text-sm font-medium opacity-70 dark:opacity-90">E-mail</div>
+                <div className="font-display text-lg font-bold break-all dark:text-white">{siteConfig.email}</div>
               </div>
             </a>
 
@@ -82,15 +82,15 @@ export default function ContatoPage() {
               <h3 className="font-display text-lg font-bold text-ink-900 dark:text-white">Horário de atendimento</h3>
               <dl className="mt-4 space-y-2 text-sm">
                 <div className="flex justify-between">
-                  <dt className="text-ink-600">Segunda a sexta</dt>
+                  <dt className="text-ink-600 dark:text-ink-300">Segunda a sexta</dt>
                   <dd className="font-semibold text-ink-900 dark:text-white">{siteConfig.hours.weekday}</dd>
                 </div>
                 <div className="flex justify-between">
-                  <dt className="text-ink-600">Sábado</dt>
+                  <dt className="text-ink-600 dark:text-ink-300">Sábado</dt>
                   <dd className="font-semibold text-ink-900 dark:text-white">{siteConfig.hours.saturday}</dd>
                 </div>
                 <div className="flex justify-between">
-                  <dt className="text-ink-600">Domingo</dt>
+                  <dt className="text-ink-600 dark:text-ink-300">Domingo</dt>
                   <dd className="font-semibold text-ink-900 dark:text-white">{siteConfig.hours.sunday}</dd>
                 </div>
               </dl>
@@ -109,7 +109,7 @@ export default function ContatoPage() {
                 </div>
                 <div>
                   <h3 className="font-display text-lg font-bold text-ink-900 dark:text-white">Nosso endereço</h3>
-                  <p className="mt-2 text-ink-700">
+                  <p className="mt-2 text-ink-700 dark:text-ink-300">
                     {siteConfig.address.street}<br />
                     {siteConfig.address.neighborhood}<br />
                     {siteConfig.address.city} — {siteConfig.address.state}<br />
