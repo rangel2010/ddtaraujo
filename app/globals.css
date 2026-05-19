@@ -8,12 +8,12 @@
   }
 
   body {
-    @apply bg-white text-ink-800 antialiased;
+    @apply bg-white text-ink-800 antialiased dark:bg-ink-900 dark:text-ink-200;
     text-rendering: optimizeLegibility;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-display tracking-tight text-ink-900;
+    @apply font-display tracking-tight text-ink-900 dark:text-white;
   }
 
   ::selection {
