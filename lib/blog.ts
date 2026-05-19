@@ -21,6 +21,144 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'como-saber-se-tem-cupim-em-casa-5-sinais',
+    title: 'Como saber se tem cupim em casa? 5 sinais antes que seja tarde',
+    date: '2026-05-15',
+    category: 'Cupins',
+    excerpt:
+      'Cupins agem em silêncio: quando aparecem, o estrago já é grande. Veja os 5 sinais que indicam infestação e o que fazer ao identificar.',
+    metaTitle: 'Como saber se tem cupim em casa? 5 sinais | Araújo',
+    metaDescription:
+      'Cupins agem em silêncio. Veja os 5 sinais que indicam infestação de cupim em casa: pó, furos, madeira oca, asas descartadas e túneis de terra.',
+    readingMinutes: 2,
+    coverImage:
+      'https://images.unsplash.com/photo-1562123404-528b41e573a0?auto=format&fit=crop&w=1600&q=80',
+    coverAlt: 'Madeira com furos causados por cupins',
+    coverCredit: { name: 'Roberto Carlos Román Don', url: 'https://unsplash.com/@srcharls' },
+    content: [
+      {
+        type: 'p',
+        text: 'Cupins são uma das pragas urbanas mais traiçoeiras: trabalham em silêncio, dentro da madeira, e quando a infestação fica visível o estrago já está avançado. Móveis, rodapés, batentes, vigas e até portas podem virar uma casca oca por dentro sem que ninguém perceba.',
+      },
+      {
+        type: 'p',
+        text: 'A boa notícia é que existem sinais claros que indicam a presença deles. Quanto mais cedo identificar, mais barato e simples é o tratamento. Conheça os 5 principais:',
+      },
+      { type: 'h2', text: '1. Pó ou serragem próximo a móveis' },
+      {
+        type: 'p',
+        text: 'O resíduo que se acumula no chão perto de móveis, batentes, janelas ou rodapés é o sinal mais clássico — especialmente o cupim de madeira seca, que expele pelotas pequenas (parecidas com grãos de café moído ou serragem fina). Se você varre e o pó volta a aparecer no mesmo lugar dias depois, há infestação ativa.',
+      },
+      { type: 'h2', text: '2. Pequenos furos na madeira' },
+      {
+        type: 'p',
+        text: 'Furinhos circulares de 1 a 3 milímetros em móveis, vigas ou batentes são pontos de saída onde o cupim expele o pó. Eles costumam aparecer em sequência, alinhados pela superfície. Não confunda com furos de prego antigos — cupim faz furos com bordas limpas e tamanho uniforme.',
+      },
+      { type: 'h2', text: '3. Madeira oca ao bater' },
+      {
+        type: 'p',
+        text: 'Bata levemente em batentes, rodapés e móveis com o dedo ou um lápis. Madeira saudável tem som maciço. Madeira com cupim soa "oca", "vazia", às vezes com leve ruído de papelão. Esse teste rápido funciona muito bem em casas que você suspeita estarem infestadas.',
+      },
+      { type: 'h2', text: '4. Asas descartadas perto de janelas e portas' },
+      {
+        type: 'p',
+        text: 'Uma vez por ano, geralmente após chuvas de verão, os cupins fazem a revoada: alados saem do ninho em busca de parceiros e novos locais. Depois do voo, perdem as asas e fundam novas colônias. Se você encontrar asas espalhadas perto de janelas, portas ou luminárias, é sinal de colônia ativa por perto.',
+      },
+      { type: 'h2', text: '5. Túneis de terra em paredes ou estruturas' },
+      {
+        type: 'p',
+        text: 'Esse é o sinal do cupim subterrâneo (mais agressivo). Eles constroem túneis de barro do solo até as estruturas de madeira da casa — você vê linhas marrons subindo por fundações, paredes externas, pilares de garagem. Em obras novas, esse é o cupim que pode comprometer vigas estruturais em pouco tempo.',
+      },
+      { type: 'h2', text: 'Cupim de madeira seca x cupim subterrâneo' },
+      {
+        type: 'p',
+        text: 'Saber qual é a espécie muda o tratamento. O cupim de madeira seca vive dentro da própria madeira infestada — móveis, batentes, portas. Forma colônias menores, e o tratamento é focal (injeção de cupinicida nos pontos infestados). O cupim subterrâneo vive no solo e ataca a casa pela base — colônias gigantes, tratamento envolve barreira química no solo.',
+      },
+      { type: 'h2', text: 'O que fazer ao identificar' },
+      {
+        type: 'ul',
+        items: [
+          'NÃO tente exterminar sozinho com inseticida comum — só mata os visíveis e espalha a colônia',
+          'Não fure ou desmonte os pontos infestados (atrapalha a vistoria técnica)',
+          'Marque os locais onde viu os sinais (foto ajuda)',
+          'Chame uma empresa especializada para vistoria — o diagnóstico correto da espécie é o que define o tratamento',
+        ],
+      },
+      {
+        type: 'p',
+        text: 'A Araújo Dedetizadora faz vistoria técnica gratuita de cupins em Londrina e região. Identifica a espécie, mapeia a infestação e propõe o tratamento adequado — com garantia escrita.',
+      },
+    ],
+  },
+  {
+    slug: 'caixa-dagua-quanto-tempo-limpar-anvisa',
+    title: 'De quanto em quanto tempo limpar a caixa d\'água? O que a ANVISA exige',
+    date: '2026-04-08',
+    category: 'Higienização',
+    excerpt:
+      'Muita gente acha que a água tratada dispensa limpar a caixa. Erro. A ANVISA recomenda limpeza semestral — entenda o porquê.',
+    metaTitle: 'Limpeza de Caixa d\'Água: prazo ANVISA | Araújo Dedetizadora',
+    metaDescription:
+      'A ANVISA recomenda limpeza e desinfecção de caixas d\'água a cada 6 meses. Saiba o que se acumula, os riscos e como funciona o serviço profissional.',
+    readingMinutes: 2,
+    coverImage:
+      'https://images.unsplash.com/photo-1555701307-06299b158245?auto=format&fit=crop&w=1600&q=80',
+    coverAlt: 'Reservatório de água branco em telhado',
+    coverCredit: { name: 'Chandler Cruttenden', url: 'https://unsplash.com/@chanphoto' },
+    content: [
+      {
+        type: 'p',
+        text: 'Uma dúvida muito comum: "a água que chega pela companhia de saneamento já é tratada — por que preciso limpar a caixa d\'água?". A resposta é direta: porque entre o tratamento da SANEPAR (ou outra concessionária) e o copo que você bebe, a água passa por um reservatório que acumula sedimentos, biofilme e às vezes até insetos.',
+      },
+      { type: 'h2', text: 'A ANVISA recomenda a cada 6 meses' },
+      {
+        type: 'p',
+        text: 'A Agência Nacional de Vigilância Sanitária estabelece que reservatórios de água destinados ao consumo humano devem ser limpos e desinfetados a cada 6 meses (limpeza semestral). Esse prazo é a referência técnica usada por vigilâncias sanitárias municipais e estaduais. Para estabelecimentos comerciais e condomínios, a periodicidade é fiscalizada — limpeza vencida pode resultar em autuação.',
+      },
+      { type: 'h2', text: 'O que se acumula numa caixa d\'água' },
+      {
+        type: 'ul',
+        items: [
+          'Sedimentos minerais (lodo no fundo, vindos da tubulação)',
+          'Biofilme nas paredes (filme orgânico onde bactérias se proliferam)',
+          'Resíduos da própria estrutura da caixa quando antiga',
+          'Insetos e até pequenos animais quando a tampa não veda bem',
+          'Folhas e poeira da rua quando há frestas',
+        ],
+      },
+      { type: 'h2', text: 'Riscos à saúde quando não limpa' },
+      {
+        type: 'p',
+        text: 'A água do reservatório sujo pode transmitir doenças gastrointestinais (diarreia, vômito, infecções intestinais), problemas de pele (dermatites, micoses), além de potencializar contaminação por bactérias como E. coli e Salmonella. Em crianças, idosos e pessoas imunossuprimidas, o risco é maior.',
+      },
+      { type: 'h2', text: 'Como funciona o serviço profissional' },
+      {
+        type: 'ul',
+        items: [
+          'Esvaziamento da caixa (reservando água final para uso temporário)',
+          'Raspagem e remoção mecânica de sedimentos e biofilme',
+          'Lavagem completa das paredes internas e tampa',
+          'Aplicação de sanitizante próprio para água potável',
+          'Enxágue final e enchimento',
+          'Emissão de certificado de higienização com data e responsável técnico',
+        ],
+      },
+      {
+        type: 'p',
+        text: 'O serviço completo leva em torno de 3 a 4 horas — durante esse período, o ponto de água da casa fica indisponível. Por isso é bom agendar em horário de menor uso.',
+      },
+      { type: 'h2', text: 'Para condomínios e empresas: é obrigatório' },
+      {
+        type: 'p',
+        text: 'Síndicos precisam manter cronograma de limpeza e apresentar certificado nas assembleias. Restaurantes, hospitais, escolas e qualquer estabelecimento que serve água ao público tem fiscalização da vigilância sanitária. Manter a periodicidade evita multas e protege a saúde dos usuários.',
+      },
+      {
+        type: 'p',
+        text: 'A Araújo Dedetizadora faz a limpeza completa de caixas d\'água e cisternas em Londrina e região, com produtos próprios para água potável e emissão de certificado válido para vigilância sanitária.',
+      },
+    ],
+  },
+  {
     slug: 'morcegos-em-londrina-riscos-leis-e-como-resolver-definitivamente',
     title: 'Controle de Morcegos em Londrina: riscos, leis e como resolver definitivamente',
     date: '2026-02-24',
