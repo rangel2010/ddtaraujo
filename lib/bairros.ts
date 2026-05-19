@@ -25,7 +25,7 @@ export const bairros: Bairro[] = [
     intro:
       'O Centro de Londrina concentra a maior densidade comercial da cidade — restaurantes, padarias, lanchonetes, cafeterias, lojas, escritórios e edifícios mistos disputam espaço em poucas quadras. Para esses estabelecimentos, controle de pragas não é luxo: é exigência da vigilância sanitária. A RDC 622/22 da ANVISA determina periodicidade mínima mensal para todo estabelecimento que manipula alimentos, e a fiscalização no Centro é mais ativa que em outras regiões.',
     body:
-      'A Araújo Dedetizadora atende o Centro há mais de 40 anos com programa CIPV (Controle Integrado de Pragas e Vetores) sob medida para o ritmo do comércio: aplicações fora do horário comercial (madrugada ou fim de tarde), técnicos uniformizados com identificação visível, laudos técnicos para apresentação à vigilância sanitária. Para padarias e cozinhas industriais, usamos gel inseticida em vez de pulverização — atende sem precisar fechar o ponto.',
+      'A Araújo atende o Centro há mais de 40 anos com programa CIPV (Controle Integrado de Pragas e Vetores) sob medida para o ritmo do comércio: aplicações fora do horário comercial (madrugada ou fim de tarde), técnicos uniformizados com identificação visível, laudos técnicos para apresentação à vigilância sanitária. Para padarias e cozinhas industriais, usamos gel inseticida em vez de pulverização — atende sem precisar fechar o ponto.',
     serviceHighlights: [
       { slug: 'controle-de-pragas-em-londrina', reason: 'Programa contínuo CIPV obrigatório para comércio com alimentos (RDC 622/22)' },
       { slug: 'dedetizacao-de-baratas', reason: 'Controle especializado em padarias, cozinhas e áreas com gordura' },
@@ -67,7 +67,7 @@ export const bairros: Bairro[] = [
     intro:
       'O bairro Aurora vive um momento de transformação acelerada — tradicionalmente residencial com casas grandes, vem recebendo investimentos massivos em novos condomínios de alto padrão. Essa fase de obra e ocupação inicial é o momento ideal para implantar barreira química preventiva contra cupins subterrâneos antes da entrega das unidades. Tratamento preventivo em construção custa muito menos que tratar infestação anos depois.',
     body:
-      'A Araújo Dedetizadora atende construtoras e empreendimentos em fase de obra na Aurora com aplicação de barreira química no solo antes da contrapiso — protege a estrutura por até 5 anos com garantia escrita. Para condomínios recém-entregues, oferecemos contrato CIPV personalizado para o primeiro ano de ocupação, fase em que a chance de aparecimento de pragas é maior (mudanças, embalagens, transição de moradores). Também atendemos as residências tradicionais do bairro com dedetização preventiva e descupinização.',
+      'A Araújo atende construtoras e empreendimentos em fase de obra na Aurora com aplicação de barreira química no solo antes da contrapiso — protege a estrutura por até 5 anos com garantia escrita. Para condomínios recém-entregues, oferecemos contrato CIPV personalizado para o primeiro ano de ocupação, fase em que a chance de aparecimento de pragas é maior (mudanças, embalagens, transição de moradores). Também atendemos as residências tradicionais do bairro com dedetização preventiva e descupinização.',
     serviceHighlights: [
       { slug: 'descupinizacao', reason: 'Barreira química preventiva em obras novas — garantia estendida até 5 anos' },
       { slug: 'dac-divisao-de-atendimento-a-condominios', reason: 'Contrato inicial para condomínios recém-entregues' },
@@ -88,7 +88,7 @@ export const bairros: Bairro[] = [
     intro:
       'O Jardim Bela Suíça é um dos endereços mais nobres de Londrina, com casas grandes em terrenos amplos, ruas arborizadas e construções que muitas vezes têm décadas de história. Esse perfil traz um desafio específico e silencioso: cupins. Casas antigas costumam ter abundância de madeira nobre — vigas, batentes, rodapés, móveis planejados, escadas — e tudo isso é cardápio para cupim de madeira seca (Cryptotermes brevis) e cupim subterrâneo (Coptotermes), que pode comprometer estruturas inteiras sem que ninguém perceba até o estrago aparecer.',
     body:
-      'A Araújo Dedetizadora atende as residências do Jardim Bela Suíça com descupinização especializada: vistoria detalhada de toda a estrutura de madeira, identificação da espécie pelo tipo de pó/grânulo expelido, tratamento focal (injeção pontual) em móveis e batentes, e barreira química perimetral contra cupim subterrâneo. Atendimento agendado discreto, equipe uniformizada, sem cheiro forte e sem precisar esvaziar cômodos. Para clientes da região, oferecemos também contrato de manutenção preventiva com vistoria anual da estrutura.',
+      'A Araújo atende as residências do Jardim Bela Suíça com descupinização especializada: vistoria detalhada de toda a estrutura de madeira, identificação da espécie pelo tipo de pó/grânulo expelido, tratamento focal (injeção pontual) em móveis e batentes, e barreira química perimetral contra cupim subterrâneo. Atendimento agendado discreto, equipe uniformizada, sem cheiro forte e sem precisar esvaziar cômodos. Para clientes da região, oferecemos também contrato de manutenção preventiva com vistoria anual da estrutura.',
     serviceHighlights: [
       { slug: 'descupinizacao', reason: 'Especialidade em casas antigas com madeira nobre — vigas, batentes, móveis' },
       { slug: 'dedetizacao-em-londrina', reason: 'Dedetização periódica em residências de alto padrão' },
@@ -109,7 +109,7 @@ export const bairros: Bairro[] = [
     intro:
       'Os Cinco Conjuntos compõem a região mais populosa de Londrina, formados pelos conjuntos habitacionais Milton Gavetti, Parigot de Souza I e II, Aquiles Stenguel, João Paz, Semíramis Barros Braga, entre outros. São milhares de famílias em residências horizontais, com infraestrutura comercial própria. Pragas mais comuns na região: baratas (atraídas por restos de comida e tubulações compartilhadas), formigas, ratos e, em meses quentes, escorpiões em terrenos baldios e construções abandonadas.',
     body:
-      'A Araújo Dedetizadora atende os Cinco Conjuntos com dedetização residencial acessível e atendimento rápido — geralmente em até 24-48 horas. Usamos produtos sem cheiro forte, sem necessidade de sair de casa em boa parte dos casos, e oferecemos GAT (Garantia de Assistência Técnica) escrita: se a praga voltar dentro do prazo, retornamos sem custo. Trabalhamos com produtos antialérgicos sob demanda para famílias com crianças pequenas e pets. Atendimento agendado por WhatsApp.',
+      'A Araújo atende os Cinco Conjuntos com dedetização residencial acessível e atendimento rápido — geralmente em até 24-48 horas. Usamos produtos sem cheiro forte, sem necessidade de sair de casa em boa parte dos casos, e oferecemos GAT (Garantia de Assistência Técnica) escrita: se a praga voltar dentro do prazo, retornamos sem custo. Trabalhamos com produtos antialérgicos sob demanda para famílias com crianças pequenas e pets. Atendimento agendado por WhatsApp.',
     serviceHighlights: [
       { slug: 'dedetizacao-em-londrina', reason: 'Dedetização residencial com garantia escrita e atendimento rápido' },
       { slug: 'dedetizacao-de-baratas', reason: 'Combate especializado a baratas em residências' },
@@ -130,7 +130,7 @@ export const bairros: Bairro[] = [
     intro:
       'A Vila Casoni é um dos bairros mais tradicionais de Londrina, conhecido pela tranquilidade, segurança e vizinhança consolidada. Uma característica marcante da região é a presença de muitas casas com elementos estruturais em madeira — desde construções antigas inteiras feitas de madeira de lei até casas de alvenaria com vigas, telhados, varandas e detalhes em madeira. Esse perfil torna a descupinização um serviço crítico para os moradores: cupim em casa de madeira é questão de tempo se não houver tratamento preventivo.',
     body:
-      'A Araújo Dedetizadora atende a Vila Casoni com descupinização especializada em estruturas de madeira: vistoria completa identificando focos ativos e zonas de risco, tratamento curativo com injeção em pontos de saída do cupim, barreira química no solo contra cupim subterrâneo e contrato preventivo anual para evitar reinfestação. Para as construções inteiramente de madeira (típicas da região), oferecemos protocolo especial que respeita a integridade da madeira e usa produtos cupinicidas de longa duração com garantia escrita.',
+      'A Araújo atende a Vila Casoni com descupinização especializada em estruturas de madeira: vistoria completa identificando focos ativos e zonas de risco, tratamento curativo com injeção em pontos de saída do cupim, barreira química no solo contra cupim subterrâneo e contrato preventivo anual para evitar reinfestação. Para as construções inteiramente de madeira (típicas da região), oferecemos protocolo especial que respeita a integridade da madeira e usa produtos cupinicidas de longa duração com garantia escrita.',
     serviceHighlights: [
       { slug: 'descupinizacao', reason: 'Atenção máxima — casas de madeira são alvo principal de cupim' },
       { slug: 'dedetizacao-em-londrina', reason: 'Dedetização preventiva geral em residências tradicionais' },
@@ -151,7 +151,7 @@ export const bairros: Bairro[] = [
     intro:
       'O Jardim Terra Bonita combina o melhor de dois mundos: ambiente residencial tranquilo com acesso imediato a serviços sofisticados do Catuaí Shopping (lojas, cafeterias, restaurantes, mercados). Essa proximidade comercial atrai um perfil de morador exigente — famílias e profissionais que valorizam serviços bem prestados, agendamento preciso e equipe capacitada. Pragas comuns na região variam de baratas em residências e estabelecimentos comerciais a formigas em jardins residenciais.',
     body:
-      'A Araújo Dedetizadora atende o Jardim Terra Bonita com dedetização residencial premium e serviços para o comércio próximo: técnicos uniformizados, agendamento pontual, produtos sem cheiro forte, opção de aplicação com gel em ambientes sensíveis. Para condomínios residenciais da região, oferecemos contrato CIPV com cronograma fixo. Para estabelecimentos comerciais próximos ao shopping, atendimento fora do horário de pico para não atrapalhar a operação.',
+      'A Araújo atende o Jardim Terra Bonita com dedetização residencial premium e serviços para o comércio próximo: técnicos uniformizados, agendamento pontual, produtos sem cheiro forte, opção de aplicação com gel em ambientes sensíveis. Para condomínios residenciais da região, oferecemos contrato CIPV com cronograma fixo. Para estabelecimentos comerciais próximos ao shopping, atendimento fora do horário de pico para não atrapalhar a operação.',
     serviceHighlights: [
       { slug: 'dedetizacao-em-londrina', reason: 'Dedetização residencial com produtos premium sem cheiro' },
       { slug: 'dac-divisao-de-atendimento-a-condominios', reason: 'Atendimento a condomínios residenciais da região' },
@@ -167,12 +167,12 @@ export const bairros: Bairro[] = [
     slug: 'aeroporto',
     name: 'Aeroporto',
     fullName: 'Aeroporto — Londrina',
-    zone: 'norte',
+    zone: 'leste',
     profile: 'Mix residencial + comercial, próximo ao Aeroporto José Richa',
     intro:
       'A região do Aeroporto, próxima ao Aeroporto Governador José Richa, combina perfil residencial tranquilo com estabelecimentos comerciais e proximidade a importantes vias de acesso. Uma característica peculiar da região: a presença constante de pombos atraídos por estruturas altas (torres do aeroporto, prédios, postes). Pombos em quantidade significam fezes acumuladas em telhados, calhas entupidas, e a fauna de parasitas que eles trazem (carrapatos, pulgas, ácaros).',
     body:
-      'A Araújo Dedetizadora atende a região do Aeroporto com foco específico em manejo de pombos: instalação de espículas anti-pouso em platibandas, telas de exclusão em vãos e respiros, fios anti-pouso em fachadas, limpeza e desinfecção de áreas com acúmulo de fezes. O serviço é executado conforme normas ambientais (manejo, não extermínio). Também atendemos as residências e comércios da região com dedetização padrão, com agendamento adaptado ao perfil de cada cliente.',
+      'A Araújo atende a região do Aeroporto com foco específico em manejo de pombos: instalação de espículas anti-pouso em platibandas, telas de exclusão em vãos e respiros, fios anti-pouso em fachadas, limpeza e desinfecção de áreas com acúmulo de fezes. O serviço é executado conforme normas ambientais (manejo, não extermínio). Também atendemos as residências e comércios da região com dedetização padrão, com agendamento adaptado ao perfil de cada cliente.',
     serviceHighlights: [
       { slug: 'controle-de-pombos-em-londrina', reason: 'Foco na região — estruturas altas atraem grande número de pombos' },
       { slug: 'dedetizacao-em-londrina', reason: 'Dedetização residencial e comercial para a região' },
@@ -193,7 +193,7 @@ export const bairros: Bairro[] = [
     intro:
       'O Jardim Quebec é um bairro predominantemente residencial onde famílias buscam segurança, tranquilidade e ruas arborizadas. Essa arborização generosa é parte da identidade do bairro — mas também atrai pragas urbanas que se beneficiam de árvores e jardins extensos: escorpiões em entulho de poda, formigas que invadem casas vindas dos jardins, carrapatos trazidos por animais de estimação que brincam em áreas verdes. O perfil familiar exige cuidado redobrado com produtos seguros para crianças e pets.',
     body:
-      'A Araújo Dedetizadora atende o Jardim Quebec com dedetização residencial focada em famílias: produtos antialérgicos sob demanda, técnicas que não exigem sair de casa, gel inseticida em ambientes sensíveis, atendimento agendado com pontualidade. Para o problema específico de escorpiões na região (que cresce em períodos quentes), oferecemos atendimento emergencial em até 24 horas e protocolo integrado: pulverização nos pontos de acesso + controle de baratas (alimento dos escorpiões) + orientação para vedação de ralos e frestas.',
+      'A Araújo atende o Jardim Quebec com dedetização residencial focada em famílias: produtos antialérgicos sob demanda, técnicas que não exigem sair de casa, gel inseticida em ambientes sensíveis, atendimento agendado com pontualidade. Para o problema específico de escorpiões na região (que cresce em períodos quentes), oferecemos atendimento emergencial em até 24 horas e protocolo integrado: pulverização nos pontos de acesso + controle de baratas (alimento dos escorpiões) + orientação para vedação de ralos e frestas.',
     serviceHighlights: [
       { slug: 'dedetizacao-em-londrina', reason: 'Dedetização residencial premium com produtos antialérgicos' },
       { slug: 'dedetizacao-para-escorpioes-em-londrina', reason: 'Bairros arborizados têm risco aumentado — atendimento 24h' },
@@ -214,7 +214,7 @@ export const bairros: Bairro[] = [
     intro:
       'O Bairro Inglaterra fica em uma das regiões mais bonitas de Londrina, próximo ao Lago Igapó e ao Parque Municipal Arthur Thomas. Tem perfil misto residencial + estabelecimentos de vida noturna (bares, restaurantes, lanchonetes). A proximidade do lago traz uma realidade peculiar: umidade ambiente elevada, e com isso uma população alta de mosquitos (Culex e, em alguns períodos, Aedes), além de moscas em quantidade superior aos outros bairros. Estabelecimentos com cozinha e atendimento ao público sofrem mais com isso.',
     body:
-      'A Araújo Dedetizadora atende o Bairro Inglaterra com soluções específicas para a realidade local: controle de mosquitos com larvicidas em ralos e caixas de gordura, instalação de armadilhas luminosas em estabelecimentos comerciais, programa CIPV para restaurantes e bares com fiscalização frequente da vigilância sanitária. Para residências, oferecemos dedetização periódica com foco em controle de insetos voadores e atendimento fora do horário comercial nos estabelecimentos. Trabalhamos também com sanitização de ambientes climatizados.',
+      'A Araújo atende o Bairro Inglaterra com soluções específicas para a realidade local: controle de mosquitos com larvicidas em ralos e caixas de gordura, instalação de armadilhas luminosas em estabelecimentos comerciais, programa CIPV para restaurantes e bares com fiscalização frequente da vigilância sanitária. Para residências, oferecemos dedetização periódica com foco em controle de insetos voadores e atendimento fora do horário comercial nos estabelecimentos. Trabalhamos também com sanitização de ambientes climatizados.',
     serviceHighlights: [
       { slug: 'controle-de-pragas-em-londrina', reason: 'CIPV para bares e restaurantes — conformidade RDC 622/22' },
       { slug: 'dedetizacao-em-londrina', reason: 'Dedetização residencial com foco em mosquitos e moscas' },
@@ -235,7 +235,7 @@ export const bairros: Bairro[] = [
     intro:
       'O Distrito Industrial de Londrina concentra grande parte das indústrias da cidade — frigoríficos, panificadoras industriais, fábricas de alimentos, depósitos, centros logísticos, indústria farmacêutica e empresas de transformação. Para esses estabelecimentos, controle de pragas não é opcional: é exigência regulatória da ANVISA (RDC 622/22), das vigilâncias sanitárias estadual (SESA 1153/2024) e municipal, e das certificações de qualidade (ISO 22000, BRC, FSSC 22000, HACCP). Auditoria sem programa CIPV ativo significa autuação garantida.',
     body:
-      'A Araújo Dedetizadora opera CIPV no Distrito Industrial há mais de quatro décadas, com equipe técnica dedicada e documentação completa para todas as auditorias. Nosso programa inclui: diagnóstico inicial detalhado, mapa de pontos de controle, visitas técnicas com periodicidade contratada (semanal, quinzenal ou mensal), porta-iscas lacrados e identificados em áreas externas e internas, armadilhas luminosas em áreas com alimentos, monitoramento técnico contínuo, laudos para auditoria interna e externa, atendimento emergencial sem custo adicional. Nossos relatórios atendem ISO 22000, BRC, FSSC 22000 e demais certificações alimentares.',
+      'A Araújo opera CIPV no Distrito Industrial há mais de quatro décadas, com equipe técnica dedicada e documentação completa para todas as auditorias. Nosso programa inclui: diagnóstico inicial detalhado, mapa de pontos de controle, visitas técnicas com periodicidade contratada (semanal, quinzenal ou mensal), porta-iscas lacrados e identificados em áreas externas e internas, armadilhas luminosas em áreas com alimentos, monitoramento técnico contínuo, laudos para auditoria interna e externa, atendimento emergencial sem custo adicional. Nossos relatórios atendem ISO 22000, BRC, FSSC 22000 e demais certificações alimentares.',
     serviceHighlights: [
       { slug: 'controle-de-pragas-em-londrina', reason: 'CIPV obrigatório para indústrias — base do nosso atendimento B2B' },
       { slug: 'desratizacao', reason: 'Porta-iscas industriais e monitoramento contínuo' },

@@ -65,17 +65,23 @@ export default function Footer() {
         <div className="mt-12 border-t border-brand-800 pt-8">
           <div className="text-sm">
             <h3 className="font-semibold text-white">Atendemos em Londrina</h3>
-            <div className="mt-4 flex flex-wrap gap-x-3 gap-y-2 text-ink-400">
-              {bairros.map((b, i) => (
-                <span key={b.slug} className="flex items-center gap-3">
-                  <Link href={`/atendimento/${b.slug}`} className="hover:text-yellow-400">{b.name}</Link>
-                  {i < bairros.length - 1 && <span className="text-brand-700">•</span>}
-                </span>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {bairros.slice(0, 6).map((b) => (
+                <Link
+                  key={b.slug}
+                  href={`/atendimento/${b.slug}`}
+                  className="rounded-full border border-brand-800 bg-brand-900/40 px-3 py-1 text-xs text-ink-300 transition hover:border-yellow-400 hover:text-yellow-400"
+                >
+                  {b.name}
+                </Link>
               ))}
+              <Link
+                href="/atendimento"
+                className="rounded-full bg-yellow-500/15 px-3 py-1 text-xs font-medium text-yellow-400 transition hover:bg-yellow-500/25"
+              >
+                Ver todos os {bairros.length} bairros →
+              </Link>
             </div>
-            <Link href="/atendimento" className="mt-3 inline-block text-sm font-medium text-yellow-400 hover:text-yellow-300">
-              Ver todas as áreas atendidas →
-            </Link>
           </div>
         </div>
 
