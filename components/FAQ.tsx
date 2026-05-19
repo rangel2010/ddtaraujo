@@ -16,10 +16,10 @@ export default function FAQ({ items, title = 'Perguntas Frequentes' }: { items: 
         </div>
         <div className="mt-12 space-y-3">
           {items.map((item, i) => (
-            <div key={i} className="overflow-hidden rounded-2xl border border-ink-200 bg-white dark:border-ink-800 dark:bg-ink-800">
+            <div key={i} className="overflow-hidden rounded-2xl border border-ink-200 bg-white dark:border-ink-700 dark:bg-ink-700">
               <button
                 onClick={() => setOpen(open === i ? null : i)}
-                className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left transition hover:bg-ink-50 dark:hover:bg-ink-700/50"
+                className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left transition hover:bg-ink-50 dark:hover:bg-ink-600/50"
                 aria-expanded={open === i}
               >
                 <span className="font-semibold text-ink-900 dark:text-white">{item.question}</span>
@@ -33,7 +33,7 @@ export default function FAQ({ items, title = 'Perguntas Frequentes' }: { items: 
                 </svg>
               </button>
               {open === i && (
-                <div className="border-t border-ink-100 px-6 py-5 text-ink-700 dark:border-ink-700 dark:text-ink-300">
+                <div className="border-t border-ink-100 px-6 py-5 text-ink-700 dark:border-ink-600 dark:text-ink-300">
                   {item.answer}
                 </div>
               )}

@@ -46,12 +46,12 @@ export default function SobrePage() {
               <div className="mt-2 text-lg font-semibold text-ink-900 dark:text-white">anos de experiência</div>
               <p className="mt-2 text-sm text-ink-700 dark:text-ink-300">Acumulando conhecimento técnico desde {siteConfig.business.foundedYear} no combate às pragas urbanas mais resistentes.</p>
             </div>
-            <div className="rounded-2xl bg-white border border-ink-200 p-8 dark:bg-ink-800 dark:border-ink-700">
+            <div className="rounded-2xl bg-white border border-ink-200 p-8 dark:bg-ink-700 dark:border-ink-600">
               <div className="font-display text-5xl font-bold text-yellow-500">+15k</div>
               <div className="mt-2 text-lg font-semibold text-ink-900 dark:text-white">clientes atendidos</div>
               <p className="mt-2 text-sm text-ink-700 dark:text-ink-300">Residências, comércios, indústrias e condomínios em Londrina e todo o Paraná.</p>
             </div>
-            <div className="rounded-2xl bg-white border border-ink-200 p-8 dark:bg-ink-800 dark:border-ink-700">
+            <div className="rounded-2xl bg-white border border-ink-200 p-8 dark:bg-ink-700 dark:border-ink-600">
               <div className="font-display text-5xl font-bold text-yellow-500">100%</div>
               <div className="mt-2 text-lg font-semibold text-ink-900 dark:text-white">credenciados</div>
               <p className="mt-2 text-sm text-ink-700 dark:text-ink-300">ANVISA, IAP, SESA e responsabilidade técnica de profissional habilitado (CRQ).</p>
@@ -60,7 +60,7 @@ export default function SobrePage() {
         </div>
       </section>
 
-      <section className="section bg-ink-50 dark:bg-ink-900">
+      <section className="section bg-ink-50 dark:bg-ink-800">
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
             <div className="eyebrow">Nossos Valores</div>
@@ -100,7 +100,7 @@ export default function SobrePage() {
               { name: 'NR-33', desc: 'Espaços Confinados' },
               { name: 'NR-35', desc: 'Trabalho em Altura' },
             ].map((c) => (
-              <div key={c.name} className="rounded-2xl border border-ink-200 bg-white p-4 text-center dark:border-ink-800 dark:bg-ink-800">
+              <div key={c.name} className="rounded-2xl border border-ink-200 bg-white p-4 text-center dark:border-ink-700 dark:bg-ink-700">
                 <div className="font-display text-xl font-bold text-brand-700 dark:text-brand-300">{c.name}</div>
                 <div className="mt-1 text-xs text-ink-600 dark:text-ink-300">{c.desc}</div>
               </div>

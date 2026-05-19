@@ -151,7 +151,7 @@ export default function HomePage() {
       </section>
 
       {/* TRUST STRIP */}
-      <section className="border-y border-ink-200 bg-ink-50 dark:border-ink-700 dark:bg-ink-800 py-8">
+      <section className="border-y border-ink-200 bg-ink-50 dark:border-ink-600 dark:bg-ink-700 py-8">
         <div className="container">
           <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
             {[
@@ -204,7 +204,7 @@ export default function HomePage() {
       </section>
 
       {/* ABOUT */}
-      <section className="section bg-ink-50 dark:bg-ink-900">
+      <section className="section bg-ink-50 dark:bg-ink-800">
         <div className="container grid gap-12 md:grid-cols-2 md:items-center">
           <div>
             <div className="eyebrow">Quem Somos</div>
@@ -228,7 +228,7 @@ export default function HomePage() {
               { num: '03', title: 'Executamos o serviço', desc: 'Aplicação profissional com EPIs e produtos certificados.' },
               { num: '04', title: 'Garantia e acompanhamento', desc: 'Você recebe certificado e suporte pós-serviço.' },
             ].map((step) => (
-              <div key={step.num} className="flex gap-4 rounded-2xl border border-ink-200 bg-white p-5 dark:border-ink-800 dark:bg-ink-800">
+              <div key={step.num} className="flex gap-4 rounded-2xl border border-ink-200 bg-white p-5 dark:border-ink-700 dark:bg-ink-700">
                 <div className="text-3xl font-bold text-accent-500 font-display">{step.num}</div>
                 <div>
                   <div className="font-semibold text-ink-900 dark:text-white">{step.title}</div>
@@ -249,7 +249,7 @@ export default function HomePage() {
           </div>
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {Object.entries(groupedAll).map(([cat, items]) => (
-              <div key={cat} className="rounded-2xl border border-ink-200 bg-white p-6 dark:border-ink-800 dark:bg-ink-800">
+              <div key={cat} className="rounded-2xl border border-ink-200 bg-white p-6 dark:border-ink-700 dark:bg-ink-700">
                 <h3 className="font-display text-xl font-bold text-ink-900 dark:text-white">{categoryLabels[cat as keyof typeof categoryLabels]}</h3>
                 <ul className={`mt-4 ${items.length > 4 ? 'grid grid-cols-2 gap-x-4 gap-y-2' : 'space-y-2'}`}>
                   {items.map((s) => (
@@ -268,7 +268,7 @@ export default function HomePage() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="section bg-ink-50 dark:bg-ink-900">
+      <section className="section bg-ink-50 dark:bg-ink-800">
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
             <div className="eyebrow">Depoimentos reais</div>
@@ -280,13 +280,13 @@ export default function HomePage() {
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {reviews.map((t) => (
-              <div key={t.name} className="flex flex-col rounded-2xl bg-white p-6 shadow-sm dark:bg-ink-800">
+              <div key={t.name} className="flex flex-col rounded-2xl bg-white p-6 shadow-sm dark:bg-ink-700">
                 <div className="flex items-center justify-between">
                   <div className="flex gap-0.5">{[1,2,3,4,5].map((i) => <Star key={i} />)}</div>
                   <GoogleIcon />
                 </div>
                 <p className="mt-4 flex-1 text-ink-700">&ldquo;{t.text}&rdquo;</p>
-                <div className="mt-4 border-t border-ink-100 pt-4 dark:border-ink-700">
+                <div className="mt-4 border-t border-ink-100 pt-4 dark:border-ink-600">
                   <div className="font-semibold text-ink-900 dark:text-white">{t.name}</div>
                   <div className="text-sm text-ink-500 dark:text-ink-300">{t.role} · {t.date}</div>
                 </div>

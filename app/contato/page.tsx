@@ -78,7 +78,7 @@ export default function ContatoPage() {
               </div>
             </a>
 
-            <div className="rounded-2xl bg-ink-50 p-6 dark:bg-ink-800">
+            <div className="rounded-2xl bg-ink-50 p-6 dark:bg-ink-700">
               <h3 className="font-display text-lg font-bold text-ink-900 dark:text-white">Horário de atendimento</h3>
               <dl className="mt-4 space-y-2 text-sm">
                 <div className="flex justify-between">
@@ -99,7 +99,7 @@ export default function ContatoPage() {
 
           {/* Endereço + Mapa */}
           <div className="space-y-6">
-            <div className="rounded-2xl bg-ink-50 p-6 dark:bg-ink-800">
+            <div className="rounded-2xl bg-ink-50 p-6 dark:bg-ink-700">
               <div className="flex items-start gap-4">
                 <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-brand-100 text-brand-700 dark:bg-brand-900/30 dark:text-brand-300">
                   <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -119,7 +119,7 @@ export default function ContatoPage() {
               </div>
             </div>
 
-            <div className="overflow-hidden rounded-2xl border border-ink-200 dark:border-ink-800">
+            <div className="overflow-hidden rounded-2xl border border-ink-200 dark:border-ink-700">
               <iframe
                 title="Mapa Araújo Dedetizadora"
                 src={`https://maps.google.com/maps?q=${encodeURIComponent(

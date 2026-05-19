@@ -79,7 +79,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       {/* Breadcrumbs */}
-      <nav className="border-b border-ink-100 bg-ink-50 dark:border-ink-700 dark:bg-ink-800 py-3 text-sm" aria-label="Breadcrumb">
+      <nav className="border-b border-ink-100 bg-ink-50 dark:border-ink-600 dark:bg-ink-700 py-3 text-sm" aria-label="Breadcrumb">
         <div className="container">
           <ol className="flex flex-wrap items-center gap-2 text-ink-600">
             <li><Link href="/" className="hover:text-brand-700">Início</Link></li>
@@ -195,7 +195,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
 
 
       {/* Process */}
-      <section className="section bg-ink-50 dark:bg-ink-900">
+      <section className="section bg-ink-50 dark:bg-ink-800">
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
             <div className="eyebrow">Como funciona</div>
@@ -203,7 +203,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {service.process.map((step, i) => (
-              <div key={i} className="relative rounded-2xl border border-ink-200 bg-white p-6 dark:border-ink-800 dark:bg-ink-800">
+              <div key={i} className="relative rounded-2xl border border-ink-200 bg-white p-6 dark:border-ink-700 dark:bg-ink-700">
                 <div className="absolute -top-4 left-6 flex h-10 w-10 items-center justify-center rounded-full bg-accent-500 font-display text-lg font-bold text-white">
                   {i + 1}
                 </div>
@@ -218,7 +218,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
       <FAQ items={service.faqs} title={`Dúvidas sobre ${service.shortTitle}`} />
 
       {/* Related */}
-      <section className="section bg-ink-50 dark:bg-ink-900">
+      <section className="section bg-ink-50 dark:bg-ink-800">
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
             <div className="eyebrow">Outros Serviços</div>
