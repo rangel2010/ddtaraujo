@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import CTASection from '@/components/CTASection';
+import { blogPosts } from '@/lib/blog';
 
 export const metadata: Metadata = {
   title: 'Blog | Dicas e Notícias sobre Controle de Pragas',
@@ -9,32 +10,10 @@ export const metadata: Metadata = {
   alternates: { canonical: '/blog' },
 };
 
-const posts = [
-  {
-    slug: 'como-prevenir-escorpioes',
-    title: 'Como prevenir escorpiões em casa: 8 passos práticos',
-    excerpt:
-      'Escorpiões são atraídos por umidade e abrigos. Veja como tornar sua casa menos atrativa e reduzir o risco de acidentes.',
-    date: '2026-04-12',
-    category: 'Prevenção',
-  },
-  {
-    slug: 'sinais-de-cupim-na-madeira',
-    title: 'Como identificar cupim na madeira antes que seja tarde',
-    excerpt:
-      'Cupins agem em silêncio. Conheça os sinais que indicam infestação e o que fazer assim que perceber.',
-    date: '2026-03-28',
-    category: 'Cupins',
-  },
-  {
-    slug: 'caixa-dagua-quanto-tempo-limpar',
-    title: 'De quanto em quanto tempo a caixa d\'água deve ser limpa?',
-    excerpt:
-      'A ANVISA recomenda limpeza semestral. Entenda o porquê e como funciona o serviço profissional.',
-    date: '2026-02-15',
-    category: 'Higienização',
-  },
-];
+// Ordenado do mais recente para o mais antigo
+const posts = [...blogPosts].sort(
+  (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+);
 
 export default function BlogPage() {
   return (
@@ -67,6 +46,7 @@ export default function BlogPage() {
                   <div className="flex items-center gap-3 text-xs text-ink-500 dark:text-ink-400">
                     <span className="rounded-full bg-yellow-100 px-2.5 py-0.5 font-medium text-yellow-700 dark:bg-yellow-400/15 dark:text-yellow-400">{p.category}</span>
                     <span>{new Date(p.date).toLocaleDateString('pt-BR')}</span>
+                    <span>· {p.readingMinutes} min</span>
                   </div>
                   <h2 className="mt-4 font-display text-xl font-bold text-ink-900 dark:text-white group-hover:text-yellow-600 dark:group-hover:text-yellow-400">
                     {p.title}
@@ -78,11 +58,6 @@ export default function BlogPage() {
                 </div>
               </article>
             ))}
-          </div>
-          <div className="mt-12 rounded-2xl bg-ink-50 p-8 text-center dark:bg-ink-700">
-            <p className="text-ink-700 dark:text-ink-300">
-              <strong className="text-ink-900 dark:text-white">Mais artigos em breve.</strong> Estamos publicando novos conteúdos sobre prevenção, identificação de pragas e legislação sanitária.
-            </p>
           </div>
         </div>
       </section>
