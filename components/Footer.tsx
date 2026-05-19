@@ -14,8 +14,8 @@ export default function Footer() {
             <div className="flex flex-wrap items-center gap-2">
               <Image src="/logo-white.png" alt="Araújo Dedetizadora" width={2460} height={671} className="h-12 w-auto" />
               <Image src="/badge-new.png" alt="40 anos de tradição" width={400} height={400} className="h-14 w-14 flex-shrink-0 drop-shadow-md opacity-90" />
-              <Link href="/garantia" aria-label="Garantia escrita Araújo" className="transition hover:scale-105">
-                <Image src="/selo-garantia.png" alt="Selo Garantia Escrita Araújo" width={240} height={160} className="h-14 w-auto flex-shrink-0 drop-shadow-md" />
+              <Link href="/garantia" aria-label="Garantia escrita Araújo" className="mt-2 transition hover:scale-105">
+                <Image src="/selo-garantia.png" alt="Selo Garantia Escrita Araújo" width={240} height={160} className="h-20 w-auto flex-shrink-0 drop-shadow-md" />
               </Link>
             </div>
             <p className="mt-4 text-sm leading-relaxed">
