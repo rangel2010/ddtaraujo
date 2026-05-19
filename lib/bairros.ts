@@ -81,7 +81,7 @@ export const bairros: Bairro[] = [
   },
   {
     slug: 'bela-suica',
-    name: 'Jardim Bela Suíça',
+    name: 'Bela Suíça',
     fullName: 'Jardim Bela Suíça — Londrina',
     zone: 'sul',
     profile: 'Alto padrão horizontal — casas antigas com madeira nobre',
@@ -144,7 +144,7 @@ export const bairros: Bairro[] = [
   },
   {
     slug: 'terra-bonita',
-    name: 'Jardim Terra Bonita',
+    name: 'Terra Bonita',
     fullName: 'Jardim Terra Bonita — Londrina',
     zone: 'sul',
     profile: 'Residencial alto + comércio sofisticado próximo ao Catuaí',

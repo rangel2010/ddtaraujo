@@ -66,7 +66,7 @@ export default function Footer() {
           <div className="text-sm">
             <h3 className="font-semibold text-white">Atendemos em Londrina</h3>
             <div className="mt-4 flex flex-wrap gap-2">
-              {bairros.slice(0, 10).map((b) => (
+              {bairros.map((b) => (
                 <Link
                   key={b.slug}
                   href={`/atendimento/${b.slug}`}
