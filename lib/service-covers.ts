@@ -41,7 +41,7 @@ export const serviceCovers: Record<string, ServiceCover> = {
     credit: { name: 'Ferran Ventura', url: 'https://unsplash.com/@ferranventura' },
   },
   'controle-de-pombos-em-londrina': {
-    image: `https://images.unsplash.com/photo-1723302642167-5b1ea8a4dc75${baseParams}`,
+    image: 'https://images.unsplash.com/photo-1723302642167-5b1ea8a4dc75?auto=format&fit=crop&w=1600&h=900&q=80&crop=focalpoint&fp-x=0.5&fp-y=0.5',
     alt: 'Pombo urbano em close-up',
     credit: { name: 'Ilie Barna', url: 'https://unsplash.com/@mechaowlstudios' },
   },
