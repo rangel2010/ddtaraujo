@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { blogPosts, blogPostsBySlug } from '@/lib/blog';
 import CTASection from '@/components/CTASection';
@@ -67,8 +68,19 @@ export default function BlogPostPage({ params }: Params) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <section className="bg-gradient-to-br from-ink-900 via-ink-800 to-brand-900 py-20 text-white">
-        <div className="container">
+      <section className="relative overflow-hidden bg-ink-900 py-20 text-white">
+        <div className="absolute inset-0">
+          <Image
+            src={post.coverImage}
+            alt={post.coverAlt}
+            fill
+            sizes="100vw"
+            priority
+            className="object-cover opacity-30"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-ink-900/85 via-ink-800/80 to-brand-900/85" />
+        </div>
+        <div className="container relative">
           <div className="mx-auto max-w-3xl">
             <nav className="mb-6 flex items-center gap-2 text-sm text-ink-300">
               <Link href="/blog" className="hover:text-yellow-400">Blog</Link>
@@ -81,7 +93,7 @@ export default function BlogPostPage({ params }: Params) {
             <h1 className="mt-6 font-display text-3xl font-bold text-white sm:text-4xl md:text-5xl">
               {post.title}
             </h1>
-            <div className="mt-6 flex items-center gap-4 text-sm text-ink-300">
+            <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-ink-300">
               <span>Por Araújo Dedetizadora</span>
               <span>·</span>
               <time dateTime={post.date}>
@@ -154,7 +166,19 @@ export default function BlogPostPage({ params }: Params) {
               );
             })}
 
-            <div className="mt-12 rounded-2xl bg-ink-50 p-6 text-center dark:bg-ink-700">
+            <p className="mt-10 text-xs italic text-ink-500 dark:text-ink-400">
+              Foto: {post.coverCredit.name} /{' '}
+              <a
+                href={post.coverCredit.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline-offset-2 hover:underline"
+              >
+                Unsplash
+              </a>
+            </p>
+
+            <div className="mt-8 rounded-2xl bg-ink-50 p-6 text-center dark:bg-ink-700">
               <p className="text-ink-700 dark:text-ink-300">
                 Precisa de ajuda profissional?{' '}
                 <a
@@ -198,8 +222,14 @@ export default function BlogPostPage({ params }: Params) {
                     href={`/blog/${p.slug}`}
                     className="group flex flex-col rounded-2xl border border-ink-200 bg-white overflow-hidden hover:border-brand-300 hover:shadow-md transition dark:border-ink-600 dark:bg-ink-700"
                   >
-                    <div className="h-32 bg-gradient-to-br from-brand-600 to-brand-800 flex items-center justify-center">
-                      <span className="text-white/30 font-display text-4xl font-bold">{p.category[0]}</span>
+                    <div className="relative h-32 overflow-hidden bg-ink-200 dark:bg-ink-600">
+                      <Image
+                        src={p.coverImage}
+                        alt={p.coverAlt}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                        className="object-cover transition duration-500 group-hover:scale-105"
+                      />
                     </div>
                     <div className="flex flex-1 flex-col p-5">
                       <span className="self-start rounded-full bg-yellow-100 px-2.5 py-0.5 text-xs font-medium text-yellow-700 dark:bg-yellow-400/15 dark:text-yellow-400">

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import CTASection from '@/components/CTASection';
 import { blogPosts } from '@/lib/blog';
 
@@ -39,8 +40,14 @@ export default function BlogPage() {
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {posts.map((p) => (
               <article key={p.slug} className="group flex flex-col rounded-2xl border border-ink-200 bg-ink-50 overflow-hidden hover:border-brand-300 hover:shadow-md transition dark:border-ink-600 dark:bg-ink-700">
-                <div className="h-48 bg-gradient-to-br from-brand-600 to-brand-800 flex items-center justify-center">
-                  <span className="text-white/30 font-display text-6xl font-bold">{p.category[0]}</span>
+                <div className="relative h-48 overflow-hidden bg-ink-200 dark:bg-ink-600">
+                  <Image
+                    src={p.coverImage}
+                    alt={p.coverAlt}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover transition duration-500 group-hover:scale-105"
+                  />
                 </div>
                 <div className="flex flex-1 flex-col p-6">
                   <div className="flex items-center gap-3 text-xs text-ink-500 dark:text-ink-400">

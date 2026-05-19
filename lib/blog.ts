@@ -13,6 +13,9 @@ export type BlogPost = {
   metaTitle: string;
   metaDescription: string;
   readingMinutes: number;
+  coverImage: string;
+  coverAlt: string;
+  coverCredit: { name: string; url: string };
   content: BlogContent[];
 };
 
@@ -28,6 +31,10 @@ export const blogPosts: BlogPost[] = [
     metaDescription:
       'Controle profissional de morcegos em Londrina e região. Manejo conforme normas ambientais, vedação e exclusão definitiva. Veja riscos e procedimentos.',
     readingMinutes: 3,
+    coverImage:
+      'https://images.unsplash.com/photo-1685096137221-2be0f743dba4?auto=format&fit=crop&w=1600&q=80',
+    coverAlt: 'Morcego pendurado em rocha de caverna',
+    coverCredit: { name: 'Ferran Ventura', url: 'https://unsplash.com/@ferranventura' },
     content: [
       {
         type: 'p',
@@ -78,6 +85,10 @@ export const blogPosts: BlogPost[] = [
     metaDescription:
       'Pulgas transmitem vermes intestinais aos pets e podem picar humanos transmitindo peste bubônica. Veja os riscos e como a dedetização resolve.',
     readingMinutes: 2,
+    coverImage:
+      'https://images.unsplash.com/photo-1769117327556-cb33587c5298?auto=format&fit=crop&w=1600&q=80',
+    coverAlt: 'Filhote marrom e branco coçando a orelha na grama',
+    coverCredit: { name: 'Helena Lopes', url: 'https://unsplash.com/@helenalopesph' },
     content: [
       {
         type: 'p',
@@ -121,6 +132,10 @@ export const blogPosts: BlogPost[] = [
     metaDescription:
       'Formigas transmitem doenças carregando bactérias e fungos. Saiba sobre a formiga doceira e a formiga-faraó, responsável por infestações em hospitais.',
     readingMinutes: 2,
+    coverImage:
+      'https://images.unsplash.com/photo-1579278084099-e7593776949e?auto=format&fit=crop&w=1600&q=80',
+    coverAlt: 'Macro fotografia de formiga vermelha sobre rocha',
+    coverCredit: { name: 'Wolfgang Hasselmann', url: 'https://unsplash.com/@wolfgang_hasselmann' },
     content: [
       {
         type: 'p',
@@ -158,6 +173,10 @@ export const blogPosts: BlogPost[] = [
     metaDescription:
       'Dedetização residencial em Londrina com produtos sem cheiro e sem mancha. Não precisa sair de casa. Mais de 40 anos de experiência. Orçamento sem compromisso.',
     readingMinutes: 1,
+    coverImage:
+      'https://images.unsplash.com/photo-1747659629851-a92bd71149f6?auto=format&fit=crop&w=1600&q=80',
+    coverAlt: 'Pessoa segurando equipamento profissional de pulverização',
+    coverCredit: { name: 'MESTO Sprayers', url: 'https://unsplash.com/@mesto_sprayers' },
     content: [
       {
         type: 'p',
