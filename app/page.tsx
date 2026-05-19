@@ -128,55 +128,20 @@ export default function HomePage() {
                 </div>
               </div>
 
-              {/* Ilustração: casa com escudo */}
-              <div className="relative my-4 flex h-44 items-center justify-center">
-                <svg viewBox="0 0 240 200" className="h-full w-auto">
-                  <defs>
-                    <radialGradient id="houseGlow" cx="50%" cy="60%" r="50%">
-                      <stop offset="0%" stopColor="#5ab031" stopOpacity="0.35"/>
-                      <stop offset="100%" stopColor="#5ab031" stopOpacity="0"/>
-                    </radialGradient>
-                  </defs>
-                  <circle cx="120" cy="115" r="85" fill="url(#houseGlow)"/>
-                  {/* Casa */}
-                  <g>
-                    <path d="M60 105 L120 60 L180 105 L172 105 L120 67 L68 105 Z" fill="#cbd5e1"/>
-                    <rect x="72" y="105" width="96" height="70" fill="#f8fafc" stroke="#94a3b8" strokeWidth="1.5"/>
-                    <rect x="108" y="130" width="24" height="45" fill="#203a72" rx="2"/>
-                    <circle cx="126" cy="153" r="1.5" fill="#fbbf24"/>
-                    <rect x="82" y="118" width="18" height="16" fill="#bcea9d" opacity="0.6" stroke="#5ab031" strokeWidth="1.5"/>
-                    <line x1="91" y1="118" x2="91" y2="134" stroke="#5ab031" strokeWidth="1"/>
-                    <line x1="82" y1="126" x2="100" y2="126" stroke="#5ab031" strokeWidth="1"/>
-                    <rect x="140" y="118" width="18" height="16" fill="#bcea9d" opacity="0.6" stroke="#5ab031" strokeWidth="1.5"/>
-                    <line x1="149" y1="118" x2="149" y2="134" stroke="#5ab031" strokeWidth="1"/>
-                    <line x1="140" y1="126" x2="158" y2="126" stroke="#5ab031" strokeWidth="1"/>
-                  </g>
-                  {/* Escudo flutuante */}
-                  <g transform="translate(100, -5)">
-                    <path d="M20 12 Q20 5 27 5 L33 5 Q40 5 40 12 L40 35 Q40 52 30 62 Q20 52 20 35 Z" fill="#5ab031" stroke="#fff" strokeWidth="2.5"/>
-                    <path d="M24 33 L29 39 L36 27" stroke="#fff" strokeWidth="3.5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
-                  </g>
-                  {/* Sparkles decorativos */}
-                  <circle cx="40" cy="40" r="3" fill="#5ab031" opacity="0.6"/>
-                  <circle cx="200" cy="50" r="2.5" fill="#fbbf24" opacity="0.7"/>
-                  <circle cx="200" cy="160" r="3" fill="#5ab031" opacity="0.5"/>
-                  <circle cx="40" cy="170" r="2.5" fill="#5d7ecd" opacity="0.6"/>
-                  <path d="M35 90 l3 -3 l3 3 l-3 3 z" fill="#fbbf24" opacity="0.7"/>
-                  <path d="M205 100 l3 -3 l3 3 l-3 3 z" fill="#5ab031" opacity="0.5"/>
-                </svg>
-              </div>
-
-              {/* Selos embaixo */}
-              <div className="grid grid-cols-2 gap-2">
+              {/* Stats grid com ícones grandes */}
+              <div className="mt-5 grid grid-cols-2 gap-3">
                 {[
-                  '40 anos de mercado',
-                  'Credenciados ANVISA',
-                  'Garantia escrita',
-                  'Atendimento 24h',
-                ].map((label) => (
-                  <div key={label} className="flex items-center gap-2 rounded-xl bg-white/10 px-3 py-2 backdrop-blur">
-                    <Check cls="h-4 w-4 flex-shrink-0 text-accent-400"/>
-                    <span className="text-xs font-medium text-white">{label}</span>
+                  { value: '40+', label: 'Anos de experiência', icon: 'M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z' },
+                  { value: '15.000+', label: 'Clientes atendidos', icon: 'M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z' },
+                  { value: '100%', label: 'Garantia escrita', icon: 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z' },
+                  { value: '24h', label: 'Atendimento WhatsApp', icon: 'M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z' },
+                ].map((s) => (
+                  <div key={s.label} className="rounded-2xl bg-white/10 p-5 border border-white/10 backdrop-blur transition hover:bg-white/15">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent-500/25 ring-1 ring-accent-400/40">
+                      <svg className="h-7 w-7 text-accent-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={s.icon}/></svg>
+                    </div>
+                    <div className="mt-4 font-display text-3xl font-bold text-white leading-none">{s.value}</div>
+                    <div className="mt-1 text-xs text-ink-300">{s.label}</div>
                   </div>
                 ))}
               </div>
