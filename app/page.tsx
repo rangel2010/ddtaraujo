@@ -180,7 +180,7 @@ export default function HomePage() {
 
           <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {featuredServices.map((s) => (
-              <Link key={s.slug} href={`/servicos/${s.slug}`} className="card group flex flex-col">
+              <Link key={s.slug} href={`/servicos/${s.slug}`} className="card group flex flex-col !bg-ink-50 dark:!bg-ink-700">
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-yellow-100 text-yellow-700 transition group-hover:bg-yellow-500 group-hover:text-white dark:bg-yellow-400/15 dark:text-yellow-400">
                   <ServiceIcon name={s.icon} />
                 </div>
@@ -249,7 +249,7 @@ export default function HomePage() {
           </div>
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {Object.entries(groupedAll).map(([cat, items]) => (
-              <div key={cat} className="rounded-2xl border border-ink-200 bg-white p-6 dark:border-ink-700 dark:bg-ink-700">
+              <div key={cat} className="rounded-2xl border border-ink-200 bg-ink-50 p-6 dark:border-ink-700 dark:bg-ink-700">
                 <h3 className="font-display text-xl font-bold text-ink-900 dark:text-white">{categoryLabels[cat as keyof typeof categoryLabels]}</h3>
                 <ul className={`mt-4 ${items.length > 4 ? 'grid grid-cols-2 gap-x-4 gap-y-2' : 'space-y-2'}`}>
                   {items.map((s) => (

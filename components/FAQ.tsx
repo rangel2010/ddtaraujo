@@ -16,7 +16,7 @@ export default function FAQ({ items, title = 'Perguntas Frequentes' }: { items: 
         </div>
         <div className="mt-12 space-y-3">
           {items.map((item, i) => (
-            <div key={i} className="overflow-hidden rounded-2xl border border-ink-200 bg-white dark:border-ink-700 dark:bg-ink-700">
+            <div key={i} className="overflow-hidden rounded-2xl border border-ink-200 bg-ink-50 dark:border-ink-700 dark:bg-ink-700">
               <button
                 onClick={() => setOpen(open === i ? null : i)}
                 className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left transition hover:bg-ink-50 dark:hover:bg-ink-600/50"
