@@ -2,7 +2,7 @@ export const siteConfig = {
   name: 'Araújo Dedetizadora',
   fullName: 'Araújo Controle de Pragas e Vetores',
   description:
-    'Dedetizadora em Londrina há mais de 40 anos. Controle de pragas urbanas com garantia: baratas, ratos, cupins, escorpiões, morcegos, pombos e mais. Atendimento residencial, comercial, industrial e condomínios.',
+    'Controle de Pragas Urbanas em Londrina há mais de 40 anos. Dedetização, desratização, descupinização e mais — com garantia: baratas, ratos, cupins, escorpiões, morcegos, pombos. Atendimento residencial, comercial, industrial e condomínios.',
   shortDescription:
     'Dedetização em Londrina e todo o Paraná. Controle de pragas com garantia há mais de 40 anos.',
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://www.ddtaraujo.com.br',

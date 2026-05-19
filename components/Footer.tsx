@@ -57,7 +57,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-12 border-t border-brand-800 pt-6 text-center text-xs text-ink-500">
-          © {new Date().getFullYear()} {siteConfig.fullName} — Todos os direitos reservados. Dedetizadora em Londrina.
+          © {new Date().getFullYear()} {siteConfig.fullName} — Todos os direitos reservados. Controle de Pragas Urbanas em Londrina.
         </div>
       </div>
     </footer>

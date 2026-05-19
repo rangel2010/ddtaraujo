@@ -83,7 +83,7 @@ export default function HomePage() {
           <div className="text-white animate-fade-up">
             <div className="inline-flex items-center gap-2 rounded-full bg-yellow-400/20 px-4 py-1.5 text-sm font-medium text-yellow-300 backdrop-blur">
               <span className="h-2 w-2 animate-pulse rounded-full bg-yellow-400" />
-              Dedetizadora em Londrina há mais de 40 anos
+              Controle de Pragas Urbanas em Londrina há mais de 40 anos
             </div>
             <h1 className="mt-6 text-4xl font-bold leading-tight font-display text-white sm:text-5xl lg:text-6xl">
               Sua casa ou empresa <span className="text-yellow-400">livre de pragas</span> — com garantia.
