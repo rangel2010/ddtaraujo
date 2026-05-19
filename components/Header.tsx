@@ -49,10 +49,10 @@ export default function Header() {
               <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7"/></svg>
             </button>
             {servicesOpen && (
-              <div className="absolute right-0 top-full mt-1 w-[640px] rounded-2xl border border-ink-200 bg-white p-6 shadow-xl">
-                <div className="grid grid-cols-2 gap-x-8 gap-y-6">
+              <div className="absolute right-0 top-full mt-1 w-[780px] rounded-2xl border border-ink-200 bg-white p-6 shadow-xl">
+                <div className="columns-3 gap-x-8">
                   {Object.entries(groupedServices).map(([cat, items]) => (
-                    <div key={cat}>
+                    <div key={cat} className="break-inside-avoid mb-5">
                       <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-brand-700">{categoryLabels[cat as keyof typeof categoryLabels]}</div>
                       <ul className="space-y-1">
                         {items.map((s) => (

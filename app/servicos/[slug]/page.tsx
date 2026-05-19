@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { services, servicesBySlug } from '@/lib/services';
+import { richContent } from '@/lib/services-extended';
 import { siteConfig, whatsappLink, phoneLink } from '@/lib/site-config';
 import FAQ from '@/components/FAQ';
 import CTASection from '@/components/CTASection';
@@ -149,6 +150,50 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
         </div>
       </section>
 
+      {/* Conteúdo expandido (apenas para serviços com richContent) */}
+      {richContent[service.slug] && (
+        <section className="pb-16 md:pb-24">
+          <div className="container max-w-4xl">
+            <div className="space-y-12">
+              {richContent[service.slug].map((sec, idx) => (
+                <div key={idx}>
+                  <h2 className="font-display text-2xl md:text-3xl font-bold text-ink-900">{sec.title}</h2>
+                  {sec.paragraphs && (
+                    <div className="mt-4 space-y-3 text-ink-700 leading-relaxed">
+                      {sec.paragraphs.map((p, i) => <p key={i}>{p}</p>)}
+                    </div>
+                  )}
+                  {sec.list && (
+                    sec.list.ordered ? (
+                      <ol className="mt-4 space-y-2 list-decimal list-inside text-ink-700">
+                        {sec.list.items.map((item, i) => <li key={i}>{item}</li>)}
+                      </ol>
+                    ) : (
+                      <ul className="mt-4 space-y-2">
+                        {sec.list.items.map((item, i) => (
+                          <li key={i} className="flex items-start gap-3 text-ink-700">
+                            <svg className="mt-1 h-5 w-5 flex-shrink-0 text-accent-500" fill="currentColor" viewBox="0 0 20 20">
+                              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                            </svg>
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )
+                  )}
+                  {sec.closingParagraphs && (
+                    <div className="mt-4 space-y-3 text-ink-700 leading-relaxed">
+                      {sec.closingParagraphs.map((p, i) => <p key={i}>{p}</p>)}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+
       {/* Process */}
       <section className="section bg-ink-50">
         <div className="container">
@@ -180,27 +225,17 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
             <h2 className="section-title mt-2">Talvez você também precise</h2>
           </div>
           <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-            {services
-              .filter((s) => s.slug !== service.slug)
-              .slice(0, 4)
-              .map((s) => (
-                <Link key={s.slug} href={`/servicos/${s.slug}`} className="card group">
-                  <h3 className="font-display text-base font-bold text-ink-900 group-hover:text-brand-700">
-                    {s.shortTitle}
-                  </h3>
-                  <div className="mt-3 text-sm font-semibold text-brand-700">
-                    Saiba mais →
-                  </div>
-                </Link>
-              ))}
+            {services.filter((s) => s.slug !== service.slug).slice(0, 4).map((s) => (
+              <Link key={s.slug} href={`/servicos/${s.slug}`} className="card group">
+                <h3 className="font-display text-base font-bold text-ink-900 group-hover:text-brand-700">{s.shortTitle}</h3>
+                <div className="mt-3 text-sm font-semibold text-brand-700">Saiba mais →</div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
 
-      <CTASection
-        title={`Solicite agora seu orçamento de ${service.shortTitle}`}
-        subtitle="Atendimento rápido pelo WhatsApp ou telefone. Orçamento sem compromisso."
-      />
+      <CTASection title={`Solicite agora seu orçamento de ${service.shortTitle}`} subtitle="Atendimento rápido pelo WhatsApp ou telefone. Orçamento sem compromisso." />
     </>
   );
 }

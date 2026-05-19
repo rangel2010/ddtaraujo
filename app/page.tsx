@@ -233,7 +233,7 @@ export default function HomePage() {
             {Object.entries(groupedAll).map(([cat, items]) => (
               <div key={cat} className="rounded-2xl border border-ink-200 bg-white p-6">
                 <h3 className="font-display text-xl font-bold text-ink-900">{categoryLabels[cat as keyof typeof categoryLabels]}</h3>
-                <ul className="mt-4 space-y-2">
+                <ul className={`mt-4 ${items.length > 4 ? 'grid grid-cols-2 gap-x-4 gap-y-2' : 'space-y-2'}`}>
                   {items.map((s) => (
                     <li key={s.slug}>
                       <Link href={`/servicos/${s.slug}`} className="group flex items-center justify-between text-sm text-ink-700 hover:text-brand-700">
@@ -311,6 +311,7 @@ function ServiceIcon({ name }: { name: string }) {
     bird: (<svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12c0 5 4 9 9 9s9-4 9-9-4-9-9-9c-2 0-4 .5-5.5 1.5M3 12l4-2m-4 2l4 2m-1-9l2 3m-2-3l-2 3"/></svg>),
     'alert-triangle': (<svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>),
     droplet: (<svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg>),
+    spray: (<svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2H7a2 2 0 00-2 2v2m12-4V5a2 2 0 00-2-2H9a2 2 0 00-2 2v2"/></svg>),
     building: (<svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>),
   };
   return icons[name] || icons.shield;
