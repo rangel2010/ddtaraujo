@@ -100,8 +100,8 @@ export default function SobrePage() {
               { name: 'NR-33', desc: 'Espaços Confinados' },
               { name: 'NR-35', desc: 'Trabalho em Altura' },
             ].map((c) => (
-              <div key={c.name} className="rounded-2xl border border-ink-200 bg-white p-4 text-center dark:border-ink-700 dark:bg-ink-700">
-                <div className="font-display text-xl font-bold text-brand-700 dark:text-brand-300">{c.name}</div>
+              <div key={c.name} className="rounded-2xl border border-ink-200 bg-ink-50 p-4 text-center dark:border-ink-600 dark:bg-ink-700">
+                <div className="font-display text-xl font-bold text-brand-700 dark:text-yellow-400">{c.name}</div>
                 <div className="mt-1 text-xs text-ink-600 dark:text-ink-300">{c.desc}</div>
               </div>
             ))}

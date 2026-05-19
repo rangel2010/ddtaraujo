@@ -59,7 +59,7 @@ export default function BlogPage() {
         <div className="container">
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {posts.map((p) => (
-              <article key={p.slug} className="group flex flex-col rounded-2xl border border-ink-200 bg-white overflow-hidden hover:border-brand-300 hover:shadow-md transition dark:border-ink-600 dark:bg-ink-700">
+              <article key={p.slug} className="group flex flex-col rounded-2xl border border-ink-200 bg-ink-50 overflow-hidden hover:border-brand-300 hover:shadow-md transition dark:border-ink-600 dark:bg-ink-700">
                 <div className="h-48 bg-gradient-to-br from-brand-600 to-brand-800 flex items-center justify-center">
                   <span className="text-white/30 font-display text-6xl font-bold">{p.category[0]}</span>
                 </div>
