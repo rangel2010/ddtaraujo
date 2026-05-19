@@ -81,12 +81,12 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
       {/* Breadcrumbs */}
       <nav className="border-b border-ink-100 bg-ink-50 dark:border-ink-600 dark:bg-ink-700 py-3 text-sm" aria-label="Breadcrumb">
         <div className="container">
-          <ol className="flex flex-wrap items-center gap-2 text-ink-600">
-            <li><Link href="/" className="hover:text-brand-700">Início</Link></li>
-            <li className="text-ink-400">/</li>
-            <li><Link href="/servicos" className="hover:text-brand-700">Serviços</Link></li>
-            <li className="text-ink-400">/</li>
-            <li className="text-ink-900 font-medium">{service.shortTitle}</li>
+          <ol className="flex flex-wrap items-center gap-2 text-ink-600 dark:text-ink-300">
+            <li><Link href="/" className="hover:text-brand-700 dark:hover:text-yellow-400">Início</Link></li>
+            <li className="text-ink-400 dark:text-ink-500">/</li>
+            <li><Link href="/servicos" className="hover:text-brand-700 dark:hover:text-yellow-400">Serviços</Link></li>
+            <li className="text-ink-400 dark:text-ink-500">/</li>
+            <li className="text-ink-900 font-medium dark:text-white">{service.shortTitle}</li>
           </ol>
         </div>
       </nav>

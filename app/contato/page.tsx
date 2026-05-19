@@ -35,7 +35,7 @@ export default function ContatoPage() {
               href={whatsappLink('Olá! Gostaria de solicitar um orçamento.')}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center gap-5 rounded-2xl border-2 border-[#25D366] bg-white p-6 transition hover:bg-[#25D366] hover:text-white"
+              className="group flex items-center gap-5 rounded-2xl border-2 border-[#25D366] bg-white p-6 transition hover:bg-[#25D366] hover:text-white dark:bg-ink-700"
             >
               <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-full bg-[#25D366] text-white group-hover:bg-white group-hover:text-[#25D366]">
                 <svg className="h-7 w-7" fill="currentColor" viewBox="0 0 24 24">
@@ -50,7 +50,7 @@ export default function ContatoPage() {
 
             <a
               href={phoneLink}
-              className="group flex items-center gap-5 rounded-2xl border-2 border-brand-600 bg-white p-6 transition hover:bg-brand-600 hover:text-white"
+              className="group flex items-center gap-5 rounded-2xl border-2 border-brand-600 bg-white p-6 transition hover:bg-brand-600 hover:text-white dark:bg-ink-700 dark:border-brand-500"
             >
               <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-full bg-brand-600 text-white group-hover:bg-white group-hover:text-brand-600">
                 <svg className="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -65,7 +65,7 @@ export default function ContatoPage() {
 
             <a
               href={`mailto:${siteConfig.email}`}
-              className="group flex items-center gap-5 rounded-2xl border-2 border-ink-300 bg-white p-6 transition hover:bg-ink-900 hover:text-white"
+              className="group flex items-center gap-5 rounded-2xl border-2 border-ink-300 bg-white p-6 transition hover:bg-ink-900 hover:text-white dark:bg-ink-700 dark:border-ink-600"
             >
               <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-full bg-ink-100 text-ink-700 group-hover:bg-white">
                 <svg className="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -101,7 +101,7 @@ export default function ContatoPage() {
           <div className="space-y-6">
             <div className="rounded-2xl bg-ink-50 p-6 dark:bg-ink-700">
               <div className="flex items-start gap-4">
-                <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-brand-100 text-brand-700 dark:bg-brand-900/30 dark:text-brand-300">
+                <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-yellow-100 text-yellow-700 dark:bg-yellow-400/15 dark:text-yellow-400">
                   <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -133,8 +133,9 @@ export default function ContatoPage() {
             </div>
 
             <div className="rounded-2xl bg-gradient-to-br from-brand-600 to-brand-700 p-6 text-white">
-              <h3 className="font-display text-lg font-bold">Onde atendemos</h3>
-              <p className="mt-2 text-brand-50">
+              {/* mantém branco em ambos os modos */}
+              <h3 className="font-display text-lg font-bold !text-white">Onde atendemos</h3>
+              <p className="mt-2 text-brand-50 !text-brand-50">
                 Sediados em Londrina, atendemos toda a região metropolitana e todo o estado do Paraná para contratos empresariais e condominiais.
               </p>
             </div>
