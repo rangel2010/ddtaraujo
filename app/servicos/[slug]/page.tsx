@@ -104,9 +104,9 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
             fill
             sizes="100vw"
             priority
-            className="object-cover opacity-25"
+            className="object-cover opacity-50"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-ink-900/90 via-ink-800/85 to-brand-900/90" />
+          <div className="absolute inset-0 bg-gradient-to-br from-ink-900/80 via-ink-900/70 to-brand-900/75" />
         </div>
         <div className="container relative grid gap-12 md:grid-cols-2 md:items-center">
           <div>
