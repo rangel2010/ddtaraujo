@@ -285,7 +285,7 @@ export default function HomePage() {
                   <div className="flex gap-0.5">{[1,2,3,4,5].map((i) => <Star key={i} />)}</div>
                   <GoogleIcon />
                 </div>
-                <p className="mt-4 flex-1 text-ink-700">&ldquo;{t.text}&rdquo;</p>
+                <p className="mt-4 flex-1 text-ink-700 dark:text-ink-200">&ldquo;{t.text}&rdquo;</p>
                 <div className="mt-4 border-t border-ink-100 pt-4 dark:border-ink-600">
                   <div className="font-semibold text-ink-900 dark:text-white">{t.name}</div>
                   <div className="text-sm text-ink-500 dark:text-ink-300">{t.role} · {t.date}</div>

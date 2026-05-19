@@ -68,7 +68,7 @@ export default function BlogPage() {
                     <span className="rounded-full bg-yellow-100 px-2.5 py-0.5 font-medium text-yellow-700 dark:bg-yellow-400/15 dark:text-yellow-400">{p.category}</span>
                     <span>{new Date(p.date).toLocaleDateString('pt-BR')}</span>
                   </div>
-                  <h2 className="mt-4 font-display text-xl font-bold text-ink-900 group-hover:text-brand-700">
+                  <h2 className="mt-4 font-display text-xl font-bold text-ink-900 dark:text-white group-hover:text-yellow-600 dark:group-hover:text-yellow-400">
                     {p.title}
                   </h2>
                   <p className="mt-2 flex-1 text-sm text-ink-600 dark:text-ink-300">{p.excerpt}</p>
