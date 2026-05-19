@@ -46,7 +46,8 @@ const reviews = [
   { name: 'Sarai Saias', role: 'Cliente', date: '2 meses atrás', text: 'Prestaram um excelente trabalho na minha empresa. Entrei em contato e fizeram o agendamento rápido, o serviço prestado e resultado foi ótimo!' },
 ];
 
-const GOOGLE_REVIEWS_URL = 'https://www.google.com/maps/place/ARAUJO+DEDETIZADORA+EM+LONDRINA,+CONTROLE+DE+PRAGAS/@-23.3023612,-51.1816474,17z/data=!4m8!3m7!1s0x94eb43362244fe61:0xba5a8a2e638cf0f0!8m2!3d-23.3023612!4d-51.1816474!9m1!1b1';
+// URL canônica do perfil no Google (CID-based) — mais estável que /place/ URLs
+const GOOGLE_REVIEWS_URL = 'https://www.google.com/maps?cid=13428197170801864944';
 const GOOGLE_WRITE_REVIEW_URL = GOOGLE_REVIEWS_URL;
 
 const WhatsAppIcon = () => (
