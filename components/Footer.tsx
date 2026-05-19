@@ -10,15 +10,11 @@ export default function Footer() {
     <footer className="bg-ink-900 text-ink-300">
       <div className="container py-16">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
-          {/* Brand */}
           <div>
-            <Image
-              src="/logo-white.png"
-              alt="Araújo Dedetizadora"
-              width={2460}
-              height={671}
-              className="h-12 w-auto"
-            />
+            <div className="flex items-center gap-4">
+              <Image src="/logo-white.png" alt="Araújo Dedetizadora" width={2460} height={671} className="h-12 w-auto" />
+              <Image src="/badge-40-anos.svg" alt="40 anos de tradição" width={200} height={200} className="h-14 w-14 flex-shrink-0 drop-shadow-md" />
+            </div>
             <p className="mt-4 text-sm leading-relaxed">
               Controle de pragas profissional em Londrina e todo o Paraná há mais de 40 anos. Credenciados ANVISA, IAP e SESA.
             </p>
