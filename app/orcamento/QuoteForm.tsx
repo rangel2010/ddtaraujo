@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import Link from 'next/link';
 import { services, categoryLabels } from '@/lib/services';
 import { whatsappLink, siteConfig } from '@/lib/site-config';
@@ -68,6 +68,12 @@ const SMART_PAIRINGS: Record<string, Pairing> = {
 
 const slugToService = Object.fromEntries(services.map((s) => [s.slug, s]));
 
+// Serviços que são contínuos por natureza (não fazem sentido como atendimento único)
+const SERVICOS_CONTINUOS = new Set([
+  'controle-de-pragas-em-londrina', // CIPV
+  'dac-divisao-de-atendimento-a-condominios', // DAC
+]);
+
 // ─── Componente principal ───────────────────────────────────────────────────
 
 export default function QuoteForm() {
@@ -85,6 +91,19 @@ export default function QuoteForm() {
       prev.includes(slug) ? prev.filter((s) => s !== slug) : [...prev, slug]
     );
   };
+
+  // Detecta se algum serviço contínuo (CIPV/DAC) está selecionado
+  const temServicoContinuo = useMemo(
+    () => servicosSelecionados.some((slug) => SERVICOS_CONTINUOS.has(slug)),
+    [servicosSelecionados]
+  );
+
+  // Auto-seta periodicidade pra "mensal" quando entra um serviço contínuo
+  useEffect(() => {
+    if (temServicoContinuo && periodicidade === 'unico') {
+      setPeriodicidade('mensal');
+    }
+  }, [temServicoContinuo, periodicidade]);
 
   // Categorias presentes na seleção atual
   const categoriasSelecionadas = useMemo(() => {
@@ -335,16 +354,24 @@ export default function QuoteForm() {
           </StepBlock>
 
           {/* ── Passo 5: Periodicidade ────────────────────────────── */}
-          <StepBlock number={5} title="Tipo de atendimento">
+          <StepBlock
+            number={5}
+            title="Tipo de atendimento"
+            subtitle={temServicoContinuo ? 'CIPV e DAC são programas contínuos — selecione mensal ou trimestral.' : undefined}
+          >
             <div className="grid gap-3 sm:grid-cols-3">
-              {PERIODICIDADES.map((p) => (
-                <OptionCard
-                  key={p.value}
-                  selected={periodicidade === p.value}
-                  onClick={() => setPeriodicidade(p.value)}
-                  label={p.label}
-                />
-              ))}
+              {PERIODICIDADES.map((p) => {
+                const disabled = p.value === 'unico' && temServicoContinuo;
+                return (
+                  <OptionCard
+                    key={p.value}
+                    selected={periodicidade === p.value}
+                    onClick={() => !disabled && setPeriodicidade(p.value)}
+                    label={p.label}
+                    disabled={disabled}
+                  />
+                );
+              })}
             </div>
           </StepBlock>
 
@@ -463,22 +490,29 @@ function OptionCard({
   label,
   sub,
   emoji,
+  disabled,
 }: {
   selected: boolean;
   onClick: () => void;
   label: string;
   sub?: string;
   emoji?: string;
+  disabled?: boolean;
 }) {
+  let className = 'rounded-2xl border-2 p-4 text-left transition ';
+  if (disabled) {
+    className += 'cursor-not-allowed border-ink-200 bg-ink-100 opacity-50 dark:border-ink-600 dark:bg-ink-800';
+  } else if (selected) {
+    className += 'border-brand-600 bg-yellow-50 dark:border-yellow-400 dark:bg-yellow-400/10';
+  } else {
+    className += 'border-ink-200 bg-white hover:border-brand-300 dark:border-ink-600 dark:bg-ink-700 dark:hover:border-yellow-500';
+  }
   return (
     <button
       type="button"
       onClick={onClick}
-      className={
-        selected
-          ? 'rounded-2xl border-2 border-brand-600 bg-yellow-50 p-4 text-left transition dark:border-yellow-400 dark:bg-yellow-400/10'
-          : 'rounded-2xl border-2 border-ink-200 bg-white p-4 text-left transition hover:border-brand-300 dark:border-ink-600 dark:bg-ink-700 dark:hover:border-yellow-500'
-      }
+      disabled={disabled}
+      className={className}
     >
       {emoji && <div className="mb-1 text-2xl">{emoji}</div>}
       <div className="font-display text-base font-bold text-ink-900 dark:text-white">
@@ -486,6 +520,11 @@ function OptionCard({
       </div>
       {sub && (
         <div className="mt-1 text-xs text-ink-600 dark:text-ink-300">{sub}</div>
+      )}
+      {disabled && (
+        <div className="mt-1 text-xs italic text-ink-500 dark:text-ink-400">
+          Não disponível para programa contínuo
+        </div>
       )}
     </button>
   );
@@ -547,10 +586,10 @@ function PitchBanner({ level }: { level: 1 | 2 | 3 }) {
           <span className="text-2xl">🎯</span>
           <div>
             <div className="font-display text-base font-bold text-ink-900 dark:text-white">
-              Boa combinação! Combo da mesma família
+              Combo perfeito! Mesma família, mesmo protocolo
             </div>
             <p className="mt-1 text-sm text-ink-700 dark:text-ink-200">
-              Como são da mesma categoria, é o mesmo tipo de aplicação. Combos assim rendem desconto especial — o protocolo é integrado.
+              Como são da mesma categoria, a aplicação é integrada — mesmo equipamento, mesma equipe. Desconto progressivo a cada serviço adicional.
             </p>
           </div>
         </div>
@@ -563,10 +602,10 @@ function PitchBanner({ level }: { level: 1 | 2 | 3 }) {
         <span className="text-2xl">✨</span>
         <div>
           <div className="font-display text-base font-bold text-ink-900 dark:text-white">
-            Pacote completo! Mesma visita, várias soluções
+            Pacote completo! Várias áreas, uma visita só
           </div>
           <p className="mt-1 text-sm text-ink-700 dark:text-ink-200">
-            Cobertura ampla com condições especiais. Pra esse perfil, nossa equipe propõe o melhor combinado no orçamento.
+            Cobertura ampla com desconto progressivo nos extras. A equipe resolve tudo na mesma viagem — economia de tempo e de custo.
           </p>
         </div>
       </div>
