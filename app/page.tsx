@@ -107,27 +107,55 @@ export default function HomePage() {
           </div>
 
           <div className="relative hidden md:block animate-fade-in">
-            <div className="relative rounded-3xl bg-gradient-to-br from-white/10 to-white/5 p-8 backdrop-blur-sm border border-white/10">
-              <div className="grid grid-cols-2 gap-6">
-                {stats.map((s) => (
-                  <div key={s.label} className="text-center">
-                    <div className="text-4xl font-bold text-accent-400 font-display">{s.value}</div>
-                    <div className="mt-1 text-sm text-ink-300">{s.label}</div>
-                  </div>
-                ))}
+            <div className="relative aspect-[4/5] overflow-hidden rounded-3xl shadow-2xl ring-1 ring-white/10">
+              <img
+                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&h=1100&q=80"
+                alt="Casa moderna protegida pela Araújo Dedetizadora"
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink-900/70 via-ink-900/10 to-ink-900/20" />
+              <img src="/badge-40-anos.svg" alt="40 anos de tradição" className="absolute top-6 left-6 h-24 w-24 drop-shadow-2xl" />
+              <div className="absolute top-6 right-6 flex items-center gap-2 rounded-full bg-white/95 px-3 py-1.5 shadow-lg backdrop-blur">
+                <GoogleIcon />
+                <span className="font-bold text-ink-900">4,8</span>
+                <div className="flex gap-0.5">{[1,2,3,4,5].map((i) => <Star key={i} />)}</div>
               </div>
-              <div className="mt-8 rounded-2xl bg-white/10 p-6 border border-white/10">
+              <div className="absolute bottom-6 left-6 right-6 rounded-2xl bg-white/95 p-4 shadow-lg backdrop-blur">
                 <div className="flex items-center gap-3">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-accent-500">
-                    <svg className="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                  <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-brand-100">
+                    <svg className="h-5 w-5 text-brand-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
                   </div>
                   <div>
-                    <div className="font-semibold text-white">Atendimento rápido</div>
-                    <div className="text-sm text-ink-300">Orçamento em até 1 hora útil</div>
+                    <div className="text-sm font-bold text-ink-900">Credenciados ANVISA</div>
+                    <div className="text-xs text-ink-600">Empresa registrada e fiscalizada</div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* STATS STRIP */}
+      <section className="border-b border-ink-200 bg-white py-8">
+        <div className="container">
+          <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
+            {[
+              { value: '40+', label: 'Anos de experiência', svg: 'M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z' },
+              { value: '15.000+', label: 'Clientes atendidos', svg: 'M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z' },
+              { value: '4,8★', label: 'Avaliação no Google', svg: 'M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z' },
+              { value: '24h', label: 'Atendimento WhatsApp', svg: 'M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z' },
+            ].map((s) => (
+              <div key={s.label} className="flex items-center gap-4">
+                <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-accent-100 text-accent-700">
+                  <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={s.svg}/></svg>
+                </div>
+                <div>
+                  <div className="font-display text-2xl font-bold text-ink-900">{s.value}</div>
+                  <div className="text-xs text-ink-500">{s.label}</div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
