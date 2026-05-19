@@ -107,55 +107,80 @@ export default function HomePage() {
           </div>
 
           <div className="relative hidden md:block animate-fade-in">
-            <div className="relative aspect-[4/5] overflow-hidden rounded-3xl shadow-2xl ring-1 ring-white/10">
-              <img
-                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&h=1100&q=80"
-                alt="Casa moderna protegida pela Araújo Dedetizadora"
-                className="absolute inset-0 h-full w-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink-900/70 via-ink-900/10 to-ink-900/20" />
-              <img src="/badge-40-anos.svg" alt="40 anos de tradição" className="absolute top-6 left-6 h-24 w-24 drop-shadow-2xl" />
-              <div className="absolute top-6 right-6 flex items-center gap-2 rounded-full bg-white/95 px-3 py-1.5 shadow-lg backdrop-blur">
-                <GoogleIcon />
-                <span className="font-bold text-ink-900">4,8</span>
-                <div className="flex gap-0.5">{[1,2,3,4,5].map((i) => <Star key={i} />)}</div>
-              </div>
-              <div className="absolute bottom-6 left-6 right-6 rounded-2xl bg-white/95 p-4 shadow-lg backdrop-blur">
+            <div className="relative rounded-3xl bg-gradient-to-br from-white/10 to-white/5 p-6 backdrop-blur-sm border border-white/10 shadow-2xl">
+              {/* Card Avaliação Google */}
+              <div className="rounded-2xl bg-white p-5 shadow-lg">
                 <div className="flex items-center gap-3">
-                  <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-brand-100">
-                    <svg className="h-5 w-5 text-brand-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-ink-50">
+                    <GoogleIcon />
                   </div>
-                  <div>
-                    <div className="text-sm font-bold text-ink-900">Credenciados ANVISA</div>
-                    <div className="text-xs text-ink-600">Empresa registrada e fiscalizada</div>
+                  <div className="flex-1">
+                    <div className="text-[10px] uppercase tracking-wider text-ink-500 font-bold">Avaliação verificada</div>
+                    <div className="flex items-baseline gap-2 mt-0.5">
+                      <span className="font-display text-3xl font-bold text-ink-900 leading-none">4,8</span>
+                      <div className="flex gap-0.5">{[1,2,3,4,5].map((i) => <Star key={i} />)}</div>
+                    </div>
                   </div>
                 </div>
+                <div className="mt-3 flex items-center justify-between border-t border-ink-100 pt-3">
+                  <span className="text-sm text-ink-600"><strong className="text-ink-900">97 avaliações</strong> reais de clientes</span>
+                  <a href={GOOGLE_REVIEWS_URL} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-brand-700 hover:text-brand-800">Ver →</a>
+                </div>
+              </div>
+
+              {/* Ilustração: casa com escudo */}
+              <div className="relative my-4 flex h-44 items-center justify-center">
+                <svg viewBox="0 0 240 200" className="h-full w-auto">
+                  <defs>
+                    <radialGradient id="houseGlow" cx="50%" cy="60%" r="50%">
+                      <stop offset="0%" stopColor="#5ab031" stopOpacity="0.35"/>
+                      <stop offset="100%" stopColor="#5ab031" stopOpacity="0"/>
+                    </radialGradient>
+                  </defs>
+                  <circle cx="120" cy="115" r="85" fill="url(#houseGlow)"/>
+                  {/* Casa */}
+                  <g>
+                    <path d="M60 105 L120 60 L180 105 L172 105 L120 67 L68 105 Z" fill="#cbd5e1"/>
+                    <rect x="72" y="105" width="96" height="70" fill="#f8fafc" stroke="#94a3b8" strokeWidth="1.5"/>
+                    <rect x="108" y="130" width="24" height="45" fill="#203a72" rx="2"/>
+                    <circle cx="126" cy="153" r="1.5" fill="#fbbf24"/>
+                    <rect x="82" y="118" width="18" height="16" fill="#bcea9d" opacity="0.6" stroke="#5ab031" strokeWidth="1.5"/>
+                    <line x1="91" y1="118" x2="91" y2="134" stroke="#5ab031" strokeWidth="1"/>
+                    <line x1="82" y1="126" x2="100" y2="126" stroke="#5ab031" strokeWidth="1"/>
+                    <rect x="140" y="118" width="18" height="16" fill="#bcea9d" opacity="0.6" stroke="#5ab031" strokeWidth="1.5"/>
+                    <line x1="149" y1="118" x2="149" y2="134" stroke="#5ab031" strokeWidth="1"/>
+                    <line x1="140" y1="126" x2="158" y2="126" stroke="#5ab031" strokeWidth="1"/>
+                  </g>
+                  {/* Escudo flutuante */}
+                  <g transform="translate(100, -5)">
+                    <path d="M20 12 Q20 5 27 5 L33 5 Q40 5 40 12 L40 35 Q40 52 30 62 Q20 52 20 35 Z" fill="#5ab031" stroke="#fff" strokeWidth="2.5"/>
+                    <path d="M24 33 L29 39 L36 27" stroke="#fff" strokeWidth="3.5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+                  </g>
+                  {/* Sparkles decorativos */}
+                  <circle cx="40" cy="40" r="3" fill="#5ab031" opacity="0.6"/>
+                  <circle cx="200" cy="50" r="2.5" fill="#fbbf24" opacity="0.7"/>
+                  <circle cx="200" cy="160" r="3" fill="#5ab031" opacity="0.5"/>
+                  <circle cx="40" cy="170" r="2.5" fill="#5d7ecd" opacity="0.6"/>
+                  <path d="M35 90 l3 -3 l3 3 l-3 3 z" fill="#fbbf24" opacity="0.7"/>
+                  <path d="M205 100 l3 -3 l3 3 l-3 3 z" fill="#5ab031" opacity="0.5"/>
+                </svg>
+              </div>
+
+              {/* Selos embaixo */}
+              <div className="grid grid-cols-2 gap-2">
+                {[
+                  '40 anos de mercado',
+                  'Credenciados ANVISA',
+                  'Garantia escrita',
+                  'Atendimento 24h',
+                ].map((label) => (
+                  <div key={label} className="flex items-center gap-2 rounded-xl bg-white/10 px-3 py-2 backdrop-blur">
+                    <Check cls="h-4 w-4 flex-shrink-0 text-accent-400"/>
+                    <span className="text-xs font-medium text-white">{label}</span>
+                  </div>
+                ))}
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* STATS STRIP */}
-      <section className="border-b border-ink-200 bg-white py-8">
-        <div className="container">
-          <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
-            {[
-              { value: '40+', label: 'Anos de experiência', svg: 'M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z' },
-              { value: '15.000+', label: 'Clientes atendidos', svg: 'M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z' },
-              { value: '4,8★', label: 'Avaliação no Google', svg: 'M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z' },
-              { value: '24h', label: 'Atendimento WhatsApp', svg: 'M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z' },
-            ].map((s) => (
-              <div key={s.label} className="flex items-center gap-4">
-                <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-accent-100 text-accent-700">
-                  <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={s.svg}/></svg>
-                </div>
-                <div>
-                  <div className="font-display text-2xl font-bold text-ink-900">{s.value}</div>
-                  <div className="text-xs text-ink-500">{s.label}</div>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </section>
