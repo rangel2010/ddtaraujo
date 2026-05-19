@@ -161,7 +161,7 @@ export default function HomePage() {
               { label: 'CRQ', sub: 'Resp. Técnico' },
             ].map((c) => (
               <div key={c.label} className="text-center">
-                <div className="text-xl font-bold text-ink-900 font-display">{c.label}</div>
+                <div className="text-xl font-bold text-ink-900 dark:text-white font-display">{c.label}</div>
                 <div className="text-xs uppercase tracking-wider text-ink-500 dark:text-ink-300">{c.sub}</div>
               </div>
             ))}
@@ -184,8 +184,8 @@ export default function HomePage() {
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100 text-brand-700 transition group-hover:bg-brand-600 group-hover:text-white dark:bg-brand-900/30 dark:text-brand-300">
                   <ServiceIcon name={s.icon} />
                 </div>
-                <h3 className="mt-4 text-lg font-bold text-ink-900">{s.shortTitle}</h3>
-                <p className="mt-2 flex-1 text-sm text-ink-600">{s.hero.subheadline}</p>
+                <h3 className="mt-4 text-lg font-bold text-ink-900 dark:text-white">{s.shortTitle}</h3>
+                <p className="mt-2 flex-1 text-sm text-ink-600 dark:text-ink-300">{s.hero.subheadline}</p>
                 <div className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand-700">
                   Saiba mais
                   <svg className="h-4 w-4 transition group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
@@ -232,7 +232,7 @@ export default function HomePage() {
                 <div className="text-3xl font-bold text-brand-600 font-display">{step.num}</div>
                 <div>
                   <div className="font-semibold text-ink-900 dark:text-white">{step.title}</div>
-                  <div className="text-sm text-ink-600">{step.desc}</div>
+                  <div className="text-sm text-ink-600 dark:text-ink-300">{step.desc}</div>
                 </div>
               </div>
             ))}
@@ -292,11 +292,11 @@ export default function HomePage() {
                 </div>
               </div>
             ))}
-            <a href={GOOGLE_WRITE_REVIEW_URL} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center rounded-2xl border-2 border-dashed border-brand-300 bg-brand-50 p-6 text-center transition hover:border-brand-600 hover:bg-brand-100">
+            <a href={GOOGLE_WRITE_REVIEW_URL} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center rounded-2xl border-2 border-dashed border-brand-300 bg-brand-50 p-6 text-center transition hover:border-brand-600 hover:bg-brand-100 dark:border-brand-700 dark:bg-brand-900/20 dark:hover:bg-brand-900/40 dark:hover:border-brand-500">
               <div className="flex h-14 w-14 items-center justify-center rounded-full bg-white shadow-sm"><GoogleIcon /></div>
-              <h3 className="mt-4 font-display text-lg font-bold text-brand-800">Você é nosso cliente?</h3>
+              <h3 className="mt-4 font-display text-lg font-bold text-brand-800 dark:text-brand-200">Você é nosso cliente?</h3>
               <p className="mt-2 text-sm text-ink-700 dark:text-ink-300">Conta sua experiência no Google e ajude outras pessoas a encontrarem um serviço de qualidade.</p>
-              <div className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand-700">
+              <div className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand-700 dark:text-brand-300">
                 Deixar avaliação
                 <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
               </div>

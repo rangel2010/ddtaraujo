@@ -56,7 +56,7 @@ export default function ServicosPage() {
                       href={`/servicos/${s.slug}`}
                       className="card group"
                     >
-                      <h3 className="font-display text-lg font-bold text-ink-900 group-hover:text-brand-700">
+                      <h3 className="font-display text-lg font-bold text-ink-900 group-hover:text-brand-700 dark:text-white dark:group-hover:text-brand-300">
                         {s.title}
                       </h3>
                       <p className="mt-2 text-sm text-ink-600 dark:text-ink-300">

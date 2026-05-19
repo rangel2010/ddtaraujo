@@ -34,7 +34,7 @@ export default function SobrePage() {
           <div>
             <div className="eyebrow">Nossa Missão</div>
             <h2 className="section-title mt-2">Proteger pessoas e ambientes com responsabilidade</h2>
-            <div className="mt-6 space-y-4 text-ink-700 text-lg leading-relaxed">
+            <div className="mt-6 space-y-4 text-ink-700 dark:text-ink-300 text-lg leading-relaxed">
               <p>Somos referência no controle de pragas em Londrina e em todo o estado do Paraná. Buscamos cada vez mais inovar e aperfeiçoar nossos equipamentos e técnicas de aplicação.</p>
               <p>A Araújo vai além do controle de pragas: protegemos você hoje e desenvolvemos novas soluções para a manutenção da sua proteção amanhã. Cada serviço é executado com responsabilidade técnica, ambiental e social.</p>
               <p>Somos uma empresa especializada no controle profissional de pragas há mais de 40 anos, com técnicos qualificados e comprometidos. Somos credenciados nos principais órgãos vigentes — ANVISA, IAP, SESA — atuando em conformidade com a Resolução nº 1153/2024 da SESA e nº 622/2022 da ANVISA. Todos os produtos utilizados são devidamente registrados junto ao Ministério da Saúde.</p>
@@ -43,17 +43,17 @@ export default function SobrePage() {
           <div className="grid gap-6">
             <div className="rounded-2xl bg-brand-50 p-8 border border-brand-100 dark:bg-brand-900/20 dark:border-brand-800">
               <div className="font-display text-5xl font-bold text-brand-700">+40</div>
-              <div className="mt-2 text-lg font-semibold text-ink-900">anos de experiência</div>
+              <div className="mt-2 text-lg font-semibold text-ink-900 dark:text-white">anos de experiência</div>
               <p className="mt-2 text-sm text-ink-700 dark:text-ink-300">Acumulando conhecimento técnico desde {siteConfig.business.foundedYear} no combate às pragas urbanas mais resistentes.</p>
             </div>
             <div className="rounded-2xl bg-white border border-ink-200 p-8 dark:bg-ink-800 dark:border-ink-700">
               <div className="font-display text-5xl font-bold text-brand-700">+15k</div>
-              <div className="mt-2 text-lg font-semibold text-ink-900">clientes atendidos</div>
+              <div className="mt-2 text-lg font-semibold text-ink-900 dark:text-white">clientes atendidos</div>
               <p className="mt-2 text-sm text-ink-700 dark:text-ink-300">Residências, comércios, indústrias e condomínios em Londrina e todo o Paraná.</p>
             </div>
             <div className="rounded-2xl bg-white border border-ink-200 p-8 dark:bg-ink-800 dark:border-ink-700">
               <div className="font-display text-5xl font-bold text-brand-700">100%</div>
-              <div className="mt-2 text-lg font-semibold text-ink-900">credenciados</div>
+              <div className="mt-2 text-lg font-semibold text-ink-900 dark:text-white">credenciados</div>
               <p className="mt-2 text-sm text-ink-700 dark:text-ink-300">ANVISA, IAP, SESA e responsabilidade técnica de profissional habilitado (CRQ).</p>
             </div>
           </div>
@@ -101,7 +101,7 @@ export default function SobrePage() {
               { name: 'NR-35', desc: 'Trabalho em Altura' },
             ].map((c) => (
               <div key={c.name} className="rounded-2xl border border-ink-200 bg-white p-4 text-center dark:border-ink-800 dark:bg-ink-800">
-                <div className="font-display text-xl font-bold text-brand-700">{c.name}</div>
+                <div className="font-display text-xl font-bold text-brand-700 dark:text-brand-300">{c.name}</div>
                 <div className="mt-1 text-xs text-ink-600 dark:text-ink-300">{c.desc}</div>
               </div>
             ))}
