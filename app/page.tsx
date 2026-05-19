@@ -229,7 +229,7 @@ export default function HomePage() {
               { num: '04', title: 'Garantia e acompanhamento', desc: 'Você recebe certificado e suporte pós-serviço.' },
             ].map((step) => (
               <div key={step.num} className="flex gap-4 rounded-2xl border border-ink-200 bg-white p-5 dark:border-ink-800 dark:bg-ink-800">
-                <div className="text-3xl font-bold text-yellow-500 font-display">{step.num}</div>
+                <div className="text-3xl font-bold text-accent-500 font-display">{step.num}</div>
                 <div>
                   <div className="font-semibold text-ink-900 dark:text-white">{step.title}</div>
                   <div className="text-sm text-ink-600 dark:text-ink-300">{step.desc}</div>

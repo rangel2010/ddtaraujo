@@ -204,7 +204,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {service.process.map((step, i) => (
               <div key={i} className="relative rounded-2xl border border-ink-200 bg-white p-6 dark:border-ink-800 dark:bg-ink-800">
-                <div className="absolute -top-4 left-6 flex h-10 w-10 items-center justify-center rounded-full bg-brand-600 font-display text-lg font-bold text-white">
+                <div className="absolute -top-4 left-6 flex h-10 w-10 items-center justify-center rounded-full bg-accent-500 font-display text-lg font-bold text-white">
                   {i + 1}
                 </div>
                 <h3 className="mt-4 font-display text-lg font-bold text-ink-900 dark:text-white">{step.title}</h3>
