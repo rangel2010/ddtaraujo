@@ -43,7 +43,7 @@
   }
 
   .section-subtitle {
-    @apply mt-4 text-lg text-ink-600 max-w-2xl;
+    @apply mt-4 text-lg text-ink-600 max-w-2xl dark:text-ink-300;
   }
 
   .eyebrow {

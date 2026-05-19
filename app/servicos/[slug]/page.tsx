@@ -145,7 +145,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
       <section className="section">
         <div className="container max-w-4xl">
           <div className="prose prose-lg max-w-none">
-            <p className="text-lg leading-relaxed text-ink-700">{service.intro}</p>
+            <p className="text-lg leading-relaxed text-ink-700 dark:text-ink-200">{service.intro}</p>
           </div>
         </div>
       </section>
@@ -157,21 +157,21 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
             <div className="space-y-12">
               {richContent[service.slug].map((sec, idx) => (
                 <div key={idx}>
-                  <h2 className="font-display text-2xl md:text-3xl font-bold text-ink-900">{sec.title}</h2>
+                  <h2 className="font-display text-2xl md:text-3xl font-bold text-ink-900 dark:text-white">{sec.title}</h2>
                   {sec.paragraphs && (
-                    <div className="mt-4 space-y-3 text-ink-700 leading-relaxed">
+                    <div className="mt-4 space-y-3 text-ink-700 dark:text-ink-200 leading-relaxed">
                       {sec.paragraphs.map((p, i) => <p key={i}>{p}</p>)}
                     </div>
                   )}
                   {sec.list && (
                     sec.list.ordered ? (
-                      <ol className="mt-4 space-y-2 list-decimal list-inside text-ink-700">
+                      <ol className="mt-4 space-y-2 list-decimal list-inside text-ink-700 dark:text-ink-200">
                         {sec.list.items.map((item, i) => <li key={i}>{item}</li>)}
                       </ol>
                     ) : (
                       <ul className="mt-4 space-y-2">
                         {sec.list.items.map((item, i) => (
-                          <li key={i} className="flex items-start gap-3 text-ink-700">
+                          <li key={i} className="flex items-start gap-3 text-ink-700 dark:text-ink-200">
                             <svg className="mt-1 h-5 w-5 flex-shrink-0 text-accent-500" fill="currentColor" viewBox="0 0 20 20">
                               <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                             </svg>
@@ -182,7 +182,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
                     )
                   )}
                   {sec.closingParagraphs && (
-                    <div className="mt-4 space-y-3 text-ink-700 leading-relaxed">
+                    <div className="mt-4 space-y-3 text-ink-700 dark:text-ink-200 leading-relaxed">
                       {sec.closingParagraphs.map((p, i) => <p key={i}>{p}</p>)}
                     </div>
                   )}
