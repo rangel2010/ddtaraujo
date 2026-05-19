@@ -162,7 +162,7 @@ export default function QuoteForm() {
 
     if (servicosSelecionados.length === 1) {
       const s = slugToService[servicosSelecionados[0]];
-      linhas.push(`🐛 Serviço: ${s.shortTitle}`);
+      if (s) linhas.push(`🐛 Serviço: ${s.shortTitle}`);
     } else if (servicosSelecionados.length > 1) {
       linhas.push('🐛 Serviços:');
       servicosSelecionados.forEach((slug) => {
@@ -281,7 +281,7 @@ export default function QuoteForm() {
           </StepBlock>
 
           {/* ── Pitch dinâmico ────────────────────────────────────── */}
-          {pitchLevel > 0 && <PitchBanner level={pitchLevel} />}
+          {pitchLevel > 0 && <PitchBanner level={pitchLevel as 1 | 2 | 3} />}
 
           {/* ── Sugestões inteligentes ────────────────────────────── */}
           {sugestoes.length > 0 && (
