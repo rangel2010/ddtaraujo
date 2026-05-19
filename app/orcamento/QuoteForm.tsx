@@ -530,10 +530,10 @@ function PitchBanner({ level }: { level: 1 | 2 | 3 }) {
           <span className="text-2xl">💡</span>
           <div>
             <div className="font-display text-base font-bold text-ink-900 dark:text-white">
-              Sabia? Adicionando mais serviços, descontos de até 40%
+              Aproveite que a equipe já vai até você!
             </div>
             <p className="mt-1 text-sm text-ink-700 dark:text-ink-200">
-              A mesma equipe vai até você — vale aproveitar a visita pra resolver tudo de uma vez.
+              Adicione mais serviços com até 40% de desconto nos serviços adicionais — resolva tudo na mesma visita.
             </p>
           </div>
         </div>
