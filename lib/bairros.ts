@@ -32,7 +32,7 @@ export const bairros: Bairro[] = [
       { slug: 'desratizacao', reason: 'Ratos atraídos por lixo comercial — porta-iscas lacrados em áreas externas' },
       { slug: 'sanitizacao-de-ambientes-londrina', reason: 'Higienização periódica para estabelecimentos com público' },
     ],
-    nearbyAreas: ['vila-casoni', 'inglaterra', 'jardim-quebec'],
+    nearbyAreas: ['vila-casoni', 'igapo', 'jardim-quebec'],
     metaTitle: 'Dedetização no Centro de Londrina | Araújo (40 anos)',
     metaDescription:
       'Controle de pragas no Centro de Londrina para restaurantes, padarias e lojas. CIPV conforme RDC 622/22 da ANVISA. Atendimento fora do horário comercial.',
@@ -137,7 +137,7 @@ export const bairros: Bairro[] = [
       { slug: 'dedetizacao-de-formigas', reason: 'Formigas em construções antigas com paredes vazadas' },
       { slug: 'desratizacao', reason: 'Ratos em forros e estruturas com madeira velha' },
     ],
-    nearbyAreas: ['centro', 'inglaterra', 'jardim-quebec'],
+    nearbyAreas: ['centro', 'igapo', 'jardim-quebec'],
     metaTitle: 'Descupinização na Vila Casoni — Casas de Madeira | Araújo',
     metaDescription:
       'Descupinização e controle de pragas na Vila Casoni em Londrina. Especialistas em casas de madeira — proteção contra cupim subterrâneo e madeira seca.',
@@ -200,21 +200,21 @@ export const bairros: Bairro[] = [
       { slug: 'dedetizacao-de-formigas', reason: 'Formigas vêm dos jardins — gel iscas eliminam a colônia toda' },
       { slug: 'dedetizacao-de-carrapatos', reason: 'Famílias com pets e jardins amplos = controle de carrapatos' },
     ],
-    nearbyAreas: ['vila-casoni', 'centro', 'inglaterra'],
+    nearbyAreas: ['vila-casoni', 'centro', 'igapo'],
     metaTitle: 'Dedetização no Jardim Quebec — Famílias | Araújo Londrina',
     metaDescription:
       'Controle de pragas no Jardim Quebec em Londrina. Dedetização residencial com produtos seguros para crianças e pets. Atendimento emergencial 24h.',
   },
   {
-    slug: 'inglaterra',
-    name: 'Bairro Inglaterra',
-    fullName: 'Bairro Inglaterra — Londrina',
+    slug: 'igapo',
+    name: 'Igapó',
+    fullName: 'Igapó — Londrina',
     zone: 'central',
     profile: 'Próximo ao Lago Igapó — vida noturna e umidade',
     intro:
-      'O Bairro Inglaterra fica em uma das regiões mais bonitas de Londrina, próximo ao Lago Igapó e ao Parque Municipal Arthur Thomas. Tem perfil misto residencial + estabelecimentos de vida noturna (bares, restaurantes, lanchonetes). A proximidade do lago traz uma realidade peculiar: umidade ambiente elevada, e com isso uma população alta de mosquitos (Culex e, em alguns períodos, Aedes), além de moscas em quantidade superior aos outros bairros. Estabelecimentos com cozinha e atendimento ao público sofrem mais com isso.',
+      'O bairro Igapó (também conhecido como Jardim Igapó) fica em uma das regiões mais bonitas de Londrina, cortado pela Avenida Inglaterra e próximo ao Lago Igapó e ao Parque Municipal Arthur Thomas. Tem perfil misto residencial + estabelecimentos de vida noturna (bares, restaurantes, lanchonetes). A proximidade do lago traz uma realidade peculiar: umidade ambiente elevada, e com isso uma população alta de mosquitos (Culex e, em alguns períodos, Aedes), além de moscas em quantidade superior aos outros bairros. Estabelecimentos com cozinha e atendimento ao público sofrem mais com isso.',
     body:
-      'A Araújo atende o Bairro Inglaterra com soluções específicas para a realidade local: controle de mosquitos com larvicidas em ralos e caixas de gordura, instalação de armadilhas luminosas em estabelecimentos comerciais, programa CIPV para restaurantes e bares com fiscalização frequente da vigilância sanitária. Para residências, oferecemos dedetização periódica com foco em controle de insetos voadores e atendimento fora do horário comercial nos estabelecimentos. Trabalhamos também com sanitização de ambientes climatizados.',
+      'A Araújo atende o Igapó com soluções específicas para a realidade local: controle de mosquitos com larvicidas em ralos e caixas de gordura, instalação de armadilhas luminosas em estabelecimentos comerciais, programa CIPV para restaurantes e bares com fiscalização frequente da vigilância sanitária. Para residências, oferecemos dedetização periódica com foco em controle de insetos voadores e atendimento fora do horário comercial nos estabelecimentos. Trabalhamos também com sanitização de ambientes climatizados.',
     serviceHighlights: [
       { slug: 'controle-de-pragas-em-londrina', reason: 'CIPV para bares e restaurantes — conformidade RDC 622/22' },
       { slug: 'dedetizacao-em-londrina', reason: 'Dedetização residencial com foco em mosquitos e moscas' },
@@ -222,9 +222,9 @@ export const bairros: Bairro[] = [
       { slug: 'dedetizacao-de-baratas', reason: 'Baratas em estabelecimentos com fluxo de alimentos' },
     ],
     nearbyAreas: ['centro', 'jardim-quebec', 'vila-casoni'],
-    metaTitle: 'Dedetização no Bairro Inglaterra — Lago Igapó | Araújo',
+    metaTitle: 'Dedetização no Igapó — Lago Igapó | Araújo Londrina',
     metaDescription:
-      'Controle de pragas no Bairro Inglaterra em Londrina, próximo ao Lago Igapó. Atendimento residencial e CIPV para bares e restaurantes. 40 anos.',
+      'Controle de pragas no Igapó em Londrina, próximo ao Lago Igapó e Avenida Inglaterra. Atendimento residencial e CIPV para bares e restaurantes. 40 anos.',
   },
   {
     slug: 'distrito-industrial',
