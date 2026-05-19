@@ -79,7 +79,7 @@ export default function Footer() {
                 href="/atendimento"
                 className="rounded-full bg-yellow-500/15 px-3 py-1 text-xs font-medium text-yellow-400 transition hover:bg-yellow-500/25"
               >
-                Ver todos os {bairros.length} bairros →
+                Ver todas as áreas atendidas →
               </Link>
             </div>
           </div>
