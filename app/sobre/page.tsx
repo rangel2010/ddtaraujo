@@ -42,17 +42,17 @@ export default function SobrePage() {
           </div>
           <div className="grid gap-6">
             <div className="rounded-2xl bg-brand-50 p-8 border border-brand-100 dark:bg-brand-900/20 dark:border-brand-800">
-              <div className="font-display text-5xl font-bold text-brand-700">+40</div>
+              <div className="font-display text-5xl font-bold text-yellow-500">+40</div>
               <div className="mt-2 text-lg font-semibold text-ink-900 dark:text-white">anos de experiência</div>
               <p className="mt-2 text-sm text-ink-700 dark:text-ink-300">Acumulando conhecimento técnico desde {siteConfig.business.foundedYear} no combate às pragas urbanas mais resistentes.</p>
             </div>
             <div className="rounded-2xl bg-white border border-ink-200 p-8 dark:bg-ink-800 dark:border-ink-700">
-              <div className="font-display text-5xl font-bold text-brand-700">+15k</div>
+              <div className="font-display text-5xl font-bold text-yellow-500">+15k</div>
               <div className="mt-2 text-lg font-semibold text-ink-900 dark:text-white">clientes atendidos</div>
               <p className="mt-2 text-sm text-ink-700 dark:text-ink-300">Residências, comércios, indústrias e condomínios em Londrina e todo o Paraná.</p>
             </div>
             <div className="rounded-2xl bg-white border border-ink-200 p-8 dark:bg-ink-800 dark:border-ink-700">
-              <div className="font-display text-5xl font-bold text-brand-700">100%</div>
+              <div className="font-display text-5xl font-bold text-yellow-500">100%</div>
               <div className="mt-2 text-lg font-semibold text-ink-900 dark:text-white">credenciados</div>
               <p className="mt-2 text-sm text-ink-700 dark:text-ink-300">ANVISA, IAP, SESA e responsabilidade técnica de profissional habilitado (CRQ).</p>
             </div>

@@ -62,7 +62,7 @@ export default function ServicosPage() {
                       <p className="mt-2 text-sm text-ink-600 dark:text-ink-300">
                         {s.hero.subheadline}
                       </p>
-                      <div className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand-700">
+                      <div className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-yellow-600 dark:text-yellow-400">
                         Saiba mais
                         <svg className="h-4 w-4 transition group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

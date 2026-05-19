@@ -228,7 +228,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
             {services.filter((s) => s.slug !== service.slug).slice(0, 4).map((s) => (
               <Link key={s.slug} href={`/servicos/${s.slug}`} className="card group">
                 <h3 className="font-display text-base font-bold text-ink-900 group-hover:text-brand-700 dark:text-white dark:group-hover:text-brand-400">{s.shortTitle}</h3>
-                <div className="mt-3 text-sm font-semibold text-brand-700">Saiba mais →</div>
+                <div className="mt-3 text-sm font-semibold text-yellow-600 dark:text-yellow-400">Saiba mais →</div>
               </Link>
             ))}
           </div>

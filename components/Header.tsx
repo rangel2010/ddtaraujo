@@ -54,7 +54,7 @@ export default function Header() {
                 <div className="columns-3 gap-x-8">
                   {Object.entries(groupedServices).map(([cat, items]) => (
                     <div key={cat} className="break-inside-avoid mb-5">
-                      <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-brand-700">{categoryLabels[cat as keyof typeof categoryLabels]}</div>
+                      <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-yellow-600">{categoryLabels[cat as keyof typeof categoryLabels]}</div>
                       <ul className="space-y-1">
                         {items.map((s) => (
                           <li key={s.slug}>
