@@ -161,6 +161,11 @@ export const services: Service[] = [
         answer:
           'Sim. Todos os relatórios seguem padrão técnico aceito por ANVISA, vigilância sanitária, BRC, ISO 22000, FSSC 22000 e demais certificações.',
       },
+      {
+        question: 'Que documentação técnica vocês entregam no contrato CIPV?',
+        answer:
+          'Laudos técnicos, certificados, relatórios de visita, mapa de monitoramento, registro dos produtos utilizados (com concentrações e registros nos órgãos competentes), manuais de procedimentos e manuais de qualidade. Tudo organizado para auditorias internas e externas.',
+      },
     ],
   },
   {
@@ -188,7 +193,7 @@ export const services: Service[] = [
       'Diagnóstico do tipo de inseto e foco de infestação',
       'Produtos antialérgicos disponíveis sob demanda',
       'Aplicação com gel em ambientes sensíveis (cozinhas, restaurantes)',
-      'Garantia escrita de 3 a 6 meses',
+      'GAT — Garantia de Assistência Técnica com laudo dos produtos utilizados',
       'Sem necessidade de remover móveis em boa parte dos casos',
     ],
     process: [
@@ -280,6 +285,16 @@ export const services: Service[] = [
         answer:
           'As iscas modernas têm efeito retardado e ação mumificadora — o rato busca água fora do ambiente e o odor é mínimo. Em estruturas antigas pode ocorrer, e oferecemos protocolo de neutralização.',
       },
+      {
+        question: 'Quais as espécies de rato mais comuns em Londrina?',
+        answer:
+          'Três espécies dominam o cenário urbano: rato de telhado (Rattus rattus) — corpo esguio, hábil escalador, vive em forros e sótãos; ratazana ou rato de esgoto (Rattus norvegicus) — corpo robusto, escavadora, prefere tocas no solo próximo a córregos e lixões; e o camundongo (Mus musculus) — pequeno, faz ninho em gavetas e armários pouco usados. Cada espécie pede uma estratégia diferente.',
+      },
+      {
+        question: 'Quais doenças os ratos transmitem?',
+        answer:
+          'Leptospirose, salmonelose, hantavirose, tifo murino, febre da mordedura do rato e outras. Além disso, contaminam alimentos, roem fiações elétricas (risco de incêndio) e danificam estoques e estruturas.',
+      },
     ],
   },
   {
@@ -338,6 +353,11 @@ export const services: Service[] = [
         question: 'O que é a barreira química preventiva?',
         answer:
           'É um tratamento aplicado no solo (em construções) ou ao redor das estruturas que impede o cupim subterrâneo de chegar à madeira. Em obras novas, é o investimento mais econômico contra cupim.',
+      },
+      {
+        question: 'Como saber se tenho cupim em casa?',
+        answer:
+          'Os principais sinais são: pó ou resíduos parecidos com serragem próximos a móveis e batentes; pequenos furos na madeira; madeira que soa "oca" ao ser batida; asas descartadas perto de janelas e portas (revoada); e túneis de terra subindo por paredes (cupim subterrâneo). Ao primeiro sinal, vale fazer vistoria — o cupim age em silêncio.',
       },
     ],
   },
@@ -455,6 +475,11 @@ export const services: Service[] = [
         answer:
           'Espículas e redes profissionais duram de 5 a 10 anos. Damos garantia escrita.',
       },
+      {
+        question: 'Quais doenças os pombos transmitem?',
+        answer:
+          'Os principais riscos são: criptococose (fungo presente nas fezes), histoplasmose (doença respiratória por inalação de esporos das fezes secas) e salmonelose (bactéria por contaminação ambiental). Além disso, os pombos carregam parasitas — carrapatos, pulgas, ácaros e piolhos — que migram para o ambiente quando o ninho é abandonado.',
+      },
     ],
   },
   {
@@ -478,7 +503,7 @@ export const services: Service[] = [
         'Eliminamos baratas de cozinha e americanas com gel inseticida e pulverização seletiva. Sem cheiro forte e sem precisar sair de casa em boa parte dos casos.',
     },
     intro:
-      'Baratas contaminam alimentos, transmitem bactérias e proliferam rapidamente. Atacamos a infestação combinando gel inseticida (de ação prolongada e baixa toxicidade) com pulverização nos focos e bloqueio de pontos de entrada. Diferenciamos o tratamento de baratas de cozinha (pequenas, vivem em grupos) e baratas americanas (grandes, vindas de galerias).',
+      'Baratas contaminam alimentos e transmitem doenças graves como furunculose, lepra, tuberculose, poliomielite e diarreia. As duas espécies mais comuns no Brasil são a Periplaneta americana (barata voadora ou de esgoto, encontrada em redes de esgoto, caixas de gordura e tubulações) e a Blatella germânica (barata alemã, predominante em cozinhas, eletrodomésticos e frestas). Atacamos a infestação combinando gel inseticida de ação prolongada e baixa toxicidade com pulverização nos focos e bloqueio de pontos de entrada. Para residências, recomenda-se dedetização a cada 3 meses; para comércios, a RDC 622/22 da ANVISA exige periodicidade mensal.',
     benefits: [
       'Gel inseticida inodoro — pode aplicar em cozinhas em uso',
       'Eliminação de até 95% da colônia em 7 a 14 dias',
@@ -566,6 +591,11 @@ export const services: Service[] = [
         question: 'Como evitar escorpiões em casa?',
         answer:
           'Mantenha ralos com proteção (tela ou abafador), elimine entulhos e pilhas no quintal, bloqueie frestas e elimine baratas (alimento principal).',
+      },
+      {
+        question: 'Onde os escorpiões costumam se esconder?',
+        answer:
+          'Terrenos baldios com lixo acumulado, quintais com materiais de construção, caixas de gordura, redes de esgoto, jardins com pedras e entulhos, ralos internos e externos, áreas próximas a fundos de vale e condomínios com falhas estruturais. Recomendamos sacudir roupas e calçados antes do uso quando há histórico na região.',
       },
     ],
   },
@@ -697,7 +727,7 @@ export const services: Service[] = [
         'Eliminação completa da colônia com gel iscas — não só das formigas que você vê.',
     },
     intro:
-      'Matar as formigas visíveis não resolve: a rainha continua produzindo. Usamos gel iscas atrativas que as formigas levam para o ninho, eliminando a colônia inteira em 7 a 14 dias. Funciona para formiga doméstica, formiga louca, lava-pé e cortadeiras.',
+      'Formigas passam por lugares totalmente sujos — caixas de gordura, esgotos, ralos e lixos — e são vetores de doenças graves como tuberculose e lepra, sendo causadoras de grande parte das infecções hospitalares. Algumas espécies ainda mordem, causam alergia e fazem ninhos dentro de paredes e armários, comprometendo a estrutura. Matar as formigas visíveis não resolve: a rainha continua produzindo. Usamos gel iscas atrativas que as operárias levam para o ninho, eliminando a colônia inteira em 7 a 14 dias. Funciona para formiga doméstica, formiga louca, lava-pé e cortadeiras.',
     benefits: [
       'Elimina a colônia toda (incluindo a rainha)',
       'Gel inodoro e seguro em cozinhas',
@@ -861,7 +891,7 @@ export const services: Service[] = [
         'Eliminação de vírus, bactérias, fungos e ácaros com produtos hospitalares aplicados por atomização ou nebulização.',
     },
     intro:
-      'Sanitização vai além da limpeza: elimina agentes patogênicos (vírus, bactérias, fungos, ácaros) que causam doenças respiratórias, alergias e infecções. Indicada para escritórios, clínicas, escolas, academias, veículos, residências de imunossuprimidos e ambientes após Covid, gripe ou outras doenças.',
+      'Sanitização vai além da limpeza: elimina agentes patogênicos (vírus, bactérias, fungos e ácaros) que causam doenças infecciosas e respiratórias. Previne o contágio por gripe, pneumonia, tuberculose e Covid-19, além de combater processos alérgicos como rinite, asma e bronquite. Indicada para escritórios, clínicas, escolas, academias, veículos, residências de imunossuprimidos e qualquer ambiente fechado com circulação de pessoas — quanto maior o fluxo, maior deve ser a frequência.',
     benefits: [
       'Produtos com registro hospitalar',
       'Atomização ou nebulização (cobre superfícies altas)',
@@ -921,8 +951,8 @@ export const services: Service[] = [
       'Contrato anual com cronograma de visitas',
       'Atendimento emergencial 24h via WhatsApp',
       'Relatórios técnicos para AGO/AGE',
-      'Inclui dedetização, desratização e limpeza de caixas',
-      'Equipe identificada e uniformizada',
+      'Inclui dedetização, desratização, limpeza de caixas e análise físico-química e microbiológica de água',
+      'Empresa com Alvará de Funcionamento, Licença CEVS e CRQ',
       'Comunicação direta com síndico ou administradora',
     ],
     process: [
@@ -953,6 +983,11 @@ export const services: Service[] = [
         question: 'Cobram visita para fazer orçamento?',
         answer:
           'Não. A vistoria e o orçamento são gratuitos para condomínios.',
+      },
+      {
+        question: 'O que o síndico precisa verificar ao contratar uma dedetizadora?',
+        answer:
+          'Três documentos são essenciais: Alvará de Funcionamento (prefeitura), Licença CEVS (Cadastro Estadual de Vigilância Sanitária) e licença do CRQ (Conselho Regional de Química), que garante o uso de produtos e métodos dentro da lei. A Araújo possui todas e fornece cópias mediante solicitação.',
       },
     ],
   },
