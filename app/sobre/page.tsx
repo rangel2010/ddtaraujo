@@ -41,7 +41,7 @@ export default function SobrePage() {
             </div>
           </div>
           <div className="grid gap-6">
-            <div className="rounded-2xl bg-brand-50 p-8 border border-brand-100 dark:bg-brand-900/20 dark:border-brand-800">
+            <div className="rounded-2xl bg-yellow-50 p-8 border border-yellow-200 dark:bg-yellow-400/10 dark:border-yellow-500/30">
               <div className="font-display text-5xl font-bold text-yellow-500">+40</div>
               <div className="mt-2 text-lg font-semibold text-ink-900 dark:text-white">anos de experiência</div>
               <p className="mt-2 text-sm text-ink-700 dark:text-ink-300">Acumulando conhecimento técnico desde {siteConfig.business.foundedYear} no combate às pragas urbanas mais resistentes.</p>
@@ -73,7 +73,7 @@ export default function SobrePage() {
               { title: 'Compromisso com resultado', desc: 'Garantia escrita em todos os serviços. Se a praga voltar dentro do prazo, retornamos sem custo adicional.', icon: 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z' },
             ].map((v) => (
               <div key={v.title} className="card text-center">
-                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-100 text-brand-700 dark:bg-brand-900/30 dark:text-brand-300">
+                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-yellow-100 text-yellow-700 dark:bg-yellow-400/15 dark:text-yellow-400">
                   <svg className="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={v.icon}/></svg>
                 </div>
                 <h3 className="mt-4 font-display text-lg font-bold text-ink-900 dark:text-white">{v.title}</h3>
