@@ -95,7 +95,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
       <section className="bg-gradient-to-br from-ink-900 via-ink-800 to-brand-900 py-16 text-white md:py-20">
         <div className="container grid gap-12 md:grid-cols-2 md:items-center">
           <div>
-            <div className="inline-flex items-center gap-2 rounded-full bg-brand-600/20 px-4 py-1.5 text-sm font-medium text-brand-300 backdrop-blur">
+            <div className="inline-flex items-center gap-2 rounded-full bg-yellow-400/20 px-4 py-1.5 text-sm font-medium text-yellow-300 backdrop-blur">
               ✓ Garantia escrita • 40 anos de experiência
             </div>
             <h1 className="mt-6 text-4xl font-bold leading-tight font-display text-white sm:text-5xl">

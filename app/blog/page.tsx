@@ -42,7 +42,7 @@ export default function BlogPage() {
       <section className="bg-gradient-to-br from-ink-900 via-ink-800 to-brand-900 py-20 text-white">
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
-            <div className="inline-flex items-center gap-2 rounded-full bg-brand-600/20 px-4 py-1.5 text-sm font-medium text-brand-300 backdrop-blur">
+            <div className="inline-flex items-center gap-2 rounded-full bg-yellow-400/20 px-4 py-1.5 text-sm font-medium text-yellow-300 backdrop-blur">
               Blog
             </div>
             <h1 className="mt-6 text-4xl font-bold font-display text-white sm:text-5xl">
@@ -65,7 +65,7 @@ export default function BlogPage() {
                 </div>
                 <div className="flex flex-1 flex-col p-6">
                   <div className="flex items-center gap-3 text-xs text-ink-500">
-                    <span className="rounded-full bg-brand-100 px-2.5 py-0.5 font-medium text-brand-700">{p.category}</span>
+                    <span className="rounded-full bg-yellow-100 px-2.5 py-0.5 font-medium text-yellow-700 dark:bg-yellow-400/15 dark:text-yellow-400">{p.category}</span>
                     <span>{new Date(p.date).toLocaleDateString('pt-BR')}</span>
                   </div>
                   <h2 className="mt-4 font-display text-xl font-bold text-ink-900 group-hover:text-brand-700">

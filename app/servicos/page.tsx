@@ -25,7 +25,7 @@ export default function ServicosPage() {
       <section className="bg-gradient-to-br from-ink-900 via-ink-800 to-brand-900 py-20 text-white">
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
-            <div className="inline-flex items-center gap-2 rounded-full bg-brand-600/20 px-4 py-1.5 text-sm font-medium text-brand-300 backdrop-blur">
+            <div className="inline-flex items-center gap-2 rounded-full bg-yellow-400/20 px-4 py-1.5 text-sm font-medium text-yellow-300 backdrop-blur">
               Nossos Serviços
             </div>
             <h1 className="mt-6 text-4xl font-bold font-display text-white sm:text-5xl">

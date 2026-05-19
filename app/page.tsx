@@ -80,8 +80,8 @@ export default function HomePage() {
         <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'radial-gradient(circle at 20% 20%, rgba(34,197,94,0.4) 0%, transparent 50%), radial-gradient(circle at 80% 60%, rgba(34,197,94,0.3) 0%, transparent 50%)' }} />
         <div className="container relative grid gap-12 py-16 md:grid-cols-2 md:py-24 lg:py-32">
           <div className="text-white animate-fade-up">
-            <div className="inline-flex items-center gap-2 rounded-full bg-brand-600/20 px-4 py-1.5 text-sm font-medium text-brand-300 backdrop-blur">
-              <span className="h-2 w-2 animate-pulse rounded-full bg-brand-400" />
+            <div className="inline-flex items-center gap-2 rounded-full bg-yellow-400/20 px-4 py-1.5 text-sm font-medium text-yellow-300 backdrop-blur">
+              <span className="h-2 w-2 animate-pulse rounded-full bg-yellow-400" />
               Dedetizadora em Londrina há mais de 40 anos
             </div>
             <h1 className="mt-6 text-4xl font-bold leading-tight font-display text-white sm:text-5xl lg:text-6xl">
@@ -181,7 +181,7 @@ export default function HomePage() {
           <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {featuredServices.map((s) => (
               <Link key={s.slug} href={`/servicos/${s.slug}`} className="card group flex flex-col">
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100 text-brand-700 transition group-hover:bg-brand-600 group-hover:text-white dark:bg-brand-900/30 dark:text-brand-300">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-yellow-100 text-yellow-700 transition group-hover:bg-yellow-500 group-hover:text-white dark:bg-yellow-400/15 dark:text-yellow-400">
                   <ServiceIcon name={s.icon} />
                 </div>
                 <h3 className="mt-4 text-lg font-bold text-ink-900 dark:text-white">{s.shortTitle}</h3>
@@ -229,7 +229,7 @@ export default function HomePage() {
               { num: '04', title: 'Garantia e acompanhamento', desc: 'Você recebe certificado e suporte pós-serviço.' },
             ].map((step) => (
               <div key={step.num} className="flex gap-4 rounded-2xl border border-ink-200 bg-white p-5 dark:border-ink-800 dark:bg-ink-800">
-                <div className="text-3xl font-bold text-brand-600 font-display">{step.num}</div>
+                <div className="text-3xl font-bold text-yellow-500 font-display">{step.num}</div>
                 <div>
                   <div className="font-semibold text-ink-900 dark:text-white">{step.title}</div>
                   <div className="text-sm text-ink-600 dark:text-ink-300">{step.desc}</div>
