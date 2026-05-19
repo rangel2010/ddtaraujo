@@ -38,7 +38,7 @@ export default function Header() {
       <div className="container flex items-center justify-between py-4">
         <Link href="/" className="flex items-center gap-3" aria-label="Araújo Dedetizadora">
           <Image src="/logo.png" alt="Araújo Dedetizadora" width={2460} height={671} priority className="h-10 w-auto md:h-12" />
-          <Image src="/badge-40-anos.svg" alt="40 anos de tradição" width={200} height={200} className="hidden sm:block h-12 w-12 md:h-14 md:w-14 drop-shadow-md" />
+          <Image src="/badge-new.png" alt="40 anos de tradição" width={400} height={400} className="hidden sm:block h-12 w-12 md:h-14 md:w-14 drop-shadow-md" />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-1">

@@ -15,7 +15,7 @@ export default function SobrePage() {
         <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'radial-gradient(circle at 50% 30%, rgba(245,207,74,0.3) 0%, transparent 50%)' }} />
         <div className="container relative">
           <div className="mx-auto max-w-3xl text-center">
-            <img src="/badge-40-anos.svg" alt="40 anos de tradição" className="mx-auto h-32 w-32 md:h-40 md:w-40 drop-shadow-2xl" />
+            <img src="/badge-new.png" alt="40 anos de tradição" className="mx-auto h-32 w-32 md:h-40 md:w-40 drop-shadow-2xl" />
             <div className="mt-6 inline-flex items-center gap-2 rounded-full bg-brand-600/20 px-4 py-1.5 text-sm font-medium text-brand-300 backdrop-blur">
               Nossa história
             </div>
