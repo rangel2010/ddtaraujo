@@ -16,7 +16,7 @@ const prazos = [
   { servico: 'Desratização', prazo: '3 a 6 meses', detalhe: 'Com retornos para reposição de iscas' },
   { servico: 'Descupinização', prazo: '1 ano (até 5 anos em contratos preventivos)', detalhe: 'Garantia estendida em obras novas com barreira química' },
   { servico: 'Controle de morcegos', prazo: 'Até 5 anos', detalhe: 'Para a vedação estrutural após desalojamento' },
-  { servico: 'Manejo de pombos', prazo: '5 a 10 anos', detalhe: 'Para espículas, redes e dispositivos instalados' },
+  { servico: 'Manejo de pombos', prazo: '1 a 5 anos', detalhe: 'Para espículas, redes e dispositivos instalados, conforme a solução' },
   { servico: 'Percevejos', prazo: '30 a 45 dias após protocolo', detalhe: 'Inclui retorno obrigatório para quebrar ciclo de ovos' },
   { servico: 'Limpeza de caixa d\'água', prazo: '6 meses', detalhe: 'Periodicidade recomendada pela ANVISA' },
   { servico: 'CIPV / DAC (programas contínuos)', prazo: 'Durante toda a vigência do contrato', detalhe: 'Atendimento emergencial sem custo adicional' },
