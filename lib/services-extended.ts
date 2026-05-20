@@ -230,7 +230,7 @@ export const richContent: Record<string, RichSection[]> = {
           'Produzem grande quantidade de fezes (cada pombo expele até 12 kg por ano)',
           'Causam mau cheiro persistente em áreas com colônias estabelecidas',
           'Deterioram pintura, concreto e metal pela acidez das fezes',
-          'Geram desconforto sonoro com arrulhos contínuos',
+          'Geram desconforto sonoro com barulhos contínuos',
         ],
       },
     },
@@ -606,6 +606,382 @@ export const richContent: Record<string, RichSection[]> = {
       },
       closingParagraphs: [
         'Para estabelecimentos com fiscalização sanitária frequente (alimentos, saúde, hotelaria), recomendamos contrato CIPV — programa contínuo que substitui dedetizações pontuais com atendimento programado e documentação completa para auditorias.',
+      ],
+    },
+  ],
+
+  'desinsetizacao': [
+    {
+      title: 'O que é desinsetização e quais insetos ela cobre',
+      paragraphs: [
+        'Desinsetização é o termo técnico usado para o combate direto a insetos urbanos — uma das três grandes vertentes do controle de pragas (junto com desratização e desinfecção). Engloba dezenas de espécies que afetam residências, comércios e indústrias diariamente.',
+      ],
+      list: {
+        items: [
+          'Insetos rasteiros — baratas (de cozinha e americanas), formigas, lacraias, percevejos e tatuzinhos',
+          'Insetos voadores — moscas (domésticas e varejeiras), mosquitos (Aedes, Culex), pernilongos, mosquitinhos de fruta (Drosophila), borrachudos',
+          'Pragas associadas a tecidos e papel — traças, mariposas e besouros que atacam roupas e livros',
+          'Parasitas externos — pulgas (que infestam ambientes além dos animais)',
+          'Insetos sociais com colônias — abelhas (com manejo cuidadoso), vespas e marimbondos em casos de risco',
+          'Insetos de estoque — caruncho do feijão, gorgulho do milho e outras pragas de despensa',
+        ],
+      },
+      closingParagraphs: [
+        'Cada um desses insetos requer técnica diferente, produto diferente e abordagem diferente. Uma pulverização que funciona contra mosquito não tem efeito sobre baratas em frestas. Por isso a primeira etapa do nosso trabalho é sempre identificar a espécie corretamente.',
+      ],
+    },
+    {
+      title: 'As cinco técnicas de aplicação que usamos',
+      paragraphs: [
+        'Não existe uma "única forma" de fazer desinsetização. Dependendo do inseto, do ambiente e da sensibilidade dos ocupantes, escolhemos uma técnica ou combinação delas. Conhecer cada uma ajuda a entender por que o controle profissional é diferente do inseticida de mercado.',
+      ],
+      list: {
+        items: [
+          'Pulverização residual — produto líquido aplicado em frestas, rodapés, atrás de móveis e pontos de passagem. Forma película invisível que mata por contato. Eficaz contra baratas, aranhas, escorpiões. Duração: 3-6 meses',
+          'Gel inseticida — gotas microscópicas em pontos discretos. Atrai o inseto, que come e leva pra colônia. Eficaz contra baratas e formigas. Sem cheiro, sem evacuar o ambiente, seguro em cozinhas em uso',
+          'Polvilhamento — pó inseticida aplicado em locais secos de difícil acesso (forros, frestas profundas, caixas elétricas, vãos estruturais). Eficaz contra baratas e traças escondidas',
+          'Atomização UBV (Ultra Baixo Volume) — produto líquido transformado em névoa de partículas microscópicas que cobre grandes áreas. Ideal para galpões, armazéns e ambientes amplos. Eficaz contra insetos voadores',
+          'Termonebulização — fumaça inseticida penetrante, criada por aquecimento. Atinge frestas e cavidades impossíveis por outras técnicas. Usada em áreas externas e estruturas com muitos esconderijos',
+        ],
+      },
+      closingParagraphs: [
+        'Combinações são a norma, não exceção. Uma residência com baratas, formigas e moscas pode receber gel em cozinha + pulverização em ralos e rodapés + orientação preventiva — tudo em uma única visita.',
+      ],
+    },
+    {
+      title: 'Por que a identificação correta do inseto faz toda diferença',
+      paragraphs: [
+        'Aplicar produto sem saber qual inseto está infestando é como tomar antibiótico sem diagnóstico. Funciona às vezes, mas é desperdício na maioria. Cada espécie exige protocolo específico.',
+      ],
+      list: {
+        items: [
+          'Atratividade do produto varia por espécie — gel doce funciona para formiga-doceira mas é ignorado por formiga lava-pé. Inseticida para baratas não tem efeito sobre mosquitos',
+          'Esconderijos variam — barata de cozinha vive em frestas internas. Barata de esgoto vive em galerias externas. Tratar uma como se fosse a outra falha',
+          'Ciclo de vida define janela de retorno — percevejos exigem retorno em 14-21 dias por causa da eclosão dos ovos. Baratas têm garantia de 3-6 meses. Aplicar a mesma frequência pra todos é ineficiente',
+          'Sensibilidade ao produto varia — populações resistentes existem. Diagnóstico permite escolher o princípio ativo certo, não o que "geralmente funciona"',
+          'Sintomas e sinais ajudam a identificar — fezes, exuvias, ovotecas, padrão de picada, horário de aparecimento. Um técnico treinado lê todos esses sinais antes de aplicar nada',
+          'Tratamento errado pode piorar — algumas espécies (formiga-faraó) se fragmentam sob estresse químico, multiplicando colônias quando o inseticida é mal escolhido',
+        ],
+      },
+    },
+    {
+      title: 'Onde fazemos desinsetização',
+      paragraphs: [
+        'Atendemos qualquer ambiente, com protocolo adaptado ao perfil de uso e à sensibilidade dos ocupantes.',
+      ],
+      list: {
+        items: [
+          'Residências (casas, apartamentos, sobrados) — produtos antialérgicos disponíveis',
+          'Restaurantes, lanchonetes e padarias — atendimento fora do horário comercial',
+          'Hospitais, clínicas e laboratórios — protocolo hospitalar com gel inseticida',
+          'Escolas, creches e universidades — atendimento em períodos sem aula',
+          'Hotéis, pousadas e motéis — discrição absoluta',
+          'Indústrias e galpões — integrado ao programa CIPV quando há fiscalização sanitária',
+          'Escritórios e ambientes corporativos — aplicação fora do expediente',
+          'Condomínios — áreas comuns e atendimento individual a unidades',
+        ],
+      },
+      closingParagraphs: [
+        'Todos os serviços incluem GAT — Garantia de Assistência Técnica com laudo escrito dos produtos utilizados, suas concentrações e registros nos órgãos competentes (ANVISA, IAP, SESA). Sem garantia escrita, não é serviço profissional.',
+      ],
+    },
+  ],
+
+  'dedetizacao-de-carrapatos': [
+    {
+      title: 'Espécies de carrapato e doenças que transmitem',
+      paragraphs: [
+        'O carrapato não é só um incômodo pro cachorro coçar — é um dos principais vetores de doenças zoonóticas (que passam de animal pra humano) no Brasil. Três espécies concentram quase todos os atendimentos urbanos.',
+      ],
+      list: {
+        items: [
+          'Carrapato-estrela (Amblyomma sclupturatum e similares) — espécie comum em áreas com cavalo, capivara e gado. Principal vetor da febre maculosa brasileira, doença grave que pode ser fatal sem tratamento rápido. Comum em sítios, chácaras, parques e propriedades rurais',
+          'Carrapato do cachorro (Rhipicephalus sanguineus) — espécie urbana, especialista em cães. Mais comum nas cidades, transmite erliquiose canina (causa anemia e baixa imunidade no animal) e babesiose. Vive em frestas de muros, casinhas, canis e cantos da casa',
+          'Carrapato-bovino (Rhipicephalus microplus) — específico de bovinos, mas pode parasitar outros mamíferos. Mais comum em sítios e fazendas com gado próximo',
+        ],
+      },
+      closingParagraphs: [
+        'Em humanos, as principais doenças transmitidas são: febre maculosa (a mais grave, com mortalidade alta sem diagnóstico precoce), doença de Lyme (rara no Brasil mas registrada), e febre Q. Em qualquer caso de picada com sintomas (febre, dor de cabeça intensa, manchas vermelhas), procure pronto-socorro mencionando o contato com carrapato.',
+      ],
+    },
+    {
+      title: 'Por que tratar só o cachorro não resolve',
+      paragraphs: [
+        'Quando o veterinário aplica antipulgas/anticarrapatos no cachorro, ele protege o ANIMAL — mas não elimina os carrapatos do ambiente. E o motivo é estatístico:',
+      ],
+      list: {
+        items: [
+          '90% da população de carrapato está no AMBIENTE, não no animal — em muros, frestas, casinhas, canis, cantos de quintal e vegetação',
+          'O carrapato passa só uma parte da vida no hospedeiro — sobe pra se alimentar de sangue, depois desce e completa o ciclo no ambiente',
+          'Fêmeas adultas se alimentam, descem, escondem-se em frestas e depositam até 4.000 ovos por postura — sem tratamento ambiental, todos esses ovos vão eclodir',
+          'Ovos sobrevivem semanas a meses no ambiente sem hospedeiro — esperando a próxima oportunidade',
+          'Antipulga no cachorro mata os que sobem nele — mas continua sobrando milhares no quintal pra subir de novo',
+          'Sem controle ambiental + tratamento do animal, o ciclo se reconstrói em poucas semanas',
+        ],
+      },
+      closingParagraphs: [
+        'Por isso o nosso protocolo SEMPRE inclui orientação para o tratamento simultâneo do animal pelo veterinário — só o controle ambiental sem proteger o pet também não dura, porque o cachorro carrega novos do passeio. A combinação dos dois é o que resolve.',
+      ],
+    },
+    {
+      title: 'Como controlamos carrapatos no ambiente',
+      paragraphs: [
+        'O carrapato vive em frestas, vegetação, casinhas e cantos abrigados. O controle exige atingir esses pontos específicos com produto residual que persiste no ambiente.',
+      ],
+      list: {
+        items: [
+          'Vistoria detalhada — identificamos focos críticos: muros e paredes com frestas, casinhas e abrigos do animal, vegetação rasteira em áreas onde o pet circula, cantos protegidos do quintal, depósitos e galpões',
+          'Pulverização residual em pontos estratégicos — produto acaricida de longa duração aplicado nas zonas de abrigo. Não pulverizamos área inteira: focamos onde os carrapatos realmente estão',
+          'Tratamento de casinhas e abrigos de animais — atenção máxima nesse ponto, é o "ninho" da infestação',
+          'Aplicação em frestas de muro e divisas — local clássico de postura de ovos',
+          'Segunda aplicação obrigatória em 14-21 dias — quebra o ciclo de eclosão dos ovos que sobreviveram à primeira aplicação. Sem retorno, infestação volta',
+          'Produto com baixo impacto para pets após carência — após 4 a 6 horas (com o produto seco), animais podem voltar ao quintal com segurança',
+          'Orientação para tratamento simultâneo no veterinário — antipulgas tópico/oral no animal pra evitar que ele traga novos carrapatos dos passeios',
+        ],
+      },
+    },
+    {
+      title: 'Onde fazemos controle de carrapatos',
+      paragraphs: [
+        'Atendemos qualquer ambiente com presença ou risco de carrapato.',
+      ],
+      list: {
+        items: [
+          'Residências com cães — quintais, casinhas, áreas de circulação do pet',
+          'Apartamentos com áreas comuns para pets — playgrounds caninos em condomínios',
+          'Canis profissionais e hotéis para animais — controle de carrapato é exigência sanitária',
+          'Pet shops com banho e tosa — produtos seguros para o trânsito de animais',
+          'Sítios e chácaras — atenção especial pra carrapato-estrela e febre maculosa',
+          'Haras e estábulos — áreas com cavalos',
+          'Propriedades rurais com gado — combate ao carrapato bovino',
+          'Áreas de passagem de capivaras — risco amplificado de febre maculosa',
+          'Parques e clubes com público familiar e pets',
+        ],
+      },
+      closingParagraphs: [
+        'Para residências e canis com histórico recorrente, recomendamos contrato trimestral com vistoria e reaplicação programada. Custo é baixo e elimina o "ciclo de chamados" que muitos clientes vivem.',
+      ],
+    },
+  ],
+
+  'dedetizacao-de-aranhas': [
+    {
+      title: 'As três aranhas peçonhentas que preocupam no Brasil',
+      paragraphs: [
+        'Existem mais de 4 mil espécies de aranha no Brasil, a maioria absolutamente inofensiva e até benéfica (predadora natural de insetos). Mas três espécies concentram quase todos os acidentes graves — e duas delas são comuns na região de Londrina.',
+      ],
+      list: {
+        items: [
+          'Aranha-marrom (Loxosceles) — a mais perigosa do Sul do Brasil. Pequena (tamanho de moeda de R$1 com pernas), cor marrom-claro a marrom-escuro, com mancha em formato de violino no cefalotórax. Vive escondida atrás de móveis, em entulhos, dentro de roupas guardadas e calçados. Picada inicialmente indolor, mas o veneno causa necrose tecidual progressiva — pode levar à perda de tecido em casos graves.',
+          'Aranha armadeira (Phoneutria) — grande (até 15cm com as pernas), cor castanho-amarelado. Postura agressiva característica (eleva as pernas dianteiras como "armadura"). Comum em jardins, montes de lenha, bananeiras, garagens. Picada extremamente dolorosa, com efeitos neurológicos e cardíacos. Pode ser fatal em crianças.',
+          'Viúva-negra (Latrodectus) — pequena, preta brilhante com mancha vermelha em forma de ampulheta no abdome. Menos comum em ambiente residencial, mais em construções rurais e jardins de áreas verdes. Veneno neurotóxico, causando dores intensas e espasmos musculares.',
+        ],
+      },
+      closingParagraphs: [
+        'Em qualquer caso de picada suspeita: vá imediatamente ao pronto-socorro. Se possível, leve a aranha (mesmo morta) para identificação correta da espécie — o soro antiaracnídico é específico por gênero e o tempo é crítico, especialmente para armadeira e viúva-negra.',
+      ],
+    },
+    {
+      title: 'Por que aranhas aparecem dentro de casa',
+      paragraphs: [
+        'Aranhas não invadem residências por acaso. Elas seguem dois recursos fundamentais: abrigo e comida. Eliminar esses dois fatores resolve o problema na raiz.',
+      ],
+      list: {
+        items: [
+          'Procuram abrigos escuros e silenciosos — atrás de móveis, dentro de armários pouco usados, no fundo de gavetas, em quadros, em rodapés com fresta, em sótãos, garagens',
+          'Caçam outros insetos — onde tem mosca, mosquito, mariposa, traça ou baratinha, tem aranha. Controlar outros insetos da casa reduz drasticamente a população de aranhas',
+          'Aproveitam acúmulos de entulho — caixas de papelão guardadas, sapatos amontoados, livros empilhados, montes de roupa. Quanto mais bagunça, mais aranhas',
+          'Sobem por encanamentos e ralos — algumas espécies aproveitam tubulações secas ou abandonadas pra circular',
+          'Entram por janelas e portas — especialmente à noite, atraídas pela luz que atrai insetos voadores',
+          'Reproduzem-se em ovotecas ocultas — uma fêmea pode produzir centenas de ovos em um único saco. Eliminar adultos sem destruir os ovos é trabalho pela metade',
+        ],
+      },
+    },
+    {
+      title: 'Como nosso protocolo elimina aranhas adultas e ovos',
+      paragraphs: [
+        'Aranha não come isca como barata ou formiga — então gel inseticida não funciona. O controle é feito por contato: o produto residual aplicado nas superfícies onde elas circulam.',
+      ],
+      list: {
+        items: [
+          'Inspeção minuciosa — procuramos abrigos ativos em rodapés, atrás de móveis, em entulhos, em quadros, em cantos altos. Identificamos a espécie pelos sinais (teia, tipo de ootéca, exuvias)',
+          'Pulverização residual em pontos estratégicos — produto de longa duração aplicado em superfícies de passagem, abrigos identificados, frestas e pontos altos. Aranhas circulam, tocam no produto, morrem',
+          'Tratamento direto de ootécas — quando localizadas, recebem aplicação direta para eliminar os ovos antes da eclosão',
+          'Eliminação simultânea das presas — pulverizamos também contra os insetos que as aranhas comem (baratinhas, traças, moscas, mariposas). Sem presa, aranha não permanece',
+          'Vedação de pontos de entrada — orientamos sobre vedação de frestas em janelas, portas e tubulações para reduzir entrada externa',
+          'Orientação preventiva ao morador — organização de armários, descarte de entulhos, sacudir roupas e calçados antes do uso (especialmente em áreas com histórico de aranha-marrom)',
+        ],
+      },
+      closingParagraphs: [
+        'Para residências com histórico de aranha-marrom (especialmente em casas antigas ou com depósitos), recomendamos contrato preventivo semestral. O custo é baixo comparado ao risco de um acidente grave com criança ou idoso.',
+      ],
+    },
+    {
+      title: 'Onde fazemos controle de aranhas',
+      paragraphs: [
+        'Atendemos qualquer ambiente com presença ou risco de aranhas, com atenção especial a locais com crianças, idosos e pessoas com sensibilidade ao veneno.',
+      ],
+      list: {
+        items: [
+          'Residências (especialmente casas antigas com porões, garagens e entulhos)',
+          'Apartamentos com sótãos, depósitos ou áreas de serviço',
+          'Condomínios — garagens, áreas externas, escadas e depósitos',
+          'Comércios e escritórios — atrás de móveis, em depósitos, em arquivos antigos',
+          'Galpões industriais — áreas com pouca movimentação, depósitos de produtos',
+          'Escolas, creches e universidades — atenção especial pelo risco a crianças',
+          'Sítios, chácaras e propriedades rurais — risco aumentado por proximidade com áreas verdes',
+          'Construções abandonadas ou em obras paradas',
+        ],
+      },
+    },
+  ],
+
+  'dedetizacao-de-formigas': [
+    {
+      title: 'As principais espécies de formiga urbana',
+      paragraphs: [
+        'Existem dezenas de espécies de formiga em ambiente urbano brasileiro, mas cinco concentram quase todos os casos que atendemos. Cada uma tem preferência alimentar diferente — e isso muda completamente a isca a ser usada.',
+      ],
+      list: {
+        items: [
+          'Formiga doceira (Monomorium pharaonis e similares) — pequenas, cor castanho-claro, atraídas por açúcar e açúcares em geral. Aparecem em cozinhas, formando trilhas finas. Fazem ninhos dentro de paredes, atrás de quadros e em pontos quentes da casa',
+          'Formiga-faraó (Monomorium pharaonis) — uma das mais perigosas. Minúscula (1,5-2mm), amarelada, vetor de infecções hospitalares. Faz ninhos em qualquer cavidade quente (tomadas, eletrônicos, paredes vazadas). Praga gravíssima em hospitais e clínicas',
+          'Formiga louca (Paratrechina longicornis) — médio porte, escura, movimentos erráticos e velozes (daí o nome). Onívora, mas atraída por proteína e alimentos oleosos. Comum em jardins e áreas externas',
+          'Formiga lava-pé (Solenopsis invicta e geminata) — vermelha, ferrão venenoso que causa dor intensa e bolhas. Constrói formigueiros de terra em quintais e jardins. Agressiva quando o ninho é perturbado',
+          'Formiga cortadeira (Atta e Acromyrmex) — grandes, cabeça larga. Cortam pedaços de folhas e os carregam para o formigueiro. Devastadoras em jardins, hortas e pomares — uma colônia pode desfolhar uma árvore em poucos dias',
+        ],
+      },
+      closingParagraphs: [
+        'Aplicar isca proteica para formiga doceira não funciona — ela ignora. Aplicar isca doce para formiga lava-pé também não funciona. Por isso a identificação correta é o primeiro passo do nosso protocolo.',
+      ],
+    },
+    {
+      title: 'Por que matar as formigas visíveis nunca resolve',
+      paragraphs: [
+        'A formiga que você vê na pia é apenas a operária — uma de milhares ou centenas de milhares de operárias da mesma colônia. Matar essas operárias com inseticida tem três efeitos contraproducentes:',
+      ],
+      list: {
+        items: [
+          'A rainha continua produzindo — pode botar 200-400 ovos por dia, gerando novas operárias em 30-50 dias. A colônia se reconstrói rapidamente',
+          'As formigas se dispersam — algumas espécies (formiga-faraó especialmente) se "fragmentam" sob estresse químico, criando colônias-satélite em outros pontos da casa. Você espalha o problema em vez de eliminá-lo',
+          'Você cria barreira de cadáveres — formigas mortas viram repelente para outras formigas em curto prazo, mas não eliminam o ninho. A trilha apenas se desvia',
+          'Inseticidas residuais matam predadores naturais — aranhas e outros insetos que comeriam formigas. Médio prazo, a infestação pode piorar',
+          'Não atinge o ninho — o ninho geralmente está dentro de paredes, sob pisos, em tomadas ou pontos quentes. Inseticida pulverizado no ambiente não chega lá',
+        ],
+      },
+    },
+    {
+      title: 'Como o gel iscas funciona — o método correto',
+      paragraphs: [
+        'O gel inseticida para formigas é uma das maiores conquistas técnicas do controle de pragas modernas. Em vez de matar a operária imediatamente, ele faz algo muito mais eficaz: usa a própria colônia contra ela mesma.',
+      ],
+      list: {
+        items: [
+          'Aplicação em gotas minúsculas — em trilhas, pontos de entrada e proximidades do ninho. Discreto, sem cheiro, sem necessidade de evacuar o ambiente',
+          'Atratividade específica — o gel é formulado para o paladar da espécie (doce, oleoso ou proteico). Operárias preferem o gel ao alimento normal',
+          'Efeito retardado — princípio ativo age lentamente. Operária come o gel e volta ao ninho antes de morrer',
+          'Compartilhamento (trofalaxia) — formigas se alimentam mutuamente pela boca. A operária que comeu gel alimenta dezenas de outras antes de morrer, inclusive a rainha',
+          'Eliminação progressiva — em 7 a 14 dias, a colônia inteira é eliminada de dentro pra fora, sem precisar saber onde está o ninho',
+          'Sem dispersão — colônia é eliminada antes de conseguir fragmentar. Especialmente crítico contra formiga-faraó',
+        ],
+      },
+      closingParagraphs: [
+        'Para formigas cortadeiras em jardins, usamos isca granulada específica — formulada com folhas atrativas e princípio ativo de absorção lenta. Em casos de formigueiros muito grandes, complementamos com aplicação direta na entrada do formigueiro.',
+      ],
+    },
+    {
+      title: 'Onde fazemos controle de formigas',
+      paragraphs: [
+        'Atendemos qualquer ambiente com infestação ou histórico de aparecimento.',
+      ],
+      list: {
+        items: [
+          'Residências — cozinhas, despensas, banheiros e áreas externas',
+          'Restaurantes e padarias — atendimento sem precisar fechar o estabelecimento',
+          'Hospitais, clínicas e laboratórios — atenção máxima a formiga-faraó (vetor de infecção hospitalar)',
+          'Escolas, creches e universidades — produtos seguros para crianças, aplicação em pontos inacessíveis',
+          'Indústrias alimentícias — controle integrado de formigas dentro do programa CIPV',
+          'Hotéis e pousadas — discrição absoluta no atendimento',
+          'Jardins, pomares e sítios — controle de formigas cortadeiras (problemão pra quem planta)',
+          'Condomínios — áreas comuns, jardins e ninhos em paredes externas',
+        ],
+      },
+      closingParagraphs: [
+        'Garantia escrita em todos os serviços. Para infestações recorrentes, oferecemos contrato preventivo trimestral com vistoria e reaplicação programada.',
+      ],
+    },
+  ],
+
+  'dedetizacao-de-baratas': [
+    {
+      title: 'As duas espécies de barata urbana no Brasil',
+      paragraphs: [
+        'Combater barata sem saber qual espécie está infestando é como tomar remédio sem diagnóstico. As duas espécies que dominam o cenário urbano brasileiro têm comportamentos completamente diferentes — e técnicas de controle distintas.',
+      ],
+      list: {
+        items: [
+          'Blatella germanica (barata alemã ou barata de cozinha) — pequena (1-1,5 cm), cor castanho-claro, gosta de ambientes quentes e úmidos. Vive em cozinhas, eletrodomésticos, atrás de geladeiras, fogões, dentro de armários, frestas em azulejo. Reprodução acelerada: uma única fêmea pode gerar 30 mil descendentes em um ano se não controlada.',
+          'Periplaneta americana (barata voadora ou de esgoto) — grande (3-4 cm), cor avermelhada, voa em dias quentes. Vive em redes de esgoto, caixas de gordura, ralos, porões e tubulações. Sobe pelos ralos durante a noite. É a barata "que aparece no banheiro" — geralmente não tem ninho dentro da casa, está em trânsito pelo sistema de esgoto.',
+        ],
+      },
+      closingParagraphs: [
+        'Diagnóstico errado leva a tratamento errado: aplicar gel onde aparecem baratas americanas (que vêm de fora) não resolve, porque a colônia está no esgoto. Por isso a primeira etapa do nosso protocolo é sempre a identificação correta da espécie.',
+      ],
+    },
+    {
+      title: 'Por que baratas são tão difíceis de eliminar com produtos comuns',
+      paragraphs: [
+        'Inseticida de supermercado mata as baratas visíveis mas não resolve a infestação. Entender por que ajuda a valorizar o controle profissional.',
+      ],
+      list: {
+        items: [
+          'Resistência química — populações urbanas desenvolveram tolerância a piretróides e outros princípios ativos comuns em inseticidas domésticos',
+          'Esconderijos múltiplos — vivem em frestas e cavidades dentro de paredes, eletrodomésticos e tubulações. Pulverização de superfície atinge só 10-20% da colônia',
+          'Ootecas (cápsulas de ovos) — fêmeas carregam ou depositam ootecas que resistem a inseticidas. Quando os ovos eclodem, a colônia se reconstrói',
+          'Comportamento noturno e cauteloso — saem só quando tudo está parado e escuro. Quem você vê é minoria — pra cada barata vista, há dezenas escondidas',
+          'Reprodução acelerada — Blatella germanica gera nova geração a cada 60 dias. Sem controle, infestação dobra a cada dois meses',
+          'Onivoria extrema — comem qualquer coisa orgânica: alimentos, papelão, couro, cabelo, livros, até outros insetos mortos. Eliminar comida visível não as elimina',
+        ],
+      },
+    },
+    {
+      title: 'Por que o gel inseticida revolucionou o controle de baratas',
+      paragraphs: [
+        'Até os anos 2000, controle de barata significava esvaziar armários, sair de casa por dias e voltar a um ambiente com cheiro forte de inseticida. Hoje, o gel mudou completamente o jogo.',
+      ],
+      list: {
+        items: [
+          'Aplicação discreta em pontos minúsculos — gotas do tamanho de uma cabeça de alfinete em frestas, atrás de eletrodomésticos e em cantos de armários',
+          'Sem cheiro, sem fumaça, sem necessidade de evacuar o ambiente — pode ser aplicado em cozinhas em uso, restaurantes em operação, hospitais',
+          'Atrai as baratas em vez de afastar — elas comem o gel, voltam pra colônia e morrem lá. Outras baratas comem o cadáver e morrem também (efeito dominó)',
+          'Atinge a colônia inteira — incluindo as fêmeas com ovotecas e os indivíduos que nunca saíram do esconderijo',
+          'Segurança hospitalar — produto com toxicidade baixíssima para mamíferos. Aprovado para uso em ambientes alimentícios e hospitalares',
+          'Eficácia comprovada — eliminação de até 95% da colônia em 7 a 14 dias após a aplicação',
+        ],
+      },
+      closingParagraphs: [
+        'Para baratas americanas (de esgoto), o gel sozinho não resolve — é necessário tratamento complementar com pulverização em ralos, caixas de gordura e áreas externas. Por isso nosso protocolo combina gel + pulverização seletiva conforme o caso.',
+      ],
+    },
+    {
+      title: 'Onde fazemos controle de baratas',
+      paragraphs: [
+        'Atendemos qualquer ambiente, com protocolo adaptado ao perfil. A periodicidade varia conforme o uso e a exigência regulatória.',
+      ],
+      list: {
+        items: [
+          'Residências — recomendamos dedetização a cada 3 meses (preventiva) ou conforme aparecimento',
+          'Restaurantes, padarias, lanchonetes — periodicidade mínima MENSAL por exigência da RDC 622/22 da ANVISA',
+          'Supermercados e mercados — controle integrado com porta-iscas em áreas externas',
+          'Hospitais, clínicas e laboratórios — protocolo hospitalar com gel inseticida exclusivamente',
+          'Hotéis, pousadas e motéis — atendimento discreto fora do horário comercial',
+          'Indústrias alimentícias — programa CIPV com documentação para auditorias',
+          'Escolas, creches e universidades — atendimento em períodos sem aula',
+          'Condomínios — áreas comuns (garagem, lixeiras, salões, áreas externas)',
+        ],
+      },
+      closingParagraphs: [
+        'Garantia escrita de 3 a 6 meses em residências e comércios. Para estabelecimentos com fiscalização sanitária, recomendamos contrato CIPV que cobre baratas e demais pragas de forma contínua.',
       ],
     },
   ],
