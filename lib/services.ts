@@ -473,7 +473,7 @@ export const services: Service[] = [
       {
         question: 'Quanto tempo dura a instalação?',
         answer:
-          'Espículas e redes profissionais duram de 5 a 10 anos. Damos garantia escrita.',
+          'Espículas e redes profissionais têm garantia escrita de 1 a 5 anos conforme a solução instalada. A vida útil real costuma ser ainda maior com manutenção adequada.',
       },
       {
         question: 'Quais doenças os pombos transmitem?',
