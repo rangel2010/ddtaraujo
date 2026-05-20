@@ -365,6 +365,89 @@ export const richContent: Record<string, RichSection[]> = {
     },
   ],
 
+  'dedetizacao-de-percevejos-em-londrina': [
+    {
+      title: 'Como identificar uma infestação de percevejos',
+      paragraphs: [
+        'Percevejos de cama são minúsculos (4-5mm), achatados e cor de café — perfeitamente camuflados em colchões e tecidos escuros. Você raramente vê o animal antes de identificar os sinais que ele deixa. Saber reconhecê-los rápido é o que separa uma infestação resolvível de um pesadelo de meses.',
+      ],
+      list: {
+        items: [
+          'Picadas na pele em fileiras ou agrupadas (geralmente em braços, pernas e pescoço) — aparecem após dormir',
+          'Coceira intensa e vermelhidão no local da picada (algumas pessoas têm reação alérgica forte)',
+          'Manchas pretas pequenas em lençóis, colchões e cabeceiras (fezes secas)',
+          'Manchas de sangue no lençol (animal esmagado durante o sono)',
+          'Cascas/exúvias claras encontradas em cantos do colchão (mudas durante o crescimento)',
+          'Ovos brancos minúsculos (1mm) agrupados em frestas e costuras de móveis',
+          'Odor característico adocicado em ambientes com infestação grande',
+          'Insetos visíveis em costuras de colchões, cabeceiras, tomadas e atrás de quadros (geralmente à noite)',
+        ],
+      },
+      closingParagraphs: [
+        'A diferença entre uma picada de percevejo e de pernilongo é o padrão: percevejos picam várias vezes seguidas formando linhas ou agrupamentos. Pernilongos picam dispersos. Se as picadas aparecem só após dormir e seguem um padrão linear, há altíssima chance de infestação.',
+      ],
+    },
+    {
+      title: 'Como os percevejos entram em casa',
+      paragraphs: [
+        'Percevejos não vêm "do nada". Eles são transportados — quase sempre involuntariamente pelo próprio morador ou visitante. Conhecer os vetores ajuda a prevenir reincidência.',
+      ],
+      list: {
+        items: [
+          'Hospedagens infestadas — hotéis, pousadas, motéis e Airbnbs. Os insetos entram na bagagem',
+          'Móveis e colchões usados — compra de segunda mão sem inspeção rigorosa é a principal causa em residências',
+          'Visitas e hóspedes — pessoas que estiveram em ambientes infestados podem trazer em roupas e bagagem',
+          'Mudanças e carregamento — caminhões e empresas de mudança que transportam móveis de imóveis infestados',
+          'Viagens de avião e ônibus — assentos e compartimentos de bagagem podem hospedar temporariamente',
+          'Compartilhamento de paredes — em apartamentos, podem migrar entre unidades por tomadas e rachaduras',
+        ],
+      },
+      closingParagraphs: [
+        'Ao voltar de uma viagem suspeita: lave todas as roupas em água quente (acima de 60°C) ou coloque na secadora em alta temperatura por 30 minutos. Inspecione a bagagem antes de levar pra dentro de casa.',
+      ],
+    },
+    {
+      title: 'Por que percevejos exigem protocolo especial',
+      paragraphs: [
+        'Percevejos são a praga mais difícil de eliminar em ambiente doméstico — não por falta de produto eficaz, mas por características biológicas que tornam o controle desafiador.',
+      ],
+      list: {
+        items: [
+          'Resistência crescente — populações modernas desenvolveram resistência a vários inseticidas comuns. Por isso usamos combinação de técnicas (química + térmica + mecânica)',
+          'Ovos não são atingidos por produto comum — a casca dos ovos protege contra a maioria dos químicos. Por isso o RETORNO obrigatório em 14 a 21 dias é essencial: mata as ninfas que eclodiram depois da primeira aplicação',
+          'Esconderijos múltiplos — colchões, cabeceiras, rodapés, tomadas, atrás de quadros, costuras de poltronas. Uma única omissão na inspeção compromete tudo',
+          'Sobrevivência longa sem alimento — adultos sobrevivem até 1 ano sem se alimentar, esperando o ambiente "esvaziar"',
+          'Ciclo de vida resiliente — ovo → ninfa → adulto em 30-45 dias, o que define nossa janela de retorno',
+          'Migração entre ambientes — podem migrar de uma sala para outra pelo rodapé, especialmente sob estresse químico',
+        ],
+      },
+      closingParagraphs: [
+        'Por tudo isso, nosso protocolo é multi-etapas: pulverização residual + vapor a alta temperatura (mata ovos e adultos por contato) + pó dessecante em frestas + retorno obrigatório. Resultado: 2 a 3 aplicações em 30 a 45 dias com eliminação completa.',
+      ],
+    },
+    {
+      title: 'Como preparar o ambiente antes da aplicação',
+      paragraphs: [
+        'Sucesso do tratamento depende da preparação prévia. Entregamos checklist detalhado ao cliente, mas em linhas gerais:',
+      ],
+      list: {
+        items: [
+          'Aspirar minuciosamente colchões, cabeceiras, sofás e rodapés (descartar o saco do aspirador em saco lacrado imediatamente)',
+          'Lavar TODOS os tecidos (roupas de cama, cortinas, roupas no armário, capas) em água quente acima de 60°C',
+          'Itens não laváveis: colocar em secadora por 30 minutos em temperatura alta, ou em sacos pretos ao sol forte por 4-6 horas',
+          'Esvaziar gavetas, criados-mudos e armários próximos à cama',
+          'Afastar móveis das paredes pelo menos 20cm pra acesso técnico',
+          'Remover quadros e objetos das paredes do quarto afetado',
+          'Aspirar ralos, frestas em rodapés e tomadas (com adaptador)',
+          'Selar saída do aspirador e descartar em saco lacrado FORA da residência',
+        ],
+      },
+      closingParagraphs: [
+        'Atendemos hotéis, pousadas e motéis com discrição absoluta — protocolo executado fora do horário comercial, equipe sem identificação visual e cuidado redobrado com a reputação do estabelecimento. Histórico de infestação não fica registrado em laudos sem autorização do cliente.',
+      ],
+    },
+  ],
+
   'desratizacao': [
     {
       title: 'As três principais espécies de ratos urbanos',
@@ -436,6 +519,260 @@ export const richContent: Record<string, RichSection[]> = {
       },
       closingParagraphs: [
         'Para estabelecimentos com fiscalização sanitária frequente, recomendamos o contrato CIPV (Controle Integrado de Pragas e Vetores) com visitas programadas e documentação técnica completa para auditorias.',
+      ],
+    },
+  ],
+
+  'dedetizacao-em-londrina': [
+    {
+      title: 'As pragas urbanas que combatemos',
+      paragraphs: [
+        'Dedetização é o termo genérico que cobre o controle de praticamente qualquer praga urbana. Em mais de 40 anos atendendo Londrina, montamos protocolos específicos para cada uma.',
+      ],
+      list: {
+        items: [
+          'Baratas — de cozinha (Blatella germânica) e americanas (Periplaneta americana)',
+          'Ratos e roedores — rato de telhado, ratazana e camundongo',
+          'Cupins — de madeira seca e subterrâneos',
+          'Formigas — doméstica, faraó, lava-pé, cortadeiras',
+          'Escorpiões — Tityus serrulatus (amarelo) e Tityus bahiensis (marrom)',
+          'Aranhas — incluindo armadeira e marrom (peçonhentas)',
+          'Pulgas e carrapatos — em residências, sítios e canis',
+          'Percevejos de cama — em colchões, estofados e hotéis',
+          'Moscas, mosquitos e pernilongos',
+          'Pombos e morcegos — manejo ecológico conforme normas ambientais',
+          'Pragas específicas como traças, lacraias, tatuzinhos e outros invertebrados',
+        ],
+      },
+      closingParagraphs: [
+        'Cada praga exige produto, dosagem e técnica diferente. Identificar corretamente a espécie é metade do trabalho — o resto é aplicar o protocolo certo.',
+      ],
+    },
+    {
+      title: 'Como escolhemos a técnica certa para cada caso',
+      paragraphs: [
+        'Não existe "uma" dedetização — existem várias técnicas, escolhidas conforme a praga, o ambiente e a sensibilidade do local. A escolha errada significa baixa eficácia, risco desnecessário ou desconforto pros ocupantes.',
+      ],
+      list: {
+        items: [
+          'Gel inseticida — pontos discretos em cozinhas e ambientes sensíveis, sem cheiro e sem necessidade de evacuar o espaço',
+          'Pulverização residual — produto líquido aplicado em rodapés, frestas e abrigos, com efeito de longa duração',
+          'Polvilhamento — pó inseticida em locais secos e de difícil acesso (forros, frestas, caixas elétricas)',
+          'Atomização (UBV — Ultra Baixo Volume) — partículas microscópicas que cobrem grandes áreas, ideal para galpões e ambientes amplos',
+          'Termonebulização — fumaça inseticida penetrante, para áreas externas e estruturas com muitos esconderijos',
+          'Porta-iscas lacrados — controle de roedores com segurança total para crianças e pets',
+          'Barreira química no solo — para cupim subterrâneo e prevenção em obras novas',
+          'Manejo ecológico — desalojamento e exclusão para morcegos e pombos, conforme legislação ambiental',
+        ],
+      },
+      closingParagraphs: [
+        'Combinações são comuns: uma residência com baratas e formigas pode receber gel em cozinha + pulverização em ralos + iscas externas — tudo em uma visita.',
+      ],
+    },
+    {
+      title: 'A diferença que 40 anos fazem na prática',
+      paragraphs: [
+        'Tradição em controle de pragas não é apenas tempo de mercado — é o conhecimento técnico acumulado que separa um serviço eficaz de uma simples aplicação de inseticida.',
+      ],
+      list: {
+        items: [
+          'Equipe técnica própria — sem terceirização, com treinamento contínuo em produtos e técnicas',
+          'Credenciamento ANVISA, IAP e SESA — em conformidade com a Resolução SESA 1153/2024 e RDC 622/2022',
+          'Produtos sempre registrados — usamos apenas inseticidas com registro no Ministério da Saúde, com laudo entregue ao cliente',
+          'Identificação correta de espécies — diagnóstico técnico antes da aplicação, não "pulveriza e reza"',
+          'GAT — Garantia de Assistência Técnica escrita em todo serviço, com retornos sem custo dentro do prazo',
+          'Histórico de clientes — milhares de residências, condomínios, indústrias e empresas atendidos em Londrina e região',
+          'Equipamentos modernos — atualizamos constantemente os equipamentos de aplicação para garantir eficácia e segurança',
+        ],
+      },
+    },
+    {
+      title: 'Onde fazemos dedetização',
+      paragraphs: [
+        'Atendemos todos os tipos de ambiente em Londrina e em todo o Paraná. Para cada perfil, um protocolo adequado.',
+      ],
+      list: {
+        items: [
+          'Residências (casas, apartamentos, sobrados)',
+          'Condomínios verticais e horizontais — áreas comuns, garagens, salões',
+          'Comércios em geral — lojas, escritórios, salões',
+          'Restaurantes, lanchonetes e padarias — com atendimento fora do horário comercial',
+          'Hotéis, pousadas e motéis — com discrição',
+          'Indústrias e galpões — alimentícia, farmacêutica, logística',
+          'Hospitais, clínicas e laboratórios — com produtos compatíveis',
+          'Escolas, creches e universidades',
+          'Sítios, chácaras e propriedades rurais',
+        ],
+      },
+      closingParagraphs: [
+        'Para estabelecimentos com fiscalização sanitária frequente (alimentos, saúde, hotelaria), recomendamos contrato CIPV — programa contínuo que substitui dedetizações pontuais com atendimento programado e documentação completa para auditorias.',
+      ],
+    },
+  ],
+
+  'sanitizacao-de-ambientes-londrina': [
+    {
+      title: 'A diferença entre limpeza, higienização e sanitização',
+      paragraphs: [
+        'Esses três termos costumam ser usados como sinônimos no dia a dia, mas tecnicamente são processos diferentes. Entender a distinção ajuda a saber quando contratar cada um.',
+      ],
+      list: {
+        items: [
+          'Limpeza — remoção de sujeira visível (poeira, resíduos, manchas) usando água, sabão e produtos comuns. Deixa o ambiente esteticamente limpo, mas não elimina patógenos.',
+          'Higienização — limpeza profunda com produtos específicos que reduzem a carga microbiana. Mata parte dos microorganismos, mas não tem eficácia comprovada contra vírus e bactérias resistentes.',
+          'Sanitização — eliminação de agentes patogênicos (vírus, bactérias, fungos, ácaros) usando produtos com registro hospitalar e equipamento específico (atomizador ou nebulizador). É o nível mais alto de descontaminação possível em ambiente urbano.',
+        ],
+      },
+      closingParagraphs: [
+        'Limpeza você faz toda semana com sua equipe. Higienização você contrata mensalmente. Sanitização é o serviço técnico que entra quando há necessidade de eliminação garantida de patógenos — após casos confirmados de doenças, em ambientes com imunossuprimidos, em estabelecimentos com público sensível ou para conformidade sanitária.',
+      ],
+    },
+    {
+      title: 'Patógenos que a sanitização elimina',
+      paragraphs: [
+        'Nossos produtos têm eficácia comprovada contra um espectro amplo de microorganismos causadores de doenças. A aplicação por atomização ou nebulização garante cobertura de superfícies altas, frestas e áreas difíceis de alcançar com pano comum.',
+      ],
+      list: {
+        items: [
+          'Vírus respiratórios — coronavírus (incluindo SARS-CoV-2), influenza, parainfluenza, vírus sincicial respiratório (VSR)',
+          'Vírus gastrointestinais — rotavírus, norovírus (causadores de viroses)',
+          'Bactérias — estafilococos, estreptococos, E. coli, Salmonella, Pseudomonas',
+          'Bactérias resistentes — incluindo Staphylococcus aureus resistente à meticilina (MRSA)',
+          'Fungos e bolores — Aspergillus, Candida, Penicillium',
+          'Ácaros — incluindo o ácaro do pó (Dermatophagoides), principal causador de alergias respiratórias em casa',
+          'Esporos — formas resistentes de fungos e bactérias em ambientes úmidos',
+        ],
+      },
+      closingParagraphs: [
+        'A escolha do produto e da técnica é feita conforme o objetivo: pra ambiente após Covid, usamos foco em coronavírus; pra creche, foco em vírus gastrointestinais e respiratórios; pra alérgicos, foco em ácaros e fungos.',
+      ],
+    },
+    {
+      title: 'Quando vale a pena fazer sanitização',
+      paragraphs: [
+        'Sanitização não substitui limpeza diária — complementa quando há indicação técnica específica. Algumas situações que justificam fortemente o serviço:',
+      ],
+      list: {
+        items: [
+          'Após casos confirmados de Covid, gripe forte, viroses ou outras doenças infecciosas no ambiente',
+          'Em residências com pessoas imunossuprimidas (quimioterapia, pós-transplante, doenças autoimunes)',
+          'Periodicamente em ambientes com idosos, bebês ou crianças com saúde frágil',
+          'Em escritórios e empresas após retorno de surto entre funcionários',
+          'Em clínicas, consultórios médicos, odontológicos e veterinários — rotina mensal',
+          'Em academias, estúdios de pilates e ambientes com transpiração intensa',
+          'Em veículos após transporte de pessoas doentes (táxi, Uber, ambulâncias, vans)',
+          'Em escolas, creches e universidades — geralmente em períodos de férias e após picos sazonais',
+          'Em ambientes com mofo ou bolor visível (combinado com tratamento de causa)',
+        ],
+      },
+    },
+    {
+      title: 'Onde fazemos sanitização em Londrina e região',
+      paragraphs: [
+        'Atendemos qualquer ambiente fechado, desde os mais simples até os mais técnicos. Adaptamos produto e equipamento conforme o local.',
+      ],
+      list: {
+        items: [
+          'Escritórios, salas comerciais e coworkings',
+          'Clínicas, consultórios, hospitais e laboratórios',
+          'Escolas, creches, universidades e cursinhos',
+          'Academias, estúdios e centros esportivos',
+          'Restaurantes, lanchonetes e padarias (combinado com CIPV)',
+          'Hotéis, pousadas e motéis',
+          'Residências (especialmente com imunossuprimidos ou após viroses)',
+          'Veículos (carros particulares, táxis, frota corporativa, ambulâncias, ônibus)',
+          'Auditórios, salões de eventos e ambientes corporativos',
+          'Áreas comuns de condomínios — academias, salões, brinquedotecas',
+        ],
+      },
+      closingParagraphs: [
+        'A aplicação é rápida (geralmente 30 minutos a 1 hora por ambiente) e o local fica liberado para uso em 1 a 2 horas após o serviço. Entregamos certificado de sanitização válido para apresentação à vigilância sanitária ou comprovação corporativa.',
+      ],
+    },
+  ],
+
+  'dac-divisao-de-atendimento-a-condominios': [
+    {
+      title: 'Por que condomínios precisam de programa próprio',
+      paragraphs: [
+        'Condomínio não é uma residência grande — é um sistema complexo com áreas compartilhadas, fluxos de pessoas, regulamentação específica e responsabilidade jurídica do síndico. Por isso o controle de pragas em condomínio merece estrutura própria.',
+      ],
+      list: {
+        items: [
+          'Áreas comuns múltiplas — garagem, salão de festas, áreas verdes, lixeiras, playground, piscina, churrasqueira, salas de máquinas',
+          'Caixas d\'água compartilhadas — obrigação semestral de limpeza conforme ANVISA',
+          'Fluxo constante de pessoas e bagagens — moradores, prestadores, mudanças, hóspedes (vetor de entrada de pragas)',
+          'Reservatórios e cisternas — atrativos para roedores e insetos sem manutenção',
+          'Lixo orgânico em grandes volumes — fonte de alimento concentrada para pragas',
+          'Responsabilidade legal do síndico — obrigação de manter o condomínio em conformidade sanitária',
+          'Necessidade de prestação de contas — moradores cobram transparência em assembleia',
+          'Vulnerabilidade compartilhada — uma unidade infestada pode contaminar vizinhas por tubulações e frestas',
+        ],
+      },
+    },
+    {
+      title: 'O que a DAC inclui no contrato anual',
+      paragraphs: [
+        'Nosso contrato DAC é desenhado para ser o "controle total" do condomínio — sem precisar contratar várias empresas para diferentes serviços.',
+      ],
+      list: {
+        items: [
+          'Dedetização periódica das áreas comuns (garagem, salão, áreas externas)',
+          'Desratização contínua com porta-iscas lacrados em áreas externas e técnicas',
+          'Limpeza e desinfecção semestral de caixas d\'água e cisternas (conforme ANVISA)',
+          'Análise físico-química e microbiológica da água após higienização',
+          'Controle de pombos quando necessário (espículas, telas, manejo)',
+          'Manejo de morcegos em forros e telhados (quando há colônia identificada)',
+          'Cronograma fixo de visitas técnicas (geralmente trimestrais ou semestrais)',
+          'Atendimento emergencial 24h via WhatsApp — pra casos urgentes entre visitas, sem custo adicional',
+          'Comunicação direta com síndico ou administradora',
+          'Equipe identificada com crachá, uniforme e cadastro prévio na portaria',
+        ],
+      },
+      closingParagraphs: [
+        'Para condomínios com restaurantes, padarias ou áreas comerciais nos andares térreos, oferecemos também o CIPV (Controle Integrado de Pragas e Vetores) integrado ao contrato, atendendo a RDC 622/2022 da ANVISA.',
+      ],
+    },
+    {
+      title: 'Documentação técnica que entregamos pro síndico',
+      paragraphs: [
+        'Síndico precisa prestar contas em assembleia e estar coberto juridicamente em caso de fiscalização sanitária. Por isso entregamos pacote documental completo a cada serviço.',
+      ],
+      list: {
+        items: [
+          'Laudo técnico assinado por responsável habilitado (CRQ)',
+          'Certificado de execução de serviço (válido para apresentação à vigilância sanitária)',
+          'Relatório de visita técnica com fotos do antes/depois quando aplicável',
+          'Mapa de pontos de monitoramento (porta-iscas, armadilhas) atualizado',
+          'Lista de produtos utilizados com concentrações, registros ANVISA e fichas técnicas',
+          'Análise físico-química e microbiológica da água após higienização de caixas',
+          'Relatórios consolidados anuais para apresentação em AGO/AGE',
+          'Cronograma de manutenção do ano em curso e do próximo ano',
+        ],
+      },
+      closingParagraphs: [
+        'O síndico pode anexar essa documentação à prestação de contas anual, demonstrando que o condomínio está em conformidade legal e que a verba destinada ao controle de pragas é bem aplicada.',
+      ],
+    },
+    {
+      title: 'Tipos de condomínios que atendemos',
+      paragraphs: [
+        'Atendemos qualquer porte e configuração, com contrato adaptado à realidade de cada empreendimento.',
+      ],
+      list: {
+        items: [
+          'Edifícios residenciais pequenos (até 20 unidades)',
+          'Edifícios residenciais médios e grandes (20 a 200+ unidades)',
+          'Condomínios horizontais — casas em loteamentos fechados',
+          'Condomínios mistos — com lojas, escritórios ou restaurantes no térreo',
+          'Condomínios de alto padrão — com infraestrutura completa (academia, spa, salão gourmet)',
+          'Edifícios comerciais — salas, escritórios, consultórios',
+          'Centros empresariais e flat-services',
+          'Empreendimentos novos — atendimento desde a entrega das chaves',
+        ],
+      },
+      closingParagraphs: [
+        'Vistoria inicial é GRATUITA e sem compromisso. Após visita técnica entregamos proposta personalizada com escopo, cronograma e investimento — você apresenta em assembleia para aprovação dos condôminos.',
       ],
     },
   ],
