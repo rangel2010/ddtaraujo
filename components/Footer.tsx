@@ -13,7 +13,7 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>
             <div className="flex items-center gap-1">
-              <Image src="/logo-white.png" alt="Araújo Dedetizadora" width={2460} height={671} className="h-12 w-auto" />
+              <Image src="/logo-nova-white.png" alt="Araujo Controladora de Pragas Urbanas" width={1174} height={317} className="h-12 w-auto" />
               <Image src="/badge-new.png" alt="40 anos de tradição" width={400} height={400} className="h-14 w-14 flex-shrink-0 drop-shadow-md opacity-90" />
               <Link href="/garantia" aria-label="Garantia escrita Araújo" className="mt-1 transition hover:scale-105">
                 <Image src="/selo-garantia.png" alt="Selo Garantia Escrita Araújo" width={240} height={160} className="h-16 w-auto flex-shrink-0 drop-shadow-md" />

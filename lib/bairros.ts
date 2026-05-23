@@ -193,17 +193,17 @@ export const bairros: Bairro[] = [
     intro:
       'O Jardim Quebec é um bairro predominantemente residencial onde famílias buscam segurança, tranquilidade e ruas arborizadas. Essa arborização generosa é parte da identidade do bairro — mas também atrai pragas urbanas que se beneficiam de árvores e jardins extensos: escorpiões em entulho de poda, formigas que invadem casas vindas dos jardins, carrapatos trazidos por animais de estimação que brincam em áreas verdes. O perfil familiar exige cuidado redobrado com produtos seguros para crianças e pets.',
     body:
-      'A Araújo atende o Jardim Quebec com dedetização residencial focada em famílias: produtos antialérgicos sob demanda, técnicas que não exigem sair de casa, gel inseticida em ambientes sensíveis, atendimento agendado com pontualidade. Para o problema específico de escorpiões na região (que cresce em períodos quentes), oferecemos atendimento emergencial em até 24 horas e protocolo integrado: pulverização nos pontos de acesso + controle de baratas (alimento dos escorpiões) + orientação para vedação de ralos e frestas.',
+      'A Araújo atende o Jardim Quebec com dedetização residencial focada em famílias: produtos antialérgicos sob demanda, técnicas que não exigem sair de casa, gel inseticida em ambientes sensíveis, atendimento agendado com pontualidade. Para o problema específico de escorpiões na região (que cresce em períodos quentes), oferecemos atendimento emergencial e protocolo integrado: pulverização nos pontos de acesso + controle de baratas (alimento dos escorpiões) + orientação para vedação de ralos e frestas.',
     serviceHighlights: [
       { slug: 'dedetizacao-em-londrina', reason: 'Dedetização residencial premium com produtos antialérgicos' },
-      { slug: 'dedetizacao-para-escorpioes-em-londrina', reason: 'Bairros arborizados têm risco aumentado — atendimento 24h' },
+      { slug: 'dedetizacao-para-escorpioes-em-londrina', reason: 'Bairros arborizados têm risco aumentado — atendimento emergencial' },
       { slug: 'dedetizacao-de-formigas', reason: 'Formigas vêm dos jardins — gel iscas eliminam a colônia toda' },
       { slug: 'dedetizacao-de-carrapatos', reason: 'Famílias com pets e jardins amplos = controle de carrapatos' },
     ],
     nearbyAreas: ['vila-casoni', 'centro', 'igapo'],
     metaTitle: 'Dedetização no Jardim Quebec — Famílias | Araújo Londrina',
     metaDescription:
-      'Controle de pragas no Jardim Quebec em Londrina. Dedetização residencial com produtos seguros para crianças e pets. Atendimento emergencial 24h.',
+      'Controle de pragas no Jardim Quebec em Londrina. Dedetização residencial com produtos seguros para crianças e pets. Atendimento emergencial.',
   },
   {
     slug: 'igapo',

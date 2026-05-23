@@ -1100,7 +1100,7 @@ export const richContent: Record<string, RichSection[]> = {
           'Controle de pombos quando necessário (espículas, telas, manejo)',
           'Manejo de morcegos em forros e telhados (quando há colônia identificada)',
           'Cronograma fixo de visitas técnicas (geralmente trimestrais ou semestrais)',
-          'Atendimento emergencial 24h via WhatsApp — pra casos urgentes entre visitas, sem custo adicional',
+          'Atendimento emergencial via WhatsApp — pra casos urgentes entre visitas, sem custo adicional',
           'Comunicação direta com síndico ou administradora',
           'Equipe identificada com crachá, uniforme e cadastro prévio na portaria',
         ],

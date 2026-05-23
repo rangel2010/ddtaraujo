@@ -53,7 +53,7 @@ export default function BlogPostPage({ params }: Params) {
     publisher: {
       '@type': 'Organization',
       name: siteConfig.name,
-      logo: { '@type': 'ImageObject', url: `${siteConfig.url}/logo.png` },
+      logo: { '@type': 'ImageObject', url: `${siteConfig.url}/logo-nova-color.png` },
     },
     mainEntityOfPage: {
       '@type': 'WebPage',

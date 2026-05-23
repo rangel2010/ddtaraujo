@@ -485,7 +485,7 @@ export const services: Service[] = [
   {
     slug: 'dedetizacao-de-baratas',
     title: 'Dedetização de Baratas',
-    shortTitle: 'Baratas',
+    shortTitle: 'Dedetização de Baratas',
     category: 'insetos',
     icon: 'bug',
     metaTitle: 'Dedetização de Baratas em Londrina | Gel e Pulverização | Araújo',
@@ -541,7 +541,7 @@ export const services: Service[] = [
   {
     slug: 'dedetizacao-para-escorpioes-em-londrina',
     title: 'Dedetização de Escorpiões',
-    shortTitle: 'Escorpiões',
+    shortTitle: 'Dedetização de Escorpiões',
     category: 'insetos',
     icon: 'alert-triangle',
     metaTitle: 'Dedetização de Escorpiões em Londrina | Araújo DDT',
@@ -602,7 +602,7 @@ export const services: Service[] = [
   {
     slug: 'dedetizacao-de-carrapatos',
     title: 'Dedetização de Carrapatos',
-    shortTitle: 'Carrapatos',
+    shortTitle: 'Dedetização de Carrapatos',
     category: 'insetos',
     icon: 'bug',
     metaTitle: 'Dedetização de Carrapatos em Londrina | Araújo DDT',
@@ -656,7 +656,7 @@ export const services: Service[] = [
   {
     slug: 'dedetizacao-de-aranhas',
     title: 'Dedetização de Aranhas',
-    shortTitle: 'Aranhas',
+    shortTitle: 'Dedetização de Aranhas',
     category: 'insetos',
     icon: 'bug',
     metaTitle: 'Dedetização de Aranhas em Londrina | Araújo DDT',
@@ -710,7 +710,7 @@ export const services: Service[] = [
   {
     slug: 'dedetizacao-de-formigas',
     title: 'Dedetização de Formigas',
-    shortTitle: 'Formigas',
+    shortTitle: 'Dedetização de Formigas',
     category: 'insetos',
     icon: 'bug',
     metaTitle: 'Dedetização de Formigas em Londrina | Araújo DDT',
@@ -760,7 +760,7 @@ export const services: Service[] = [
   {
     slug: 'dedetizacao-de-percevejos-em-londrina',
     title: 'Dedetização de Percevejos',
-    shortTitle: 'Percevejos',
+    shortTitle: 'Dedetização de Percevejos',
     category: 'insetos',
     icon: 'bug',
     metaTitle: 'Dedetização de Percevejos em Londrina | Araújo DDT',
@@ -927,6 +927,81 @@ export const services: Service[] = [
     ],
   },
   {
+    slug: 'higienizacao-de-bebedouros-em-londrina',
+    title: 'Higienização de Bebedouros em Londrina',
+    shortTitle: 'Higienização de Bebedouros',
+    category: 'higienizacao',
+    icon: 'droplet',
+    metaTitle: 'Higienização de Bebedouros em Londrina | Araújo DDT',
+    metaDescription:
+      'Higienização e limpeza profissional de bebedouros e purificadores em Londrina. Desinfecção interna, sanitização externa e troca de filtros — escritórios, escolas, indústrias e clínicas.',
+    keywords: [
+      'higienização de bebedouros londrina',
+      'limpeza de bebedouro londrina',
+      'troca de filtro bebedouro londrina',
+      'sanitização de purificadores londrina',
+    ],
+    hero: {
+      headline: 'Higienização de Bebedouros e Purificadores',
+      subheadline:
+        'Limpeza interna profunda, desinfecção das superfícies e troca dos filtros — água potável e segura para o seu time, alunos ou clientes.',
+    },
+    intro:
+      'Bebedouros e purificadores acumulam biofilme, fungos e bactérias dentro dos reservatórios, mangueiras e bicos de saída — mesmo quando parecem limpos por fora. A higienização profissional combina três etapas: limpeza interna do reservatório, sanitização externa das superfícies de contato (bicos, botões, bandejas) e troca dos filtros conforme a recomendação do fabricante. Recomendada a cada 6 meses em ambientes residenciais e a cada 3 meses em escritórios, escolas, clínicas e indústrias com alto fluxo de uso.',
+    benefits: [
+      'Limpeza e desinfecção interna do reservatório',
+      'Sanitização externa de bicos, botões e bandejas',
+      'Troca de filtros (refis originais ou compatíveis)',
+      'Produtos sem cheiro residual e atóxicos após enxágue',
+      'Certificado de higienização para vigilância sanitária',
+      'Atende escritórios, escolas, clínicas, academias e indústrias',
+    ],
+    process: [
+      {
+        title: 'Diagnóstico',
+        description: 'Identificamos o modelo do bebedouro/purificador e o tipo de filtro compatível.',
+      },
+      {
+        title: 'Desmontagem e limpeza interna',
+        description: 'Reservatório, mangueiras e bicos passam por limpeza com produto sanitizante e enxágue completo.',
+      },
+      {
+        title: 'Troca do filtro',
+        description: 'Substituição do refi pelo modelo original ou compatível, conforme especificação do fabricante.',
+      },
+      {
+        title: 'Sanitização externa',
+        description: 'Botões, bandejas e superfícies de contato recebem desinfecção com produto de uso alimentar.',
+      },
+      {
+        title: 'Certificado',
+        description: 'Emitimos comprovante com data, próxima troca recomendada e assinatura do técnico.',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Com que frequência o bebedouro precisa ser higienizado?',
+        answer:
+          'Recomendamos a cada 6 meses em residências e a cada 3 meses em ambientes coletivos (escritórios, escolas, academias, clínicas). A frequência pode ser maior em locais com mais de 50 usuários diários.',
+      },
+      {
+        question: 'A troca do filtro está incluída no serviço?',
+        answer:
+          'Sim. Já trazemos o filtro compatível com o seu modelo. Trabalhamos com refis originais (Soft, Latina, Esmaltec, Masterfrio, Polar, IBBL) e compatíveis certificados pelo INMETRO.',
+      },
+      {
+        question: 'Vocês emitem certificado?',
+        answer:
+          'Sim. Emitimos certificado de higienização com data, próxima troca recomendada e assinatura do técnico responsável — válido para vigilância sanitária, auditorias e visitas de NR/SESMT.',
+      },
+      {
+        question: 'Atendem contratos para várias unidades?',
+        answer:
+          'Sim. Atendemos redes de lojas, escolas, escritórios e indústrias com cronograma fixo de higienização para todas as unidades, com relatório consolidado por filial.',
+      },
+    ],
+  },
+  {
     slug: 'dac-divisao-de-atendimento-a-condominios',
     title: 'DAC — Divisão de Atendimento a Condomínios',
     shortTitle: 'Atendimento a Condomínios',
@@ -934,7 +1009,7 @@ export const services: Service[] = [
     icon: 'building',
     metaTitle: 'Controle de Pragas para Condomínios em Londrina | DAC | Araújo',
     metaDescription:
-      'Divisão exclusiva de atendimento a condomínios em Londrina. Contratos personalizados, atendimento 24h emergencial e documentação para AGE/AGO.',
+      'Divisão exclusiva de atendimento a condomínios em Londrina. Contratos personalizados, atendimento emergencial e documentação para AGE/AGO.',
     keywords: [
       'controle de pragas condomínio londrina',
       'dedetização condomínio londrina',
@@ -949,7 +1024,7 @@ export const services: Service[] = [
       'Condomínios têm necessidades específicas: áreas comuns, garagem, jardins, caixas d\'água, monitoramento de pragas e documentação para a assembleia. Nossa DAC oferece contratos personalizados com cronograma anual, equipe dedicada e relatórios técnicos para o síndico apresentar nas reuniões.',
     benefits: [
       'Contrato anual com cronograma de visitas',
-      'Atendimento emergencial 24h via WhatsApp',
+      'Atendimento emergencial via WhatsApp',
       'Relatórios técnicos para AGO/AGE',
       'Inclui dedetização, desratização, limpeza de caixas e análise físico-química e microbiológica de água',
       'Empresa com Alvará de Funcionamento, Licença CEVS e CRQ',

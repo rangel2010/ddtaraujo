@@ -41,7 +41,7 @@ export default function BairroPage({ params }: Params) {
     description: bairro.metaDescription,
     url: `${siteConfig.url}/atendimento/${bairro.slug}`,
     telephone: `+55${siteConfig.phone}`,
-    image: `${siteConfig.url}/logo.png`,
+    image: `${siteConfig.url}/logo-nova-color.png`,
     areaServed: {
       '@type': 'Place',
       name: bairro.fullName,

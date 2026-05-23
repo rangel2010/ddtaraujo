@@ -36,8 +36,8 @@ export default function Header() {
       </div>
 
       <div className="container flex items-center justify-between py-4">
-        <Link href="/" className="flex items-center gap-3" aria-label="Araújo Dedetizadora">
-          <Image src="/logo.png" alt="Araújo Dedetizadora" width={2460} height={671} priority className="h-10 w-auto md:h-12" />
+        <Link href="/" className="flex items-center gap-3" aria-label="Araujo Controladora de Pragas Urbanas">
+          <Image src="/logo-nova-color.png" alt="Araujo Controladora de Pragas Urbanas" width={1174} height={317} priority className="h-10 w-auto md:h-12" />
           <Image src="/badge-new.png" alt="40 anos de tradição" width={400} height={400} className="hidden sm:block h-12 w-12 md:h-14 md:w-14 drop-shadow-md opacity-90" />
         </Link>
 

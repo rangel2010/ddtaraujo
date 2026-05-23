@@ -19,18 +19,21 @@ const homeFaqSchema = {
   mainEntity: heroFaqs.map((f) => ({ '@type': 'Question', name: f.question, acceptedAnswer: { '@type': 'Answer', text: f.answer } })),
 };
 
-const stats = [
-  { value: '40+', label: 'Anos de experiência' },
-  { value: '15.000+', label: 'Clientes atendidos' },
-  { value: '4,8★', label: 'No Google' },
-  { value: '24h', label: 'Atendimento WhatsApp' },
+// Ordem do docx de revisão: 9 serviços (sem pragas individuais)
+const FEATURED_ORDER = [
+  'dedetizacao-em-londrina',
+  'desratizacao',
+  'controle-de-pragas-em-londrina',
+  'descupinizacao',
+  'controle-de-morcegos-em-londrina',
+  'controle-de-pombos-em-londrina',
+  'limpeza-de-caixas-de-agua-em-londrina',
+  'sanitizacao-de-ambientes-londrina',
+  'higienizacao-de-bebedouros-em-londrina',
 ];
-
-const featuredServices = services.filter((s) => [
-  'dedetizacao-em-londrina','desratizacao','descupinizacao','controle-de-pragas-em-londrina',
-  'controle-de-morcegos-em-londrina','dedetizacao-para-escorpioes-em-londrina',
-  'dedetizacao-de-baratas','limpeza-de-caixas-de-agua-em-londrina',
-].includes(s.slug));
+const featuredServices = FEATURED_ORDER
+  .map((slug) => services.find((s) => s.slug === slug))
+  .filter((s): s is typeof services[number] => Boolean(s));
 
 const groupedAll = services.reduce<Record<string, typeof services>>((acc, s) => {
   if (!acc[s.category]) acc[s.category] = [];
@@ -135,7 +138,7 @@ export default function HomePage() {
                   { value: '40+', label: 'Anos de experiência', icon: 'M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z' },
                   { value: '15.000+', label: 'Clientes atendidos', icon: 'M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z' },
                   { value: '100%', label: 'Garantia escrita', icon: 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z' },
-                  { value: '24h', label: 'Atendimento WhatsApp', icon: 'M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z' },
+                  { value: '—', label: 'A definir', icon: 'M12 6v6m0 0v6m0-6h6m-6 0H6' },
                 ].map((s) => (
                   <div key={s.label} className="rounded-2xl bg-white/10 p-5 border border-white/10 backdrop-blur transition hover:bg-white/15">
                     <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent-400/15 ring-1 ring-accent-400/40">
@@ -179,7 +182,7 @@ export default function HomePage() {
             <p className="section-subtitle mx-auto">Atendimento profissional para qualquer praga urbana, com produtos registrados e garantia escrita.</p>
           </div>
 
-          <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {featuredServices.map((s) => (
               <Link key={s.slug} href={`/servicos/${s.slug}`} className="card group flex flex-col !bg-ink-50 dark:!bg-ink-700">
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-yellow-100 text-yellow-700 transition group-hover:bg-yellow-500 group-hover:text-white dark:bg-yellow-400/15 dark:text-yellow-400">
@@ -252,7 +255,7 @@ export default function HomePage() {
             {Object.entries(groupedAll).map(([cat, items]) => (
               <div key={cat} className="rounded-2xl border border-ink-200 bg-ink-50 p-6 dark:border-ink-700 dark:bg-ink-700">
                 <h3 className="font-display text-xl font-bold text-ink-900 dark:text-white">{categoryLabels[cat as keyof typeof categoryLabels]}</h3>
-                <ul className={`mt-4 ${items.length > 4 ? 'grid grid-cols-2 gap-x-4 gap-y-2' : 'space-y-2'}`}>
+                <ul className="mt-4 space-y-2">
                   {items.map((s) => (
                     <li key={s.slug}>
                       <Link href={`/servicos/${s.slug}`} className="group flex items-center justify-between text-sm text-ink-700 hover:text-brand-700 dark:text-ink-200 dark:hover:text-yellow-400">
