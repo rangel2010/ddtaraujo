@@ -14,13 +14,23 @@ export default function SobrePage() {
     <>
       <section className="relative overflow-hidden bg-ink-900 py-20 text-white">
         <div className="absolute inset-0">
+          {/* Mobile: foto vertical centralizada */}
           <Image
             src="/sobre-hero.jpeg"
             alt="Profissional Araújo aplicando dedetização em ambiente residencial"
             fill
             sizes="100vw"
             priority
-            className="object-contain object-center md:object-left opacity-50"
+            className="object-contain object-center opacity-50 md:hidden"
+          />
+          {/* Desktop: foto horizontal cobrindo o hero */}
+          <Image
+            src="/sobre-hero-desktop.avif"
+            alt="Profissional Araújo aplicando dedetização em ambiente residencial"
+            fill
+            sizes="100vw"
+            priority
+            className="hidden md:block object-cover object-center opacity-50"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-ink-900/75 via-ink-900/65 to-brand-900/75" />
         </div>
