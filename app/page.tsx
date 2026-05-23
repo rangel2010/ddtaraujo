@@ -3,6 +3,7 @@ import { services, categoryLabels } from '@/lib/services';
 import { phoneLink, siteConfig } from '@/lib/site-config';
 import FAQ from '@/components/FAQ';
 import CTASection from '@/components/CTASection';
+import PrefetchServiceImages from '@/components/PrefetchServiceImages';
 
 const heroFaqs = [
   { question: 'Quanto tempo leva para fazer uma dedetização?', answer: 'Uma dedetização residencial padrão leva entre 1 e 3 horas, dependendo do tamanho do imóvel e da praga combatida. Para empresas e condomínios, o tempo é definido conforme o cronograma do contrato.' },
@@ -78,6 +79,7 @@ export default function HomePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqSchema) }} />
+      <PrefetchServiceImages slugs={FEATURED_ORDER} />
 
       {/* HERO */}
       <section className="relative overflow-hidden bg-gradient-to-br from-ink-900 via-ink-800 to-brand-900">
