@@ -2,7 +2,7 @@
 
 import { useState, useMemo, useEffect } from 'react';
 import Link from 'next/link';
-import { services, categoryLabels } from '@/lib/services';
+import { services } from '@/lib/services';
 import { whatsappLink, siteConfig } from '@/lib/site-config';
 
 // ─── Opções dos passos ──────────────────────────────────────────────────────
@@ -74,12 +74,32 @@ const SERVICOS_CONTINUOS = new Set([
   'dac-divisao-de-atendimento-a-condominios', // DAC
 ]);
 
+// Lista fixa de SERVIÇOS no formulário (ordem do docx de revisão).
+const SERVICOS_FORM: { slug: string; label: string }[] = [
+  { slug: 'dedetizacao-em-londrina', label: 'Dedetização' },
+  { slug: 'desratizacao', label: 'Desratização' },
+  { slug: 'controle-de-pragas-em-londrina', label: 'Controle Integrado de Pragas' },
+  { slug: 'descupinizacao', label: 'Descupinização' },
+  { slug: 'controle-de-morcegos-em-londrina', label: 'Controle de Morcegos' },
+  { slug: 'controle-de-pombos-em-londrina', label: 'Manejo de Pombos' },
+  { slug: 'limpeza-de-caixas-de-agua-em-londrina', label: 'Limpeza de Caixas de água' },
+  { slug: 'sanitizacao-de-ambientes-londrina', label: 'Sanitização' },
+  { slug: 'higienizacao-de-bebedouros-em-londrina', label: 'Higienização de Bebedouros' },
+];
+
+// Lista fixa de PRAGAS no formulário (identificadores soltos, sem link com service).
+const PRAGAS_FORM: string[] = [
+  'Baratas', 'Cupim', 'Aranhas', 'Escorpiões', 'Formigas',
+  'Percevejos', 'Pulgas', 'Carrapatos', 'Ratos', 'Outras',
+];
+
 // ─── Componente principal ───────────────────────────────────────────────────
 
 export default function QuoteForm() {
   const [tipo, setTipo] = useState('');
   const [tamanho, setTamanho] = useState('');
   const [servicosSelecionados, setServicosSelecionados] = useState<string[]>([]);
+  const [pragasSelecionadas, setPragasSelecionadas] = useState<string[]>([]);
   const [quando, setQuando] = useState('');
   const [periodicidade, setPeriodicidade] = useState('');
   const [nome, setNome] = useState('');
@@ -91,6 +111,16 @@ export default function QuoteForm() {
       prev.includes(slug) ? prev.filter((s) => s !== slug) : [...prev, slug]
     );
   };
+
+  // Toggle de praga
+  const togglePraga = (praga: string) => {
+    setPragasSelecionadas((prev) =>
+      prev.includes(praga) ? prev.filter((p) => p !== praga) : [...prev, praga]
+    );
+  };
+
+  // Total de itens selecionados (serviços + pragas)
+  const totalSelecionados = servicosSelecionados.length + pragasSelecionadas.length;
 
   // Detecta se algum serviço contínuo (CIPV/DAC) está selecionado
   const temServicoContinuo = useMemo(
@@ -115,13 +145,13 @@ export default function QuoteForm() {
     return Array.from(cats);
   }, [servicosSelecionados]);
 
-  // Nível do pitch dinâmico
+  // Nível do pitch dinâmico (considera serviços + pragas)
   const pitchLevel = useMemo<0 | 1 | 2 | 3>(() => {
-    if (servicosSelecionados.length === 0) return 0;
-    if (servicosSelecionados.length === 1) return 1;
-    if (categoriasSelecionadas.length === 1) return 2;
+    if (totalSelecionados === 0) return 0;
+    if (totalSelecionados === 1) return 1;
+    if (categoriasSelecionadas.length === 1 && pragasSelecionadas.length === 0) return 2;
     return 3;
-  }, [servicosSelecionados, categoriasSelecionadas]);
+  }, [totalSelecionados, categoriasSelecionadas, pragasSelecionadas.length]);
 
   // Sugestões inteligentes (sem duplicar serviços já selecionados)
   const sugestoes = useMemo(() => {
@@ -143,9 +173,9 @@ export default function QuoteForm() {
       }
     });
 
-    // Bonus: 3+ serviços → sugerir CIPV
+    // Bonus: 3+ itens (serviços + pragas) → sugerir CIPV
     if (
-      servicosSelecionados.length >= 3 &&
+      totalSelecionados >= 3 &&
       !servicosSelecionados.includes('controle-de-pragas-em-londrina') &&
       !suggested.has('controle-de-pragas-em-londrina')
     ) {
@@ -159,11 +189,11 @@ export default function QuoteForm() {
     }
 
     return result.slice(0, 3); // máximo 3 sugestões
-  }, [servicosSelecionados]);
+  }, [servicosSelecionados, totalSelecionados]);
 
   // Texto da mensagem do WhatsApp
   const whatsappMessage = useMemo(() => {
-    if (servicosSelecionados.length === 0) return '';
+    if (totalSelecionados === 0) return '';
 
     const tipoObj = TIPOS.find((t) => t.value === tipo);
     const tamObj = TAMANHOS.find((t) => t.value === tamanho);
@@ -171,7 +201,7 @@ export default function QuoteForm() {
     const perObj = PERIODICIDADES.find((p) => p.value === periodicidade);
 
     const linhas: string[] = [];
-    const isCombo = servicosSelecionados.length > 1;
+    const isCombo = totalSelecionados > 1;
 
     linhas.push(`Olá! Gostaria de um orçamento${isCombo ? ' combinado' : ''}.`);
     linhas.push('');
@@ -180,20 +210,22 @@ export default function QuoteForm() {
     if (tamObj) linhas.push(`📐 Tamanho: ${tamObj.label} (${tamObj.sub})`);
 
     if (servicosSelecionados.length === 1) {
-      const s = slugToService[servicosSelecionados[0]];
-      if (s) linhas.push(`🐛 Serviço: ${s.shortTitle}`);
+      const slug = servicosSelecionados[0];
+      const label = SERVICOS_FORM.find((s) => s.slug === slug)?.label || slugToService[slug]?.shortTitle;
+      if (label) linhas.push(`🛠 Serviço: ${label}`);
     } else if (servicosSelecionados.length > 1) {
-      linhas.push('🐛 Serviços:');
+      linhas.push('🛠 Serviços:');
       servicosSelecionados.forEach((slug) => {
-        const s = slugToService[slug];
-        if (s) linhas.push(`  • ${s.shortTitle}`);
+        const label = SERVICOS_FORM.find((s) => s.slug === slug)?.label || slugToService[slug]?.shortTitle;
+        if (label) linhas.push(`  • ${label}`);
       });
-      if (pitchLevel === 2) {
-        const cat = categoriasSelecionadas[0];
-        linhas.push(`  ↳ Combo da mesma família (${categoryLabels[cat as keyof typeof categoryLabels]?.toLowerCase()})`);
-      } else if (pitchLevel === 3) {
-        linhas.push(`  ↳ Pacote diversificado (${categoriasSelecionadas.length} áreas diferentes)`);
-      }
+    }
+
+    if (pragasSelecionadas.length === 1) {
+      linhas.push(`🐛 Praga: ${pragasSelecionadas[0]}`);
+    } else if (pragasSelecionadas.length > 1) {
+      linhas.push('🐛 Pragas:');
+      pragasSelecionadas.forEach((p) => linhas.push(`  • ${p}`));
     }
 
     if (quandoObj) linhas.push(`⏰ Quando: ${quandoObj.label}${quandoObj.sub ? ` (${quandoObj.sub})` : ''}`);
@@ -212,20 +244,10 @@ export default function QuoteForm() {
     }
 
     return linhas.join('\n');
-  }, [tipo, tamanho, servicosSelecionados, quando, periodicidade, nome, bairro, pitchLevel, categoriasSelecionadas]);
+  }, [tipo, tamanho, servicosSelecionados, pragasSelecionadas, totalSelecionados, quando, periodicidade, nome, bairro]);
 
-  const podeEnviar = servicosSelecionados.length > 0;
+  const podeEnviar = totalSelecionados > 0;
   const whatsappHref = podeEnviar ? whatsappLink(whatsappMessage) : '#';
-
-  // Agrupa serviços por categoria pra render
-  const servicosPorCategoria = useMemo(() => {
-    const grouped: Record<string, typeof services> = {};
-    services.forEach((s) => {
-      if (!grouped[s.category]) grouped[s.category] = [];
-      grouped[s.category].push(s);
-    });
-    return grouped;
-  }, []);
 
   return (
     <>
@@ -278,24 +300,40 @@ export default function QuoteForm() {
 
           {/* ── Passo 3: Serviços ─────────────────────────────────── */}
           <StepBlock number={3} title="Quais pragas/serviços você precisa?" subtitle="Pode selecionar mais de um — combinar gera economia.">
-            <div className="space-y-6">
-              {Object.entries(servicosPorCategoria).map(([cat, items]) => (
-                <div key={cat}>
-                  <div className="mb-3 text-xs font-bold uppercase tracking-wider text-brand-700 dark:text-brand-300">
-                    {categoryLabels[cat as keyof typeof categoryLabels]}
-                  </div>
-                  <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-                    {items.map((s) => (
-                      <ServiceCard
-                        key={s.slug}
-                        selected={servicosSelecionados.includes(s.slug)}
-                        onClick={() => toggleServico(s.slug)}
-                        title={s.shortTitle}
-                      />
-                    ))}
-                  </div>
+            <div className="space-y-8">
+              {/* SERVIÇOS */}
+              <div>
+                <div className="mb-3 text-xs font-bold uppercase tracking-wider text-brand-700 dark:text-brand-300">
+                  Serviços
                 </div>
-              ))}
+                <div className="grid gap-2 sm:grid-cols-2">
+                  {SERVICOS_FORM.map((s) => (
+                    <ServiceCard
+                      key={s.slug}
+                      selected={servicosSelecionados.includes(s.slug)}
+                      onClick={() => toggleServico(s.slug)}
+                      title={s.label}
+                    />
+                  ))}
+                </div>
+              </div>
+
+              {/* PRAGAS */}
+              <div>
+                <div className="mb-3 text-xs font-bold uppercase tracking-wider text-brand-700 dark:text-brand-300">
+                  Pragas
+                </div>
+                <div className="grid gap-2 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
+                  {PRAGAS_FORM.map((praga) => (
+                    <ServiceCard
+                      key={praga}
+                      selected={pragasSelecionadas.includes(praga)}
+                      onClick={() => togglePraga(praga)}
+                      title={praga}
+                    />
+                  ))}
+                </div>
+              </div>
             </div>
           </StepBlock>
 
@@ -400,9 +438,9 @@ export default function QuoteForm() {
             {podeEnviar ? (
               <>
                 <p className="text-sm text-ink-700 dark:text-ink-200">
-                  {servicosSelecionados.length === 1
+                  {totalSelecionados === 1
                     ? 'Pronto! Sua solicitação está montada.'
-                    : `Combo de ${servicosSelecionados.length} serviços pronto! Clique pra enviar e garantir as condições especiais.`}
+                    : `Combo de ${totalSelecionados} itens pronto! Clique pra enviar e garantir as condições especiais.`}
                 </p>
                 <a
                   href={whatsappHref}

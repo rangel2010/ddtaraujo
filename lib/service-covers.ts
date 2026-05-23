@@ -70,9 +70,9 @@ export const serviceCovers: Record<string, ServiceCover> = {
     credit: { name: 'Wolfgang Hasselmann', url: 'https://unsplash.com/@wolfgang_hasselmann' },
   },
   'dedetizacao-de-percevejos-em-londrina': {
-    image: '/services/dedetizacao-de-percevejos-em-londrina.jpg',
-    alt: 'Percevejo em close-up',
-    credit: { name: 'matheus ferreira', url: 'https://unsplash.com/@tazdmfotos' },
+    image: '/services/dedetizacao-de-percevejos-em-londrina.webp',
+    alt: 'Colônia de percevejos-de-cama (Cimex lectularius) sobre tecido',
+    credit: { name: 'mkmult', url: 'https://www.freepik.com' },
   },
   'limpeza-de-caixas-de-agua-em-londrina': {
     image: '/services/limpeza-de-caixas-de-agua-em-londrina.jpg',
