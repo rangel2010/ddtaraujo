@@ -40,14 +40,6 @@ const PERIODICIDADES = [
 type Pairing = { suggest: string; reason: string };
 
 const SMART_PAIRINGS: Record<string, Pairing> = {
-  'dedetizacao-de-baratas': {
-    suggest: 'dedetizacao-para-escorpioes-em-londrina',
-    reason: 'Escorpiões se alimentam de baratas — controlar os dois é o protocolo correto.',
-  },
-  'dedetizacao-para-escorpioes-em-londrina': {
-    suggest: 'dedetizacao-de-baratas',
-    reason: 'Sem controlar baratas (fonte de alimento), os escorpiões voltam.',
-  },
   'controle-de-morcegos-em-londrina': {
     suggest: 'controle-de-pombos-em-londrina',
     reason: 'Ambos exigem vedação estrutural similar — mesmo dia, mesma equipe.',
@@ -59,6 +51,10 @@ const SMART_PAIRINGS: Record<string, Pairing> = {
   'limpeza-de-caixas-de-agua-em-londrina': {
     suggest: 'sanitizacao-de-ambientes-londrina',
     reason: 'Higienização completa: caixa d\'água + ambientes no mesmo dia.',
+  },
+  'sanitizacao-de-ambientes-londrina': {
+    suggest: 'higienizacao-de-bebedouros-em-londrina',
+    reason: 'Ambiente sanitizado merece água potável segura — higienize os bebedouros junto.',
   },
   'descupinizacao': {
     suggest: 'dedetizacao-em-londrina',
@@ -93,6 +89,30 @@ const PRAGAS_FORM: string[] = [
   'Percevejos', 'Pulgas', 'Carrapatos', 'Ratos', 'Outras',
 ];
 
+// Mapa reverso: serviço → praga que ele aciona automaticamente.
+// Só inclui serviços ESPECÍFICOS (1 serviço = 1 praga). 'Dedetização' é
+// genérico e cobre várias pragas, então não auto-marca nenhuma.
+const SERVICO_PRAGA_MAP: Record<string, string> = {
+  'desratizacao': 'Ratos',
+  'descupinizacao': 'Cupim',
+};
+
+// Mapa de praga → slug do serviço que ela aciona automaticamente.
+// Ao selecionar uma praga, o serviço correspondente é auto-marcado
+// (cliente pode desmarcar depois se quiser).
+const PRAGA_SERVICO_MAP: Record<string, string> = {
+  'Ratos': 'desratizacao',
+  'Cupim': 'descupinizacao',
+  'Baratas': 'dedetizacao-em-londrina',
+  'Aranhas': 'dedetizacao-em-londrina',
+  'Escorpiões': 'dedetizacao-em-londrina',
+  'Formigas': 'dedetizacao-em-londrina',
+  'Percevejos': 'dedetizacao-em-londrina',
+  'Carrapatos': 'dedetizacao-em-londrina',
+  'Pulgas': 'dedetizacao-em-londrina',
+  // 'Outras' não mapeia — cliente decide qual serviço quer
+};
+
 // ─── Componente principal ───────────────────────────────────────────────────
 
 export default function QuoteForm() {
@@ -105,18 +125,33 @@ export default function QuoteForm() {
   const [nome, setNome] = useState('');
   const [bairro, setBairro] = useState('');
 
-  // Toggle de serviço
+  // Toggle de serviço — se está adicionando E há praga associada (só Desratização/Descupinização),
+  // auto-marca a praga correspondente
   const toggleServico = (slug: string) => {
+    const adicionando = !servicosSelecionados.includes(slug);
     setServicosSelecionados((prev) =>
       prev.includes(slug) ? prev.filter((s) => s !== slug) : [...prev, slug]
     );
+    if (adicionando) {
+      const praga = SERVICO_PRAGA_MAP[slug];
+      if (praga && !pragasSelecionadas.includes(praga)) {
+        setPragasSelecionadas((prev) => [...prev, praga]);
+      }
+    }
   };
 
-  // Toggle de praga
+  // Toggle de praga — se está adicionando E há serviço associado, auto-marca o serviço
   const togglePraga = (praga: string) => {
+    const adicionando = !pragasSelecionadas.includes(praga);
     setPragasSelecionadas((prev) =>
       prev.includes(praga) ? prev.filter((p) => p !== praga) : [...prev, praga]
     );
+    if (adicionando) {
+      const slug = PRAGA_SERVICO_MAP[praga];
+      if (slug && !servicosSelecionados.includes(slug)) {
+        setServicosSelecionados((prev) => [...prev, slug]);
+      }
+    }
   };
 
   // Total de itens selecionados (serviços + pragas)
@@ -145,13 +180,14 @@ export default function QuoteForm() {
     return Array.from(cats);
   }, [servicosSelecionados]);
 
-  // Nível do pitch dinâmico (considera serviços + pragas)
+  // Nível do pitch dinâmico — APENAS baseado em serviços (pragas não geram desconto)
   const pitchLevel = useMemo<0 | 1 | 2 | 3>(() => {
-    if (totalSelecionados === 0) return 0;
-    if (totalSelecionados === 1) return 1;
-    if (categoriasSelecionadas.length === 1 && pragasSelecionadas.length === 0) return 2;
+    const n = servicosSelecionados.length;
+    if (n === 0) return 0;
+    if (n === 1) return 1;
+    if (categoriasSelecionadas.length === 1) return 2;
     return 3;
-  }, [totalSelecionados, categoriasSelecionadas, pragasSelecionadas.length]);
+  }, [servicosSelecionados, categoriasSelecionadas]);
 
   // Sugestões inteligentes (sem duplicar serviços já selecionados)
   const sugestoes = useMemo(() => {
@@ -173,23 +209,8 @@ export default function QuoteForm() {
       }
     });
 
-    // Bonus: 3+ itens (serviços + pragas) → sugerir CIPV
-    if (
-      totalSelecionados >= 3 &&
-      !servicosSelecionados.includes('controle-de-pragas-em-londrina') &&
-      !suggested.has('controle-de-pragas-em-londrina')
-    ) {
-      const cipv = slugToService['controle-de-pragas-em-londrina'];
-      if (cipv) {
-        result.push({
-          service: cipv,
-          reason: 'Já que precisa de várias pragas, um programa contínuo (CIPV) cobre tudo com manutenção.',
-        });
-      }
-    }
-
     return result.slice(0, 3); // máximo 3 sugestões
-  }, [servicosSelecionados, totalSelecionados]);
+  }, [servicosSelecionados]);
 
   // Texto da mensagem do WhatsApp
   const whatsappMessage = useMemo(() => {
