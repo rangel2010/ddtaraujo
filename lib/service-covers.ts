@@ -1,5 +1,6 @@
 // Fotos de capa por serviço — Unsplash License (uso comercial livre)
-// Mapeamento separado de lib/services.ts para reduzir risco de edição.
+// Arquivos salvos localmente em /public/services/ para melhor performance,
+// otimização automática pelo Next.js e independência do CDN da Unsplash.
 
 export type ServiceCover = {
   image: string;
@@ -7,94 +8,97 @@ export type ServiceCover = {
   credit: { name: string; url: string };
 };
 
-const baseParams = '?auto=format&fit=crop&w=1600&q=80';
-
 export const serviceCovers: Record<string, ServiceCover> = {
   'dedetizacao-em-londrina': {
-    image: `https://images.unsplash.com/photo-1747659629851-a92bd71149f6${baseParams}`,
+    image: '/services/dedetizacao-em-londrina.jpg',
     alt: 'Pessoa segurando equipamento profissional de pulverização',
     credit: { name: 'MESTO Sprayers', url: 'https://unsplash.com/@mesto_sprayers' },
   },
   'controle-de-pragas-em-londrina': {
-    image: `https://images.unsplash.com/photo-1515263487990-61b07816b324${baseParams}`,
+    image: '/services/controle-de-pragas-em-londrina.jpg',
     alt: 'Edifício comercial moderno em perspectiva',
     credit: { name: 'Luke van Zyl', url: 'https://unsplash.com/@lukevz' },
   },
   'desinsetizacao': {
-    image: `https://images.unsplash.com/photo-1567479403609-5711aa5e0ef6${baseParams}`,
+    image: '/services/desinsetizacao.jpg',
     alt: 'Macro de barata sobre superfície de madeira',
     credit: { name: 'Robert Thiemann', url: 'https://unsplash.com/@rthiemann' },
   },
   'desratizacao': {
-    image: `https://images.unsplash.com/photo-1575378064390-5a323bbac5d7${baseParams}`,
+    image: '/services/desratizacao.jpg',
     alt: 'Rato em close-up com foco seletivo',
     credit: { name: 'Svetozar Cenisev', url: 'https://unsplash.com/@cenisev' },
   },
   'descupinizacao': {
-    image: `https://images.unsplash.com/photo-1562123404-528b41e573a0${baseParams}`,
+    image: '/services/descupinizacao.jpg',
     alt: 'Madeira com furos causados por cupins',
     credit: { name: 'Roberto Carlos Román Don', url: 'https://unsplash.com/@srcharls' },
   },
   'controle-de-morcegos-em-londrina': {
-    image: `https://images.unsplash.com/photo-1685096137221-2be0f743dba4${baseParams}`,
+    image: '/services/controle-de-morcegos-em-londrina.jpg',
     alt: 'Morcego pendurado em rocha de caverna',
     credit: { name: 'Ferran Ventura', url: 'https://unsplash.com/@ferranventura' },
   },
   'controle-de-pombos-em-londrina': {
-    image: 'https://images.unsplash.com/photo-1723302642167-5b1ea8a4dc75?auto=format&fit=crop&w=1600&h=900&q=80&crop=focalpoint&fp-x=0.5&fp-y=0.4&fp-z=0.5',
+    image: '/services/controle-de-pombos-em-londrina.jpg',
     alt: 'Pombo urbano em close-up',
     credit: { name: 'Ilie Barna', url: 'https://unsplash.com/@mechaowlstudios' },
   },
   'dedetizacao-de-baratas': {
-    image: `https://images.unsplash.com/photo-1567479403609-5711aa5e0ef6${baseParams}`,
+    image: '/services/dedetizacao-de-baratas.jpg',
     alt: 'Barata marrom e preta em close-up',
     credit: { name: 'Robert Thiemann', url: 'https://unsplash.com/@rthiemann' },
   },
   'dedetizacao-para-escorpioes-em-londrina': {
-    image: `https://images.unsplash.com/photo-1727527056819-04bc5ac49bb8${baseParams}`,
+    image: '/services/dedetizacao-para-escorpioes-em-londrina.jpg',
     alt: 'Escorpião sobre superfície de madeira',
     credit: { name: 'Andrey Tikhonovskiy', url: 'https://unsplash.com/@anritikhon' },
   },
   'dedetizacao-de-carrapatos': {
-    image: `https://images.unsplash.com/photo-1629533827249-4e5f77a9877c${baseParams}`,
+    image: '/services/dedetizacao-de-carrapatos.jpg',
     alt: 'Carrapato sobre dedo humano em macro',
     credit: { name: 'Erik Karits', url: 'https://unsplash.com/@erik_karits' },
   },
   'dedetizacao-de-aranhas': {
-    image: `https://images.unsplash.com/photo-1634176104523-d03aaf0364db${baseParams}`,
+    image: '/services/dedetizacao-de-aranhas.jpg',
     alt: 'Aranha em teia, macro fotografia',
     credit: { name: 'Silvestre Leon', url: 'https://unsplash.com/@silver26class' },
   },
   'dedetizacao-de-formigas': {
-    image: `https://images.unsplash.com/photo-1579278084099-e7593776949e${baseParams}`,
+    image: '/services/dedetizacao-de-formigas.jpg',
     alt: 'Macro fotografia de formiga vermelha sobre rocha',
     credit: { name: 'Wolfgang Hasselmann', url: 'https://unsplash.com/@wolfgang_hasselmann' },
   },
   'dedetizacao-de-percevejos-em-londrina': {
-    image: `https://images.unsplash.com/photo-1727198634627-645ef5356455${baseParams}`,
+    image: '/services/dedetizacao-de-percevejos-em-londrina.jpg',
     alt: 'Percevejo em close-up',
     credit: { name: 'matheus ferreira', url: 'https://unsplash.com/@tazdmfotos' },
   },
   'limpeza-de-caixas-de-agua-em-londrina': {
-    image: `https://images.unsplash.com/photo-1555701307-06299b158245${baseParams}`,
+    image: '/services/limpeza-de-caixas-de-agua-em-londrina.jpg',
     alt: 'Reservatório de água branco em telhado',
     credit: { name: 'Chandler Cruttenden', url: 'https://unsplash.com/@chanphoto' },
   },
   'sanitizacao-de-ambientes-londrina': {
-    image: `https://images.unsplash.com/photo-1668600418580-822f03b4e21d${baseParams}`,
+    image: '/services/sanitizacao-de-ambientes-londrina.jpg',
     alt: 'Profissional com máscara e luvas higienizando ambiente interno',
     credit: { name: 'Toon Lambrechts', url: 'https://unsplash.com/@mycellhub' },
   },
   'dac-divisao-de-atendimento-a-condominios': {
-    image: `https://images.unsplash.com/photo-1545324418-cc1a3fa10c00${baseParams}`,
+    image: '/services/dac-divisao-de-atendimento-a-condominios.jpg',
     alt: 'Prédio residencial em perspectiva de baixo para cima',
     credit: { name: 'Marlene Céline Nordvik', url: 'https://unsplash.com/@zarlinaa' },
+  },
+  'higienizacao-de-bebedouros-em-londrina': {
+    image: '/services/higienizacao-de-bebedouros-em-londrina.jpg',
+    alt: 'Close de bebedouro de aço inox com água saindo do bico',
+    credit: { name: 'Hamid Siddiqi', url: 'https://unsplash.com/@hamidsiddiqi7' },
   },
 };
 
 // Fallback genérico caso algum slug futuro não tenha foto mapeada
 export const fallbackCover: ServiceCover = {
-  image: `https://images.unsplash.com/photo-1747659629851-a92bd71149f6${baseParams}`,
+  image: '/services/dedetizacao-em-londrina.jpg',
   alt: 'Equipamento profissional de controle de pragas',
   credit: { name: 'MESTO Sprayers', url: 'https://unsplash.com/@mesto_sprayers' },
 };

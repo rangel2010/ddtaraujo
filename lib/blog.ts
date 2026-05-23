@@ -33,8 +33,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription:
       'Cupins agem em silêncio. Veja os 5 sinais que indicam infestação de cupim em casa: pó, furos, madeira oca, asas descartadas e túneis de terra.',
     readingMinutes: 2,
-    coverImage:
-      'https://images.unsplash.com/photo-1562123404-528b41e573a0?auto=format&fit=crop&w=1600&q=80',
+    coverImage: '/blog/como-saber-se-tem-cupim-em-casa-5-sinais.jpg',
     coverAlt: 'Madeira com furos causados por cupins',
     coverCredit: { name: 'Roberto Carlos Román Don', url: 'https://unsplash.com/@srcharls' },
     content: [
@@ -103,8 +102,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription:
       'Ratos são noturnos e cautelosos. Veja os 5 sinais principais: fezes, roeduras, barulhos no forro, marcas de gordura e odor. Saiba o que fazer.',
     readingMinutes: 2,
-    coverImage:
-      'https://images.unsplash.com/photo-1540366244940-9dce0a570312?auto=format&fit=crop&w=1600&q=80',
+    coverImage: '/blog/5-sinais-de-que-sua-casa-tem-ratos.jpg',
     coverAlt: 'Rato em close-up sobre superfície de madeira',
     coverCredit: { name: 'Alexander Crawley', url: 'https://unsplash.com/@xander_crawley' },
     content: [
@@ -169,8 +167,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription:
       'CIPV é o programa contínuo de controle de pragas exigido pela ANVISA para indústrias, hospitais e restaurantes. Entenda a diferença para dedetização pontual.',
     readingMinutes: 3,
-    coverImage:
-      'https://images.unsplash.com/photo-1515263487990-61b07816b324?auto=format&fit=crop&w=1600&q=80',
+    coverImage: '/blog/por-que-empresas-precisam-cipv-controle-integrado-de-pragas.jpg',
     coverAlt: 'Edifício comercial moderno em perspectiva',
     coverCredit: { name: 'Luke van Zyl', url: 'https://unsplash.com/@lukevz' },
     content: [
@@ -264,8 +261,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription:
       'Por que escorpiões aparecem em casa em Londrina, sintomas da picada, primeiros socorros e prevenção. Guia completo para proteger sua família.',
     readingMinutes: 3,
-    coverImage:
-      'https://images.unsplash.com/photo-1727527056819-04bc5ac49bb8?auto=format&fit=crop&w=1600&q=80',
+    coverImage: '/blog/por-que-aparecem-escorpioes-em-casa-como-agir.jpg',
     coverAlt: 'Escorpião sobre superfície de madeira',
     coverCredit: { name: 'Andrey Tikhonovskiy', url: 'https://unsplash.com/@anritikhon' },
     content: [
@@ -359,8 +355,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription:
       'A ANVISA recomenda limpeza e desinfecção de caixas d\'água a cada 6 meses. Saiba o que se acumula, os riscos e como funciona o serviço profissional.',
     readingMinutes: 2,
-    coverImage:
-      'https://images.unsplash.com/photo-1730108227471-f0f1dafb9f7a?auto=format&fit=crop&w=1600&h=900&q=80&crop=focalpoint&fp-x=0.5&fp-y=0.75&fp-z=0.5',
+    coverImage: '/blog/caixa-dagua-quanto-tempo-limpar-anvisa.jpg',
     coverAlt: 'Close-up em tons azuis com bolhas e encanamento — vista que remete ao interior de um reservatório de água',
     coverCredit: { name: 'Dynamic Wang', url: 'https://unsplash.com/@dynamicwang' },
     content: [
@@ -427,8 +422,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription:
       'Controle profissional de morcegos em Londrina e região. Manejo conforme normas ambientais, vedação e exclusão definitiva. Veja riscos e procedimentos.',
     readingMinutes: 3,
-    coverImage:
-      'https://images.unsplash.com/photo-1685096137221-2be0f743dba4?auto=format&fit=crop&w=1600&q=80',
+    coverImage: '/blog/morcegos-em-londrina-riscos-leis-e-como-resolver-definitivamente.jpg',
     coverAlt: 'Morcego pendurado em rocha de caverna',
     coverCredit: { name: 'Ferran Ventura', url: 'https://unsplash.com/@ferranventura' },
     content: [
@@ -481,8 +475,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription:
       'Pulgas transmitem vermes intestinais aos pets e podem picar humanos transmitindo peste bubônica. Veja os riscos e como a dedetização resolve.',
     readingMinutes: 2,
-    coverImage:
-      'https://images.unsplash.com/photo-1769117327556-cb33587c5298?auto=format&fit=crop&w=1600&q=80',
+    coverImage: '/blog/problemas-com-pulgas.jpg',
     coverAlt: 'Filhote marrom e branco coçando a orelha na grama',
     coverCredit: { name: 'Helena Lopes', url: 'https://unsplash.com/@helenalopesph' },
     content: [
@@ -528,8 +521,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription:
       'Formigas transmitem doenças carregando bactérias e fungos. Saiba sobre a formiga doceira e a formiga-faraó, responsável por infestações em hospitais.',
     readingMinutes: 2,
-    coverImage:
-      'https://images.unsplash.com/photo-1579278084099-e7593776949e?auto=format&fit=crop&w=1600&q=80',
+    coverImage: '/blog/problemas-com-formigas.jpg',
     coverAlt: 'Macro fotografia de formiga vermelha sobre rocha',
     coverCredit: { name: 'Wolfgang Hasselmann', url: 'https://unsplash.com/@wolfgang_hasselmann' },
     content: [
@@ -570,8 +562,7 @@ export const blogPosts: BlogPost[] = [
       'Dedetização residencial em Londrina com produtos sem cheiro e sem mancha. Não precisa sair de casa. Mais de 40 anos de experiência. Orçamento sem compromisso.',
     readingMinutes: 1,
     featured: true,
-    coverImage:
-      'https://images.unsplash.com/photo-1747659629851-a92bd71149f6?auto=format&fit=crop&w=1600&q=80',
+    coverImage: '/blog/dedetizadora-londrina-controle-especializado-de-pragas.jpg',
     coverAlt: 'Pessoa segurando equipamento profissional de pulverização',
     coverCredit: { name: 'MESTO Sprayers', url: 'https://unsplash.com/@mesto_sprayers' },
     content: [
