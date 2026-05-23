@@ -185,7 +185,7 @@ export const richContent: Record<string, RichSection[]> = {
       list: {
         items: [
           'Tratamento curativo focal — para infestações localizadas em móveis ou pontos específicos. Aplicação direta nos furos de saída do cupim, com produto cupinicida transmissível pela colônia. Eficaz contra cupim de madeira seca em itens individuais.',
-          'Barreira química preventiva no solo — aplicada em obras novas (durante ou logo após o contrapiso) ou ao redor de estruturas existentes em risco. Impede o cupim subterrâneo de chegar à madeira. É o tratamento que recebe garantia estendida de até 5 anos em contratos preventivos.',
+          'Barreira química preventiva no solo — aplicada em obras novas (durante ou logo após o contrapiso) ou ao redor de estruturas existentes em risco. Impede o cupim subterrâneo de chegar à madeira. É o tratamento que recebe garantia escrita estendida em contratos preventivos.',
           'Tratamento estrutural — para infestações já estabelecidas no imóvel. Combina pulverização, injeção em vigas e batentes, aplicação de gel/iscas e, quando necessário, barreira química perimetral. Indicado para casas antigas, imóveis com madeira de lei e edifícios históricos.',
         ],
       },
@@ -211,7 +211,7 @@ export const richContent: Record<string, RichSection[]> = {
         ],
       },
       closingParagraphs: [
-        'Para imóveis em construção, recomendamos fortemente a aplicação preventiva de barreira química no solo antes do contrapiso — é o investimento mais econômico contra cupim subterrâneo, e a única forma de receber a garantia estendida de até 5 anos.',
+        'Para imóveis em construção, recomendamos fortemente a aplicação preventiva de barreira química no solo antes do contrapiso — é o investimento mais econômico contra cupim subterrâneo, e a única forma de receber a garantia escrita estendida.',
       ],
     },
   ],
@@ -267,7 +267,7 @@ export const richContent: Record<string, RichSection[]> = {
         ],
       },
       closingParagraphs: [
-        'Cada projeto é avaliado individualmente — escolhemos o método (ou combinação) que melhor se adapta à arquitetura do imóvel e ao orçamento. Os sistemas são discretos, eficazes, e contam com garantia escrita de 1 a 5 anos conforme a solução instalada.',
+        'Cada projeto é avaliado individualmente — escolhemos o método (ou combinação) que melhor se adapta à arquitetura do imóvel e ao orçamento. Os sistemas são discretos, eficazes, e contam com garantia por escrito conforme a solução instalada.',
       ],
     },
     {
@@ -657,7 +657,7 @@ export const richContent: Record<string, RichSection[]> = {
         items: [
           'Atratividade do produto varia por espécie — gel doce funciona para formiga-doceira mas é ignorado por formiga lava-pé. Inseticida para baratas não tem efeito sobre mosquitos',
           'Esconderijos variam — barata de cozinha vive em frestas internas. Barata de esgoto vive em galerias externas. Tratar uma como se fosse a outra falha',
-          'Ciclo de vida define janela de retorno — percevejos exigem retorno em 14-21 dias por causa da eclosão dos ovos. Baratas têm garantia de 3-6 meses. Aplicar a mesma frequência pra todos é ineficiente',
+          'Ciclo de vida define janela de retorno — percevejos exigem retorno em 14-21 dias por causa da eclosão dos ovos. Aplicar a mesma frequência pra todos é ineficiente',
           'Sensibilidade ao produto varia — populações resistentes existem. Diagnóstico permite escolher o princípio ativo certo, não o que "geralmente funciona"',
           'Sintomas e sinais ajudam a identificar — fezes, exuvias, ovotecas, padrão de picada, horário de aparecimento. Um técnico treinado lê todos esses sinais antes de aplicar nada',
           'Tratamento errado pode piorar — algumas espécies (formiga-faraó) se fragmentam sob estresse químico, multiplicando colônias quando o inseticida é mal escolhido',
@@ -981,7 +981,7 @@ export const richContent: Record<string, RichSection[]> = {
         ],
       },
       closingParagraphs: [
-        'Garantia escrita de 3 a 6 meses em residências e comércios. Para estabelecimentos com fiscalização sanitária, recomendamos contrato CIPV que cobre baratas e demais pragas de forma contínua.',
+        'Garantia por escrito em residências e comércios. Para estabelecimentos com fiscalização sanitária, recomendamos contrato CIPV que cobre baratas e demais pragas de forma contínua.',
       ],
     },
   ],

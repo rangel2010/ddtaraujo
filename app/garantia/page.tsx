@@ -6,21 +6,9 @@ import CTASection from '@/components/CTASection';
 export const metadata: Metadata = {
   title: 'Garantia Escrita | Araújo Dedetizadora',
   description:
-    'A Araújo Dedetizadora oferece GAT — Garantia de Assistência Técnica — em todos os serviços. Saiba prazos, casos cobertos e como acionar.',
+    'A Araújo Dedetizadora oferece GAT — Garantia de Assistência Técnica — em todos os serviços. Saiba como funciona, o que está coberto e como acionar.',
   alternates: { canonical: '/garantia' },
 };
-
-const prazos = [
-  { servico: 'Dedetização residencial (insetos)', prazo: '3 a 6 meses', detalhe: 'Baratas, formigas, pulgas, aranhas, escorpiões' },
-  { servico: 'Dedetização comercial', prazo: '1 mês', detalhe: 'Periodicidade conforme RDC 622/22 da ANVISA' },
-  { servico: 'Desratização', prazo: '3 a 6 meses', detalhe: 'Com retornos para reposição de iscas' },
-  { servico: 'Descupinização', prazo: '1 ano (até 5 anos em contratos preventivos)', detalhe: 'Garantia estendida em obras novas com barreira química' },
-  { servico: 'Controle de morcegos', prazo: 'Até 5 anos', detalhe: 'Para a vedação estrutural após desalojamento' },
-  { servico: 'Manejo de pombos', prazo: '1 a 5 anos', detalhe: 'Para espículas, redes e dispositivos instalados, conforme a solução' },
-  { servico: 'Percevejos', prazo: '30 a 45 dias após protocolo', detalhe: 'Inclui retorno obrigatório para quebrar ciclo de ovos' },
-  { servico: 'Limpeza de caixa d\'água', prazo: '6 meses', detalhe: 'Periodicidade recomendada pela ANVISA' },
-  { servico: 'CIPV / DAC (programas contínuos)', prazo: 'Durante toda a vigência do contrato', detalhe: 'Atendimento emergencial sem custo adicional' },
-];
 
 const cobertos = [
   'Reaparecimento da praga dentro do prazo de garantia',
@@ -53,7 +41,7 @@ export default function GarantiaPage() {
               Garantia escrita em todos os serviços
             </h1>
             <p className="mt-6 text-lg text-ink-200">
-              A Araújo entrega GAT — Garantia de Assistência Técnica — em todo trabalho que executa. Se a praga voltar dentro do prazo combinado, a gente retorna sem custo até resolver. Documentação, prazos e responsabilidade técnica, por escrito.
+              A Araújo entrega GAT — Garantia de Assistência Técnica — em todo trabalho que executa. Se a praga voltar dentro do prazo combinado, a gente retorna sem custo até resolver. Documentação e responsabilidade técnica, por escrito.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link href="/orcamento" className="btn-whatsapp">
@@ -95,45 +83,6 @@ export default function GarantiaPage() {
             <p>
               Em cada serviço executado, o cliente recebe junto com o pagamento: laudo técnico com produtos utilizados (registros ANVISA), prazo de garantia definido, condições de cobertura e contatos diretos pra acionamento. Tudo em conformidade com a Resolução SESA 1153/2024 e RDC 622/2022 da ANVISA.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Prazos por serviço */}
-      <section className="section bg-ink-50 dark:bg-ink-800">
-        <div className="container max-w-5xl">
-          <div className="text-center">
-            <div className="eyebrow">Prazos de garantia</div>
-            <h2 className="section-title mt-2">Quanto tempo cada serviço é coberto</h2>
-            <p className="section-subtitle mx-auto">
-              Os prazos abaixo são padrão — em casos específicos podem ser estendidos por contrato.
-            </p>
-          </div>
-
-          <div className="mt-12 overflow-hidden rounded-2xl border border-ink-200 dark:border-ink-600">
-            <table className="w-full divide-y divide-ink-200 dark:divide-ink-600">
-              <thead className="bg-ink-100 dark:bg-ink-700">
-                <tr>
-                  <th className="px-6 py-4 text-left text-sm font-bold text-ink-900 dark:text-white">Serviço</th>
-                  <th className="px-6 py-4 text-left text-sm font-bold text-ink-900 dark:text-white">Prazo de garantia</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-ink-200 bg-white dark:divide-ink-600 dark:bg-ink-700">
-                {prazos.map((p) => (
-                  <tr key={p.servico}>
-                    <td className="px-6 py-4 align-top">
-                      <div className="font-semibold text-ink-900 dark:text-white">{p.servico}</div>
-                      <div className="mt-1 text-sm text-ink-600 dark:text-ink-300">{p.detalhe}</div>
-                    </td>
-                    <td className="whitespace-nowrap px-6 py-4 align-top">
-                      <span className="inline-flex rounded-full bg-accent-100 px-3 py-1 text-sm font-semibold text-accent-800 dark:bg-accent-500/20 dark:text-accent-300">
-                        {p.prazo}
-                      </span>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
           </div>
         </div>
       </section>

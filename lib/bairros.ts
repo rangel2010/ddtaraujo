@@ -67,9 +67,9 @@ export const bairros: Bairro[] = [
     intro:
       'O bairro Aurora vive um momento de transformação acelerada — tradicionalmente residencial com casas grandes, vem recebendo investimentos massivos em novos condomínios de alto padrão. Essa fase de obra e ocupação inicial é o momento ideal para implantar barreira química preventiva contra cupins subterrâneos antes da entrega das unidades. Tratamento preventivo em construção custa muito menos que tratar infestação anos depois.',
     body:
-      'A Araújo atende construtoras e empreendimentos em fase de obra na Aurora com aplicação de barreira química no solo antes da contrapiso — protege a estrutura por até 5 anos com garantia escrita. Para condomínios recém-entregues, oferecemos contrato CIPV personalizado para o primeiro ano de ocupação, fase em que a chance de aparecimento de pragas é maior (mudanças, embalagens, transição de moradores). Também atendemos as residências tradicionais do bairro com dedetização preventiva e descupinização.',
+      'A Araújo atende construtoras e empreendimentos em fase de obra na Aurora com aplicação de barreira química no solo antes da contrapiso — protege a estrutura com garantia escrita. Para condomínios recém-entregues, oferecemos contrato CIPV personalizado para o primeiro ano de ocupação, fase em que a chance de aparecimento de pragas é maior (mudanças, embalagens, transição de moradores). Também atendemos as residências tradicionais do bairro com dedetização preventiva e descupinização.',
     serviceHighlights: [
-      { slug: 'descupinizacao', reason: 'Barreira química preventiva em obras novas — garantia estendida até 5 anos' },
+      { slug: 'descupinizacao', reason: 'Barreira química preventiva em obras novas — garantia escrita estendida' },
       { slug: 'dac-divisao-de-atendimento-a-condominios', reason: 'Contrato inicial para condomínios recém-entregues' },
       { slug: 'dedetizacao-em-londrina', reason: 'Dedetização preventiva em residências tradicionais do bairro' },
       { slug: 'controle-de-pragas-em-londrina', reason: 'CIPV especializado para empreendimentos novos' },

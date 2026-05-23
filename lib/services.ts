@@ -79,7 +79,7 @@ export const services: Service[] = [
       {
         question: 'Quanto tempo dura o efeito da dedetização?',
         answer:
-          'A maior parte dos serviços tem garantia de 3 a 6 meses, dependendo da praga e do ambiente. Em programas contínuos (CIPV) o controle é permanente, com visitas periódicas.',
+          'Todos os nossos serviços têm garantia por escrito, conforme a praga e o ambiente. Em programas contínuos (CIPV) o controle é permanente, com visitas periódicas.',
       },
       {
         question: 'Preciso sair de casa durante o serviço?',
@@ -305,7 +305,7 @@ export const services: Service[] = [
     icon: 'tree',
     metaTitle: 'Descupinização em Londrina | Dedetização de Cupins | Araújo',
     metaDescription:
-      'Descupinização em Londrina para cupins de madeira seca e de solo. Tratamento curativo e preventivo com garantia de até 5 anos.',
+      'Descupinização em Londrina para cupins de madeira seca e de solo. Tratamento curativo e preventivo com garantia por escrito.',
     keywords: [
       'descupinização londrina',
       'dedetização de cupins londrina',
@@ -323,7 +323,7 @@ export const services: Service[] = [
       'Identificação correta da espécie de cupim',
       'Tratamento curativo de móveis e estruturas',
       'Barreira química preventiva no solo',
-      'Garantia estendida de até 5 anos em contratos preventivos',
+      'Garantia escrita estendida em contratos preventivos',
       'Atendimento a obras em construção',
     ],
     process: [
@@ -448,7 +448,7 @@ export const services: Service[] = [
       'Redes e telas para vãos e platibandas',
       'Dispositivos ultrassônicos e visuais',
       'Limpeza e desinfecção de fezes acumuladas',
-      'Garantia de 1 a 5 anos conforme a solução',
+      'Garantia por escrito conforme a solução',
     ],
     process: [
       {
@@ -473,7 +473,7 @@ export const services: Service[] = [
       {
         question: 'Quanto tempo dura a instalação?',
         answer:
-          'Espículas e redes profissionais têm garantia escrita de 1 a 5 anos conforme a solução instalada. A vida útil real costuma ser ainda maior com manutenção adequada.',
+          'Espículas e redes profissionais têm garantia por escrito conforme a solução instalada. A vida útil real costuma ser longa com manutenção adequada.',
       },
       {
         question: 'Quais doenças os pombos transmitem?',
@@ -508,7 +508,7 @@ export const services: Service[] = [
       'Gel inseticida inodoro — pode aplicar em cozinhas em uso',
       'Eliminação de até 95% da colônia em 7 a 14 dias',
       'Identificação correta da espécie',
-      'Garantia de 3 a 6 meses',
+      'Garantia por escrito',
       'Orientação para evitar reinfestação',
     ],
     process: [
