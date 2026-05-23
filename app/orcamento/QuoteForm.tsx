@@ -110,7 +110,7 @@ const PRAGA_SERVICO_MAP: Record<string, string> = {
   'Percevejos': 'dedetizacao-em-londrina',
   'Carrapatos': 'dedetizacao-em-londrina',
   'Pulgas': 'dedetizacao-em-londrina',
-  // 'Outras' não mapeia — cliente decide qual serviço quer
+  'Outras': 'dedetizacao-em-londrina',
 };
 
 // ─── Componente principal ───────────────────────────────────────────────────
@@ -125,31 +125,48 @@ export default function QuoteForm() {
   const [nome, setNome] = useState('');
   const [bairro, setBairro] = useState('');
 
-  // Toggle de serviço — se está adicionando E há praga associada (só Desratização/Descupinização),
-  // auto-marca a praga correspondente
+  // Toggle de serviço — sincroniza com pragas em ambas as direções:
+  //  - ao ADICIONAR: se há praga única associada (Desratização/Descupinização), auto-marca a praga
+  //  - ao REMOVER: desmarca TODAS as pragas que apontam pra esse serviço
   const toggleServico = (slug: string) => {
     const adicionando = !servicosSelecionados.includes(slug);
-    setServicosSelecionados((prev) =>
-      prev.includes(slug) ? prev.filter((s) => s !== slug) : [...prev, slug]
-    );
     if (adicionando) {
+      setServicosSelecionados((prev) => [...prev, slug]);
       const praga = SERVICO_PRAGA_MAP[slug];
       if (praga && !pragasSelecionadas.includes(praga)) {
         setPragasSelecionadas((prev) => [...prev, praga]);
       }
+    } else {
+      setServicosSelecionados((prev) => prev.filter((s) => s !== slug));
+      // Remove todas as pragas que mapeiam pra esse serviço (ex: desmarcar Dedetização
+      // tira Baratas, Aranhas, Escorpiões etc. todas de uma vez)
+      setPragasSelecionadas((prev) => prev.filter((p) => PRAGA_SERVICO_MAP[p] !== slug));
     }
   };
 
-  // Toggle de praga — se está adicionando E há serviço associado, auto-marca o serviço
+  // Toggle de praga — sincroniza com serviços em ambas as direções:
+  //  - ao ADICIONAR: auto-marca o serviço associado
+  //  - ao REMOVER: desmarca o serviço SE não houver outras pragas usando ele
+  //    (ex: cliente tem Baratas+Aranhas marcadas, desmarca Baratas → Aranhas ainda usa
+  //    Dedetização, então mantém. Desmarca Aranhas também → Dedetização sai.)
   const togglePraga = (praga: string) => {
     const adicionando = !pragasSelecionadas.includes(praga);
-    setPragasSelecionadas((prev) =>
-      prev.includes(praga) ? prev.filter((p) => p !== praga) : [...prev, praga]
-    );
+    const slugServico = PRAGA_SERVICO_MAP[praga];
+
     if (adicionando) {
-      const slug = PRAGA_SERVICO_MAP[praga];
-      if (slug && !servicosSelecionados.includes(slug)) {
-        setServicosSelecionados((prev) => [...prev, slug]);
+      setPragasSelecionadas((prev) => [...prev, praga]);
+      if (slugServico && !servicosSelecionados.includes(slugServico)) {
+        setServicosSelecionados((prev) => [...prev, slugServico]);
+      }
+    } else {
+      const novasPragas = pragasSelecionadas.filter((p) => p !== praga);
+      setPragasSelecionadas(novasPragas);
+      // Se o serviço associado não é mais usado por nenhuma outra praga, desmarca o serviço
+      if (slugServico) {
+        const aindaUsado = novasPragas.some((p) => PRAGA_SERVICO_MAP[p] === slugServico);
+        if (!aindaUsado) {
+          setServicosSelecionados((prev) => prev.filter((s) => s !== slugServico));
+        }
       }
     }
   };
