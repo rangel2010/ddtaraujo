@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import { siteConfig } from '@/lib/site-config';
 import CTASection from '@/components/CTASection';
 
@@ -11,8 +12,18 @@ export const metadata: Metadata = {
 export default function SobrePage() {
   return (
     <>
-      <section className="relative overflow-hidden bg-gradient-to-br from-ink-900 via-ink-800 to-brand-900 py-20 text-white">
-        <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'radial-gradient(circle at 50% 30%, rgba(245,207,74,0.3) 0%, transparent 50%)' }} />
+      <section className="relative overflow-hidden bg-ink-900 py-20 text-white">
+        <div className="absolute inset-0">
+          <Image
+            src="/sobre-hero.jpeg"
+            alt="Profissional Araújo aplicando dedetização em ambiente residencial"
+            fill
+            sizes="100vw"
+            priority
+            className="object-contain object-center opacity-40"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-ink-900/75 via-ink-900/65 to-brand-900/75" />
+        </div>
         <div className="container relative">
           <div className="mx-auto max-w-3xl text-center">
             <img src="/badge-new.png" alt="40 anos de tradição" className="mx-auto h-32 w-32 md:h-40 md:w-40 drop-shadow-2xl opacity-90" />
