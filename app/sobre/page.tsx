@@ -20,7 +20,7 @@ export default function SobrePage() {
             fill
             sizes="100vw"
             priority
-            className="object-contain object-center opacity-40"
+            className="object-contain object-center md:object-left opacity-50"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-ink-900/75 via-ink-900/65 to-brand-900/75" />
         </div>
