@@ -572,7 +572,7 @@ function PitchBanner({ level }: { level: 1 | 2 | 3 }) {
               Aproveite que a equipe já vai até você!
             </div>
             <p className="mt-1 text-sm text-ink-700 dark:text-ink-200">
-              Adicione mais serviços com até 40% de desconto nos serviços adicionais — resolva tudo na mesma visita.
+              Adicione mais serviços com até 50% de desconto nos serviços adicionais — resolva tudo na mesma visita.
             </p>
           </div>
         </div>
