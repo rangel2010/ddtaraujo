@@ -241,45 +241,61 @@ export default function QuoteForm() {
     const linhas: string[] = [];
     const isCombo = totalSelecionados > 1;
 
-    linhas.push(`Olá! Gostaria de um orçamento${isCombo ? ' combinado' : ''}.`);
-    linhas.push('');
+    // Helper pra separar blocos com linha em branco
+    const pushBloco = (linhasDoBloco: string[]) => {
+      if (linhasDoBloco.length === 0) return;
+      if (linhas.length > 0 && linhas[linhas.length - 1] !== '') linhas.push('');
+      linhas.push(...linhasDoBloco);
+    };
 
-    if (tipoObj) linhas.push(`📍 Tipo: ${tipoObj.label}`);
-    if (tamObj) linhas.push(`📐 Tamanho: ${tamObj.label} (${tamObj.sub})`);
+    // Saudação
+    pushBloco([`Olá! Gostaria de um orçamento${isCombo ? ' combinado' : ''}.`]);
 
+    // Bloco: Tipo + Tamanho
+    const blocoImovel: string[] = [];
+    if (tipoObj) blocoImovel.push(`Tipo: ${tipoObj.label}`);
+    if (tamObj) blocoImovel.push(`Tamanho: ${tamObj.label} (${tamObj.sub})`);
+    pushBloco(blocoImovel);
+
+    // Bloco: Serviços
+    const blocoServicos: string[] = [];
     if (servicosSelecionados.length === 1) {
       const slug = servicosSelecionados[0];
       const label = SERVICOS_FORM.find((s) => s.slug === slug)?.label || slugToService[slug]?.shortTitle;
-      if (label) linhas.push(`🛠 Serviço: ${label}`);
+      if (label) blocoServicos.push(`Serviço: ${label}`);
     } else if (servicosSelecionados.length > 1) {
-      linhas.push('🛠 Serviços:');
+      blocoServicos.push('Serviços:');
       servicosSelecionados.forEach((slug) => {
         const label = SERVICOS_FORM.find((s) => s.slug === slug)?.label || slugToService[slug]?.shortTitle;
-        if (label) linhas.push(`  • ${label}`);
+        if (label) blocoServicos.push(`  - ${label}`);
       });
     }
+    pushBloco(blocoServicos);
 
+    // Bloco: Pragas
+    const blocoPragas: string[] = [];
     if (pragasSelecionadas.length === 1) {
-      linhas.push(`🐛 Praga: ${pragasSelecionadas[0]}`);
+      blocoPragas.push(`Praga: ${pragasSelecionadas[0]}`);
     } else if (pragasSelecionadas.length > 1) {
-      linhas.push('🐛 Pragas:');
-      pragasSelecionadas.forEach((p) => linhas.push(`  • ${p}`));
+      blocoPragas.push('Pragas:');
+      pragasSelecionadas.forEach((p) => blocoPragas.push(`  - ${p}`));
     }
+    pushBloco(blocoPragas);
 
-    if (quandoObj) linhas.push(`⏰ Quando: ${quandoObj.label}${quandoObj.sub ? ` (${quandoObj.sub})` : ''}`);
-    if (perObj) linhas.push(`🔁 Periodicidade: ${perObj.label}`);
+    // Bloco: Quando + Periodicidade
+    const blocoQuando: string[] = [];
+    if (quandoObj) blocoQuando.push(`Quando: ${quandoObj.label}${quandoObj.sub ? ` (${quandoObj.sub})` : ''}`);
+    if (perObj) blocoQuando.push(`Periodicidade: ${perObj.label}`);
+    pushBloco(blocoQuando);
 
-    const identificacao: string[] = [];
-    if (nome.trim()) identificacao.push(nome.trim());
-    if (bairro.trim()) identificacao.push(`bairro ${bairro.trim()}`);
-    if (identificacao.length) linhas.push(`👤 Sou: ${identificacao.join(', ')}`);
+    // Bloco: Identificação (nome e bairro em linhas separadas)
+    const blocoIdentificacao: string[] = [];
+    if (nome.trim()) blocoIdentificacao.push(`Sou: ${nome.trim()}`);
+    if (bairro.trim()) blocoIdentificacao.push(`Bairro: ${bairro.trim()}`);
+    pushBloco(blocoIdentificacao);
 
-    linhas.push('');
-    if (isCombo) {
-      linhas.push('Quero o combo com descontos!');
-    } else {
-      linhas.push('Aguardo o orçamento. Obrigado!');
-    }
+    // Fechamento
+    pushBloco([isCombo ? 'Quero o combo com descontos!' : 'Aguardo o orçamento. Obrigado!']);
 
     return linhas.join('\n');
   }, [tipo, tamanho, servicosSelecionados, pragasSelecionadas, totalSelecionados, quando, periodicidade, nome, bairro]);
