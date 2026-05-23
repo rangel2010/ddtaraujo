@@ -931,7 +931,7 @@ export const services: Service[] = [
     title: 'Higienização de Bebedouros em Londrina',
     shortTitle: 'Higienização de Bebedouros',
     category: 'higienizacao',
-    icon: 'droplet',
+    icon: 'dispenser',
     metaTitle: 'Higienização de Bebedouros em Londrina | Araújo DDT',
     metaDescription:
       'Higienização e limpeza profissional de bebedouros e purificadores em Londrina. Desinfecção interna, sanitização externa e troca de filtros — escritórios, escolas, indústrias e clínicas.',

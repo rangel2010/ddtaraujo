@@ -325,18 +325,161 @@ export default function HomePage() {
 }
 
 function ServiceIcon({ name }: { name: string }) {
+  const common = {
+    className: "h-7 w-7",
+    fill: "none" as const,
+    stroke: "currentColor",
+    strokeWidth: 1.5,
+    strokeLinecap: "round" as const,
+    strokeLinejoin: "round" as const,
+    viewBox: "0 0 24 24",
+  };
   const icons: Record<string, JSX.Element> = {
-    shield: (<svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>),
-    'clipboard-check': (<svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>),
-    bug: (<svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19l3 3 3-3M12 8v13M3 12h2m14 0h2M5 7l2 2m10-2l-2 2M6 17l2-2m8 2l-2-2M12 4a4 4 0 014 4v4a4 4 0 11-8 0V8a4 4 0 014-4z"/></svg>),
-    rat: (<svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9.5a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM3 21l5-5m0 0a3 3 0 104.243-4.243M8 16a3 3 0 11-2.121-5.121"/></svg>),
-    tree: (<svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v18m0-18l-4 4m4-4l4 4M5 21h14"/></svg>),
-    moon: (<svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>),
-    bird: (<svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12c0 5 4 9 9 9s9-4 9-9-4-9-9-9c-2 0-4 .5-5.5 1.5M3 12l4-2m-4 2l4 2m-1-9l2 3m-2-3l-2 3"/></svg>),
-    'alert-triangle': (<svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>),
-    droplet: (<svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg>),
-    spray: (<svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2H7a2 2 0 00-2 2v2m12-4V5a2 2 0 00-2-2H9a2 2 0 00-2 2v2"/></svg>),
-    building: (<svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>),
+    // Dedetização: pulverizador profissional
+    shield: (
+      <svg {...common}>
+        <path d="M7 11h7v9a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1z" />
+        <path d="M14 13h3V8h-3" />
+        <path d="M14 8V6h-3" />
+        <path d="M11 6V5h5" />
+        <path d="M17 10h2l3-2" />
+        <circle cx="22" cy="8" r="0.6" />
+        <circle cx="21" cy="6" r="0.4" />
+        <circle cx="20" cy="9.5" r="0.4" />
+      </svg>
+    ),
+    // CIPV: prédio com selo de aprovação
+    'clipboard-check': (
+      <svg {...common}>
+        <rect x="4" y="5" width="11" height="16" rx="0.5" />
+        <line x1="7" y1="8" x2="8" y2="8" />
+        <line x1="11" y1="8" x2="12" y2="8" />
+        <line x1="7" y1="11" x2="8" y2="11" />
+        <line x1="11" y1="11" x2="12" y2="11" />
+        <line x1="7" y1="14" x2="8" y2="14" />
+        <line x1="11" y1="14" x2="12" y2="14" />
+        <rect x="8" y="17" width="3" height="4" />
+        <circle cx="18" cy="7" r="4" />
+        <path d="M16 7l1.5 1.5L20 6" />
+      </svg>
+    ),
+    // Genérico inseto (desinsetização e outras pragas insetos)
+    bug: (
+      <svg {...common}>
+        <ellipse cx="12" cy="13" rx="4" ry="5" />
+        <line x1="12" y1="9" x2="12" y2="18" />
+        <line x1="8" y1="13" x2="3" y2="13" />
+        <line x1="16" y1="13" x2="21" y2="13" />
+        <line x1="9" y1="9" x2="6" y2="6" />
+        <line x1="15" y1="9" x2="18" y2="6" />
+        <line x1="9" y1="17" x2="6" y2="20" />
+        <line x1="15" y1="17" x2="18" y2="20" />
+        <path d="M10 7l-1-3M14 7l1-3" />
+      </svg>
+    ),
+    // Rato: silhueta lateral com orelha e cauda
+    rat: (
+      <svg {...common}>
+        <ellipse cx="11" cy="15" rx="6" ry="4" />
+        <circle cx="6" cy="12.5" r="2.2" />
+        <circle cx="5.5" cy="14" r="0.5" fill="currentColor" stroke="none" />
+        <line x1="3.5" y1="12" x2="2" y2="11" />
+        <path d="M17 15c3 0 5 2 5 4" />
+        <line x1="11" y1="19" x2="11" y2="21" />
+        <line x1="14" y1="19" x2="14" y2="21" />
+      </svg>
+    ),
+    // Cupim: corpo segmentado com antenas
+    tree: (
+      <svg {...common}>
+        <ellipse cx="13" cy="13" rx="6" ry="2.5" />
+        <line x1="11" y1="10.5" x2="11" y2="15.5" />
+        <line x1="15" y1="10.5" x2="15" y2="15.5" />
+        <circle cx="5" cy="13" r="2.2" />
+        <line x1="3" y1="11.5" x2="1" y2="10" />
+        <line x1="3" y1="14.5" x2="1" y2="16" />
+        <line x1="9" y1="15.5" x2="8" y2="18" />
+        <line x1="13" y1="16" x2="13" y2="18" />
+        <line x1="17" y1="15.5" x2="18" y2="18" />
+      </svg>
+    ),
+    // Morcego: silhueta com asas estendidas
+    moon: (
+      <svg {...common}>
+        <path d="M12 8c-1.5 0-2 2-2 3.5v3l-2 .5v-2c0-1-1-3-3-3l-1 2 2 2-1 2 2-0.5v1.5c0 1 1 2 2 2h6c1 0 2-1 2-2v-1.5l2 0.5-1-2 2-2-1-2c-2 0-3 2-3 3v2l-2-0.5v-3c0-1.5-0.5-3.5-2-3.5z" />
+        <path d="M11 8.5l-1-1.5M13 8.5l1-1.5" />
+      </svg>
+    ),
+    // Pombo: perfil com bico e asa
+    bird: (
+      <svg {...common}>
+        <ellipse cx="11" cy="14" rx="5" ry="3.5" />
+        <circle cx="15.5" cy="10" r="2" />
+        <path d="M17.5 10l3 0.5-3 0.8" />
+        <circle cx="16" cy="9.5" r="0.4" fill="currentColor" stroke="none" />
+        <path d="M9 13l-2 2 3 1 2-2" />
+        <line x1="9" y1="17.3" x2="9" y2="20" />
+        <line x1="12.5" y1="17.3" x2="12.5" y2="20" />
+        <path d="M9 20h-1.5M9 20h1.5M12.5 20h-1.5M12.5 20h1.5" />
+      </svg>
+    ),
+    // Escorpião / triangle de alerta
+    'alert-triangle': (
+      <svg {...common}>
+        <path d="M12 9v2m0 4h.01M5.062 19h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+      </svg>
+    ),
+    // Gotas d'água (caixa d'água/limpeza)
+    droplet: (
+      <svg {...common}>
+        <rect x="6" y="6" width="12" height="11" rx="0.5" />
+        <line x1="4" y1="6" x2="20" y2="6" />
+        <path d="M7 11c1-1 2 1 3 0s2 1 3 0 2 1 3 0 1 0 1 0" />
+        <line x1="8" y1="17" x2="8" y2="20" />
+        <line x1="16" y1="17" x2="16" y2="20" />
+        <line x1="8" y1="20" x2="16" y2="20" />
+      </svg>
+    ),
+    // Spray sanitização: garrafa com gatilho e gotas
+    spray: (
+      <svg {...common}>
+        <rect x="6" y="11" width="9" height="10" rx="0.5" />
+        <line x1="6" y1="14" x2="15" y2="14" />
+        <path d="M15 13h3v-2h-2v-3h-5v2" />
+        <path d="M18 8l4-2" />
+        <path d="M22 5l-1 1.5M22 7l1.5-1M20 4l-0.5 1.5" />
+        <circle cx="22" cy="9" r="0.4" />
+        <circle cx="20" cy="10" r="0.4" />
+      </svg>
+    ),
+    // DAC: prédio residencial
+    building: (
+      <svg {...common}>
+        <rect x="4" y="3" width="16" height="18" rx="0.5" />
+        <line x1="7" y1="6" x2="9" y2="6" />
+        <line x1="11" y1="6" x2="13" y2="6" />
+        <line x1="15" y1="6" x2="17" y2="6" />
+        <line x1="7" y1="10" x2="9" y2="10" />
+        <line x1="11" y1="10" x2="13" y2="10" />
+        <line x1="15" y1="10" x2="17" y2="10" />
+        <line x1="7" y1="14" x2="9" y2="14" />
+        <line x1="11" y1="14" x2="13" y2="14" />
+        <line x1="15" y1="14" x2="17" y2="14" />
+        <rect x="10" y="17" width="4" height="4" />
+      </svg>
+    ),
+    // Higienização de bebedouros: bebedouro com bico
+    dispenser: (
+      <svg {...common}>
+        <rect x="6" y="3" width="12" height="16" rx="0.5" />
+        <rect x="8" y="5" width="8" height="3" />
+        <line x1="9" y1="6.5" x2="11" y2="6.5" />
+        <line x1="13" y1="6.5" x2="15" y2="6.5" />
+        <path d="M12 11v3l-1 1.5h2L12 14" />
+        <rect x="9" y="16" width="6" height="3" />
+        <line x1="6" y1="19" x2="18" y2="19" />
+      </svg>
+    ),
   };
   return icons[name] || icons.shield;
 }
