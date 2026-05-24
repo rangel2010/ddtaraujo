@@ -64,7 +64,7 @@ export default function Footer() {
         {/* Linha extra: bairros atendidos (SEO local + descoberta) */}
         <div className="mt-12 border-t border-brand-800 pt-8">
           <div className="text-sm">
-            <h3 className="font-semibold text-white">Atendemos em Londrina</h3>
+            <h3 className="font-semibold text-white">Atendemos em Londrina e Paraná</h3>
             <div className="mt-4 flex flex-wrap gap-2">
               {bairros.map((b) => (
                 <Link

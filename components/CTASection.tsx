@@ -3,7 +3,7 @@ import { phoneLink, siteConfig } from '@/lib/site-config';
 
 export default function CTASection({
   title = 'Pronto para acabar com as pragas?',
-  subtitle = 'Monte seu pedido em poucos cliques e envie pelo WhatsApp. Combos rendem condições especiais. Atendimento residencial, comercial e condomínios em Londrina e região.',
+  subtitle = 'Monte seu pedido em poucos cliques e envie pelo WhatsApp. Combos rendem condições especiais. Atendimento residencial, comercial e condomínios em Londrina e Paraná.',
 }: { title?: string; subtitle?: string }) {
   return (
     <section className="section bg-gradient-to-br from-brand-700 via-brand-600 to-brand-700">

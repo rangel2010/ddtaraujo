@@ -4,9 +4,9 @@ import { bairros, zoneLabels } from '@/lib/bairros';
 import CTASection from '@/components/CTASection';
 
 export const metadata: Metadata = {
-  title: 'Onde Atendemos em Londrina | Bairros e Regiões | Araújo',
+  title: 'Onde Atendemos em Londrina e Paraná | Bairros e Regiões | Araújo',
   description:
-    'A Araújo Dedetizadora atende toda Londrina e região: Gleba Palhano, Centro, Cinco Conjuntos, Vila Casoni, Distrito Industrial e mais. Veja sua região.',
+    'A Araújo Dedetizadora atende toda Londrina e Paraná: Gleba Palhano, Centro, Cinco Conjuntos, Vila Casoni, Distrito Industrial e mais. Veja sua região.',
   alternates: { canonical: '/atendimento' },
 };
 
@@ -28,7 +28,7 @@ export default function AtendimentoPage() {
             Onde atendemos
           </div>
           <h1 className="mt-6 font-display text-4xl font-bold text-white sm:text-5xl">
-            Atendemos toda Londrina e região
+            Atendemos toda Londrina e Paraná
           </h1>
           <p className="mt-6 text-lg text-ink-200">
             Mais de 40 anos protegendo residências, comércios, condomínios e indústrias em todos os bairros e cidades vizinhas. Encontre sua região abaixo para conhecer os detalhes do nosso atendimento na sua área.
@@ -82,7 +82,7 @@ export default function AtendimentoPage() {
               Não encontrou sua região?
             </h3>
             <p className="mt-3 text-ink-700 dark:text-ink-200">
-              Atendemos Londrina e cidades vizinhas (Cambé, Ibiporã, Rolândia, Arapongas, entre outras) além dos bairros listados acima. Solicite seu orçamento informando sua localização — nossa equipe avalia e responde com o melhor atendimento para sua área.
+              Atendemos Londrina, cidades vizinhas (Cambé, Ibiporã, Rolândia, Arapongas, entre outras) e todo o Paraná, além dos bairros listados acima. Solicite seu orçamento informando sua localização — nossa equipe avalia e responde com o melhor atendimento para sua área.
             </p>
             <Link href="/orcamento" className="btn-whatsapp mt-6 inline-flex">
               Solicitar orçamento

@@ -527,7 +527,7 @@ export const richContent: Record<string, RichSection[]> = {
     {
       title: 'As pragas urbanas que combatemos',
       paragraphs: [
-        'Dedetização é o termo genérico que cobre o controle de praticamente qualquer praga urbana. Em mais de 40 anos atendendo Londrina, montamos protocolos específicos para cada uma.',
+        'Dedetização é o termo genérico que cobre o controle de praticamente qualquer praga urbana. Em mais de 40 anos atendendo Londrina e Paraná, montamos protocolos específicos para cada uma.',
       ],
       list: {
         items: [
@@ -581,7 +581,7 @@ export const richContent: Record<string, RichSection[]> = {
           'Produtos sempre registrados — usamos apenas inseticidas com registro no Ministério da Saúde, com laudo entregue ao cliente',
           'Identificação correta de espécies — diagnóstico técnico antes da aplicação, não "pulveriza e reza"',
           'GAT — Garantia de Assistência Técnica escrita em todo serviço, com retornos sem custo dentro do prazo',
-          'Histórico de clientes — milhares de residências, condomínios, indústrias e empresas atendidos em Londrina e região',
+          'Histórico de clientes — milhares de residências, condomínios, indústrias e empresas atendidos em Londrina e Paraná',
           'Equipamentos modernos — atualizamos constantemente os equipamentos de aplicação para garantir eficácia e segurança',
         ],
       },
@@ -1043,7 +1043,7 @@ export const richContent: Record<string, RichSection[]> = {
       },
     },
     {
-      title: 'Onde fazemos sanitização em Londrina e região',
+      title: 'Onde fazemos sanitização em Londrina e Paraná',
       paragraphs: [
         'Atendemos qualquer ambiente fechado, desde os mais simples até os mais técnicos. Adaptamos produto e equipamento conforme o local.',
       ],
@@ -1208,7 +1208,7 @@ export const richContent: Record<string, RichSection[]> = {
       },
     },
     {
-      title: 'Onde implantamos CIPV em Londrina e região',
+      title: 'Onde implantamos CIPV em Londrina e Paraná',
       paragraphs: [
         'Operamos CIPV há mais de quatro décadas em todos os segmentos onde o programa é exigido ou recomendado.',
       ],

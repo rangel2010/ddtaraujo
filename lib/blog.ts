@@ -87,7 +87,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'A Araújo faz vistoria técnica gratuita de cupins em Londrina e região. Identifica a espécie, mapeia a infestação e propõe o tratamento adequado — com garantia escrita.',
+        text: 'A Araújo faz vistoria técnica gratuita de cupins em Londrina e Paraná. Identifica a espécie, mapeia a infestação e propõe o tratamento adequado — com garantia escrita.',
       },
     ],
   },
@@ -152,7 +152,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'A Araújo faz desratização em residências, comércios e indústrias em Londrina e região com produtos registrados na ANVISA, porta-iscas lacrados e monitoramento periódico. Garantia escrita com retornos.',
+        text: 'A Araújo faz desratização em residências, comércios e indústrias em Londrina e Paraná com produtos registrados na ANVISA, porta-iscas lacrados e monitoramento periódico. Garantia escrita com retornos.',
       },
     ],
   },
@@ -246,7 +246,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'A Araújo opera CIPV em indústrias, hospitais, hotéis e supermercados de Londrina e região há mais de 40 anos. Equipe técnica dedicada, documentação completa para todas as certificações sanitárias e atendimento emergencial sem custo adicional. Solicite uma vistoria inicial gratuita pra montar a proposta sob medida.',
+        text: 'A Araújo opera CIPV em indústrias, hospitais, hotéis e supermercados de Londrina e Paraná há mais de 40 anos. Equipe técnica dedicada, documentação completa para todas as certificações sanitárias e atendimento emergencial sem custo adicional. Solicite uma vistoria inicial gratuita pra montar a proposta sob medida.',
       },
     ],
   },
@@ -340,7 +340,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'A Araújo faz controle de escorpiões em residências, condomínios e empresas em Londrina e região — atendimento emergencial em casos de avistamento, garantia escrita e protocolo integrado pra eliminar tanto os escorpiões quanto o que os atrai.',
+        text: 'A Araújo faz controle de escorpiões em residências, condomínios e empresas em Londrina e Paraná — atendimento emergencial em casos de avistamento, garantia escrita e protocolo integrado pra eliminar tanto os escorpiões quanto o que os atrai.',
       },
     ],
   },
@@ -407,7 +407,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'A Araújo faz a limpeza completa de caixas d\'água e cisternas em Londrina e região, com produtos próprios para água potável e emissão de certificado válido para vigilância sanitária.',
+        text: 'A Araújo faz a limpeza completa de caixas d\'água e cisternas em Londrina e Paraná, com produtos próprios para água potável e emissão de certificado válido para vigilância sanitária.',
       },
     ],
   },
@@ -420,7 +420,7 @@ export const blogPosts: BlogPost[] = [
       'Morcegos no forro, telhado ou galpão envolvem riscos à saúde e normas ambientais específicas. Veja o que é permitido por lei e como funciona o controle profissional.',
     metaTitle: 'Controle de Morcegos em Londrina | Riscos e Soluções | Araújo',
     metaDescription:
-      'Controle profissional de morcegos em Londrina e região. Manejo conforme normas ambientais, vedação e exclusão definitiva. Veja riscos e procedimentos.',
+      'Controle profissional de morcegos em Londrina e Paraná. Manejo conforme normas ambientais, vedação e exclusão definitiva. Veja riscos e procedimentos.',
     readingMinutes: 3,
     coverImage: '/blog/morcegos-em-londrina-riscos-leis-e-como-resolver-definitivamente.jpg',
     coverAlt: 'Morcego pendurado em rocha de caverna',
@@ -428,7 +428,7 @@ export const blogPosts: BlogPost[] = [
     content: [
       {
         type: 'p',
-        text: 'Se você está enfrentando problemas com morcegos no forro, telhado ou galpão em Londrina e região, é fundamental agir corretamente. Além dos riscos à saúde, o manejo de morcegos envolve normas ambientais específicas. Neste artigo, explicamos como funciona o controle profissional e o que é permitido por lei.',
+        text: 'Se você está enfrentando problemas com morcegos no forro, telhado ou galpão em Londrina e Paraná, é fundamental agir corretamente. Além dos riscos à saúde, o manejo de morcegos envolve normas ambientais específicas. Neste artigo, explicamos como funciona o controle profissional e o que é permitido por lei.',
       },
       { type: 'h2', text: 'Por que morcegos são um problema?' },
       {
