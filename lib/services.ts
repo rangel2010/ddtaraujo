@@ -987,7 +987,7 @@ export const services: Service[] = [
       {
         question: 'A troca do filtro está incluída no serviço?',
         answer:
-          'Sim. Já trazemos o filtro compatível com o seu modelo. Trabalhamos com refis originais (Soft, Latina, Esmaltec, Masterfrio, Polar, IBBL) e compatíveis certificados pelo INMETRO.',
+          'Sim. Já trazemos o filtro compatível com o seu modelo. Trabalhamos com refis originais e compatíveis certificados pelo INMETRO.',
       },
       {
         question: 'Vocês emitem certificado?',
