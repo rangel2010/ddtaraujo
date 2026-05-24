@@ -1079,4 +1079,3 @@ export const categoryLabels: Record<Service['category'], string> = {
   higienizacao: 'Higienização',
   programas: 'Programas e Contratos',
 };
-};
