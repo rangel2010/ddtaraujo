@@ -329,7 +329,7 @@ function ServiceIcon({ name }: { name: string }) {
   // 7 dos 9 cards usam SVGs do svgrepo (outline, padrão visual coerente).
   // CIPV e Caixas d'água continuam Heroicons inline (fallback abaixo).
   const fileMap: Record<string, string> = {
-    shield: '/icons/servico-limpeza.svg',      // Dedetização Geral
+    shield: '/icons/pulverizador-v2.svg',     // Dedetização Geral
     rat: '/icons/rato-svg.svg',                // Desratização
     tree: '/icons/inseto.svg',                 // Descupinização
     moon: '/icons/morcego-svg.svg',            // Controle de Morcegos
