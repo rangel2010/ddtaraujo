@@ -109,6 +109,7 @@ export default function HomePage() {
               <div className="flex items-center gap-2"><Check /> Garantia escrita</div>
               <div className="flex items-center gap-2"><Check /> Credenciados ANVISA</div>
               <div className="flex items-center gap-2"><Check /> Seguro para pets</div>
+              <div className="flex items-center gap-2"><Check /> Pacotes com até 50% desconto</div>
             </div>
           </div>
 
