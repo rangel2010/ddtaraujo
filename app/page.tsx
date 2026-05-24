@@ -325,25 +325,28 @@ export default function HomePage() {
 }
 
 function ServiceIcon({ name }: { name: string }) {
-  // Ícones custom em PNG (designer): só os 3 que temos
-  const pngMap: Record<string, string> = {
-    shield: '/icons/profissional-clean.png',   // Dedetização Geral
-    rat: '/icons/rato-clean.png',              // Desratização
-    moon: '/icons/morcego-clean.png',          // Controle de Morcegos
+  // Mapeamento icon key -> arquivo SVG/PNG.
+  // 7 dos 9 cards usam SVGs do svgrepo (outline, padrão visual coerente).
+  // CIPV e Caixas d'água continuam Heroicons inline (fallback abaixo).
+  const fileMap: Record<string, string> = {
+    shield: '/icons/servico-limpeza.svg',      // Dedetização Geral
+    rat: '/icons/rato-svg.svg',                // Desratização
+    tree: '/icons/inseto.svg',                 // Descupinização
+    moon: '/icons/morcego-svg.svg',            // Controle de Morcegos
+    bird: '/icons/pombo-v2.svg',               // Manejo de Pombos
+    spray: '/icons/limpeza-ambiente.svg',      // Sanitização
+    dispenser: '/icons/bebedouro.svg',         // Higienização de Bebedouros
   };
-  if (pngMap[name]) {
-    return <img src={pngMap[name]} alt="" aria-hidden="true" className="h-8 w-8 object-contain" />;
+  if (fileMap[name]) {
+    return <img src={fileMap[name]} alt="" aria-hidden="true" className="h-8 w-8 object-contain" />;
   }
 
-  // Fallback: Heroicons inline para os outros 6
+  // Fallback Heroicons inline (CIPV, droplet, bug, alert-triangle, building)
   const icons: Record<string, JSX.Element> = {
     'clipboard-check': (<svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>),
     bug: (<svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19l3 3 3-3M12 8v13M3 12h2m14 0h2M5 7l2 2m10-2l-2 2M6 17l2-2m8 2l-2-2M12 4a4 4 0 014 4v4a4 4 0 11-8 0V8a4 4 0 014-4z"/></svg>),
-    tree: (<svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v18m0-18l-4 4m4-4l4 4M5 21h14"/></svg>),
-    bird: (<svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12c0 5 4 9 9 9s9-4 9-9-4-9-9-9c-2 0-4 .5-5.5 1.5M3 12l4-2m-4 2l4 2m-1-9l2 3m-2-3l-2 3"/></svg>),
     'alert-triangle': (<svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>),
     droplet: (<svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg>),
-    spray: (<svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2H7a2 2 0 00-2 2v2m12-4V5a2 2 0 00-2-2H9a2 2 0 00-2 2v2"/></svg>),
     building: (<svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>),
   };
   return icons[name] || icons['clipboard-check'];
