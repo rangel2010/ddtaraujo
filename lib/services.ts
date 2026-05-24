@@ -34,7 +34,7 @@ export const services: Service[] = [
       'empresa de dedetização londrina',
     ],
     hero: {
-      headline: 'Dedetização em Londrina com Garantia',
+      headline: 'Dedetização em Londrina e todo o Paraná',
       subheadline:
         'Mais de 40 anos eliminando pragas em residências, empresas, indústrias e condomínios em Londrina e todo o Paraná, com garantia escrita.',
     },
@@ -1078,4 +1078,5 @@ export const categoryLabels: Record<Service['category'], string> = {
   'aves-morcegos': 'Aves e Morcegos',
   higienizacao: 'Higienização',
   programas: 'Programas e Contratos',
+};
 };
