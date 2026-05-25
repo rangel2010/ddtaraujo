@@ -10,9 +10,9 @@ export type ServiceCover = {
 
 export const serviceCovers: Record<string, ServiceCover> = {
   'dedetizacao-em-londrina': {
-    image: '/services/dedetizacao-em-londrina.jpg',
-    alt: 'Pessoa segurando equipamento profissional de pulverização',
-    credit: { name: 'MESTO Sprayers', url: 'https://unsplash.com/@mesto_sprayers' },
+    image: '/services/dedetizacao-em-londrina.png',
+    alt: 'Profissional Araújo com EPI completo aplicando dedetização em sofá residencial',
+    credit: { name: 'Araújo', url: '#' },
   },
   'controle-de-pragas-em-londrina': {
     image: '/services/controle-de-pragas-em-londrina.jpg',
@@ -20,9 +20,9 @@ export const serviceCovers: Record<string, ServiceCover> = {
     credit: { name: 'Luke van Zyl', url: 'https://unsplash.com/@lukevz' },
   },
   'desinsetizacao': {
-    image: '/services/desinsetizacao.jpg',
-    alt: 'Macro de barata sobre superfície de madeira',
-    credit: { name: 'Robert Thiemann', url: 'https://unsplash.com/@rthiemann' },
+    image: '/services/desinsetizacao.png',
+    alt: 'Equipe Araújo com EPI aplicando desinsetização em armazém comercial',
+    credit: { name: 'Araújo', url: '#' },
   },
   'desratizacao': {
     image: '/services/desratizacao.jpg',
@@ -98,7 +98,7 @@ export const serviceCovers: Record<string, ServiceCover> = {
 
 // Fallback genérico caso algum slug futuro não tenha foto mapeada
 export const fallbackCover: ServiceCover = {
-  image: '/services/dedetizacao-em-londrina.jpg',
-  alt: 'Equipamento profissional de controle de pragas',
-  credit: { name: 'MESTO Sprayers', url: 'https://unsplash.com/@mesto_sprayers' },
+  image: '/services/dedetizacao-em-londrina.png',
+  alt: 'Profissional Araújo aplicando dedetização',
+  credit: { name: 'Araújo', url: '#' },
 };
