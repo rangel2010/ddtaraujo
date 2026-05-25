@@ -96,7 +96,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
       </nav>
 
       {/* Hero */}
-      <section className="relative overflow-hidden bg-ink-900 py-16 text-white md:py-20">
+      <section className="relative overflow-hidden bg-ink-900 py-8 text-white md:py-20">
         <div className="absolute inset-0">
           <Image
             src={cover.image}
@@ -104,7 +104,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
             fill
             sizes="100vw"
             priority
-            className="object-contain md:object-cover opacity-60"
+            className="object-cover opacity-60"
             style={cover.objectPosition ? { objectPosition: cover.objectPosition } : undefined}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-ink-900/75 via-ink-900/65 to-brand-900/70" />
