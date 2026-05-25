@@ -13,9 +13,26 @@ const groupedServices = services.reduce<Record<string, typeof services>>((acc, s
   return acc;
 }, {});
 
+// 9 serviços principais — mesmos cards da home — usados no menu mobile expandido
+const FEATURED_ORDER = [
+  'dedetizacao-em-londrina',
+  'desratizacao',
+  'controle-de-pragas-em-londrina',
+  'descupinizacao',
+  'controle-de-morcegos-em-londrina',
+  'controle-de-pombos-em-londrina',
+  'limpeza-de-caixas-de-agua-em-londrina',
+  'sanitizacao-de-ambientes-londrina',
+  'higienizacao-de-bebedouros-em-londrina',
+];
+const featuredServices = FEATURED_ORDER
+  .map((slug) => services.find((s) => s.slug === slug))
+  .filter((s): s is typeof services[number] => Boolean(s));
+
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-40 border-b border-ink-200 bg-white/90 backdrop-blur-md">
@@ -97,7 +114,37 @@ export default function Header() {
           <div className="container py-4 space-y-1">
             <Link href="/" className="block py-2 text-base font-medium text-ink-800" onClick={() => setMenuOpen(false)}>Início</Link>
             <Link href="/sobre" className="block py-2 text-base font-medium text-ink-800" onClick={() => setMenuOpen(false)}>Quem Somos</Link>
-            <Link href="/servicos" className="block py-2 text-base font-medium text-ink-800" onClick={() => setMenuOpen(false)}>Serviços</Link>
+            <div>
+              <button
+                onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                className="flex w-full items-center justify-between py-2 text-base font-medium text-ink-800"
+                aria-expanded={mobileServicesOpen}
+              >
+                <span>Serviços</span>
+                <svg className={`h-5 w-5 transition-transform ${mobileServicesOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7"/></svg>
+              </button>
+              {mobileServicesOpen && (
+                <div className="ml-3 mt-1 border-l-2 border-ink-100 pl-4 space-y-1">
+                  {featuredServices.map((s) => (
+                    <Link
+                      key={s.slug}
+                      href={`/servicos/${s.slug}`}
+                      className="block py-1.5 text-sm text-ink-700 hover:text-brand-700"
+                      onClick={() => { setMenuOpen(false); setMobileServicesOpen(false); }}
+                    >
+                      {s.shortTitle}
+                    </Link>
+                  ))}
+                  <Link
+                    href="/servicos"
+                    className="block py-1.5 text-sm font-semibold text-brand-700 hover:underline"
+                    onClick={() => { setMenuOpen(false); setMobileServicesOpen(false); }}
+                  >
+                    Ver todos os serviços →
+                  </Link>
+                </div>
+              )}
+            </div>
             <Link href="/blog" className="block py-2 text-base font-medium text-ink-800" onClick={() => setMenuOpen(false)}>Blog</Link>
             <Link href="/contato" className="block py-2 text-base font-medium text-ink-800" onClick={() => setMenuOpen(false)}>Contato</Link>
             <Link href="/orcamento" onClick={() => setMenuOpen(false)} className="btn-whatsapp mt-4 w-full">Solicitar Orçamento</Link>
