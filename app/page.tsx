@@ -118,13 +118,13 @@ export default async function HomePage() {
                   <div className="flex-1">
                     <div className="text-[10px] uppercase tracking-wider text-ink-300 font-bold">Avaliação verificada</div>
                     <div className="flex items-baseline gap-2 mt-0.5">
-                      <span className="font-display text-3xl font-bold text-white leading-none">4,8</span>
+                      <span className="font-display text-3xl font-bold text-white leading-none">{rating.toFixed(1).replace('.', ',')}</span>
                       <div className="flex gap-0.5">{[1,2,3,4,5].map((i) => <Star key={i} />)}</div>
                     </div>
                   </div>
                 </div>
                 <div className="mt-3 flex items-center justify-between border-t border-white/10 pt-3">
-                  <span className="text-sm text-ink-300"><strong className="text-white">97 avaliações</strong> reais de clientes</span>
+                  <span className="text-sm text-ink-300"><strong className="text-white">{totalReviews} avaliações</strong> reais de clientes</span>
                   <a href={GOOGLE_REVIEWS_URL} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-accent-400 hover:text-accent-400">Ver →</a>
                 </div>
               </div>
