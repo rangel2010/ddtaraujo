@@ -104,7 +104,8 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
             fill
             sizes="100vw"
             priority
-            className="object-cover opacity-60"
+            className="object-contain md:object-cover opacity-60"
+            style={cover.objectPosition ? { objectPosition: cover.objectPosition } : undefined}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-ink-900/75 via-ink-900/65 to-brand-900/70" />
         </div>

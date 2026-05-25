@@ -6,6 +6,8 @@ export type ServiceCover = {
   image: string;
   alt: string;
   credit: { name: string; url: string };
+  /** CSS object-position pra controlar foco do crop no desktop. Default: 'center'. */
+  objectPosition?: string;
 };
 
 export const serviceCovers: Record<string, ServiceCover> = {
@@ -13,6 +15,7 @@ export const serviceCovers: Record<string, ServiceCover> = {
     image: '/services/dedetizacao-em-londrina.png',
     alt: 'Profissional Araújo com EPI completo aplicando dedetização em sofá residencial',
     credit: { name: 'Araújo', url: '#' },
+    objectPosition: 'left center',
   },
   'controle-de-pragas-em-londrina': {
     image: '/services/controle-de-pragas-em-londrina.jpg',
