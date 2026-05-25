@@ -45,9 +45,9 @@ export const serviceCovers: Record<string, ServiceCover> = {
     credit: { name: 'Ilie Barna', url: 'https://unsplash.com/@mechaowlstudios' },
   },
   'dedetizacao-de-baratas': {
-    image: '/services/dedetizacao-de-baratas.jpg',
-    alt: 'Barata marrom e preta em close-up',
-    credit: { name: 'Robert Thiemann', url: 'https://unsplash.com/@rthiemann' },
+    image: '/services/dedetizacao-de-baratas.png',
+    alt: 'Duas baratas em close sobre superfície clara',
+    credit: { name: 'Araújo', url: '#' },
   },
   'dedetizacao-para-escorpioes-em-londrina': {
     image: '/services/dedetizacao-para-escorpioes-em-londrina.jpg',
@@ -75,9 +75,9 @@ export const serviceCovers: Record<string, ServiceCover> = {
     credit: { name: 'mkmult', url: 'https://www.freepik.com' },
   },
   'limpeza-de-caixas-de-agua-em-londrina': {
-    image: '/services/limpeza-de-caixas-de-agua-em-londrina.jpg',
-    alt: 'Reservatório de água branco em telhado',
-    credit: { name: 'Chandler Cruttenden', url: 'https://unsplash.com/@chanphoto' },
+    image: '/services/limpeza-de-caixas-de-agua-em-londrina.png',
+    alt: 'Cisternas azuis ao ar livre em ambiente industrial',
+    credit: { name: 'Araújo', url: '#' },
   },
   'sanitizacao-de-ambientes-londrina': {
     image: '/services/sanitizacao-de-ambientes-londrina.jpg',
@@ -90,9 +90,9 @@ export const serviceCovers: Record<string, ServiceCover> = {
     credit: { name: 'Marlene Céline Nordvik', url: 'https://unsplash.com/@zarlinaa' },
   },
   'higienizacao-de-bebedouros-em-londrina': {
-    image: '/services/higienizacao-de-bebedouros-em-londrina.jpg',
-    alt: 'Close de bebedouro de aço inox com água saindo do bico',
-    credit: { name: 'Hamid Siddiqi', url: 'https://unsplash.com/@hamidsiddiqi7' },
+    image: '/services/higienizacao-de-bebedouros-em-londrina.png',
+    alt: 'Bebedouro escolar de aço inox em parede com listras',
+    credit: { name: 'Araújo', url: '#' },
   },
 };
 
