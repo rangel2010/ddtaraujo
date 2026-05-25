@@ -35,9 +35,9 @@ export const serviceCovers: Record<string, ServiceCover> = {
     credit: { name: 'Roberto Carlos Román Don', url: 'https://unsplash.com/@srcharls' },
   },
   'controle-de-morcegos-em-londrina': {
-    image: '/services/controle-de-morcegos-em-londrina.jpg',
-    alt: 'Morcego pendurado em rocha de caverna',
-    credit: { name: 'Ferran Ventura', url: 'https://unsplash.com/@ferranventura' },
+    image: '/services/controle-de-morcegos-em-londrina.png',
+    alt: 'Morcego em voo com asas abertas',
+    credit: { name: 'Araújo', url: '#' },
   },
   'controle-de-pombos-em-londrina': {
     image: '/services/controle-de-pombos-em-londrina.jpg',
