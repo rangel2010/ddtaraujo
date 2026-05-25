@@ -596,7 +596,7 @@ export const richContent: Record<string, RichSection[]> = {
           'Residências (casas, apartamentos, sobrados)',
           'Condomínios verticais e horizontais — áreas comuns, garagens, salões',
           'Comércios em geral — lojas, escritórios, salões',
-          'Restaurantes, lanchonetes e padarias — com atendimento fora do horário comercial',
+          'Restaurantes, lanchonetes e padarias',
           'Hotéis, pousadas e motéis — com discrição',
           'Indústrias e galpões — alimentícia, farmacêutica, logística',
           'Hospitais, clínicas e laboratórios — com produtos compatíveis',
@@ -637,7 +637,7 @@ export const richContent: Record<string, RichSection[]> = {
       ],
       list: {
         items: [
-          'Pulverização residual — produto líquido aplicado em frestas, rodapés, atrás de móveis e pontos de passagem. Forma película invisível que mata por contato. Eficaz contra baratas, aranhas, escorpiões. Duração: 3-6 meses',
+          'Pulverização residual — produto líquido aplicado em frestas, rodapés, atrás de móveis e pontos de passagem. Forma película invisível que mata por contato. Eficaz contra baratas, aranhas, escorpiões.',
           'Gel inseticida — gotas microscópicas em pontos discretos. Atrai o inseto, que come e leva pra colônia. Eficaz contra baratas e formigas. Sem cheiro, sem evacuar o ambiente, seguro em cozinhas em uso',
           'Polvilhamento — pó inseticida aplicado em locais secos de difícil acesso (forros, frestas profundas, caixas elétricas, vãos estruturais). Eficaz contra baratas e traças escondidas',
           'Atomização UBV (Ultra Baixo Volume) — produto líquido transformado em névoa de partículas microscópicas que cobre grandes áreas. Ideal para galpões, armazéns e ambientes amplos. Eficaz contra insetos voadores',

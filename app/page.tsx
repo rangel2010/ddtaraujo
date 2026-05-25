@@ -4,6 +4,7 @@ import { phoneLink, siteConfig } from '@/lib/site-config';
 import FAQ from '@/components/FAQ';
 import CTASection from '@/components/CTASection';
 import PrefetchServiceImages from '@/components/PrefetchServiceImages';
+import { fetchGoogleReviews } from '@/lib/google-reviews';
 
 const heroFaqs = [
   { question: 'Quanto tempo leva para fazer uma dedetização?', answer: 'Uma dedetização residencial padrão leva entre 1 e 3 horas, dependendo do tamanho do imóvel e da praga combatida. Para empresas e condomínios, o tempo é definido conforme o cronograma do contrato.' },
@@ -42,14 +43,6 @@ const groupedAll = services.reduce<Record<string, typeof services>>((acc, s) => 
   return acc;
 }, {});
 
-const reviews = [
-  { name: 'Lúcia', role: 'Londrichapas', date: '2 meses atrás', text: 'Somos clientes a anos e sempre fomos bem atendidos, horários flexíveis, dedetização completa e bem aplicada, equipe bem preparada e suporte pós-venda muito bom. Estão de parabéns pelos serviços prestados.' },
-  { name: 'Gabriela Mendonça', role: 'Local Guide · 20 avaliações', date: '3 meses atrás', text: 'Estávamos passando por um problema delicado com cupins e morcegos, a empresa foi essencial para solucionar tudo com agilidade e profissionalismo. Além da eficácia do serviço, destaco o atendimento atencioso e transparente da equipe.' },
-  { name: 'Mariana Simioni', role: 'Clínica Veterinária — Tamarana', date: '3 meses atrás', text: 'Na Clínica Veterinária em Tamarana fomos muito bem atendidos!! Suspeitávamos de alguns focos e o dedetizador não mediu esforços para encontrar, adentrou no forro e fez todo trabalho!!' },
-  { name: 'Estevão Guerra', role: 'Cliente · 5 avaliações', date: '2 meses atrás', text: 'Trabalho excelente! Profissionais pontuais, educados e competentes! Super recomendo! E realmente funciona a dedetização.' },
-  { name: 'Sarai Saias', role: 'Cliente', date: '2 meses atrás', text: 'Prestaram um excelente trabalho na minha empresa. Entrei em contato e fizeram o agendamento rápido, o serviço prestado e resultado foi ótimo!' },
-];
-
 // URL canônica do perfil no Google (CID-based) — mais estável que /place/ URLs
 const GOOGLE_REVIEWS_URL = 'https://www.google.com/maps?cid=13428197170801864944';
 const GOOGLE_WRITE_REVIEW_URL = GOOGLE_REVIEWS_URL;
@@ -75,7 +68,8 @@ const Check = ({ cls = 'h-5 w-5 text-accent-400' }: { cls?: string }) => (
   <svg className={cls} fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
 );
 
-export default function HomePage() {
+export default async function HomePage() {
+  const { rating, totalReviews, reviews } = await fetchGoogleReviews();
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqSchema) }} />
@@ -282,20 +276,20 @@ export default function HomePage() {
             <h2 className="section-title mt-2">O que nossos clientes dizem</h2>
             <div className="mt-6 inline-flex items-center gap-3 rounded-full bg-white px-5 py-2.5 shadow-sm border border-ink-200">
               <div className="flex gap-0.5">{[1,2,3,4,5].map((i) => <Star key={i} />)}</div>
-              <div className="text-sm"><span className="font-bold text-ink-900">4,8</span><span className="text-ink-600"> · 97 avaliações no </span><span className="font-semibold text-ink-900">Google</span></div>
+              <div className="text-sm"><span className="font-bold text-ink-900">{rating.toFixed(1).replace('.', ',')}</span><span className="text-ink-600"> · {totalReviews} avaliações no </span><span className="font-semibold text-ink-900">Google</span></div>
             </div>
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {reviews.map((t) => (
-              <div key={t.name} className="flex flex-col rounded-2xl bg-white p-6 shadow-sm dark:bg-ink-700">
+            {reviews.slice(0, 5).map((t, idx) => (
+              <div key={`${t.author}-${idx}`} className="flex flex-col rounded-2xl bg-white p-6 shadow-sm dark:bg-ink-700">
                 <div className="flex items-center justify-between">
-                  <div className="flex gap-0.5">{[1,2,3,4,5].map((i) => <Star key={i} />)}</div>
+                  <div className="flex gap-0.5">{Array.from({ length: Math.round(t.rating) }, (_, i) => <Star key={i} />)}</div>
                   <GoogleIcon />
                 </div>
                 <p className="mt-4 flex-1 text-ink-700 dark:text-ink-200">&ldquo;{t.text}&rdquo;</p>
                 <div className="mt-4 border-t border-ink-100 pt-4 dark:border-ink-600">
-                  <div className="font-semibold text-ink-900 dark:text-white">{t.name}</div>
-                  <div className="text-sm text-ink-500 dark:text-ink-300">{t.role} · {t.date}</div>
+                  <div className="font-semibold text-ink-900 dark:text-white">{t.author}</div>
+                  <div className="text-sm text-ink-500 dark:text-ink-300">{t.relativeTime}</div>
                 </div>
               </div>
             ))}
@@ -311,7 +305,7 @@ export default function HomePage() {
           </div>
           <div className="mt-10 text-center">
             <a href={GOOGLE_REVIEWS_URL} target="_blank" rel="noopener noreferrer" className="btn-secondary">
-              Ver todas as 97 avaliações no Google
+              Ver todas as {totalReviews} avaliações no Google
               <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
             </a>
           </div>
@@ -339,7 +333,23 @@ function ServiceIcon({ name }: { name: string }) {
     dispenser: '/icons/bebedouro.svg',         // Higienização de Bebedouros
   };
   if (fileMap[name]) {
-    return <img src={fileMap[name]} alt="" aria-hidden="true" className="h-8 w-8 object-contain" />;
+    // Usa mask-image pra cor seguir o text-... do container (adapta a dark mode)
+    return (
+      <span
+        aria-hidden="true"
+        className="block h-8 w-8 bg-current"
+        style={{
+          maskImage: `url(${fileMap[name]})`,
+          WebkitMaskImage: `url(${fileMap[name]})`,
+          maskSize: 'contain',
+          WebkitMaskSize: 'contain',
+          maskRepeat: 'no-repeat',
+          WebkitMaskRepeat: 'no-repeat',
+          maskPosition: 'center',
+          WebkitMaskPosition: 'center',
+        }}
+      />
+    );
   }
 
   // Fallback Heroicons inline (CIPV, droplet, bug, alert-triangle, building)
