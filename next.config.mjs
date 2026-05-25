@@ -65,6 +65,17 @@ const nextConfig = {
       { source: '/post/problemas-com-pulgas-araujo-controle-de-pragas-resolve', destination: '/blog/problemas-com-pulgas', permanent: true },
       { source: '/post/problemas-com-formigas', destination: '/blog/problemas-com-formigas', permanent: true },
       { source: '/post/dedetizadora-londrina-controle-especializado-de-pragas', destination: '/blog/dedetizadora-londrina-controle-especializado-de-pragas', permanent: true },
+
+      // ───── Versões percent-encoded das URLs com acento (Google às vezes indexa assim) ─────
+      { source: '/dedetiza%C3%A7%C3%A3o-desinseti%C3%A7%C3%A3o', destination: '/servicos/desinsetizacao', permanent: true },
+      { source: '/dedetiza%C3%A7%C3%A3o-de-baratas', destination: '/servicos/dedetizacao-de-baratas', permanent: true },
+      { source: '/dedetiza%C3%A7%C3%A3o-de-carrapatos', destination: '/servicos/dedetizacao-de-carrapatos', permanent: true },
+      { source: '/dedetiza%C3%A7%C3%A3o-de-aranhas', destination: '/servicos/dedetizacao-de-aranhas', permanent: true },
+      { source: '/dedetiza%C3%A7%C3%A3o-de-formigas', destination: '/servicos/dedetizacao-de-formigas', permanent: true },
+      { source: '/dac-divis%C3%A3o-de-atendimento-%C3%A0-condom%C3%ADn', destination: '/servicos/dac-divisao-de-atendimento-a-condominios', permanent: true },
+
+      // ───── Padrão dinâmico — qualquer post antigo do blog Wix vai pro novo ─────
+      { source: '/blog-araujo-dedetizadora/:slug', destination: '/blog/:slug', permanent: true },
     ];
   },
 };
