@@ -384,7 +384,6 @@ export const services: Service[] = [
       'Morcegos são protegidos por lei e fundamentais para o equilíbrio ecológico — mas podem transmitir raiva e ocupar telhados, forros e galerias. Nosso protocolo de manejo respeita a legislação ambiental: desalojamos os animais sem matá-los e vedamos os pontos de abrigo para que não retornem.',
     benefits: [
       'Manejo legal e ecológico (sem matar os animais)',
-      'Equipe treinada com vacinação antirrábica em dia',
       'Vedação definitiva de pontos de abrigo',
       'Limpeza e desinfecção do local',
       'Orientação sobre prevenção de raiva',
@@ -417,7 +416,7 @@ export const services: Service[] = [
       {
         question: 'Morcego transmite raiva?',
         answer:
-          'Pode transmitir, sim. Por isso é fundamental que o manejo seja feito por equipe treinada e vacinada. Se você foi mordido ou teve contato direto, procure imediatamente um posto de saúde.',
+          'Pode transmitir, sim. Por isso é fundamental que o manejo seja feito por equipe treinada. Se você foi mordido ou teve contato direto, procure imediatamente um posto de saúde.',
       },
     ],
   },
