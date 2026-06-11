@@ -44,7 +44,7 @@ export async function fetchGoogleReviews(): Promise<GoogleReviewsData> {
 
   if (!apiKey || !placeId) {
     console.warn('[google-reviews] env vars não configuradas, usando fallback');
-    return { ...FALLBACK, debugSource: 'fallback: env vars não configuradas (apiKey ou placeId ausentes)' };
+    return { ...FALLBACK, debugSource: `fallback: env vars ausentes (apiKey=${!!apiKey}, placeId=${!!placeId})` };
   }
 
   try {
