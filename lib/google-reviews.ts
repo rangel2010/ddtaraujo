@@ -19,6 +19,7 @@ export type GoogleReviewsData = {
   rating: number;
   totalReviews: number;
   reviews: GoogleReview[];
+  debugSource?: string;
 };
 
 /**
@@ -43,7 +44,7 @@ export async function fetchGoogleReviews(): Promise<GoogleReviewsData> {
 
   if (!apiKey || !placeId) {
     console.warn('[google-reviews] env vars não configuradas, usando fallback');
-    return FALLBACK;
+    return { ...FALLBACK, debugSource: 'fallback: env vars não configuradas (apiKey ou placeId ausentes)' };
   }
 
   try {
@@ -59,8 +60,9 @@ export async function fetchGoogleReviews(): Promise<GoogleReviewsData> {
     });
 
     if (!res.ok) {
-      console.error('[google-reviews] API error:', res.status, await res.text());
-      return FALLBACK;
+      const errText = await res.text();
+      console.error('[google-reviews] API error:', res.status, errText);
+      return { ...FALLBACK, debugSource: `fallback: API error ${res.status} - ${errText.slice(0, 300)}` };
     }
 
     const data = await res.json();
@@ -77,9 +79,10 @@ export async function fetchGoogleReviews(): Promise<GoogleReviewsData> {
       rating: data.rating ?? FALLBACK.rating,
       totalReviews: data.userRatingCount ?? FALLBACK.totalReviews,
       reviews: reviews.length > 0 ? reviews : FALLBACK.reviews,
+      debugSource: 'api: sucesso',
     };
-  } catch (err) {
+  } catch (err: any) {
     console.error('[google-reviews] fetch failed:', err);
-    return FALLBACK;
+    return { ...FALLBACK, debugSource: `fallback: fetch failed - ${err?.message || String(err)}` };
   }
 }
