@@ -69,10 +69,9 @@ const Check = ({ cls = 'h-5 w-5 text-accent-400' }: { cls?: string }) => (
 );
 
 export default async function HomePage() {
-  const { rating, totalReviews, reviews, debugSource } = await fetchGoogleReviews();
+  const { rating, totalReviews, reviews } = await fetchGoogleReviews();
   return (
     <>
-      <div dangerouslySetInnerHTML={{ __html: `<!-- DEBUG-GOOGLE-REVIEWS: ${debugSource} -->` }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqSchema) }} />
       <PrefetchServiceImages slugs={FEATURED_ORDER} />
 
