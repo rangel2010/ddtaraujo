@@ -55,8 +55,8 @@ export async function fetchGoogleReviews(): Promise<GoogleReviewsData> {
         'X-Goog-Api-Key': apiKey,
         'X-Goog-FieldMask': 'id,displayName,rating,userRatingCount,reviews',
       },
-      // Cache de 6 horas (Next.js ISR)
-      next: { revalidate: 21600 },
+      // TEMP: sem cache, para descartar resposta antiga guardada
+      cache: 'no-store',
     });
 
     if (!res.ok) {
