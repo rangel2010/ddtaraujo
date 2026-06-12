@@ -835,7 +835,7 @@ export const services: Service[] = [
     benefits: [
       'Esvaziamento, raspagem, lavagem e desinfecção',
       'Produtos próprios para água potável',
-      'Certificado de higienização',
+      'Certificado de higienização com fotos do antes e depois',
       'Atendimento a condomínios e empresas',
       'Verificação de integridade da caixa e tampa',
     ],
