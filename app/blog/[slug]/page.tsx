@@ -178,6 +178,21 @@ export default function BlogPostPage({ params }: Params) {
               </a>
             </p>
 
+            {post.relatedService && (
+              <div className="mt-8 rounded-2xl border border-yellow-400/40 bg-yellow-50 p-6 text-center dark:bg-ink-700">
+                <p className="text-ink-700 dark:text-ink-300">
+                  Conheça nosso serviço de{' '}
+                  <Link
+                    href={`/servicos/${post.relatedService.slug}`}
+                    className="font-semibold text-yellow-600 underline-offset-2 hover:underline dark:text-yellow-400"
+                  >
+                    {post.relatedService.label}
+                  </Link>
+                  .
+                </p>
+              </div>
+            )}
+
             <div className="mt-8 rounded-2xl bg-ink-50 p-6 text-center dark:bg-ink-700">
               <p className="text-ink-700 dark:text-ink-300">
                 Precisa de ajuda profissional?{' '}

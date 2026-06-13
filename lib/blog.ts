@@ -18,6 +18,8 @@ export type BlogPost = {
   coverCredit: { name: string; url: string };
   /** Se true, fixa o artigo na primeira posição da listagem (independente da data). */
   featured?: boolean;
+  /** Link para a página de serviço relacionada (slug em /servicos/[slug]) */
+  relatedService?: { slug: string; label: string };
   content: BlogContent[];
 };
 
@@ -416,6 +418,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Controle de Morcegos em Londrina: riscos, leis e como resolver definitivamente',
     date: '2026-02-24',
     category: 'Manejo de Fauna',
+    relatedService: { slug: 'controle-de-morcegos-em-londrina', label: 'Controle de Morcegos em Londrina' },
     excerpt:
       'Morcegos no forro, telhado ou galpão envolvem riscos à saúde e normas ambientais específicas. Veja o que é permitido por lei e como funciona o controle profissional.',
     metaTitle: 'Controle de Morcegos em Londrina | Riscos e Soluções | Araújo',

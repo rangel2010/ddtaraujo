@@ -15,6 +15,8 @@ export type Service = {
   benefits: string[];
   process: { title: string; description: string }[];
   faqs: { question: string; answer: string }[];
+  /** Link para um artigo do blog relacionado (slug em /blog/[slug]) */
+  relatedPost?: { slug: string; label: string };
 };
 
 export const services: Service[] = [
@@ -374,6 +376,10 @@ export const services: Service[] = [
       'controle de morcegos londrina',
       'desalojamento de morcegos londrina',
       'morcegos no telhado londrina',
+      'remoção de morcegos londrina',
+      'morcegos no forro',
+      'como tirar morcego do telhado',
+      'dedetizadora para morcegos londrina',
     ],
     hero: {
       headline: 'Controle de Morcegos em Londrina',
@@ -418,7 +424,36 @@ export const services: Service[] = [
         answer:
           'Pode transmitir, sim. Por isso é fundamental que o manejo seja feito por equipe treinada. Se você foi mordido ou teve contato direto, procure imediatamente um posto de saúde.',
       },
+      {
+        question: 'Quanto tempo demora o serviço de remoção de morcegos?',
+        answer:
+          'Depende do tamanho da colônia e da estrutura do imóvel, mas a maioria dos serviços é concluída em uma única visita, entre o desalojamento e a vedação dos pontos de abrigo.',
+      },
+      {
+        question: 'Os morcegos podem voltar depois do desalojamento?',
+        answer:
+          'Se todos os pontos de entrada forem corretamente vedados, a chance de retorno é muito baixa. Por isso a etapa de vedação é tão importante quanto o desalojamento em si.',
+      },
+      {
+        question: 'Tenho morcegos no forro ou no telhado, é normal?',
+        answer:
+          'É uma situação comum em cidades do Paraná, principalmente em telhados com telhas soltas, forros antigos ou frestas próximas a calhas. O ideal é agir rápido: quanto maior a colônia, mais trabalhoso é o manejo.',
+      },
+      {
+        question: 'Vocês atendem emergências com morcegos dentro de casa?',
+        answer:
+          'Sim. Se um morcego entrou na sua casa ou estabelecimento, entre em contato que priorizamos esses casos para um atendimento rápido.',
+      },
+      {
+        question: 'Vocês atendem outras cidades do Paraná além de Londrina?',
+        answer:
+          'Sim. Além de Londrina, atendemos cidades da região e outras localidades do Paraná. Entre em contato para confirmar o atendimento na sua cidade.',
+      },
     ],
+    relatedPost: {
+      slug: 'morcegos-em-londrina-riscos-leis-e-como-resolver-definitivamente',
+      label: 'Controle de Morcegos em Londrina: riscos, leis e como resolver definitivamente',
+    },
   },
   {
     slug: 'controle-de-pombos-em-londrina',

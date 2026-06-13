@@ -244,6 +244,22 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
 
       <FAQ items={service.faqs} title={`Dúvidas sobre ${service.shortTitle}`} />
 
+      {service.relatedPost && (
+        <div className="container pb-2">
+          <div className="mx-auto max-w-4xl rounded-2xl border border-yellow-400/40 bg-yellow-50 p-6 text-center dark:bg-ink-700">
+            <p className="text-ink-700 dark:text-ink-300">
+              Leia também:{' '}
+              <Link
+                href={`/blog/${service.relatedPost.slug}`}
+                className="font-semibold text-yellow-600 underline-offset-2 hover:underline dark:text-yellow-400"
+              >
+                {service.relatedPost.label}
+              </Link>
+            </p>
+          </div>
+        </div>
+      )}
+
       {/* Related */}
       <section className="section bg-ink-50 dark:bg-ink-800">
         <div className="container">
