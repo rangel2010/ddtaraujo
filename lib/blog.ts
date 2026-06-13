@@ -29,6 +29,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Como saber se tem cupim em casa? 5 sinais antes que seja tarde',
     date: '2026-05-15',
     category: 'Cupins',
+    relatedService: { slug: 'descupinizacao', label: 'Descupinização em Londrina' },
     excerpt:
       'Cupins agem em silêncio: quando aparecem, o estrago já é grande. Veja os 5 sinais que indicam infestação e o que fazer ao identificar.',
     metaTitle: 'Como saber se tem cupim em casa? 5 sinais | Araújo',

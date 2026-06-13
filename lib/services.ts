@@ -313,6 +313,10 @@ export const services: Service[] = [
       'dedetização de cupins londrina',
       'controle de cupins londrina',
       'eliminação de cupins londrina',
+      'cupim de madeira seca',
+      'cupim subterrâneo',
+      'barreira química contra cupim',
+      'tratamento de cupim em obra',
     ],
     hero: {
       headline: 'Descupinização em Londrina',
@@ -361,7 +365,31 @@ export const services: Service[] = [
         answer:
           'Os principais sinais são: pó ou resíduos parecidos com serragem próximos a móveis e batentes; pequenos furos na madeira; madeira que soa "oca" ao ser batida; asas descartadas perto de janelas e portas (revoada); e túneis de terra subindo por paredes (cupim subterrâneo). Ao primeiro sinal, vale fazer vistoria — o cupim age em silêncio.',
       },
+      {
+        question: 'Os cupins podem voltar depois do tratamento?',
+        answer:
+          'Se o tratamento for feito corretamente e a barreira preventiva for aplicada, a chance de retorno é baixa. Por isso recomendamos contratos preventivos, que incluem revisões periódicas e garantia escrita estendida.',
+      },
+      {
+        question: 'Vocês atendem obras em construção?',
+        answer:
+          'Sim. A aplicação de barreira química no solo durante a obra (antes do contrapiso) é o momento ideal e mais econômico para prevenir cupim subterrâneo, e é o que garante a garantia escrita estendida.',
+      },
+      {
+        question: 'A descupinização tem garantia?',
+        answer:
+          'Sim. Em contratos preventivos com barreira química, oferecemos garantia escrita estendida. Em tratamentos curativos, o prazo de garantia é definido conforme a espécie identificada e o tipo de tratamento aplicado.',
+      },
+      {
+        question: 'Vale a pena investir em descupinização preventiva?',
+        answer:
+          'Sim. O custo da barreira química preventiva é muito menor do que o de um tratamento estrutural depois que a infestação já compromete vigas, móveis ou a estrutura do imóvel. É a forma mais econômica de evitar prejuízos maiores no futuro.',
+      },
     ],
+    relatedPost: {
+      slug: 'como-saber-se-tem-cupim-em-casa-5-sinais',
+      label: 'Como saber se tem cupim em casa? 5 sinais antes que seja tarde',
+    },
   },
   {
     slug: 'controle-de-morcegos-em-londrina',
