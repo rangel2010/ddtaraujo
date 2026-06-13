@@ -212,7 +212,7 @@ export default async function HomePage() {
             <h2 className="section-title mt-2">40 anos protegendo famílias e empresas em Londrina</h2>
             <p className="mt-6 text-lg text-ink-700 dark:text-ink-300">A Araújo é referência no controle profissional de pragas em Londrina e em todo o Paraná. Investimos continuamente em tecnologia, capacitação técnica e produtos de última geração — sempre com responsabilidade ambiental e segurança para você.</p>
             <ul className="mt-8 space-y-3">
-              {['Técnicos certificados e em treinamento contínuo','Produtos registrados ANVISA com NR-33 e NR-35','Conformidade total com SESA e ANVISA','Equipamentos modernos e EPIs completos','Atendimento personalizado de pequeno a grande porte'].map((item) => (
+              {['Técnicos certificados e em treinamento contínuo','Produtos registrados na ANVISA','Equipe capacitada conforme NR-33 e NR-35 (espaços confinados e trabalho em altura), entre outras','Conformidade total com SESA e ANVISA','Equipamentos modernos e EPIs completos','Atendimento personalizado de pequeno a grande porte'].map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <Check cls="mt-0.5 h-5 w-5 flex-shrink-0 text-accent-600" />
                   <span className="text-ink-700 dark:text-ink-300">{item}</span>
