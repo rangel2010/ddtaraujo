@@ -1062,7 +1062,7 @@ export const richContent: Record<string, RichSection[]> = {
         ],
       },
       closingParagraphs: [
-        'A aplicação é rápida (geralmente 30 minutos a 1 hora por ambiente) e o local fica liberado para uso em 1 a 2 horas após o serviço. Entregamos certificado de sanitização válido para apresentação à vigilância sanitária ou comprovação corporativa.',
+        'A aplicação é rápida (geralmente 30 minutos a 1 hora por ambiente) e o local fica liberado para uso conforme orientação da nossa equipe. Entregamos certificado de sanitização válido para apresentação à vigilância sanitária ou comprovação corporativa.',
       ],
     },
   ],

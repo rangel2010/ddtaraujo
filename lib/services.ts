@@ -76,7 +76,7 @@ export const services: Service[] = [
       {
         question: 'A dedetização é segura para crianças e animais de estimação?',
         answer:
-          'Sim. Utilizamos produtos registrados na ANVISA e indicamos o tempo de reentrada após cada aplicação (geralmente 2 a 4 horas). Para casos sensíveis, oferecemos produtos antialérgicos e inodoros.',
+          'Sim. Utilizamos produtos registrados na ANVISA e nossa equipe orienta individualmente sobre o tempo de reentrada após cada aplicação. Para casos sensíveis, oferecemos produtos antialérgicos e inodoros.',
       },
       {
         question: 'Quanto tempo dura o efeito da dedetização?',
@@ -86,7 +86,7 @@ export const services: Service[] = [
       {
         question: 'Preciso sair de casa durante o serviço?',
         answer:
-          'Recomendamos que pessoas e pets fiquem fora do ambiente durante a aplicação e por algumas horas após, dependendo do produto utilizado. Nosso técnico orientará você no dia.',
+          'Recomendamos que pessoas e pets fiquem fora do ambiente durante a aplicação. Nosso técnico orientará individualmente sobre o tempo necessário após cada serviço.',
       },
       {
         question: 'Vocês emitem certificado para vigilância sanitária?',

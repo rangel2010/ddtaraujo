@@ -8,10 +8,10 @@ import { fetchGoogleReviews } from '@/lib/google-reviews';
 
 const heroFaqs = [
   { question: 'Quanto tempo leva para fazer uma dedetização?', answer: 'Uma dedetização residencial padrão leva entre 1 e 3 horas, dependendo do tamanho do imóvel e da praga combatida. Para empresas e condomínios, o tempo é definido conforme o cronograma do contrato.' },
-  { question: 'Os produtos são seguros para crianças e pets?', answer: 'Sim. Trabalhamos exclusivamente com produtos registrados na ANVISA. Temos opções antialérgicas e inodoras, e nosso técnico orienta o tempo de reentrada após cada serviço (geralmente 2 a 4 horas).' },
+  { question: 'Os produtos são seguros para crianças e pets?', answer: 'Sim. Trabalhamos exclusivamente com produtos registrados na ANVISA. Temos opções antialérgicas e inodoras, e nossa equipe orienta individualmente sobre o tempo de reentrada após cada serviço.' },
   { question: 'Vocês atendem em quais cidades?', answer: 'Sediados em Londrina, atendemos toda a região metropolitana e todo o estado do Paraná para contratos empresariais e condominiais.' },
   { question: 'Como funciona a garantia?', answer: 'Todos os nossos serviços possuem garantia por escrito, conforme o tipo de praga e ambiente. Se a praga voltar dentro do prazo, retornamos sem custo adicional.' },
-  { question: 'Preciso desocupar o imóvel?', answer: 'Na maioria dos casos, recomendamos que pessoas e pets fiquem fora do ambiente durante a aplicação e por algumas horas após. Em serviços específicos como gel para baratas, a reentrada é imediata.' },
+  { question: 'Preciso desocupar o imóvel?', answer: 'Na maioria dos casos, recomendamos que pessoas e pets fiquem fora do ambiente durante a aplicação. Nosso técnico orienta individualmente sobre o tempo necessário após cada serviço.' },
   { question: 'Emitem nota fiscal e certificado?', answer: 'Sim. Emitimos nota fiscal e certificado válido para apresentação à vigilância sanitária, síndicos, auditorias e demais órgãos.' },
 ];
 
