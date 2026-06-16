@@ -178,7 +178,7 @@ export const services: Service[] = [
     icon: 'bug',
     metaTitle: 'Desinsetização em Londrina | Araújo Dedetizadora',
     metaDescription:
-      'Desinsetização profissional em Londrina contra baratas, formigas, pulgas, moscas e outros insetos. Garantia escrita e produtos seguros para família e pets.',
+      'Desinsetização profissional em Londrina contra baratas, formigas, pulgas, moscas e outros insetos. Garantia escrita e produtos sem cheiro, seguros para família, pets, idosos e crianças.',
     keywords: [
       'desinsetização londrina',
       'controle de insetos londrina',
