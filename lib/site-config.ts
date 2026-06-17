@@ -23,7 +23,7 @@ export const siteConfig = {
   },
   social: {
     facebook: 'https://www.facebook.com/DDTAraujo/',
-    instagram: 'https://www.instagram.com/dedetizadoralondrinaaraujo/',
+    instagram: 'https://www.instagram.com/araujocontroledepragas/',
   },
   business: {
     foundedYear: 1985,
