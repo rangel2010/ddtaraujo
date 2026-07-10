@@ -126,63 +126,116 @@ export const richContent: Record<string, RichSection[]> = {
 
   'limpeza-de-caixas-de-agua-em-londrina': [
     {
-      title: 'Por que a limpeza de caixa de água é tão importante?',
+      title: 'O que diz a Portaria MS 888/2021 sobre higienização de reservatórios',
       paragraphs: [
-        'Com o tempo, os reservatórios acumulam diversos contaminantes — mesmo quando a água vem tratada da rede pública, a caixa pode se tornar um ponto de contaminação se não houver manutenção periódica. Entre os principais resíduos acumulados:',
+        'A manutenção periódica de reservatórios de água não é apenas uma boa prática — é uma determinação regulatória. A Portaria MS 888/2021 do Ministério da Saúde, que atualizou as normas de qualidade da água para consumo humano, estabelece que os reservatórios domiciliares e prediais devem ser inspecionados e higienizados periodicamente, com frequência mínima de seis meses.',
+        'Para condomínios e estabelecimentos com fiscalização sanitária, o descumprimento pode gerar autuações e interdições. Síndicos respondem legalmente pela qualidade da água que abastece as unidades — e o certificado de higienização é o documento que comprova a conformidade.',
+        'A Araújo emite certificado completo após cada serviço, com data, volume do reservatório, produtos utilizados (com registro ANVISA), procedimento executado e assinatura do responsável técnico. Esse documento é aceito por vigilâncias sanitárias, administradoras de condomínio e auditorias.',
+      ],
+    },
+    {
+      title: "Biofilme: o perigo invisível nas paredes da caixa d'água",
+      paragraphs: [
+        "O maior risco que a maioria das pessoas desconhece não é a sujeira visível no fundo da caixa — é o biofilme. Biofilme é uma camada de microrganismos (bactérias, fungos e algas) que se adere às paredes internas do reservatório formando uma película gelatinosa praticamente invisível a olho nu.",
+        "O problema do biofilme é que ele cria um ambiente protetor para bactérias patogênicas — incluindo Legionella, E. coli e Salmonella — que resistem a concentrações normais de cloro na água. Uma vez formado, o biofilme libera microrganismos continuamente na água que passa pelo reservatório.",
+        "A remoção eficaz do biofilme não é feita apenas jogando hipoclorito na caixa — exige raspagem mecânica das paredes e do fundo (que elimina a matriz protetora), seguida de desinfecção química com produto em contato pelo tempo adequado e enxágue completo. Esse é exatamente o processo que a Araújo executa em cada higienização.",
+      ],
+    },
+    {
+      title: "Sinais que indicam que sua caixa d'água precisa de limpeza urgente",
+      paragraphs: [
+        'Na maioria dos casos, a água contaminada não tem aparência diferente. Mas alguns sinais externos indicam que o reservatório precisa de atenção imediata.',
       ],
       list: {
         items: [
-          'Lodo e sedimentos',
-          'Ferrugem',
-          'Microrganismos (bactérias, fungos e algas)',
-          'Insetos e resíduos orgânicos',
-          'Contaminação cruzada por vedação inadequada',
+          'Sabor ou cheiro diferente na água — gosto de mofo, terra ou produto químico',
+          'Coloração levemente amarelada, esverdeada ou turva',
+          'Sensação de partículas ao beber ou ao enxaguar a boca',
+          'Tampa sem vedação adequada ou com frestas expostas',
+          'Fezes de pombos ou insetos visíveis próximos ou dentro da caixa',
+          'Ferrugem ou manchas escuras visíveis no interior',
+          "Mais de 6 meses desde a última higienização — ou nunca fez / não lembra quando foi",
         ],
       },
       closingParagraphs: [
-        'A limpeza periódica previne riscos à saúde e evita problemas como doenças gastrointestinais, mau cheiro na água, alteração de cor ou sabor e entupimentos na rede hidráulica.',
+        'Qualquer um desses sinais é motivo suficiente para agendar o serviço. Em condomínios, qualquer morador que perceba alteração na água pode — e deve — notificar a administração, que tem responsabilidade legal pela qualidade da água fornecida.',
       ],
+    },
+    {
+      title: "Como é feita a higienização profissional de caixa d'água",
+      paragraphs: [
+        'A higienização profissional vai muito além de jogar hipoclorito na caixa e encher de água — uma prática que infelizmente ainda ocorre com prestadores sem preparo técnico. Veja como o serviço correto é realizado.',
+      ],
+      list: {
+        items: [
+          'Inspeção prévia — o técnico verifica o estado da caixa, a vedação da tampa, a presença de rachaduras e o nível de contaminação antes de iniciar',
+          'Esvaziamento controlado — o reservatório é esvaziado preservando abastecimento mínimo da casa durante o serviço',
+          "Raspagem mecânica — paredes, fundo e bordas recebem raspagem com equipamento específico para remover sedimentos, ferrugem e a camada de biofilme. Essa etapa é a mais importante e a que diferencia a higienização profissional da lavagem caseira",
+          'Lavagem — resíduos soltos são removidos com água limpa',
+          'Desinfecção química — aplicação de solução sanitizante registrada para uso em água potável, com tempo de contato recomendado para eficácia microbiológica',
+          'Enxágue completo — lavagem final para remoção de qualquer resíduo de produto',
+          'Verificação de integridade — inspeção da caixa, da boia e da vedação da tampa ao final do serviço',
+          'Enchimento e liberação — o reservatório é reabastecido e a água liberada para consumo imediato',
+          'Certificado e laudo — emissão do documento comprobatório com fotos do antes e depois',
+        ],
+      },
     },
     {
       title: 'Documentação que você recebe após o serviço',
       paragraphs: [
-        'Todos os equipamentos são higienizados antes e após o procedimento. Ao final, o cliente recebe:',
+        'Todos os equipamentos utilizados são higienizados antes e após o procedimento. Ao final da higienização, o cliente recebe documentação completa para arquivo e apresentação a terceiros.',
       ],
       list: {
         items: [
-          'Laudo técnico assinado',
-          'Relatório do procedimento executado',
-          'Registro fotográfico do antes e depois',
-          'Comprovação conforme normas sanitárias',
-          'Procedimentos operacionais utilizados',
+          'Certificado de higienização assinado pelo técnico responsável',
+          'Laudo técnico com os produtos utilizados e seus registros nos órgãos competentes',
+          'Registro fotográfico do antes e depois da higienização',
+          'Data do serviço e próxima higienização recomendada',
+          'Comprovante válido para vigilância sanitária, síndicos e auditorias',
         ],
       },
+      closingParagraphs: [
+        'Para condomínios, emitimos relatório consolidado com todos os reservatórios atendidos — ideal para prestação de contas em AGO/AGE e para a pasta de manutenção que o síndico deve manter atualizada.',
+      ],
     },
     {
-      title: 'Também realizamos',
-      list: {
-        items: [
-          'Limpeza de cisternas',
-          'Higienização de reservatórios industriais',
-          'Manutenção preventiva em sistemas de armazenamento',
-        ],
-      },
-    },
-    {
-      title: 'Atendemos Londrina e todo o Paraná',
+      title: "Caixas d'água, cisternas e reservatórios: tipos e diferenças no serviço",
       paragraphs: [
-        'Com mais de 40 anos de experiência, a Araújo é referência em serviços de higienização técnica e controle sanitário. Realizamos limpeza de caixa de água em Londrina e em todo o Paraná, atendendo:',
+        'Atendemos todos os tipos de reservatório de água, com procedimento adaptado para cada material e configuração.',
       ],
       list: {
         items: [
-          'Residências',
-          'Condomínios',
-          'Escolas',
-          'Hospitais',
-          'Indústrias',
-          'Comércios',
+          "Caixa d'água de polietileno (fibra azul) — o tipo mais comum em residências. Paredes lisas facilitam a raspagem, mas o material acumula biofilme com facilidade sem manutenção regular",
+          'Caixa de fibra de vidro — durável e resistente, mas exige cuidado na raspagem para não danificar a superfície interna',
+          'Caixa de amianto (eternit) — comum em construções antigas. Exige protocolo específico para manejo seguro do material',
+          'Reservatório de alvenaria — em muitos prédios e condomínios, a caixa é de concreto revestido. Exige inspeção de rachaduras e possíveis infiltrações',
+          'Cisternas — reservatórios enterrados ou semienterrados para armazenar água de chuva ou como reserva complementar. O acesso restrito exige equipamento específico',
+          'Reservatórios industriais e prediais de grande volume — comuns em condomínios e indústrias. Exigem equipe maior e, quando necessário, equipamento para trabalho em espaço confinado',
         ],
       },
+      closingParagraphs: [
+        'Independente do tipo, todos os reservatórios recebem o mesmo cuidado técnico e documentação completa ao final do serviço.',
+      ],
+    },
+    {
+      title: "Onde fazemos limpeza de caixa d'água em Londrina",
+      paragraphs: [
+        "A Araújo realiza higienização de caixas d'água, cisternas e reservatórios em Londrina e região. Com mais de 40 anos no mercado de higienização e controle sanitário, já atendemos centenas de residências, condomínios e estabelecimentos em toda a região metropolitana.",
+      ],
+      list: {
+        items: [
+          'Residências (casas e apartamentos)',
+          'Condomínios verticais e horizontais',
+          'Escolas, creches e universidades',
+          'Hospitais, clínicas e farmácias',
+          'Indústrias e galpões',
+          'Restaurantes, hotéis e comércios',
+          'Empresas com exigência de certificação sanitária',
+        ],
+      },
+      closingParagraphs: [
+        'Para condomínios e empresas que precisam de higienização periódica, oferecemos contrato semestral com agendamento programado, certificado e laudo técnico em cada visita.',
+      ],
     },
   ],
 

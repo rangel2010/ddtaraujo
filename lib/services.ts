@@ -901,56 +901,92 @@ export const services: Service[] = [
     shortTitle: 'Limpeza de Caixas',
     category: 'higienizacao',
     icon: 'droplet',
-    metaTitle: 'Limpeza de Caixa d\'Água em Londrina | Araújo DDT',
+    metaTitle: 'Limpeza de Caixa d\'Água em Londrina | Higienização com Certificado | Araújo DDT',
     metaDescription:
-      'Limpeza e desinfecção de caixas d\'água e cisternas em Londrina conforme recomendação ANVISA (a cada 6 meses). Emissão de certificado.',
+      'Limpeza e higienização de caixas d\'água e cisternas em Londrina. Serviço conforme Portaria MS 888/2021 (ANVISA), com certificado, laudo técnico e fotos. Orçamento grátis.',
     keywords: [
       'limpeza de caixa d\'água londrina',
-      'limpeza de cisterna londrina',
+      'limpeza caixa dagua londrina',
       'higienização caixa de água londrina',
+      'higienização de caixa d\'água londrina',
+      'limpeza de cisterna londrina',
+      'serviço de limpeza caixa d\'água londrina',
+      'limpar caixa d água londrina',
+      'empresa limpeza caixa d água londrina',
     ],
     hero: {
-      headline: 'Limpeza de Caixas de Água e Cisternas',
+      headline: 'Limpeza de Caixas de Água e Cisternas em Londrina',
       subheadline:
-        'A ANVISA recomenda limpeza a cada 6 meses. Fazemos com certificado e produtos próprios para água potável.',
+        'Higienização completa conforme Portaria MS 888/2021 (ANVISA). Certificado, laudo técnico e registro fotográfico do antes e depois.',
     },
     intro:
-      'A água que abastece sua casa ou empresa passa pela caixa — e ela acumula sedimentos, biofilme e até insetos. A ANVISA recomenda limpeza e desinfecção a cada 6 meses. Fazemos o serviço completo com produtos sanitizantes próprios para água potável e emissão de certificado.',
+      'A água que abastece sua casa ou empresa passa pela caixa d\'água — e mesmo que pareça limpa, ela acumula sedimentos, biofilme, ferrugem e outros contaminantes ao longo do tempo. A Portaria MS 888/2021 do Ministério da Saúde recomenda higienização completa do reservatório a cada 6 meses. Sem manutenção regular, a água pode apresentar alteração de sabor, odor, cor e contaminação microbiológica invisível ao olho nu. A Araújo realiza limpeza e desinfecção de caixas d\'água e cisternas em Londrina com produtos sanitizantes registrados para água potável, emissão de certificado e registro fotográfico do antes e depois.',
     benefits: [
-      'Esvaziamento, raspagem, lavagem e desinfecção',
-      'Produtos próprios para água potável',
+      'Esvaziamento, raspagem, lavagem e desinfecção completa',
+      'Produtos registrados para água potável (ANVISA)',
       'Certificado de higienização com fotos do antes e depois',
-      'Atendimento a condomínios e empresas',
-      'Verificação de integridade da caixa e tampa',
+      'Laudo técnico assinado pelo responsável',
+      'Atendimento a condomínios, empresas e residências',
+      'Verificação de integridade da caixa e da tampa',
     ],
     process: [
       {
         title: 'Esvaziamento',
-        description: 'Reservamos a água final para sua casa.',
+        description: 'Esvaziamos o reservatório preservando abastecimento mínimo da casa durante o serviço.',
       },
       {
         title: 'Raspagem e lavagem',
-        description: 'Remoção de sedimentos e biofilme.',
+        description: 'Removemos sedimentos, biofilme, ferrugem e resíduos orgânicos das paredes e fundo.',
       },
       {
         title: 'Desinfecção',
-        description: 'Aplicação de sanitizante e enxágue.',
+        description: 'Aplicamos sanitizante registrado para água potável com tempo de contato adequado e enxágue completo.',
       },
       {
-        title: 'Certificado',
-        description: 'Documento válido com data e responsável técnico.',
+        title: 'Certificado e laudo',
+        description: 'Emitimos certificado com data, responsável técnico, fotos e próxima higienização recomendada.',
       },
     ],
     faqs: [
       {
         question: 'Vou ficar sem água durante o serviço?',
         answer:
-          'Por algumas horas, sim — pelo tempo de esvaziar, limpar e encher novamente (em média 3 a 4 horas).',
+          'Por algumas horas, sim — pelo tempo necessário para esvaziar, higienizar e encher novamente. Em média, o serviço leva de 2 a 4 horas dependendo do tamanho do reservatório. Se sua casa tem mais de uma caixa, podemos organizar para minimizar o período sem fornecimento.',
       },
       {
-        question: 'O certificado vale para condomínio?',
+        question: 'O certificado vale para condomínio e vigilância sanitária?',
         answer:
-          'Sim. Emitimos certificado válido para apresentação a vigilância sanitária, síndicos e auditorias.',
+          'Sim. Emitimos certificado válido para apresentação a vigilância sanitária, síndicos e auditorias. O documento contém data, volume do reservatório, procedimento executado, produtos utilizados e assinatura do responsável técnico.',
+      },
+      {
+        question: 'Com que frequência devo fazer a higienização da caixa d\'água?',
+        answer:
+          'A Portaria MS 888/2021 e a ANVISA recomendam higienização completa do reservatório a cada 6 meses. Em condomínios com alta demanda, escolas ou clínicas — onde a qualidade da água é crítica — recomenda-se a cada 3 meses. Mesmo quando a água parece limpa, sedimentos e biofilme se formam de forma invisível e podem comprometer a saúde dos moradores.',
+      },
+      {
+        question: 'Como saber se minha caixa d\'água precisa de limpeza?',
+        answer:
+          'Os sinais mais comuns são: gosto ou cheiro diferente na água (tipo mofo ou terra), coloração levemente amarelada ou turva, sensação de partículas ao beber, presença de insetos ou fezes de pombos próximos à tampa, ou simplesmente ter passado mais de 6 meses desde a última higienização. Se você nunca fez ou não lembra quando foi, é hora de agendar.',
+      },
+      {
+        question: 'Quanto custa a limpeza de caixa d\'água em Londrina?',
+        answer:
+          'O valor varia conforme o volume do reservatório, o tipo de material (polietileno, fibra de vidro, alvenaria), a altura de instalação e o acesso. Uma caixa residencial padrão (500L a 1.000L) tem serviço mais simples; condomínios com reservatórios de 5.000L ou mais exigem mais tempo e equipe. Solicite orçamento gratuito pelo WhatsApp — avaliamos sem compromisso e com resposta rápida.',
+      },
+      {
+        question: 'Precisam esvaziar a caixa antes de chamar vocês?',
+        answer:
+          'Não. O esvaziamento já faz parte do nosso processo. Basta garantir acesso à caixa e ter reserva mínima de água para o período da higienização. Informamos com antecedência o tempo estimado sem fornecimento.',
+      },
+      {
+        question: 'A higienização serve também para cisternas?',
+        answer:
+          'Sim. Realizamos higienização de cisternas residenciais e industriais, além de caixas d\'água de todos os materiais: polietileno, fibra de vidro, amianto (com protocolo específico) e alvenaria. Cada tipo tem suas particularidades e o técnico adapta o procedimento.',
+      },
+      {
+        question: 'A água fica segura para consumo logo após a limpeza?',
+        answer:
+          'Sim. Após a desinfecção, realizamos enxágue completo com água limpa. Só liberamos o reservatório quando confirmamos que não há resíduo de sanitizante. Os produtos utilizados são registrados para uso em água potável e seguros para consumo imediato após o procedimento.',
       },
     ],
   },
