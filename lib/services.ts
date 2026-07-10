@@ -397,17 +397,26 @@ export const services: Service[] = [
     shortTitle: 'Controle de Morcegos',
     category: 'aves-morcegos',
     icon: 'moon',
-    metaTitle: 'Controle de Morcegos em Londrina | Manejo Ecológico | Araújo',
+    metaTitle: 'Controle de Morcegos em Londrina | Empresa Especializada | Araújo Dedetizadora',
     metaDescription:
-      'Controle e desalojamento de morcegos em Londrina de forma ecológica e legal. Equipe treinada, manejo sem matar os animais e vedação de pontos de abrigo.',
+      'Empresa especializada em controle e remoção de morcegos em Londrina há 40 anos. Manejo ecológico, vedação definitiva e desinfecção. Equipe com vacinação antirrábica. Ligue: (43) 3339-1295.',
     keywords: [
       'controle de morcegos londrina',
+      'controle de morcegos em londrina',
+      'remoção de morcegos londrina',
+      'remoção de morcegos em londrina',
+      'empresa especializada em morcegos',
+      'empresa especializada em morcegos londrina',
+      'empresa para tirar morcegos londrina',
       'desalojamento de morcegos londrina',
       'morcegos no telhado londrina',
-      'remoção de morcegos londrina',
+      'tirar morcego do telhado londrina',
       'morcegos no forro',
       'como tirar morcego do telhado',
       'dedetizadora para morcegos londrina',
+      'dedetização de morcegos londrina',
+      'manejo de morcegos londrina',
+      'morcego transmite raiva londrina',
     ],
     hero: {
       headline: 'Controle de Morcegos em Londrina',
@@ -420,7 +429,9 @@ export const services: Service[] = [
       'Manejo legal e ecológico (sem matar os animais)',
       'Vedação definitiva de pontos de abrigo',
       'Limpeza e desinfecção do local',
-      'Orientação sobre prevenção de raiva',
+      'Equipe com vacinação antirrábica em dia',
+      'Laudo técnico e certificado após o serviço',
+      'Orientação completa sobre prevenção de raiva',
     ],
     process: [
       {
@@ -476,6 +487,16 @@ export const services: Service[] = [
         question: 'Vocês atendem outras cidades do Paraná além de Londrina?',
         answer:
           'Sim. Além de Londrina, atendemos cidades da região e outras localidades do Paraná. Entre em contato para confirmar o atendimento na sua cidade.',
+      },
+      {
+        question: 'Quanto custa o controle de morcegos em Londrina?',
+        answer:
+          'O valor varia conforme o tamanho da colônia, o tipo de imóvel e o acesso ao local. Residências pequenas com poucas entradas têm um serviço mais simples; galpões industriais ou telhados extensos exigem mais etapas. Solicite um orçamento gratuito pelo WhatsApp ou telefone — fazemos avaliação técnica sem compromisso.',
+      },
+      {
+        question: 'Como saber se tenho morcegos no telhado ou forro?',
+        answer:
+          'Os sinais mais comuns são: barulho no telhado à noite ou ao entardecer, manchas escuras próximas a frestas e telhas, fezes acumuladas no chão ou nas paredes, odor forte no ambiente e visualização de morcegos saindo ao anoitecer. Se perceber qualquer um desses sinais, entre em contato para uma vistoria técnica gratuita.',
       },
     ],
     relatedPost: {

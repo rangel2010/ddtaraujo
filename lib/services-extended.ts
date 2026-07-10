@@ -61,6 +61,45 @@ export const richContent: Record<string, RichSection[]> = {
       },
     },
     {
+      title: 'Remoção de morcegos em Londrina: como funciona na prática',
+      paragraphs: [
+        'A remoção de morcegos em Londrina exige uma abordagem técnica e estruturada, diferente de qualquer outro tipo de controle de pragas. Por serem animais protegidos por lei, não é possível simplesmente eliminá-los — o processo correto é o desalojamento por exclusão, que consiste em permitir a saída dos animais sem permitir o retorno.',
+        'Na Araújo, o serviço de remoção de morcegos segue um protocolo de quatro etapas: inspeção detalhada do imóvel para mapear todos os pontos de acesso e estimar o tamanho da colônia; instalação de dispositivos de exclusão nas saídas identificadas; vedação definitiva de frestas, telhas soltas, respiros e demais entradas após o esvaziamento da colônia; e desinfecção do local com produtos específicos para eliminação de fungos presentes nas fezes acumuladas.',
+        'O resultado é duradouro: com todos os pontos vedados corretamente, os morcegos não encontram como retornar. Emitimos laudo técnico ao final do serviço.',
+      ],
+    },
+    {
+      title: 'Morcego transmite raiva: o que fazer em caso de contato',
+      paragraphs: [
+        'Sim, morcegos podem ser vetores do vírus da raiva — e esse é um dos principais motivos pelos quais o controle profissional é indispensável. Diferente de outros animais, morcegos podem transmitir a raiva mesmo sem apresentar sinais visíveis da doença.',
+        'Se você teve contato direto com um morcego — seja uma mordida, arranhão, ou contato com saliva em mucosas — procure imediatamente uma UBS ou pronto-socorro para iniciar o protocolo de profilaxia antirrábica. Não espere sintomas aparecerem.',
+        'Nossa equipe é vacinada contra raiva e treinada para o manejo seguro de colônias. Em todos os atendimentos, seguimos o protocolo de segurança biológica para minimizar qualquer risco de exposição.',
+      ],
+    },
+    {
+      title: 'Histoplasmose: o risco silencioso das fezes de morcego',
+      paragraphs: [
+        'Além da raiva, outro risco relevante das colônias de morcegos é a histoplasmose — uma doença respiratória causada pelo fungo Histoplasma capsulatum, que se desenvolve em ambientes com acúmulo de fezes (guano) de morcegos e pombos.',
+        'A inalação de esporos do fungo pode causar sintomas semelhantes a gripe, pneumonia e, em casos graves, infecções sistêmicas. O risco é maior durante a limpeza de forros e telhados contaminados — por isso nunca tente limpar o local sozinho sem equipamento de proteção adequado.',
+        'Na Araújo, a etapa de desinfecção após o desalojamento inclui tratamento específico contra fungos, com produtos biocidas e uso de EPIs completos pela equipe. Você recebe o local limpo e seguro.',
+      ],
+    },
+    {
+      title: 'Por que contratar uma empresa especializada em morcegos',
+      paragraphs: [
+        'Tentativas de remoção sem orientação técnica geralmente falham e podem agravar o problema: morcegos assustados podem se dispersar para outras partes do imóvel, e vedações malfeitas criam morcegos presos dentro das estruturas — o que gera odor intenso e risco sanitário.',
+        'Uma empresa especializada em morcegos como a Araújo traz a combinação necessária para um resultado definitivo: conhecimento do comportamento da espécie, equipamentos para trabalho em altura (NR-35), vacinação antirrábica da equipe, produtos biocidas registrados e experiência com diferentes tipos de estrutura — residências, galpões, prédios comerciais e condomínios.',
+        'Com mais de 40 anos no mercado de controle de pragas em Londrina e credenciamento junto à ANVISA, SESA e IAP, a Araújo é a referência em manejo de fauna urbana na região.',
+      ],
+    },
+    {
+      title: 'Nossa equipe tem vacinação antirrábica em dia',
+      paragraphs: [
+        'Este é um diferencial que poucos comunicam — e que faz toda a diferença na escolha de uma empresa para cuidar da remoção de morcegos. Toda a equipe técnica da Araújo que atua em serviços de manejo de fauna possui vacinação antirrábica atualizada conforme protocolo do Ministério da Saúde.',
+        'Isso significa que seu atendimento é feito por profissionais que sabem exatamente como manusear os animais com segurança, minimizando qualquer risco para você, sua família ou funcionários durante a execução do serviço.',
+      ],
+    },
+    {
       title: 'Controle de morcegos dentro da legislação',
       paragraphs: [
         'Os morcegos são animais silvestres protegidos pela legislação ambiental brasileira. O manejo desses animais deve seguir normas específicas e ser realizado por profissionais capacitados.',
