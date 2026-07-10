@@ -920,7 +920,7 @@ export const services: Service[] = [
         'Higienização completa conforme Portaria MS 888/2021 (ANVISA). Certificado, laudo técnico e registro fotográfico do antes e depois.',
     },
     intro:
-      'A água que abastece sua casa ou empresa passa pela caixa d\'água — e mesmo que pareça limpa, ela acumula sedimentos, biofilme, ferrugem e outros contaminantes ao longo do tempo. A Portaria MS 888/2021 do Ministério da Saúde recomenda higienização completa do reservatório a cada 6 meses. Sem manutenção regular, a água pode apresentar alteração de sabor, odor, cor e contaminação microbiológica invisível ao olho nu. A Araújo realiza limpeza e desinfecção de caixas d\'água e cisternas em Londrina com produtos sanitizantes registrados para água potável, emissão de certificado e registro fotográfico do antes e depois.',
+      'A água que abastece sua casa ou empresa passa pela caixa d\'água — e mesmo que pareça limpa, ela acumula sedimentos, biofilme, ferrugem e outros contaminantes ao longo do tempo. O Ministério da Saúde recomenda limpeza e desinfecção do reservatório a cada 6 meses, ou antes desse prazo quando houver suspeita de contaminação, entrada de animais ou alteração da qualidade da água. Sem manutenção regular, a água pode apresentar alteração de sabor, odor, cor e contaminação microbiológica invisível ao olho nu. A Araújo realiza limpeza e desinfecção de caixas d\'água e cisternas em Londrina com produtos sanitizantes registrados para água potável, emissão de certificado e registro fotográfico do antes e depois.',
     benefits: [
       'Esvaziamento, raspagem, lavagem e desinfecção completa',
       'Produtos registrados para água potável (ANVISA)',
@@ -951,7 +951,7 @@ export const services: Service[] = [
       {
         question: 'Vou ficar sem água durante o serviço?',
         answer:
-          'Por algumas horas, sim — pelo tempo necessário para esvaziar, higienizar e encher novamente. Em média, o serviço leva de 2 a 4 horas dependendo do tamanho do reservatório. Se sua casa tem mais de uma caixa, podemos organizar para minimizar o período sem fornecimento.',
+          'Na maioria dos casos, não — ou por pouquíssimo tempo. Em residências com reservatório suficiente, você nem percebe. Quando é necessário esvaziar completamente, a pausa é breve. Nosso técnico avalia a situação no local antes de começar e avisa com antecedência se houver qualquer necessidade de interrupção.',
       },
       {
         question: 'O certificado vale para condomínio e vigilância sanitária?',
@@ -961,7 +961,7 @@ export const services: Service[] = [
       {
         question: 'Com que frequência devo fazer a higienização da caixa d\'água?',
         answer:
-          'A Portaria MS 888/2021 e a ANVISA recomendam higienização completa do reservatório a cada 6 meses. Em condomínios com alta demanda, escolas ou clínicas — onde a qualidade da água é crítica — recomenda-se a cada 3 meses. Mesmo quando a água parece limpa, sedimentos e biofilme se formam de forma invisível e podem comprometer a saúde dos moradores.',
+          'O Ministério da Saúde recomenda limpeza e desinfecção do reservatório a cada 6 meses, prazo adotado pelas vigilâncias sanitárias de todo o Brasil. Em condomínios com alta demanda, escolas ou clínicas — onde a qualidade da água é crítica — recomenda-se a cada 3 meses. Mesmo quando a água parece limpa, sedimentos e biofilme se formam de forma invisível e podem comprometer a saúde dos moradores.',
       },
       {
         question: 'Como saber se minha caixa d\'água precisa de limpeza?',

@@ -126,9 +126,9 @@ export const richContent: Record<string, RichSection[]> = {
 
   'limpeza-de-caixas-de-agua-em-londrina': [
     {
-      title: 'O que diz a Portaria MS 888/2021 sobre higienização de reservatórios',
+      title: 'Regulamentação sanitária: o que a lei diz sobre limpeza de reservatórios',
       paragraphs: [
-        'A manutenção periódica de reservatórios de água não é apenas uma boa prática — é uma determinação regulatória. A Portaria MS 888/2021 do Ministério da Saúde, que atualizou as normas de qualidade da água para consumo humano, estabelece que os reservatórios domiciliares e prediais devem ser inspecionados e higienizados periodicamente, com frequência mínima de seis meses.',
+        'A higienização periódica de reservatórios de água não é apenas uma boa prática — é uma exigência regulatória. O Ministério da Saúde recomenda limpeza e desinfecção do reservatório a cada 6 meses, ou antes desse prazo quando houver suspeita de contaminação, entrada de animais, acúmulo de resíduos ou alteração da qualidade da água — recomendação seguida pelas vigilâncias sanitárias municipais em todo o Brasil. A Portaria MS 888/2021 complementa esse cenário ao estabelecer os padrões de potabilidade da água para consumo humano, e manter o reservatório limpo é condição para que esses padrões sejam atendidos.',
         'Para condomínios e estabelecimentos com fiscalização sanitária, o descumprimento pode gerar autuações e interdições. Síndicos respondem legalmente pela qualidade da água que abastece as unidades — e o certificado de higienização é o documento que comprova a conformidade.',
         'A Araújo emite certificado completo após cada serviço, com data, volume do reservatório, produtos utilizados (com registro ANVISA), procedimento executado e assinatura do responsável técnico. Esse documento é aceito por vigilâncias sanitárias, administradoras de condomínio e auditorias.',
       ],
