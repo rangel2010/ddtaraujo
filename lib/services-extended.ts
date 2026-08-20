@@ -1325,4 +1325,119 @@ export const richContent: Record<string, RichSection[]> = {
       ],
     },
   ],
+  'hidrojateamento-em-londrina': [
+    {
+      title: 'Como funciona o hidrojateamento de alta pressão',
+      paragraphs: [
+        'O equipamento é composto por uma motobomba que pressuriza a água e por bicos rotativos acoplados a lanças ou mangueiras. Ao ser lançada dentro da tubulação, a água em alta pressão rompe a obstrução e ainda raspa a parede interna do tubo, removendo a camada de gordura e incrustação que reduz o diâmetro útil da rede. É essa diferença que faz o serviço durar: em vez de abrir apenas uma passagem, a tubulação volta ao diâmetro original.',
+      ],
+      list: {
+        items: [
+          'Desobstrução de tubulações e colunas prediais',
+          'Limpeza de redes coletoras e galerias pluviais',
+          'Limpeza de caixas de gordura e caixas de inspeção',
+          'Remoção de raízes que invadiram a tubulação',
+          'Lavagem de pisos industriais, pátios, calçadas e fachadas',
+          'Higienização de tanques, reservatórios e estruturas metálicas',
+        ],
+      },
+    },
+    {
+      title: 'Quando o hidrojateamento é a melhor opção',
+      paragraphs: [
+        'Nem todo entupimento exige hidrojateamento — mas alguns cenários pedem exatamente isso:',
+      ],
+      list: {
+        items: [
+          'A rede entope sempre no mesmo trecho, mesmo depois de desentupida',
+          'Escoamento lento e constante em toda a casa ou no prédio inteiro',
+          'Acúmulo pesado de gordura em cozinhas industriais e restaurantes',
+          'Rede coletora de condomínio, indústria ou galpão com histórico de refluxo',
+          'Raízes de árvores que se infiltraram na tubulação externa',
+          'Superfícies com resíduo incrustado que a lavagem comum não remove',
+        ],
+      },
+      closingParagraphs: [
+        'Em manutenção preventiva, o hidrojateamento periódico da rede evita a parada emergencial — que sempre custa mais caro e acontece no pior momento.',
+      ],
+    },
+    {
+      title: 'Onde atendemos',
+      paragraphs: [
+        'A Araújo atende Londrina e todo o estado do Paraná com hidrojateamento de alta pressão. Nossa equipe faz avaliação técnica prévia para definir pressão, bico e método adequados a cada caso. Atendemos:',
+      ],
+      list: {
+        items: [
+          'Residências e sobrados',
+          'Condomínios residenciais e comerciais',
+          'Restaurantes, padarias e cozinhas industriais',
+          'Indústrias, galpões e centros logísticos',
+          'Postos de combustível, oficinas e lava-rápidos',
+          'Órgãos públicos, escolas e hospitais',
+        ],
+      },
+    },
+  ],
+
+  'desentupimento-em-londrina': [
+    {
+      title: 'O que desentupimos',
+      paragraphs: [
+        'Atendemos qualquer ponto da rede hidráulica — do ralo do banheiro à rede coletora do condomínio. Os chamados mais comuns são:',
+      ],
+      list: {
+        items: [
+          'Pia de cozinha e de banheiro',
+          'Vaso sanitário',
+          'Ralos de banheiro, área de serviço e área externa',
+          'Colunas e tubulações em geral do prédio',
+          'Caixa de gordura e caixa de inspeção',
+          'Rede coletora, fossa e sumidouro',
+          'Calhas e galerias de água pluvial',
+        ],
+      },
+    },
+    {
+      title: 'Sinais de que a rede está entupindo',
+      paragraphs: [
+        'O entupimento raramente acontece de uma hora para outra. Quase sempre a rede dá avisos antes de parar de vez:',
+      ],
+      list: {
+        items: [
+          'Água escoando devagar na pia ou no ralo',
+          'Barulho de borbulha no ralo quando outro ponto é usado',
+          'Mau cheiro vindo do ralo ou do vaso',
+          'Vaso sanitário com nível de água oscilando',
+          'Retorno de água suja em ralo de banheiro ou área de serviço',
+          'Aparecimento repentino de baratas americanas vindas do ralo',
+        ],
+      },
+      closingParagraphs: [
+        'Agir no primeiro sinal costuma resolver com um atendimento simples. Esperar até o refluxo significa limpeza, prejuízo e, às vezes, obra.',
+      ],
+    },
+    {
+      title: 'Entupimento, pragas e o que uma coisa tem a ver com a outra',
+      paragraphs: [
+        'A Araújo trabalha com controle de pragas há mais de 40 anos, e a rede coletora é um dos principais caminhos de baratas americanas e roedores dentro de imóveis urbanos. Caixa de gordura suja, tubulação obstruída e ralo sem proteção formam o combo perfeito: alimento, umidade e rota livre.',
+        'Por isso tratamos desentupimento como parte do controle ambiental, não como serviço isolado. Quando faz sentido, indicamos o serviço combinado — desobstrução da rede, limpeza da caixa de gordura e tratamento dos pontos de entrada — para resolver a causa e não apenas o sintoma.',
+      ],
+    },
+    {
+      title: 'Onde atendemos',
+      paragraphs: [
+        'Atendemos Londrina e todo o estado do Paraná, com equipe própria e equipamento profissional. Nosso desentupimento cobre:',
+      ],
+      list: {
+        items: [
+          'Residências, apartamentos e sobrados',
+          'Condomínios residenciais e comerciais',
+          'Restaurantes, bares, padarias e lanchonetes',
+          'Escritórios, clínicas e consultórios',
+          'Indústrias, galpões e centros de distribuição',
+          'Escolas, creches e órgãos públicos',
+        ],
+      },
+    },
+  ],
 };

@@ -2,7 +2,7 @@ export type Service = {
   slug: string;
   title: string;
   shortTitle: string;
-  category: 'insetos' | 'roedores' | 'aves-morcegos' | 'higienizacao' | 'programas';
+  category: 'insetos' | 'roedores' | 'aves-morcegos' | 'higienizacao' | 'desentupimento' | 'programas';
   icon: string;
   metaTitle: string;
   metaDescription: string;
@@ -1185,6 +1185,164 @@ export const services: Service[] = [
       },
     ],
   },
+  {
+    slug: 'hidrojateamento-em-londrina',
+    title: 'Hidrojateamento de Alta Pressão',
+    shortTitle: 'Hidrojateamento',
+    category: 'desentupimento',
+    icon: 'water-jet',
+    metaTitle: 'Hidrojateamento em Londrina | Alta Pressão | Araújo DDT',
+    metaDescription:
+      'Hidrojateamento de alta pressão em Londrina para desobstrução de tubulações, redes coletoras e limpeza de superfícies. Equipamento profissional e atendimento emergencial.',
+    keywords: [
+      'hidrojateamento londrina',
+      'hidrojateamento de alta pressão londrina',
+      'desobstrução de tubulação londrina',
+      'limpeza de tubulação alta pressão londrina',
+      'hidrojato londrina',
+    ],
+    hero: {
+      headline: 'Hidrojateamento de Alta Pressão em Londrina',
+      subheadline:
+        'Água pressurizada por motobombas e bicos rotativos para desobstruir tubulações, redes coletoras e limpar superfícies — sem quebrar piso nem parede.',
+    },
+    intro:
+      'O Hidrojateamento de Alta Pressão utiliza água pressurizada por motobombas e bicos rotativos acoplados a lanças ou mangueiras. É indicado para desobstrução de tubulações, limpeza de redes coletoras, caixas de gordura, galerias pluviais e higienização de superfícies. Por trabalhar apenas com água, dispensa produtos químicos agressivos, não danifica a tubulação e remove gordura, raízes, incrustações e resíduos que a desobstrução mecânica comum não alcança.',
+    benefits: [
+      'Desobstrução sem quebrar piso, parede ou tubulação',
+      'Remove gordura, incrustações, raízes e resíduos sólidos',
+      'Limpeza feita apenas com água, sem produto químico agressivo',
+      'Pressão regulável conforme o material e o diâmetro do tubo',
+      'Atende residências, comércios, indústrias e condomínios',
+      'Atendimento emergencial e orçamento sem compromisso',
+    ],
+    process: [
+      {
+        title: 'Diagnóstico da rede',
+        description:
+          'Identificamos o ponto da obstrução, o material e o diâmetro da tubulação para definir a pressão correta.',
+      },
+      {
+        title: 'Posicionamento do equipamento',
+        description:
+          'Instalamos a motobomba e escolhemos o bico rotativo adequado ao serviço — desobstrução ou limpeza de superfície.',
+      },
+      {
+        title: 'Jateamento',
+        description:
+          'A água pressurizada percorre a tubulação rompendo a obstrução e arrastando gordura, lodo e incrustações até a saída.',
+      },
+      {
+        title: 'Teste de vazão',
+        description:
+          'Conferimos o escoamento livre e orientamos sobre a manutenção preventiva da rede.',
+      },
+    ],
+    faqs: [
+      {
+        question: 'O hidrojateamento pode danificar minha tubulação?',
+        answer:
+          'Não, quando executado por equipe técnica. A pressão é regulada conforme o material e o diâmetro do tubo (PVC, ferro fundido, concreto). Por isso o diagnóstico prévio é obrigatório no nosso protocolo.',
+      },
+      {
+        question: 'Qual a diferença entre hidrojateamento e desentupimento comum?',
+        answer:
+          'O desentupimento mecânico abre uma passagem no ponto obstruído. O hidrojateamento limpa a tubulação inteira, removendo a camada de gordura e incrustação aderida à parede do tubo. Por isso o resultado dura muito mais e reduz a chance de entupir de novo.',
+      },
+      {
+        question: 'Para que mais serve o hidrojateamento além de tubulação?',
+        answer:
+          'Também usamos para limpeza de superfícies: pisos industriais, pátios, calçadas, fachadas, tanques, caixas de gordura, galerias pluviais e remoção de resíduos incrustados em estruturas.',
+      },
+      {
+        question: 'Precisa quebrar piso ou parede?',
+        answer:
+          'Na grande maioria dos casos, não. O jato entra pela própria rede — caixa de inspeção, ralo ou ponto de acesso — e atua de dentro da tubulação.',
+      },
+    ],
+  },
+  {
+    slug: 'desentupimento-em-londrina',
+    title: 'Desentupimento em Londrina',
+    shortTitle: 'Desentupimentos',
+    category: 'desentupimento',
+    icon: 'plunger',
+    metaTitle: 'Desentupimento em Londrina | Pia, Ralo e Vaso | Araújo',
+    metaDescription:
+      'Desentupimento em Londrina de pias, ralos, vasos sanitários, caixas de gordura e redes coletoras. Equipamento profissional, sem quebra-quebra e com garantia.',
+    keywords: [
+      'desentupimento londrina',
+      'desentupidora londrina',
+      'desentupimento de tubulação londrina',
+      'desentupimento de pia londrina',
+      'desentupimento de vaso sanitário londrina',
+      'desentupimento de caixa de gordura londrina',
+    ],
+    hero: {
+      headline: 'Desentupimento em Londrina',
+      subheadline:
+        'Pias, ralos, vasos sanitários, caixas de gordura e redes coletoras desobstruídos com equipamento profissional, sem quebrar piso ou parede.',
+    },
+    intro:
+      'O serviço de desentupimento consiste na remoção de obstruções em encanamentos, pias, ralos, vasos sanitários e redes coletoras. Utilizamos equipamentos específicos para restaurar o fluxo normal e evitar danos maiores ao sistema hidráulico. Entupimento não se resolve sozinho: quanto mais tempo a água fica represada, maior o risco de refluxo, mau cheiro, infiltração e proliferação de baratas e ratos que sobem pela tubulação.',
+    benefits: [
+      'Desobstrução sem quebrar piso, parede ou tubulação',
+      'Pias, ralos, vasos, caixas de gordura, colunas e tubulações em geral',
+      'Equipamentos rotativos e hidrojateamento conforme o caso',
+      'Atendimento emergencial para refluxo e transbordamento',
+      'Residências, comércios, indústrias e condomínios',
+      'Orientação para evitar reincidência e garantia do serviço',
+    ],
+    process: [
+      {
+        title: 'Avaliação do entupimento',
+        description:
+          'Localizamos o ponto obstruído e identificamos a causa: gordura, cabelo, raiz, resíduo sólido ou trecho danificado.',
+      },
+      {
+        title: 'Escolha da técnica',
+        description:
+          'Equipamento rotativo, sonda ou hidrojateamento de alta pressão, conforme o tipo e a localização da obstrução.',
+      },
+      {
+        title: 'Desobstrução',
+        description:
+          'Removemos o bloqueio e liberamos a passagem sem danificar a tubulação.',
+      },
+      {
+        title: 'Teste e orientação',
+        description:
+          'Testamos o escoamento e orientamos sobre limpeza preventiva da caixa de gordura e uso correto da rede.',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Precisa quebrar piso ou parede para desentupir?',
+        answer:
+          'Na grande maioria dos atendimentos, não. Trabalhamos pelos pontos de acesso da própria rede (ralos, caixas de inspeção, vaso sanitário). A quebra só entra em cena quando há tubulação rompida ou colapsada, e sempre com autorização prévia do cliente.',
+      },
+      {
+        question: 'Vocês atendem emergência?',
+        answer:
+          'Sim. Refluxo de água servida e entupimento em comércio não esperam. Chame pelo WhatsApp que priorizamos o atendimento.',
+      },
+      {
+        question: 'Produto desentupidor de supermercado resolve?',
+        answer:
+          'Raramente, e pode piorar. A soda cáustica endurece a gordura em trechos mais adiante da tubulação e ainda ataca tubos e vedações antigas. O desentupimento mecânico ou por hidrojateamento remove a obstrução de fato.',
+      },
+      {
+        question: 'Por que a pia entope sempre no mesmo lugar?',
+        answer:
+          'Geralmente porque existe uma camada de gordura acumulada na parede do tubo, que reduz o diâmetro útil. O desentupimento pontual abre uma passagem, mas a camada continua ali. Nesses casos indicamos o hidrojateamento, que limpa a tubulação inteira.',
+      },
+      {
+        question: 'Entupimento tem relação com barata e rato?',
+        answer:
+          'Sim. Tubulação obstruída e caixa de gordura suja são rota e abrigo de baratas americanas e roedores. Por isso muitos clientes contratam desentupimento junto com a dedetização: resolve a origem, não só o sintoma.',
+      },
+    ],
+  },
 ];
 
 export const servicesBySlug = Object.fromEntries(
@@ -1196,5 +1354,6 @@ export const categoryLabels: Record<Service['category'], string> = {
   roedores: 'Roedores',
   'aves-morcegos': 'Aves e Morcegos',
   higienizacao: 'Higienização',
+  desentupimento: 'Desentupimento e Hidrojateamento',
   programas: 'Programas e Contratos',
 };
