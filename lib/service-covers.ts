@@ -101,13 +101,13 @@ export const serviceCovers: Record<string, ServiceCover> = {
     image: '/services/hidrojateamento-em-londrina.jpg',
     alt: 'Técnico com capacete, viseira, avental e luvas de PVC operando hidrojateamento de alta pressão em caixa de inspeção',
     credit: { name: 'Araújo', url: '#' },
-    objectPosition: 'right center',
+    objectPosition: 'left center',
   },
   'desentupimento-em-londrina': {
     image: '/services/desentupimento-em-londrina.jpg',
     alt: 'Técnico de uniforme e luvas de PVC operando equipamento rotativo de desobstrução em caixa de inspeção',
     credit: { name: 'Araújo', url: '#' },
-    objectPosition: 'right center',
+    objectPosition: 'center bottom',
   },
 };
 
