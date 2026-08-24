@@ -6,11 +6,12 @@ import type { PortableTextBlock } from '@portabletext/react';
 import type { Image as SanityImage } from 'sanity';
 import CTASection from '@/components/CTASection';
 import PortableText from '@/components/PortableText';
+import OrcamentoCTA from '@/components/OrcamentoCTA';
 import { sanityFetch } from '@/sanity/lib/fetch';
 import { urlFor } from '@/sanity/lib/image';
 import { postBySlugQuery, postSlugsQuery, relatedPostsQuery } from '@/sanity/lib/queries';
 import { servicesBySlug } from '@/lib/services';
-import { siteConfig, whatsappLink } from '@/lib/site-config';
+import { siteConfig } from '@/lib/site-config';
 
 type Params = { params: { slug: string } };
 
@@ -223,20 +224,10 @@ export default async function BlogPostPage({ params }: Params) {
               </div>
             )}
 
-            <div className="mt-8 rounded-2xl bg-ink-50 p-6 text-center dark:bg-ink-700">
-              <p className="text-ink-700 dark:text-ink-300">
-                Precisa de ajuda profissional?{' '}
-                <a
-                  href={whatsappLink()}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-semibold text-yellow-600 underline-offset-2 hover:underline dark:text-yellow-400"
-                >
-                  Fale conosco no WhatsApp
-                </a>{' '}
-                ou ligue {siteConfig.phoneDisplay}.
-              </p>
-            </div>
+            <OrcamentoCTA
+              postSlug={post.slug}
+              postCategoria={post.category?.title}
+            />
 
             <div className="mt-8">
               <Link
