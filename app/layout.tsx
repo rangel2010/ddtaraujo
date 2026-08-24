@@ -7,6 +7,7 @@ import Footer from '@/components/Footer';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
 import OrganizationSchema from '@/components/OrganizationSchema';
 import ClarityAnalytics from '@/components/ClarityAnalytics';
+import SiteChrome from '@/components/SiteChrome';
 import './globals.css';
 
 const inter = Inter({
@@ -120,10 +121,13 @@ export default function RootLayout({
         </noscript>
         <OrganizationSchema />
         <ClarityAnalytics />
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <WhatsAppFloat />
+        <SiteChrome
+          header={<Header />}
+          footer={<Footer />}
+          float={<WhatsAppFloat />}
+        >
+          {children}
+        </SiteChrome>
       </body>
     </html>
   );
