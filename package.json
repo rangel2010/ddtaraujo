@@ -6,12 +6,20 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "typegen": "sanity schema extract && sanity typegen generate"
   },
   "dependencies": {
+    "@portabletext/react": "^3.2.0",
+    "@sanity/icons": "^3.5.0",
+    "@sanity/image-url": "^1.1.0",
+    "@sanity/vision": "^4.22.0",
     "next": "14.2.35",
+    "next-sanity": "^9.8.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "sanity": "^4.22.0",
+    "styled-components": "^6.5.1"
   },
   "devDependencies": {
     "@types/node": "^20.14.10",

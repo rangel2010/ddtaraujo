@@ -1,10 +1,13 @@
 import type { MetadataRoute } from 'next';
 import { services } from '@/lib/services';
-import { blogPosts } from '@/lib/blog';
+import { sanityFetch } from '@/sanity/lib/fetch';
+import { postsSitemapQuery } from '@/sanity/lib/queries';
 import { bairros } from '@/lib/bairros';
 import { siteConfig } from '@/lib/site-config';
 
-export default function sitemap(): MetadataRoute.Sitemap {
+type SitemapPost = { slug: string; publishedAt: string };
+
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const lastModified = new Date();
 
   const staticRoutes = [
@@ -25,9 +28,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
-  const blogRoutes = blogPosts.map((p) => ({
+  const posts = await sanityFetch<SitemapPost[]>({
+    query: postsSitemapQuery,
+    tags: ['post'],
+  });
+
+  const blogRoutes = posts.map((p) => ({
     url: `${siteConfig.url}/blog/${p.slug}`,
-    lastModified: new Date(p.date),
+    lastModified: new Date(p.publishedAt),
     changeFrequency: 'monthly' as const,
     priority: 0.6,
   }));

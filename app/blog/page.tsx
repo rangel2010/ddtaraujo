@@ -2,7 +2,10 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import CTASection from '@/components/CTASection';
-import { blogPosts } from '@/lib/blog';
+import { sanityFetch } from '@/sanity/lib/fetch';
+import { urlFor } from '@/sanity/lib/image';
+import { postsListQuery } from '@/sanity/lib/queries';
+import type { Image as SanityImage } from 'sanity';
 
 export const metadata: Metadata = {
   title: 'Blog | Dicas e Notícias sobre Controle de Pragas',
@@ -11,14 +14,25 @@ export const metadata: Metadata = {
   alternates: { canonical: '/blog' },
 };
 
-// Featured primeiro (fixado), depois do mais recente para o mais antigo
-const posts = [...blogPosts].sort((a, b) => {
-  if (a.featured && !b.featured) return -1;
-  if (!a.featured && b.featured) return 1;
-  return new Date(b.date).getTime() - new Date(a.date).getTime();
-});
+// ISR: publicou no Studio, aparece aqui em até 60s — sem redeploy.
+export const revalidate = 60;
 
-export default function BlogPage() {
+type PostCard = {
+  _id: string;
+  title: string;
+  slug: string;
+  excerpt: string;
+  publishedAt: string;
+  readTime: number;
+  featured?: boolean;
+  category?: { title: string; slug: string };
+  coverImage?: SanityImage;
+  coverImageAlt?: string;
+};
+
+export default async function BlogPage() {
+  const posts = await sanityFetch<PostCard[]>({ query: postsListQuery, tags: ['post'] });
+
   return (
     <>
       <section className="bg-gradient-to-br from-ink-900 via-ink-800 to-brand-900 py-20 text-white">
@@ -41,21 +55,25 @@ export default function BlogPage() {
         <div className="container">
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {posts.map((p) => (
-              <article key={p.slug} className="group flex flex-col rounded-2xl border border-ink-200 bg-ink-50 overflow-hidden hover:border-brand-300 hover:shadow-md transition dark:border-ink-600 dark:bg-ink-700">
+              <article key={p._id} className="group flex flex-col rounded-2xl border border-ink-200 bg-ink-50 overflow-hidden hover:border-brand-300 hover:shadow-md transition dark:border-ink-600 dark:bg-ink-700">
                 <div className="relative h-48 overflow-hidden bg-ink-200 dark:bg-ink-600">
-                  <Image
-                    src={p.coverImage}
-                    alt={p.coverAlt}
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-cover transition duration-500 group-hover:scale-105"
-                  />
+                  {p.coverImage && (
+                    <Image
+                      src={urlFor(p.coverImage).width(800).height(450).auto('format').url()}
+                      alt={p.coverImageAlt || p.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="object-cover transition duration-500 group-hover:scale-105"
+                    />
+                  )}
                 </div>
                 <div className="flex flex-1 flex-col p-6">
                   <div className="flex items-center gap-3 text-xs text-ink-500 dark:text-ink-400">
-                    <span className="rounded-full bg-yellow-100 px-2.5 py-0.5 font-medium text-yellow-700 dark:bg-yellow-400/15 dark:text-yellow-400">{p.category}</span>
-                    <span>{new Date(p.date).toLocaleDateString('pt-BR')}</span>
-                    <span>· {p.readingMinutes} min</span>
+                    <span className="rounded-full bg-yellow-100 px-2.5 py-0.5 font-medium text-yellow-700 dark:bg-yellow-400/15 dark:text-yellow-400">
+                      {p.category?.title}
+                    </span>
+                    <span>{new Date(p.publishedAt).toLocaleDateString('pt-BR')}</span>
+                    <span>· {p.readTime} min</span>
                   </div>
                   <h2 className="mt-4 font-display text-xl font-bold text-ink-900 dark:text-white group-hover:text-yellow-600 dark:group-hover:text-yellow-400">
                     {p.title}
