@@ -41,6 +41,9 @@ export const postBySlugQuery = groq`
     coverImageAlt,
     coverImageCredit,
     coverImageCreditUrl,
+    instagramImage,
+    instagramTitulo,
+    instagramCaption,
     "category": category->{title, "slug": slug.current, description},
     "author": author->{name, "slug": slug.current, role, image}
   }

@@ -10,6 +10,7 @@ export const postType = defineType({
     { name: 'content', title: 'Conteúdo', default: true },
     { name: 'meta', title: 'Metadados' },
     { name: 'seo', title: 'SEO' },
+    { name: 'instagram', title: 'Instagram' },
   ],
   fields: [
     // ============ CONTEÚDO ============
@@ -137,6 +138,34 @@ export const postType = defineType({
       description:
         'Slugs de /servicos/[slug] — ex.: descupinizacao, desratizacao, dedetizacao-de-baratas. O nome do serviço é puxado automático.',
       of: [{ type: 'string' }],
+    }),
+
+    // ============ INSTAGRAM ============
+    defineField({
+      name: 'instagramImage',
+      title: 'Imagem do post no Instagram',
+      type: 'image',
+      group: 'instagram',
+      description:
+        'Versão 1080x1080 com o título aplicado sobre a capa. Gerada pela skill ddt-blog-writer, não edite à mão.',
+      options: { hotspot: false },
+    }),
+    defineField({
+      name: 'instagramTitulo',
+      title: 'Título usado na imagem',
+      type: 'string',
+      group: 'instagram',
+      description:
+        'O corte curto que aparece na arte, no formato "DESTAQUE | COMPLEMENTO | linha de apoio". Guardado pra dar pra regerar a imagem igual depois.',
+    }),
+    defineField({
+      name: 'instagramCaption',
+      title: 'Legenda do post',
+      type: 'text',
+      rows: 6,
+      group: 'instagram',
+      description:
+        'Texto que vai na publicação, com hashtags. É o que a automação envia junto com a imagem.',
     }),
 
     // ============ SEO ============
