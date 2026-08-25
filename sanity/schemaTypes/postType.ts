@@ -159,6 +159,15 @@ export const postType = defineType({
         'O corte curto que aparece na arte, no formato "DESTAQUE | COMPLEMENTO | linha de apoio". Guardado pra dar pra regerar a imagem igual depois.',
     }),
     defineField({
+      name: 'instagramPostadoEm',
+      title: 'Publicado no Instagram em',
+      type: 'datetime',
+      group: 'instagram',
+      readOnly: true,
+      description:
+        'Preenchido pela automação depois que o post é enviado. É o que faz a fila retroativa andar: quem tem data já saiu, quem não tem entra na fila. Apagar este campo coloca o post de volta na fila.',
+    }),
+    defineField({
       name: 'instagramCaption',
       title: 'Legenda do post',
       type: 'text',
