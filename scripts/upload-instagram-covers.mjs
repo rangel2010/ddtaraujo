@@ -1,19 +1,22 @@
 /**
- * Sobe as artes de Instagram (blog-capas/<slug>/instagram.jpg) pro Sanity e
- * grava, no mesmo post: `instagramImage`, `instagramTitulo` e `instagramCaption`.
+ * Sobe as imagens de blog-capas/<slug>/ pro Sanity e liga ao post correspondente.
  *
- * Título e legenda vêm de scripts/instagram-content.json. Se um slug não estiver
- * nesse arquivo, só a imagem é gravada.
+ *   capa.jpg       -> campo `coverImage`      (só quando o post ainda não tem capa)
+ *   instagram.jpg  -> campo `instagramImage`  (sempre que existir o arquivo)
  *
- * Idempotente no sentido de que reescreve o campo, mas CADA execução cria um
- * asset novo no Sanity. Não rode à toa: só quando houver arte nova ou refeita.
+ * Título e legenda de Instagram vêm de scripts/instagram-content.json quando o
+ * slug estiver lá. Se não estiver, esses campos não são tocados (útil pra post
+ * que já recebeu título e legenda direto no Sanity).
+ *
+ * Escreve no RASCUNHO quando existe rascunho, e no publicado quando não existe.
+ * Assim um post ainda em revisão não é publicado por acidente.
+ *
+ * Cada execução cria asset novo no Sanity. Não rode à toa.
  *
  * Como rodar (PowerShell, na raiz do projeto):
  *   $env:SANITY_WRITE_TOKEN="<token de escrita>"
- *   node scripts/upload-instagram-covers.mjs
- *
- * Para subir só alguns, passe os slugs como argumento:
- *   node scripts/upload-instagram-covers.mjs problemas-com-pulgas outro-slug
+ *   node scripts/upload-instagram-covers.mjs                 # todas as pastas
+ *   node scripts/upload-instagram-covers.mjs slug-a slug-b   # só esses posts
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -37,25 +40,17 @@ if (!TOKEN) {
   console.error('  $env:SANITY_WRITE_TOKEN="sk..."\n');
   process.exit(1);
 }
-
 if (!fs.existsSync(CAPAS)) {
   console.error(`Pasta não encontrada: ${CAPAS}`);
   process.exit(1);
 }
 
 const filtro = process.argv.slice(2);
-
 const slugs = fs
   .readdirSync(CAPAS, { withFileTypes: true })
   .filter((d) => d.isDirectory())
   .map((d) => d.name)
-  .filter((s) => fs.existsSync(path.join(CAPAS, s, 'instagram.jpg')))
   .filter((s) => filtro.length === 0 || filtro.includes(s));
-
-if (slugs.length === 0) {
-  console.error('Nenhum instagram.jpg encontrado em blog-capas/.');
-  process.exit(1);
-}
 
 async function uploadImage(file, filename) {
   const r = await fetch(`${API}/assets/images/${DATASET}?filename=${encodeURIComponent(filename)}`, {
@@ -65,6 +60,15 @@ async function uploadImage(file, filename) {
   });
   if (!r.ok) throw new Error(`upload ${filename}: ${r.status} ${await r.text()}`);
   return (await r.json()).document._id;
+}
+
+async function query(groq) {
+  const r = await fetch(`${API}/data/query/${DATASET}?query=${encodeURIComponent(groq)}`, {
+    headers: { Authorization: `Bearer ${TOKEN}` },
+  });
+  const j = await r.json();
+  if (!r.ok) throw new Error(`query: ${JSON.stringify(j)}`);
+  return j.result || [];
 }
 
 async function mutate(mutations) {
@@ -78,46 +82,67 @@ async function mutate(mutations) {
   return JSON.parse(t);
 }
 
-// Só liga a imagem em post que existe, pra não criar documento fantasma.
-const idsExistentes = await (async () => {
-  const query = encodeURIComponent('*[_type == "post"].slug.current');
-  const r = await fetch(`${API}/data/query/${DATASET}?query=${query}`, {
-    headers: { Authorization: `Bearer ${TOKEN}` },
-  });
-  const j = await r.json();
-  return new Set(j.result || []);
-})();
+// Mapa slug -> { id que deve receber o patch, já tem capa? }
+// Rascunho tem prioridade: se o post está em revisão, a imagem vai pro rascunho.
+const docs = await query('*[_type == "post" && defined(slug.current)]{_id, "slug": slug.current, "temCapa": defined(coverImage)}');
+const alvo = new Map();
+for (const d of docs) {
+  const ehRascunho = d._id.startsWith('drafts.');
+  const atual = alvo.get(d.slug);
+  if (!atual || (ehRascunho && !atual.ehRascunho)) {
+    alvo.set(d.slug, { id: d._id, temCapa: d.temCapa, ehRascunho });
+  }
+}
 
 const muts = [];
 const pulados = [];
 
 for (const slug of slugs) {
-  if (!idsExistentes.has(slug)) {
-    pulados.push(slug);
+  const alvoDoc = alvo.get(slug);
+  if (!alvoDoc) {
+    pulados.push(`${slug} (não existe post com esse slug)`);
     continue;
   }
-  const assetId = await uploadImage(path.join(CAPAS, slug, 'instagram.jpg'), `instagram-${slug}.jpg`);
-  console.log(`arte ok   ${slug}  ->  ${assetId}`);
-  const set = {
-    instagramImage: { _type: 'image', asset: { _type: 'reference', _ref: assetId } },
-  };
+
+  const set = {};
+  const dirCapa = path.join(CAPAS, slug, 'capa.jpg');
+  const dirInsta = path.join(CAPAS, slug, 'instagram.jpg');
+
+  if (fs.existsSync(dirCapa)) {
+    if (alvoDoc.temCapa) {
+      console.log(`capa      ${slug}: post já tem capa, mantida como está`);
+    } else {
+      const id = await uploadImage(dirCapa, `capa-${slug}.jpg`);
+      set.coverImage = { _type: 'image', asset: { _type: 'reference', _ref: id } };
+      console.log(`capa ok   ${slug}  ->  ${id}`);
+    }
+  }
+
+  if (fs.existsSync(dirInsta)) {
+    const id = await uploadImage(dirInsta, `instagram-${slug}.jpg`);
+    set.instagramImage = { _type: 'image', asset: { _type: 'reference', _ref: id } };
+    console.log(`arte ok   ${slug}  ->  ${id}`);
+  }
+
   const t = textos[slug];
   if (t?.titulo) set.instagramTitulo = t.titulo;
   if (t?.caption) set.instagramCaption = t.caption;
-  if (!t) console.log(`  (sem título/legenda em instagram-content.json para ${slug})`);
 
-  muts.push({ patch: { id: `post-${slug}`, set } });
+  if (Object.keys(set).length === 0) {
+    pulados.push(`${slug} (pasta sem capa.jpg nem instagram.jpg)`);
+    continue;
+  }
+
+  muts.push({ patch: { id: alvoDoc.id, set } });
+  console.log(`          grava em ${alvoDoc.id}`);
 }
 
-if (pulados.length) {
-  console.log(`\nPulados (não existe post com esse slug no Sanity): ${pulados.join(', ')}`);
-}
-
+if (pulados.length) console.log(`\nPulados:\n  ${pulados.join('\n  ')}`);
 if (muts.length === 0) {
   console.log('\nNada pra gravar.');
   process.exit(0);
 }
 
 const res = await mutate(muts);
-console.log(`\nOK, ${res.results.length} posts atualizados com arte, título e legenda de Instagram.`);
-console.log('Confira em: https://www.ddtaraujo.com.br/studio (aba Instagram de cada post)');
+console.log(`\nOK, ${res.results.length} posts atualizados.`);
+console.log('Confira em: https://www.ddtaraujo.com.br/studio');
