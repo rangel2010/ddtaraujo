@@ -36,6 +36,11 @@ export const siteConfig = {
     saturday: '08:00 - 12:00',
     sunday: 'Fechado (atendimento emergencial via WhatsApp)',
   },
+  rating: {
+    ratingValue: 4.9,
+    reviewCount: 143,
+    bestRating: 5,
+  },
 };
 
 export const whatsappLink = (message?: string) => {

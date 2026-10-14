@@ -45,6 +45,12 @@ export default function OrganizationSchema() {
     ],
     sameAs: [siteConfig.social.facebook, siteConfig.social.instagram],
     priceRange: '$$',
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: siteConfig.rating.ratingValue,
+      reviewCount: siteConfig.rating.reviewCount,
+      bestRating: siteConfig.rating.bestRating,
+    },
   };
 
   return (
