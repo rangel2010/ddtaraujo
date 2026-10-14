@@ -142,7 +142,7 @@ export default async function BlogPostPage({ params }: Params) {
               src={urlFor(post.coverImage).width(1920).auto('format').url()}
               alt={post.coverImageAlt || post.title}
               fill
-              sizes="100vw"
+              sizes="(max-width: 768px) 100vw, 1200px"
               priority
               className="object-cover opacity-30"
             />

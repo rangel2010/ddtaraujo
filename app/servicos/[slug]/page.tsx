@@ -103,7 +103,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
             src={cover.image}
             alt={cover.alt}
             fill
-            sizes="100vw"
+            sizes="(max-width: 768px) 100vw, 1200px"
             priority
             className="object-cover opacity-60"
             style={cover.objectPosition ? { objectPosition: cover.objectPosition } : undefined}

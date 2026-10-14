@@ -19,7 +19,7 @@ export default function SobrePage() {
             src="/sobre-hero.jpeg"
             alt="Profissional Araújo aplicando dedetização em ambiente residencial"
             fill
-            sizes="100vw"
+            sizes="(max-width: 768px) 100vw, 1200px"
             priority
             className="object-contain object-center opacity-50 md:hidden"
           />
@@ -28,7 +28,7 @@ export default function SobrePage() {
             src="/sobre-hero-desktop.avif"
             alt="Profissional Araújo aplicando dedetização em ambiente residencial"
             fill
-            sizes="100vw"
+            sizes="(max-width: 768px) 100vw, 1200px"
             priority
             className="hidden md:block object-cover object-center opacity-50"
           />
