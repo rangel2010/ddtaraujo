@@ -199,6 +199,26 @@ export const richContent: Record<string, RichSection[]> = {
       ],
     },
     {
+      title: 'Limpeza de Reservatório para Condomínios em Londrina',
+      paragraphs: [
+        'Condomínios residenciais e comerciais têm exigências específicas: múltiplos reservatórios, prazos de auditoria e a responsabilidade legal do síndico pela qualidade da água que abastece os moradores. A Araújo tem experiência consolidada em atender condomínios verticais e horizontais de todos os portes em Londrina.',
+        'Para condomínios com mais de um reservatório, realizamos a higienização completa em um único atendimento, minimizando o impacto no abastecimento. Ao final, emitimos relatório consolidado com todos os reservatórios atendidos — documento ideal para prestação de contas em AGO/AGE e para a pasta de manutenção.',
+      ],
+      list: {
+        items: [
+          'Certificado individual por reservatório, válido para vigilância sanitária e AVCB',
+          'Laudo técnico com produtos utilizados e registros ANVISA',
+          'Registro fotográfico do antes e depois para arquivo do condomínio',
+          'Relatório consolidado para síndicos com data da próxima higienização recomendada',
+          'Contrato semestral com agendamento programado e aviso prévio ao síndico',
+          'Disponibilidade para atendimento em finais de semana mediante agendamento',
+        ],
+      },
+      closingParagraphs: [
+        'Fale com a Araújo e receba uma proposta personalizada para o seu condomínio. Atendemos condomínios verticais, horizontais, conjuntos comerciais e galpões industriais em Londrina e região.',
+      ],
+    },
+    {
       title: "Caixas d'água, cisternas e reservatórios: tipos e diferenças no serviço",
       paragraphs: [
         'Atendemos todos os tipos de reservatório de água, com procedimento adaptado para cada material e configuração.',

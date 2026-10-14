@@ -8,6 +8,7 @@ import { serviceCovers, fallbackCover } from '@/lib/service-covers';
 import { siteConfig, phoneLink } from '@/lib/site-config';
 import FAQ from '@/components/FAQ';
 import CTASection from '@/components/CTASection';
+import FormOrcamento from '@/components/FormOrcamento';
 
 export function generateStaticParams() {
   return services.map((s) => ({ slug: s.slug }));
@@ -243,6 +244,8 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
       </section>
 
       <FAQ items={service.faqs} title={`Dúvidas sobre ${service.shortTitle}`} />
+
+      {service.slug === 'limpeza-de-caixas-de-agua-em-londrina' && <FormOrcamento />}
 
       {service.relatedPost && (
         <div className="container pb-2">
